@@ -1,0 +1,8 @@
+/home/runner/work/gyms52-d/gyms52-d/scripts/places.py:80: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  resumen = {"inicio": dt.datetime.utcnow().isoformat() + "Z", "metros": {}}
+/home/runner/work/gyms52-d/gyms52-d/scripts/places.py:110: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  resumen.update(peticiones=contador["n"], errores=contador["errores"][:20], fin=dt.datetime.utcnow().isoformat() + "Z")
+/home/runner/work/gyms52-d/gyms52-d/scripts/places.py:112: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  nombre = dt.datetime.utcnow().strftime("%Y%m%d-%H%M") + "-places.json"
+Valle de México (CDMX): 0 -> 1709 lugares
+Peticiones usadas: 281 de 600
