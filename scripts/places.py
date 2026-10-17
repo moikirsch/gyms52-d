@@ -31,6 +31,10 @@ BUSQUEDAS = [
 ]
 
 
+class CuotaAgotada(Exception):
+    pass
+
+
 def municipios(fila):
     out = []
     for item in str(fila["lista_municipios"]).split(";"):
@@ -54,6 +58,9 @@ def buscar(clave, texto, contador, maximo, max_paginas=3):
         contador["n"] += 1
         if r.status_code != 200:
             contador["errores"].append(f"{r.status_code} {texto}: {r.text[:200]}")
+            if r.status_code == 429:
+                contador["n"] -= 1
+                raise CuotaAgotada(r.text[:200])
             if r.status_code in (400, 401, 403):
                 raise SystemExit("Google Places rechazó la llave o la petición: " + r.text[:300])
             break
@@ -77,7 +84,7 @@ def main():
     metros = pd.read_csv(os.path.join(RAIZ, "config", "metros.csv"))
     rangos = [int(x) for x in a.metros.split(",") if x.strip()]
     contador = {"n": 0, "errores": []}
-    resumen = {"inicio": dt.datetime.utcnow().isoformat() + "Z", "metros": {}}
+    resumen = {"inicio": dt.datetime.now(dt.timezone.utc).isoformat() + "Z", "metros": {}}
     os.makedirs(os.path.join(RAIZ, "data", "places"), exist_ok=True)
     for rango in rangos:
         fila = metros[metros.rango == rango].iloc[0]
@@ -88,11 +95,24 @@ def main():
                 p = json.loads(linea)
                 vistos[p["id"]] = p
         antes = len(vistos)
+        ruta_estado = ruta.replace(".jsonl", ".hecho.json")
+        hechas = set(json.load(open(ruta_estado))) if os.path.exists(ruta_estado) else set()
+        agotada = False
         for mun, edo in municipios(fila):
             for q in BUSQUEDAS:
-                if contador["n"] >= a.max:
+                if contador["n"] >= a.max or agotada:
                     break
-                for p in buscar(clave, f"{q} en {mun}, {edo}", contador, a.max):
+                consulta = f"{q} en {mun}, {edo}"
+                if consulta in hechas:
+                    continue
+                try:
+                    encontrados = buscar(clave, consulta, contador, a.max)
+                except CuotaAgotada as e:
+                    contador["errores"].append("Cuota diaria de Google agotada: " + str(e)[:120])
+                    agotada = True
+                    break
+                hechas.add(consulta)
+                for p in encontrados:
                     if p.get("businessStatus") == "CLOSED_PERMANENTLY":
                         continue
                     p.setdefault("_busquedas", [])
@@ -102,14 +122,18 @@ def main():
                         previo["_busquedas"].append(q)
                     previo["_metro_rango"], previo["_metropoli"] = rango, fila["metropoli"]
                     vistos[p["id"]] = previo
+        json.dump(sorted(hechas), open(ruta_estado, "w"), ensure_ascii=False)
         with open(ruta, "w", encoding="utf-8") as f:
             for p in vistos.values():
                 f.write(json.dumps(p, ensure_ascii=False) + "\n")
         resumen["metros"][fila["metropoli"]] = {"antes": antes, "despues": len(vistos)}
         print(f"{fila['metropoli']}: {antes} -> {len(vistos)} lugares")
-    resumen.update(peticiones=contador["n"], errores=contador["errores"][:20], fin=dt.datetime.utcnow().isoformat() + "Z")
+        if agotada:
+            print("Cuota diaria de Google agotada; se retoma en la siguiente corrida.")
+            break
+    resumen.update(peticiones=contador["n"], errores=contador["errores"][:20], fin=dt.datetime.now(dt.timezone.utc).isoformat() + "Z")
     os.makedirs(os.path.join(RAIZ, "data", "corridas"), exist_ok=True)
-    nombre = dt.datetime.utcnow().strftime("%Y%m%d-%H%M") + "-places.json"
+    nombre = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%d-%H%M") + "-places.json"
     json.dump(resumen, open(os.path.join(RAIZ, "data", "corridas", nombre), "w"), ensure_ascii=False, indent=1)
     print(f"Peticiones usadas: {contador['n']} de {a.max}")
 

@@ -63,12 +63,13 @@ REGLAS_DISCIPLINA = [
     (r"karate", "Karate"),
     (r"taekwondo|tae kwon do|\btkd\b", "Taekwondo"),
     (r"krav maga", "Krav maga"),
-    (r"boxeo|boxing|\bbox\b(?! funcional)", "Box"),
+    (r"boxeo|boxing|box club|escuela de box|\bbox\b(?! (funcional|training|crossfit))", "Box"),
     (r"lucha", "Lucha"),
+    (r"artes marciales|martial|dojo", "Combate"),
     (r"esgrima", "Esgrima"),
     (r"zumba", "Zumba"),
     (r"jazzercise", "Jazzercise"),
-    (r"pole", "Pole fitness"),
+    (r"\bpole\b|pole dance|pole fitness", "Pole fitness"),
     (r"ballet", "Ballet"),
     (r"hip ?hop", "Hip hop"),
     (r"salsa|bachata", "Salsa y bachata"),
@@ -112,7 +113,7 @@ def clasificar(nombre, tipos=(), pista=""):
             disc.append("Ropa deportiva" if "clothing_store" in tipos else "Equipo de gimnasio")
     elif any(d in disc for d in ("CrossFit", "HYROX")) or re.search(r"\bbox\b.*(funcional|crossfit|training)|training box", n):
         tipo = "Box"
-    elif any(d in disc for d in ("Muay thai", "Kickboxing", "MMA", "Jiu-jitsu brasileño", "Judo", "Karate", "Taekwondo", "Krav maga", "Box", "Lucha", "Esgrima")):
+    elif any(d in disc for d in ("Muay thai", "Kickboxing", "MMA", "Jiu-jitsu brasileño", "Judo", "Karate", "Taekwondo", "Krav maga", "Box", "Lucha", "Esgrima", "Combate")):
         tipo = "Gimnasio de combate"
     elif any(d in disc for d in ("Yoga", "Hot yoga", "Yoga aéreo", "Pilates mat", "Pilates reformer", "Barre", "Indoor cycling", "Jumping")):
         tipo = "Estudio"
@@ -133,3 +134,9 @@ def clasificar(nombre, tipos=(), pista=""):
     if not disc:
         disc.append("Pesas" if tipo != "Tienda" else "Equipo de gimnasio")
     return tipo, disc, cadena
+
+
+def limpiar_nombre(s):
+    """Quita emojis y símbolos sueltos del nombre que da Google."""
+    s = "".join(c for c in (s or "") if unicodedata.category(c)[0] in "LNPZ" or c in "&+'-.")
+    return re.sub(r"\s{2,}", " ", s).strip(" -|·•")

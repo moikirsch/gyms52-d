@@ -13,9 +13,16 @@ from collections import defaultdict
 
 import pandas as pd
 
-from comun import clasificar, distancia_m, similitud, slug, TIPOS_VALIDOS
+from comun import clasificar, distancia_m, limpiar_nombre, similitud, slug, TIPOS_VALIDOS
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Qué significa haber aparecido en una sola búsqueda (solo se usa si el nombre no dice nada)
+PISTAS = {
+    "crossfit": "crossfit", "box de entrenamiento funcional": "funcional", "estudio de pilates": "pilates",
+    "estudio de yoga": "yoga", "indoor cycling": "cycling", "gimnasio de box": "boxeo",
+    "artes marciales": "artes marciales", "escuela de danza": "danza", "clases de natacion": "natacion",
+    "clases de natación": "natacion", "muro de escalada": "escalada", "tienda de suplementos deportivos": "suplementos",
+}
 EXCLUIR = {"school", "primary_school", "secondary_school", "university", "hospital", "doctor", "physiotherapist",
            "restaurant", "hotel", "lodging", "spa", "beauty_salon", "real_estate_agency", "apartment_complex",
            "church", "park", "cafe", "bar", "car_repair", "medical_lab", "dentist"}
@@ -69,7 +76,7 @@ def main():
     for archivo in sorted(glob.glob(os.path.join(RAIZ, "data", "places", "*.jsonl"))):
         for linea in open(archivo, encoding="utf-8"):
             p = json.loads(linea)
-            nombre = p.get("displayName", {}).get("text", "").strip()
+            nombre = limpiar_nombre(p.get("displayName", {}).get("text", ""))
             tipos = p.get("types", [])
             pista = " ".join(p.get("_busquedas", []))
             _, disc_nombre, _ = clasificar(nombre, ())
@@ -77,7 +84,9 @@ def main():
             if not nombre or not es_fitness(p, disc_nombre):
                 descartados += 1
                 continue
-            tipo, disciplinas, cadena = clasificar(nombre, tipos, pista if not disc_nombre else "")
+            busq = p.get("_busquedas", [])
+            usar_pista = not disc_nombre and p.get("primaryType") not in ("gym", "fitness_center") and len(busq) == 1
+            tipo, disciplinas, cadena = clasificar(nombre, tipos, PISTAS.get(busq[0], "") if usar_pista else "")
             lat, lng = p["location"]["latitude"], p["location"]["longitude"]
             # pareja en DENUE
             mejor, mejor_puntos = None, 0
