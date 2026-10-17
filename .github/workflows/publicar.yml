@@ -1,0 +1,62 @@
+name: Publicar en gyms52.com
+
+on:
+  workflow_dispatch:
+    inputs:
+      metros:
+        description: "Rangos de metrópoli (vacío = todos)"
+        default: "1"
+      max:
+        description: "Máximo de fichas a publicar"
+        default: "300"
+      estado:
+        description: "publish o draft"
+        default: "publish"
+  push:
+    branches: [main]
+    paths: ["solicitudes/publicar.json"]
+
+concurrency:
+  group: datos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Leer parámetros
+        id: p
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "metros=${{ inputs.metros }}" >> $GITHUB_OUTPUT
+            echo "max=${{ inputs.max }}" >> $GITHUB_OUTPUT
+            echo "estado=${{ inputs.estado }}" >> $GITHUB_OUTPUT
+          else
+            echo "metros=$(jq -r '.metros // ""' solicitudes/publicar.json)" >> $GITHUB_OUTPUT
+            echo "max=$(jq -r '.max // 300' solicitudes/publicar.json)" >> $GITHUB_OUTPUT
+            echo "estado=$(jq -r '.estado // "publish"' solicitudes/publicar.json)" >> $GITHUB_OUTPUT
+          fi
+      - name: Publicar
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          mkdir -p data/corridas
+          cd scripts && python publicar.py --metros "${{ steps.p.outputs.metros }}" --max "${{ steps.p.outputs.max }}" --estado "${{ steps.p.outputs.estado }}" 2>&1 | tee ../data/corridas/ultima-publicar.log
+      - name: Guardar resultados
+        if: always()
+        run: |
+          git config user.name "gyms52-bot"
+          git config user.email "bot@gyms52.com"
+          git add data
+          git commit -m "Publicación metros ${{ steps.p.outputs.metros }}" || echo "Sin cambios"
+          git pull --rebase origin main && git push

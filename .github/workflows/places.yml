@@ -1,0 +1,59 @@
+name: Buscar lugares (Google Places + DENUE)
+
+on:
+  workflow_dispatch:
+    inputs:
+      metros:
+        description: "Rangos de metrópoli, separados por coma"
+        default: "1"
+      max:
+        description: "Tope de peticiones a Google en esta corrida"
+        default: "600"
+  push:
+    branches: [main]
+    paths: ["solicitudes/places.json"]
+
+concurrency:
+  group: datos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Leer parámetros
+        id: p
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "metros=${{ inputs.metros }}" >> $GITHUB_OUTPUT
+            echo "max=${{ inputs.max }}" >> $GITHUB_OUTPUT
+          else
+            echo "metros=$(jq -r '.metros' solicitudes/places.json)" >> $GITHUB_OUTPUT
+            echo "max=$(jq -r '.max // 600' solicitudes/places.json)" >> $GITHUB_OUTPUT
+          fi
+      - name: DENUE (si falta)
+        run: test -f data/denue/gimnasios.csv || (cd scripts && python denue.py)
+      - name: Google Places
+        env:
+          GOOGLE_PLACES_KEY: ${{ secrets.GOOGLE_PLACES_KEY }}
+        run: mkdir -p data/corridas && cd scripts && python places.py --metros "${{ steps.p.outputs.metros }}" --max "${{ steps.p.outputs.max }}" 2>&1 | tee ../data/corridas/ultima-places.log
+      - name: Unir en la base maestra
+        if: always()
+        run: cd scripts && python unir.py 2>&1 | tee ../data/corridas/ultima-unir.log
+      - name: Guardar resultados
+        if: always()
+        run: |
+          git config user.name "gyms52-bot"
+          git config user.email "bot@gyms52.com"
+          git add data
+          git commit -m "Places metros ${{ steps.p.outputs.metros }}" || echo "Sin cambios"
+          git pull --rebase origin main && git push
