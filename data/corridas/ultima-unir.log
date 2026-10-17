@@ -1,12 +1,12 @@
-Base: 1568 lugares | con DENUE: 258 | descartados: 141 | DENUE sin pareja: 2023
+Base: 12187 lugares | Google: 1568 | OSM nuevos: 1372 | OSM completan: 896 | DENUE nuevos: 9260 | DENUE genéricos fuera: 1435 | descartados Google: 141
 tipo_lugar
-Gimnasio de combate    319
-Estudio                305
-Gimnasio               238
-Tienda                 232
-Escuela de danza       176
-Box                    149
-Club deportivo          62
-Centro acuático         56
-Muro de escalada        17
-Deportivo público       14
+Gimnasio               7880
+Deportivo público       877
+Escuela de danza        875
+Gimnasio de combate     734
+Estudio                 645
+Club deportivo          471
+Tienda                  358
+Box                     216
+Centro acuático          78
+Muro de escalada         53
