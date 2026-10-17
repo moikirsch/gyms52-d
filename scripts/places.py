@@ -77,12 +77,21 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--metros", default="1", help="rangos separados por coma, ej. 1,2,3")
     ap.add_argument("--max", type=int, default=600, help="tope de peticiones a Google en esta corrida")
+    ap.add_argument("--auto", type=int, default=0, help="toma en orden las primeras N metrópolis que tengan búsquedas pendientes")
     a = ap.parse_args()
     clave = os.environ.get("GOOGLE_PLACES_KEY")
     if not clave:
         raise SystemExit("Falta GOOGLE_PLACES_KEY")
     metros = pd.read_csv(os.path.join(RAIZ, "config", "metros.csv"))
     rangos = [int(x) for x in a.metros.split(",") if x.strip()]
+    if a.auto:
+        rangos = []
+        for _, f in metros[metros.rango <= a.auto].sort_values("rango").iterrows():
+            est = os.path.join(RAIZ, "data", "places", f"{int(f['rango']):03d}-{slug(f['metropoli'])}.hecho.json")
+            hechas = set(json.load(open(est))) if os.path.exists(est) else set()
+            if len(hechas) < len(municipios(f)) * len(BUSQUEDAS):
+                rangos.append(int(f["rango"]))
+        print("Metrópolis con búsquedas pendientes:", rangos or "ninguna")
     contador = {"n": 0, "errores": []}
     resumen = {"inicio": dt.datetime.now(dt.timezone.utc).isoformat() + "Z", "metros": {}}
     os.makedirs(os.path.join(RAIZ, "data", "places"), exist_ok=True)

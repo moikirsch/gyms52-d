@@ -1,0 +1,49 @@
+name: Corrida diaria (buscar y publicar)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 13 * * *"   # 7:17 am hora del centro de México
+
+concurrency:
+  group: datos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  diario:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Buscar en las metrópolis de lanzamiento con pendientes
+        env:
+          GOOGLE_PLACES_KEY: ${{ secrets.GOOGLE_PLACES_KEY }}
+        run: |
+          mkdir -p data/corridas
+          LANZAMIENTO=$(jq -r '.metros_lanzamiento // 10' config/diario.json)
+          MAX=$(jq -r '.max_google // 600' config/diario.json)
+          cd scripts && python places.py --auto "$LANZAMIENTO" --max "$MAX" 2>&1 | tee ../data/corridas/ultima-places.log
+      - name: Unir
+        if: always()
+        run: cd scripts && python unir.py 2>&1 | tee ../data/corridas/ultima-unir.log
+      - name: Publicar lo nuevo
+        if: always()
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: cd scripts && python publicar.py --max 3000 2>&1 | tee ../data/corridas/ultima-publicar.log
+      - name: Guardar resultados
+        if: always()
+        run: |
+          git config user.name "gyms52-bot"
+          git config user.email "bot@gyms52.com"
+          git add data
+          git commit -m "Corrida diaria $(date -u +%F)" || echo "Sin cambios"
+          git pull --rebase origin main && git push

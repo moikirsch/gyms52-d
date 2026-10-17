@@ -18,6 +18,10 @@ Edita y sube uno de estos archivos; el cambio dispara el proceso:
 
 También se pueden lanzar a mano desde la pestaña Actions.
 
+## Corrida diaria
+
+`diario.yml` corre todos los días a las 7:17 am (centro de México): busca en las metrópolis de lanzamiento que tengan búsquedas pendientes, une y publica lo nuevo. Se ajusta en `config/diario.json` (`metros_lanzamiento`, `max_google`). Si Google agota su cuota del día, la búsqueda se detiene y retoma al día siguiente donde se quedó.
+
 ## Secretos del repositorio
 
 `GOOGLE_PLACES_KEY`, `WP_USER`, `WP_APP_PASSWORD`. Nunca van en archivos.
