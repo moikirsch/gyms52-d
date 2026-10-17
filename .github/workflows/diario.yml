@@ -39,6 +39,17 @@ jobs:
           WP_USER: ${{ secrets.WP_USER }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
         run: cd scripts && python publicar.py --max 3000 2>&1 | tee ../data/corridas/ultima-publicar.log
+      - name: Enriquecer lo nuevo
+        if: always()
+        env:
+          GOOGLE_PLACES_KEY: ${{ secrets.GOOGLE_PLACES_KEY }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          cd scripts
+          python detalles.py --max 2000 2>&1 | tee ../data/corridas/ultima-detalles.log
+          python redes.py 2>&1 | tee ../data/corridas/ultima-redes.log
+          python publicar.py --actualizar --max 5000 2>&1 | tee -a ../data/corridas/ultima-publicar.log
       - name: Guardar resultados
         if: always()
         run: |

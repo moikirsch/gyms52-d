@@ -34,7 +34,8 @@ def main():
     ap.add_argument("--metros", default="", help="rangos separados por coma; vacío = todos")
     ap.add_argument("--max", type=int, default=300)
     ap.add_argument("--estado", default="publish")
-    ap.add_argument("--actualizar", action="store_true", help="reenvía los datos de fichas ya publicadas")
+    ap.add_argument("--actualizar", action="store_true", help="reenvía a WordPress las fichas con pendiente_sync=1")
+    ap.add_argument("--todas", action="store_true", help="con --actualizar, reenvía todas las publicadas")
     a = ap.parse_args()
     url = os.environ.get("WP_URL", "https://gyms52.com").rstrip("/")
     s = requests.Session()
@@ -43,7 +44,12 @@ def main():
     cats = categorias(s, url)
     ruta = os.path.join(RAIZ, "data", "base.csv")
     base = pd.read_csv(ruta, dtype=str).fillna("")
-    pendientes = base[base.wp_id != ""] if a.actualizar else base[base.wp_id == ""]
+    if "pendiente_sync" not in base.columns:
+        base["pendiente_sync"] = ""
+    if a.actualizar:
+        pendientes = base[(base.wp_id != "") & ((base.pendiente_sync == "1") | a.todas)]
+    else:
+        pendientes = base[base.wp_id == ""]
     if a.metros:
         pendientes = pendientes[pendientes.metro_rango.isin([x.strip() for x in a.metros.split(",")])]
     hoy = dt.date.today().isoformat()
@@ -58,6 +64,8 @@ def main():
             "tipo_lugar": r.tipo_lugar, "cadena": r.cadena, "telefono": r.telefono, "correo": r.correo,
             "sitio_web": r.sitio_web, "place_id": r.place_id, "denue_id": r.denue_id, "fuente": r.fuente,
             "ultima_verificacion": r.ultima_verificacion,
+            "instagram": r.get("instagram", ""), "facebook": r.get("facebook", ""), "tiktok": r.get("tiktok", ""),
+            "whatsapp": r.get("whatsapp", ""), "business_hours": r.get("horario", ""),
         }
         cuerpo = {k: v for k, v in cuerpo.items() if v not in ("", None, [])}
         destino = f"{url}/wp-json/geodir/v2/lugares" + (f"/{r.wp_id}" if a.actualizar else "")
@@ -69,6 +77,7 @@ def main():
                 base.at[i, "wp_id"] = str(resp.json()["id"])
                 if not a.actualizar:
                     base.at[i, "publicado_el"] = hoy
+                base.at[i, "pendiente_sync"] = ""
                 hechos += 1
             else:
                 errores.append(f"{r.nombre}: {resp.status_code} {resp.text[:160]}")

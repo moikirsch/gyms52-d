@@ -1,0 +1,66 @@
+name: Enriquecer fichas (Google Details + redes del sitio web)
+
+on:
+  workflow_dispatch:
+    inputs:
+      metros:
+        description: "Rangos de metrópoli (vacío = todas)"
+        default: ""
+      max:
+        description: "Máximo de fichas a consultar en Google"
+        default: "2000"
+  push:
+    branches: [main]
+    paths: ["solicitudes/enriquecer.json"]
+
+concurrency:
+  group: datos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  enriquecer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Leer parámetros
+        id: p
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "metros=${{ inputs.metros }}" >> $GITHUB_OUTPUT
+            echo "max=${{ inputs.max }}" >> $GITHUB_OUTPUT
+          else
+            echo "metros=$(jq -r '.metros // ""' solicitudes/enriquecer.json)" >> $GITHUB_OUTPUT
+            echo "max=$(jq -r '.max // 2000' solicitudes/enriquecer.json)" >> $GITHUB_OUTPUT
+            echo "extra=$(jq -r 'if .todas then "--todas" else "" end' solicitudes/enriquecer.json)" >> $GITHUB_OUTPUT
+          fi
+      - name: Google Place Details
+        env:
+          GOOGLE_PLACES_KEY: ${{ secrets.GOOGLE_PLACES_KEY }}
+        run: |
+          mkdir -p data/corridas
+          cd scripts && python detalles.py --metros "${{ steps.p.outputs.metros }}" --max "${{ steps.p.outputs.max }}" 2>&1 | tee ../data/corridas/ultima-detalles.log
+      - name: Redes desde el sitio web
+        if: always()
+        run: cd scripts && python redes.py --metros "${{ steps.p.outputs.metros }}" 2>&1 | tee ../data/corridas/ultima-redes.log
+      - name: Subir cambios a WordPress
+        if: always()
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: cd scripts && python publicar.py --actualizar ${{ steps.p.outputs.extra }} --max 5000 2>&1 | tee ../data/corridas/ultima-publicar.log
+      - name: Guardar resultados
+        if: always()
+        run: |
+          git config user.name "gyms52-bot"
+          git config user.email "bot@gyms52.com"
+          git add data
+          git commit -m "Enriquecimiento ${{ steps.p.outputs.metros }}" || echo "Sin cambios"
+          git pull --rebase origin main && git push

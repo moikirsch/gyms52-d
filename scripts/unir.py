@@ -23,6 +23,8 @@ PISTAS = {
     "artes marciales": "artes marciales", "escuela de danza": "danza", "clases de natacion": "natacion",
     "clases de natación": "natacion", "muro de escalada": "escalada", "tienda de suplementos deportivos": "suplementos",
 }
+ENRIQUECIDOS = ("horario", "google_rating", "google_resenas", "instagram", "facebook", "tiktok", "whatsapp",
+               "detalles_el", "redes_el", "pendiente_sync")
 EXCLUIR = {"school", "primary_school", "secondary_school", "university", "hospital", "doctor", "physiotherapist",
            "restaurant", "hotel", "lodging", "spa", "beauty_salon", "real_estate_agency", "apartment_complex",
            "church", "park", "cafe", "bar", "car_repair", "medical_lab", "dentist"}
@@ -129,6 +131,12 @@ def main():
             ant = previo.get(r["place_id"], {})
             r["wp_id"] = ant.get("wp_id", "")
             r["publicado_el"] = ant.get("publicado_el", "")
+            # lo que ya trajo el enriquecimiento no se pierde al volver a unir
+            for c in ("sitio_web", "telefono", "correo"):
+                if not r[c] and ant.get(c):
+                    r[c] = ant[c]
+            for c in ENRIQUECIDOS:
+                r[c] = ant.get(c, "")
             filas.append(r)
 
     if not filas:
