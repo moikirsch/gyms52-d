@@ -164,6 +164,8 @@ def main():
                         mejor, md = i, d
         return denue.loc[mejor] if mejor is not None else None
 
+    estados_metro = pd.read_csv(os.path.join(RAIZ, "config", "metros.csv"), dtype=str).set_index("rango")["estado"].to_dict()
+
     # ---------- OpenStreetMap ----------
     n_osm_nuevos = n_osm_completan = 0
     for archivo in sorted(glob.glob(os.path.join(RAIZ, "data", "osm", "*.jsonl"))):
@@ -219,8 +221,8 @@ def main():
                 "place_id": "osm:" + o["osm_id"], "nombre": nombre, "slug": slug(nombre), "tipo_lugar": tipo,
                 "disciplinas": "|".join(disciplinas), "cadena": cadena, "calle": calle,
                 "colonia": t.get("addr:suburb") or t.get("addr:neighbourhood") or (titulo(vd.nomb_asent) if vd is not None else ""),
-                "ciudad": t.get("addr:city") or (vd.municipio if vd is not None else ""),
-                "estado": vd.entidad if vd is not None else "",
+                "ciudad": titulo(t.get("addr:city", "").split(",")[0]) or (vd.municipio if vd is not None else ""),
+                "estado": vd.entidad if vd is not None else estados_metro.get(str(o["metro_rango"]), ""),
                 "cp": t.get("addr:postcode") or (vd.cod_postal if vd is not None else ""),
                 "lat": round(o["lat"], 7), "lng": round(o["lng"], 7), "google_maps_url": "", "direccion_google": "",
                 "telefono": "", "correo": "", "sitio_web": "", "denue_id": "", "sector": "",
