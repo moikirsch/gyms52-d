@@ -14,12 +14,15 @@ import re
 from urllib.parse import urlparse
 
 import pandas as pd
+from comun import sin_acentos
 import requests
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
 NO_PERFIL = {"sharer", "share", "intent", "dialog", "plugins", "tr", "p", "reel", "explore", "accounts", "watch",
              "hashtag", "events", "groups", "login", "privacy", "policies", "help", "legal", "about", "home.php"}
+GENERICAS = {"gym", "gimnasio", "fitness", "club", "center", "centro", "studio", "estudio", "sport", "sports",
+             "training", "crossfit", "box", "yoga", "pilates", "mexico", "cdmx"}
 RE_IG = re.compile(r"https?://(?:www\.)?instagram\.com/([A-Za-z0-9_.]{2,30})/?", re.I)
 RE_FB = re.compile(r"https?://(?:www\.|m\.|es-la\.)?facebook\.com/(?:pg/)?([A-Za-z0-9_.\-]{3,80})/?", re.I)
 RE_TT = re.compile(r"https?://(?:www\.)?tiktok\.com/@([A-Za-z0-9_.]{2,30})", re.I)
@@ -27,15 +30,38 @@ RE_WA = re.compile(r"(?:wa\.me/|api\.whatsapp\.com/send/?\?phone=|whatsapp\.com/
 RE_MAIL = re.compile(r"mailto:([A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[a-z]{2,})", re.I)
 
 
-def perfil(regex, texto, base_url):
+def _plano(t):
+    return re.sub(r"[^a-z0-9]", "", sin_acentos(t.lower()))
+
+
+def _parecido(handle, nombre, dominio):
+    """Qué tanto se parece la cuenta al lugar: comparte pedazos del nombre o del dominio."""
+    h = _plano(handle)
+    claves = [_plano(w) for w in re.split(r"[\s\-_.]+", sin_acentos(nombre.lower())) if len(_plano(w)) >= 4]
+    raiz = _plano(dominio.split(".")[0]) if dominio else ""
+    if raiz and (raiz in h or h in raiz) and min(len(raiz), len(h)) >= 4:
+        return 3
+    return sum(1 for w in claves if w not in GENERICAS and w in h)
+
+
+def perfil(regex, texto, base_url, nombre="", dominio=""):
+    vistos = []
     for m in regex.finditer(texto):
         h = m.group(1).strip("/.")
-        if h.lower() not in NO_PERFIL and not h.lower().startswith(("profile.php", "pages")):
-            return base_url + h
+        if h.lower() in NO_PERFIL or h.lower().startswith(("profile.php", "pages")) or h in vistos:
+            continue
+        vistos.append(h)
+    if not vistos:
+        return ""
+    mejor = max(vistos, key=lambda h: _parecido(h, nombre, dominio))
+    # una sola cuenta en la página: es del lugar; varias: solo si una se parece al lugar
+    if len(vistos) == 1 or _parecido(mejor, nombre, dominio) > 0:
+        return base_url + mejor
     return ""
 
 
-def extraer(texto):
+def extraer(texto, nombre="", url=""):
+    dominio = urlparse(url).netloc.lower().removeprefix("www.")
     wa = RE_WA.search(texto)
     mail = RE_MAIL.search(texto)
     num = wa.group(1) if wa else ""
@@ -44,9 +70,9 @@ def extraer(texto):
     if num.startswith("521") and len(num) == 13:
         num = num[3:]
     return {
-        "instagram": perfil(RE_IG, texto, "https://www.instagram.com/"),
-        "facebook": perfil(RE_FB, texto, "https://www.facebook.com/"),
-        "tiktok": perfil(RE_TT, texto, "https://www.tiktok.com/@"),
+        "instagram": perfil(RE_IG, texto, "https://www.instagram.com/", nombre, dominio),
+        "facebook": perfil(RE_FB, texto, "https://www.facebook.com/", nombre, dominio),
+        "tiktok": perfil(RE_TT, texto, "https://www.tiktok.com/@", nombre, dominio),
         "whatsapp": num,
         "correo": mail.group(1).lower() if mail and not mail.group(1).lower().endswith((".png", ".jpg")) else "",
     }
@@ -66,6 +92,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--metros", default="")
     ap.add_argument("--max", type=int, default=3000)
+    ap.add_argument("--rehacer", action="store_true", help="vuelve a leer los sitios ya leídos y reemplaza sus redes")
     a = ap.parse_args()
     ruta = os.path.join(RAIZ, "data", "base.csv")
     base = pd.read_csv(ruta, dtype=str).fillna("")
@@ -86,6 +113,13 @@ def main():
                 base.at[i, "pendiente_sync"] = "1"
                 movidos += 1
 
+    if a.rehacer:
+        leidas = (base.sitio_web != "") & (base.redes_el != "")
+        for c in ("instagram", "facebook", "tiktok"):
+            base.loc[leidas, c] = ""
+        base.loc[leidas, "redes_el"] = ""
+        base.loc[leidas, "pendiente_sync"] = "1"
+
     # 2) leer sitios propios
     filtro = (base.sitio_web != "") & (base.redes_el == "")
     if a.metros:
@@ -99,7 +133,7 @@ def main():
                 continue
             leidos += 1
             hubo = False
-            for campo, valor in extraer(html).items():
+            for campo, valor in extraer(html, base.at[i, "nombre"], base.at[i, "sitio_web"]).items():
                 if valor and not base.at[i, campo]:
                     base.at[i, campo] = valor
                     hubo = True

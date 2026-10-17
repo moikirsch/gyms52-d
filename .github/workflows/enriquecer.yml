@@ -40,6 +40,7 @@ jobs:
             echo "metros=$(jq -r '.metros // ""' solicitudes/enriquecer.json)" >> $GITHUB_OUTPUT
             echo "max=$(jq -r '.max // 2000' solicitudes/enriquecer.json)" >> $GITHUB_OUTPUT
             echo "extra=$(jq -r 'if .todas then "--todas" else "" end' solicitudes/enriquecer.json)" >> $GITHUB_OUTPUT
+            echo "rehacer=$(jq -r 'if .rehacer_redes then "--rehacer" else "" end' solicitudes/enriquecer.json)" >> $GITHUB_OUTPUT
           fi
       - name: Google Place Details
         env:
@@ -49,7 +50,7 @@ jobs:
           cd scripts && python detalles.py --metros "${{ steps.p.outputs.metros }}" --max "${{ steps.p.outputs.max }}" 2>&1 | tee ../data/corridas/ultima-detalles.log
       - name: Redes desde el sitio web
         if: always()
-        run: cd scripts && python redes.py --metros "${{ steps.p.outputs.metros }}" 2>&1 | tee ../data/corridas/ultima-redes.log
+        run: cd scripts && python redes.py --metros "${{ steps.p.outputs.metros }}" ${{ steps.p.outputs.rehacer }} 2>&1 | tee ../data/corridas/ultima-redes.log
       - name: Subir cambios a WordPress
         if: always()
         env:
