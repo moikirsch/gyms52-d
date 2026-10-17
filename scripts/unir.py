@@ -48,7 +48,8 @@ def descripcion(r):
     lugar = r["colonia"] + ", " + r["ciudad"] if r["colonia"] else r["ciudad"]
     articulo = "una" if r["tipo_lugar"] in ("Tienda", "Escuela de danza") else "un"
     tipo = r["tipo_lugar"].lower()
-    texto = f"{r['nombre']} es {articulo} {tipo} en {lugar}, {r['estado']}."
+    estado = "" if r["estado"] in (r["ciudad"], "") else f", {r['estado']}"
+    texto = f"{r['nombre']} es {articulo} {tipo} en {lugar}{estado}."
     disc = [d for d in r["disciplinas"].split("|") if d and d != "Pesas"]
     if disc:
         texto += " Disciplinas: " + ", ".join(d.lower() if d not in ("CrossFit", "HYROX", "MMA", "HIIT") else d for d in disc) + "."

@@ -44,6 +44,7 @@ jobs:
             echo "metros=$(jq -r '.metros // ""' solicitudes/publicar.json)" >> $GITHUB_OUTPUT
             echo "max=$(jq -r '.max // 300' solicitudes/publicar.json)" >> $GITHUB_OUTPUT
             echo "estado=$(jq -r '.estado // "publish"' solicitudes/publicar.json)" >> $GITHUB_OUTPUT
+            echo "extra=$(jq -r 'if .actualizar then "--actualizar" else "" end' solicitudes/publicar.json)" >> $GITHUB_OUTPUT
           fi
       - name: Publicar
         env:
@@ -51,7 +52,7 @@ jobs:
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
         run: |
           mkdir -p data/corridas
-          cd scripts && python publicar.py --metros "${{ steps.p.outputs.metros }}" --max "${{ steps.p.outputs.max }}" --estado "${{ steps.p.outputs.estado }}" 2>&1 | tee ../data/corridas/ultima-publicar.log
+          cd scripts && python publicar.py --metros "${{ steps.p.outputs.metros }}" --max "${{ steps.p.outputs.max }}" --estado "${{ steps.p.outputs.estado }}" ${{ steps.p.outputs.extra }} 2>&1 | tee ../data/corridas/ultima-publicar.log
       - name: Guardar resultados
         if: always()
         run: |

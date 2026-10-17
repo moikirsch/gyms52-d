@@ -34,6 +34,7 @@ def main():
     ap.add_argument("--metros", default="", help="rangos separados por coma; vacío = todos")
     ap.add_argument("--max", type=int, default=300)
     ap.add_argument("--estado", default="publish")
+    ap.add_argument("--actualizar", action="store_true", help="reenvía los datos de fichas ya publicadas")
     a = ap.parse_args()
     url = os.environ.get("WP_URL", "https://gyms52.com").rstrip("/")
     s = requests.Session()
@@ -42,7 +43,7 @@ def main():
     cats = categorias(s, url)
     ruta = os.path.join(RAIZ, "data", "base.csv")
     base = pd.read_csv(ruta, dtype=str).fillna("")
-    pendientes = base[base.wp_id == ""]
+    pendientes = base[base.wp_id != ""] if a.actualizar else base[base.wp_id == ""]
     if a.metros:
         pendientes = pendientes[pendientes.metro_rango.isin([x.strip() for x in a.metros.split(",")])]
     hoy = dt.date.today().isoformat()
@@ -59,11 +60,15 @@ def main():
             "ultima_verificacion": r.ultima_verificacion,
         }
         cuerpo = {k: v for k, v in cuerpo.items() if v not in ("", None, [])}
+        destino = f"{url}/wp-json/geodir/v2/lugares" + (f"/{r.wp_id}" if a.actualizar else "")
+        if a.actualizar:
+            cuerpo.pop("status", None)
         try:
-            resp = s.post(f"{url}/wp-json/geodir/v2/lugares", json=cuerpo, timeout=90)
+            resp = s.post(destino, json=cuerpo, timeout=90)
             if resp.status_code in (200, 201):
                 base.at[i, "wp_id"] = str(resp.json()["id"])
-                base.at[i, "publicado_el"] = hoy
+                if not a.actualizar:
+                    base.at[i, "publicado_el"] = hoy
                 hechos += 1
             else:
                 errores.append(f"{r.nombre}: {resp.status_code} {resp.text[:160]}")
@@ -76,7 +81,7 @@ def main():
         time.sleep(0.4)
     base.to_csv(ruta, index=False)
     os.makedirs(os.path.join(RAIZ, "data", "corridas"), exist_ok=True)
-    nombre = dt.datetime.utcnow().strftime("%Y%m%d-%H%M") + "-publicar.json"
+    nombre = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%d-%H%M") + "-publicar.json"
     json.dump({"publicados": hechos, "pendientes_antes": len(pendientes), "errores": errores[:30]},
               open(os.path.join(RAIZ, "data", "corridas", nombre), "w"), ensure_ascii=False, indent=1)
     print(f"Publicados: {hechos} | errores: {len(errores)}")
