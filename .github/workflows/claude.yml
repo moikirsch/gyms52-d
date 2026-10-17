@@ -1,0 +1,41 @@
+name: Aplicar lo que encontró Claude
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["data/claude/*.csv"]
+
+concurrency:
+  group: datos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  aplicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Aplicar
+        run: cd scripts && python aplicar_claude.py 2>&1 | tee ../data/corridas/ultima-claude.log
+      - name: Subir a WordPress
+        if: always()
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: cd scripts && python publicar.py --actualizar --max 2000 2>&1 | tee -a ../data/corridas/ultima-claude.log
+      - name: Guardar resultados
+        if: always()
+        run: |
+          git config user.name "gyms52-bot"
+          git config user.email "bot@gyms52.com"
+          git add data
+          git commit -m "Enriquecimiento de Claude aplicado" || echo "Sin cambios"
+          git pull --rebase origin main && git push

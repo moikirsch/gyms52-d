@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Utilidades compartidas del pipeline de Gyms +52."""
 import math
+import json
 import re
 import unicodedata
 
@@ -140,3 +141,87 @@ def limpiar_nombre(s):
     """Quita emojis y símbolos sueltos del nombre que da Google."""
     s = "".join(c for c in (s or "") if unicodedata.category(c)[0] in "LNPZ" or c in "&+'-.")
     return re.sub(r"\s{2,}", " ", s).strip(" -|·•")
+
+
+# ---------- Fuentes abiertas: OpenStreetMap y DENUE ----------
+DIAS_GD = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]
+
+
+def horario_texto_gd(por_dia):
+    """{'Mo': ['06:00-22:00'], ...} → formato de horario de GeoDirectory."""
+    rangos = [f"{d} {','.join(por_dia[d])}" for d in DIAS_GD if por_dia.get(d)]
+    if not rangos:
+        return ""
+    return json.dumps(rangos, ensure_ascii=False, separators=(",", ":")) + ',["UTC":"-6","Timezone":"America/Mexico_City"]'
+
+
+def horario_osm(texto):
+    """Convierte opening_hours de OSM (casos comunes) al formato de GeoDirectory. Si no lo entiende, regresa ''."""
+    texto = (texto or "").strip()
+    if not texto:
+        return ""
+    if texto == "24/7":
+        return horario_texto_gd({d: ["00:00-23:59"] for d in DIAS_GD})
+    por_dia = {d: [] for d in DIAS_GD}
+    for regla in [r.strip() for r in texto.split(";") if r.strip()]:
+        m = re.fullmatch(r"((?:Mo|Tu|We|Th|Fr|Sa|Su)(?:\s*[-,]\s*(?:Mo|Tu|We|Th|Fr|Sa|Su))*)?\s*(.+)", regla)
+        if not m:
+            return ""
+        dias_txt, horas_txt = m.group(1), m.group(2).strip()
+        dias = []
+        for parte in (dias_txt or "Mo-Su").replace(" ", "").split(","):
+            if "-" in parte:
+                i, f = DIAS_GD.index(parte[:2]), DIAS_GD.index(parte[3:5])
+                dias += [DIAS_GD[k % 7] for k in range(i, f + 1 if f >= i else f + 8)]
+            else:
+                dias.append(parte)
+        if horas_txt in ("off", "closed"):
+            for d in dias:
+                por_dia[d] = []
+            continue
+        horas = []
+        for h in horas_txt.split(","):
+            hm = re.fullmatch(r"(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})", h.strip())
+            if not hm:
+                return ""
+            a, b = f"{int(hm.group(1)):02d}:{hm.group(2)}", f"{int(hm.group(3)):02d}:{hm.group(4)}"
+            if b in ("24:00", "00:00"):
+                b = "23:59"
+            horas.append(f"{a}-{b}")
+        for d in dias:
+            por_dia[d] = horas
+    return horario_texto_gd(por_dia)
+
+
+GENERICAS_NOMBRE = set("""gimnasio gimnacio gimnasios gym gyms clases clase de del la el los las y e en zumba fitness
+spinning crossfit cardio box boxeo yoga pilates danza baile bailes academia escuela centro centros acondicionamiento
+fisico fisica sector privado publico sin nombre deportivo deportiva unidad sport sports club estudio studio funcional
+entrenamiento aerobics aerobicos aerobic fit training trainer power body center artes marciales karate taekwondo judo
+natacion alberca pesas kick kickboxing tae kwon do muay thai mma ballet jazz salon sala""".split())
+MAYUS = {"mma", "hiit", "hyrox", "cdmx", "ufc", "trx", "bjj", "cf", "ii", "iii", "iv", "imss", "issste", "unam", "ipn"}
+MINUS = {"de", "del", "la", "el", "los", "las", "y", "e", "en", "a", "con", "por", "para"}
+
+
+def nombre_denue(s):
+    """Nombre de DENUE en tipo título. Regresa '' si es genérico ("GIMNASIO", "ZUMBA SIN NOMBRE")."""
+    s = limpiar_nombre(s)
+    if not s or "sin nombre" in s.lower():
+        return ""
+    palabras = re.findall(r"[a-z0-9ñ]+", sin_acentos(s.lower()))
+    if not [w for w in palabras if w not in GENERICAS_NOMBRE and len(w) >= 3]:
+        return ""
+    return titulo(s)
+
+
+def titulo(s):
+    """Tipo título en español: "CALLE LERDO DE TEJADA" → "Calle Lerdo de Tejada"."""
+    salida = []
+    for k, w in enumerate((s or "").split()):
+        base = sin_acentos(w.lower()).strip(".,")
+        if base in MAYUS:
+            salida.append(w.upper())
+        elif base in MINUS and k > 0:
+            salida.append(w.lower())
+        else:
+            salida.append(w[:1].upper() + w[1:].lower())
+    return " ".join(salida)

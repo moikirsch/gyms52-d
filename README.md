@@ -10,12 +10,16 @@ Base maestra y procesos del directorio [gyms52.com](https://gyms52.com). Todo co
 4. **Publicar** (`scripts/publicar.py`): sube a WordPress los lugares sin `wp_id` y guarda el id de vuelta en la base. Con `--actualizar` reenvía solo las fichas marcadas `pendiente_sync=1` (con `--todas`, todas).
 5. **Enriquecer**: `scripts/detalles.py` trae de Google sitio web, teléfono, horario y calificación; `scripts/redes.py` lee cada sitio web y saca Instagram, Facebook, TikTok, WhatsApp y correo. Lo que cambia queda marcado para subirse.
 
+6. **Fuentes gratis**: `scripts/osm.py` baja de OpenStreetMap gimnasios, estudios, dojos, academias de baile y tiendas (sin llave ni cuota). `unir.py` usa OSM para completar contacto, redes y horario, y agrega como fichas nuevas lo que Google no tiene. También agrega lo de DENUE sin pareja en las metrópolis de lanzamiento, salvo nombres genéricos ("GIMNASIO", "ZUMBA SIN NOMBRE"). Si después Google encuentra un lugar que venía de OSM o DENUE, se queda con la misma ficha en WordPress.
+7. **Claude**: una tarea programada busca en la web redes, contacto y horario de fichas incompletas y deja un CSV en `data/claude/`. `aplicar_claude.py` lo integra (solo llena campos vacíos) y se sube a WordPress.
+
 ## Cómo pedir una corrida
 
 Edita y sube uno de estos archivos; el cambio dispara el proceso:
 
 - `solicitudes/places.json` → `{"metros": "1,2", "max": 600}`
 - `solicitudes/publicar.json` → `{"metros": "1", "max": 300, "estado": "publish"}`
+- `solicitudes/osm.json` → `{"metros": ""}` (vacío = las de lanzamiento; también corre solo cada lunes)
 - `solicitudes/enriquecer.json` → `{"metros": "1", "max": 2000, "todas": false}`
 
 También se pueden lanzar a mano desde la pestaña Actions.
