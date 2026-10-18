@@ -83,6 +83,11 @@ def main():
             "ultima_verificacion": r.ultima_verificacion,
             "instagram": r.get("instagram", ""), "facebook": r.get("facebook", ""), "tiktok": r.get("tiktok", ""),
             "whatsapp": r.get("whatsapp", ""), "business_hours": r.get("horario", ""),
+            "instalaciones": r.get("instalaciones", "").replace("|", ","), "servicios": r.get("servicios", "").replace("|", ","),
+            "pases": r.get("pases", "").replace("|", ","), "abierto_24h": 1 if r.get("abierto_24h") == "1" else "",
+            "mensualidad_desde": r.get("mensualidad_desde", ""), "inscripcion": r.get("inscripcion", ""),
+            "pase_dia": r.get("pase_dia", ""), "fecha_precio": r.get("fecha_precio", ""),
+            "pases_fuente": r.get("opiniones_fuentes", "")[:250], "pases_verificado_el": r.get("opiniones_el", ""),
         }
         if cuerpo["correo"] and not re.fullmatch(r"[A-Za-z0-9._%+\-]+@([A-Za-z0-9]([A-Za-z0-9\-]*[A-Za-z0-9])?\.)+[A-Za-z]{2,}", cuerpo["correo"].strip()):
             cuerpo["correo"] = ""  # WordPress rechaza correos mal escritos

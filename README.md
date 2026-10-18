@@ -11,7 +11,7 @@ Base maestra y procesos del directorio [gyms52.com](https://gyms52.com). Todo co
 5. **Enriquecer**: `scripts/detalles.py` trae de Google sitio web, teléfono, horario y calificación; `scripts/redes.py` lee cada sitio web y saca Instagram, Facebook, TikTok, WhatsApp y correo. Lo que cambia queda marcado para subirse.
 
 6. **Fuentes gratis**: `scripts/osm.py` baja de OpenStreetMap gimnasios, estudios, dojos, academias de baile y tiendas (sin llave ni cuota). `unir.py` usa OSM para completar contacto, redes y horario, y agrega como fichas nuevas lo que Google no tiene. También agrega lo de DENUE sin pareja en las metrópolis de lanzamiento, salvo nombres genéricos ("GIMNASIO", "ZUMBA SIN NOMBRE"). Si después Google encuentra un lugar que venía de OSM o DENUE, se queda con la misma ficha en WordPress.
-7. **Claude**: una tarea programada busca en la web redes, contacto y horario de fichas incompletas y deja un CSV en `data/claude/`. `aplicar_claude.py` lo integra (solo llena campos vacíos) y se sube a WordPress.
+7. **Claude**: una tarea programada busca en la web redes, contacto, horario y lo que dicen las reseñas (resumen propio "Lo mejor" / "A considerar", instalaciones, servicios, pases y precios con fuente y fecha) y deja un CSV en `data/claude/`. `aplicar_claude.py` lo integra (solo llena campos vacíos) y se sube a WordPress.
 
 ## Cómo pedir una corrida
 

@@ -2,6 +2,8 @@
 """Aplica a data/base.csv lo que la tarea programada de Claude encontró en la web (data/claude/*.csv).
 
 Cada CSV trae: place_id, sitio_web, instagram, facebook, tiktok, whatsapp, telefono, correo, horario_texto, fuente_url, nota
+y, desde oct 2026, lo que dicen las reseñas: lo_mejor, a_considerar, instalaciones, servicios, abierto_24h, pases,
+mensualidad_desde, inscripcion, pase_dia, fecha_precio, precio_fuente_url, opiniones_fuentes
 - Solo llena campos vacíos (lo que ya venía de Google, OSM, DENUE o del sitio web se respeta).
 - horario_texto viene en formato OpenStreetMap ("Mo-Fr 06:00-22:00; Sa 08:00-14:00").
 - Marca claude_el en cada ficha revisada (aunque no haya encontrado nada) y pendiente_sync=1 donde hubo cambios.
@@ -13,10 +15,36 @@ import re
 
 import pandas as pd
 
-from comun import horario_osm
+from comun import horario_osm, sin_acentos
+from unir import con_opiniones, descripcion
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAMPOS = ("sitio_web", "instagram", "facebook", "tiktok", "whatsapp", "telefono", "correo")
+OPCIONES = {
+    "instalaciones": ["Alberca", "Regaderas y vestidores", "Lockers", "Sauna o vapor", "Estacionamiento", "Área infantil",
+                      "Cafetería", "Tienda", "Zona de peso libre", "Zona funcional", "Aire acondicionado"],
+    "servicios": ["Entrenador personal", "Nutriólogo", "Evaluación corporal", "Fisioterapia", "App propia", "Clases en línea"],
+    "pases": ["TotalPass", "Wellhub", "ClassPass", "Fitpass"],
+}
+PRECIOS = ("mensualidad_desde", "inscripcion", "pase_dia")
+NUEVAS = ("lo_mejor", "a_considerar", "instalaciones", "servicios", "abierto_24h", "pases") + PRECIOS + (
+    "fecha_precio", "precio_fuente_url", "opiniones_fuentes", "opiniones_el")
+
+
+def lista(campo, v):
+    """Solo deja opciones válidas del sitio, separadas por |."""
+    validas = {sin_acentos(o).lower(): o for o in OPCIONES[campo]}
+    sal = []
+    for x in re.split(r"[|,;]", v or ""):
+        o = validas.get(sin_acentos(x.strip()).lower())
+        if o and o not in sal:
+            sal.append(o)
+    return "|".join(sal)
+
+
+def frase(v):
+    v = re.sub(r"\s+", " ", (v or "").replace("—", ",").replace("–", ",")).strip()
+    return "" if v.lower() in ("", "nan", "none", "-") else v[:400]
 
 
 def limpio(campo, v):
@@ -36,7 +64,7 @@ def limpio(campo, v):
 def main():
     ruta = os.path.join(RAIZ, "data", "base.csv")
     base = pd.read_csv(ruta, dtype=str).fillna("")
-    for c in CAMPOS + ("horario", "claude_el", "pendiente_sync"):
+    for c in CAMPOS + NUEVAS + ("horario", "claude_el", "pendiente_sync"):
         if c not in base.columns:
             base[c] = ""
     reg = os.path.join(RAIZ, "data", "claude", "aplicados.txt")
@@ -66,7 +94,38 @@ def main():
             if h and not base.at[i, "horario"]:
                 base.at[i, "horario"] = h
                 hubo = True
+            # opiniones: se reemplazan con la lectura más reciente (son un resumen, no un dato fijo)
+            if any(c in hoja.columns for c in ("lo_mejor", "a_considerar")):
+                base.at[i, "opiniones_el"] = fecha
+                for c in ("lo_mejor", "a_considerar"):
+                    v = frase(r.get(c, ""))
+                    if v and v != base.at[i, c]:
+                        base.at[i, c] = v
+                        hubo = True
+                for c in OPCIONES:
+                    v = lista(c, r.get(c, ""))
+                    if v and v != base.at[i, c]:
+                        base.at[i, c] = v
+                        hubo = True
+                a24 = (r.get("abierto_24h", "") or "").strip().lower()
+                if a24 in ("1", "si", "sí", "true") and base.at[i, "abierto_24h"] != "1":
+                    base.at[i, "abierto_24h"] = "1"
+                    hubo = True
+                precios = {c: re.sub(r"\D", "", r.get(c, "") or "") for c in PRECIOS}
+                fecha_p = (r.get("fecha_precio", "") or "").strip()[:7]
+                fuente_p = (r.get("precio_fuente_url", "") or "").strip()
+                if any(50 <= int(v) <= 20000 for v in precios.values() if v) and re.fullmatch(r"20\d\d-\d\d", fecha_p) and fuente_p.startswith("http"):
+                    for c, v in precios.items():
+                        if v and 50 <= int(v) <= 20000:
+                            base.at[i, c] = v
+                    base.at[i, "fecha_precio"], base.at[i, "precio_fuente_url"] = fecha_p, fuente_p
+                    hubo = True
+                f_op = (r.get("opiniones_fuentes", "") or "").strip()
+                if f_op:
+                    base.at[i, "opiniones_fuentes"] = f_op[:500]
             if hubo:
+                fila = base.loc[i].to_dict()
+                base.at[i, "descripcion"] = con_opiniones(descripcion(fila), fila)
                 base.at[i, "pendiente_sync"] = "1"
                 cambios += 1
         nuevos.append(nombre)

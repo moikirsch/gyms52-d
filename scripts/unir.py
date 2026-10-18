@@ -26,7 +26,9 @@ PISTAS = {
     "clases de natación": "natacion", "muro de escalada": "escalada", "tienda de suplementos deportivos": "suplementos",
 }
 ENRIQUECIDOS = ("horario", "google_rating", "google_resenas", "instagram", "facebook", "tiktok", "whatsapp",
-               "detalles_el", "redes_el", "claude_el", "pendiente_sync")
+               "detalles_el", "redes_el", "claude_el", "pendiente_sync",
+               "lo_mejor", "a_considerar", "instalaciones", "servicios", "abierto_24h", "pases", "mensualidad_desde",
+               "inscripcion", "pase_dia", "fecha_precio", "precio_fuente_url", "opiniones_fuentes", "opiniones_el")
 EXCLUIR = {"school", "primary_school", "secondary_school", "university", "hospital", "doctor", "physiotherapist",
            "restaurant", "hotel", "lodging", "spa", "beauty_salon", "real_estate_agency", "apartment_complex",
            "church", "park", "cafe", "bar", "car_repair", "medical_lab", "dentist"}
@@ -60,6 +62,16 @@ def descripcion(r):
     if r["cadena"]:
         texto += f" Forma parte de {r['cadena']}."
     return texto
+
+
+def con_opiniones(texto, r):
+    """Agrega a la descripción lo que dice la gente en sus reseñas (resumen propio, no citas)."""
+    partes = []
+    if r.get("lo_mejor"):
+        partes.append(f"<p><strong>Lo mejor, según sus reseñas:</strong> {r['lo_mejor']}</p>")
+    if r.get("a_considerar"):
+        partes.append(f"<p><strong>A considerar:</strong> {r['a_considerar']}</p>")
+    return texto + ("\n" + "\n".join(partes) if partes else "")
 
 
 def main():
@@ -295,6 +307,7 @@ def main():
                 r[c] = ant[c]
         for c in ENRIQUECIDOS:
             r[c] = ant.get(c, "")
+        r["descripcion"] = con_opiniones(r["descripcion"], r)
         cambio = bool(ant) and (ant.get("place_id") != r["place_id"] or ant.get("descripcion") != r["descripcion"]
                                 or ant.get("nombre") != r["nombre"])
         for c, v in r.pop("_extra", {}).items():
