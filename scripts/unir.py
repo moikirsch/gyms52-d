@@ -15,7 +15,7 @@ from collections import defaultdict
 
 import pandas as pd
 
-from comun import titulo, clasificar, distancia_m, horario_osm, limpiar_nombre, nombre_denue, similitud, slug, TIPOS_VALIDOS
+from comun import es_cancha, titulo, clasificar, distancia_m, horario_osm, limpiar_nombre, nombre_denue, similitud, slug, TIPOS_VALIDOS
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Qué significa haber aparecido en una sola búsqueda (solo se usa si el nombre no dice nada)
@@ -193,7 +193,7 @@ def main():
             disc_dep = [d for d in disc_dep if d not in ("Pesas", "Equipo de gimnasio")]
             if not (tipos or pista or disc_nombre or disc_dep or "fitness" in deporte):
                 continue  # p. ej. un sports_centre de pura cancha de futbol
-            if not nombre:
+            if not nombre or (es_cancha(nombre) and not t.get("shop")):
                 continue
             extra = {
                 "sitio_web": (t.get("website") or t.get("contact:website") or "").strip(),
@@ -248,6 +248,8 @@ def main():
             usados_denue.add(i)
             continue
         nombre = nombre_denue(d.nom_estab)
+        if nombre and es_cancha(nombre):
+            nombre = ""
         if not nombre:
             n_denue_genericos += 1
             continue
@@ -304,6 +306,16 @@ def main():
 
     base = pd.DataFrame(filas).drop_duplicates("place_id")
     base.to_csv(ruta_base, index=False)
+    # fichas publicadas que ya no están en la base (p. ej. canchas): se pasan a borrador
+    ruta_ret = os.path.join(RAIZ, "data", "retirar.csv")
+    ret = pd.read_csv(ruta_ret, dtype=str).fillna("") if os.path.exists(ruta_ret) else pd.DataFrame(columns=["wp_id", "nombre", "motivo", "retirado_el"])
+    vivos = set(base.wp_id) - {""}
+    ya = set(ret.wp_id)
+    nuevos_ret = [{"wp_id": v["wp_id"], "nombre": v.get("nombre", ""), "motivo": "fuera de la base", "retirado_el": ""}
+                  for v in previo.values() if v.get("wp_id") and v["wp_id"] not in vivos and v["wp_id"] not in ya]
+    if nuevos_ret:
+        pd.concat([ret, pd.DataFrame(nuevos_ret)]).to_csv(ruta_ret, index=False)
+    print(f"Por retirar de WordPress: {len(nuevos_ret)}")
     sin = denue.drop(index=list(usados_denue))
     sin = sin[sin.metro_rango.astype(str).isin(lanzamiento)]
     sin.drop(columns=["lat", "lng"]).to_csv(os.path.join(RAIZ, "data", "denue", "sin_pareja.csv"), index=False)

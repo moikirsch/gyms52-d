@@ -225,3 +225,15 @@ def titulo(s):
         else:
             salida.append(w[:1].upper() + w[1:].lower())
     return " ".join(salida)
+
+
+# Canchas y campos de deportes de equipo: no son lugares de entrenamiento (DENUE y OSM los traen mezclados)
+RE_CANCHA = re.compile(r"\b(cancha|canchas|campo de fut|campo de beis|futbol rapido|f[uú]tbol r[aá]pido|fut ?7|futbol 7|"
+                       r"fut[bv]ol(?! americano)|futball|soccer(?! ?city)|front[oó]n|beisbol|b[eé]isbol|basquet|b[aá]squetbol|"
+                       r"padel|p[aá]del|tenis club|club de tenis|campo de golf|golf)\b", re.I)
+RE_ENTRENA = re.compile(r"gimnasio|gym|fitness|box\b|crossfit|pesas|funcional|entrenamiento|alberca|nataci|yoga|pilates|dojo|karate|tae", re.I)
+
+
+def es_cancha(nombre):
+    n = sin_acentos(nombre or "")
+    return bool(RE_CANCHA.search(n)) and not RE_ENTRENA.search(n)

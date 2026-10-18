@@ -50,6 +50,7 @@ jobs:
           python detalles.py --max 2000 2>&1 | tee ../data/corridas/ultima-detalles.log
           python redes.py 2>&1 | tee ../data/corridas/ultima-redes.log
           python publicar.py --actualizar --max 5000 2>&1 | tee -a ../data/corridas/ultima-publicar.log
+          python publicar.py --retirar 2>&1 | tee -a ../data/corridas/ultima-publicar.log
       - name: Guardar resultados
         if: always()
         run: |

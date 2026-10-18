@@ -56,6 +56,7 @@ jobs:
             if tail -3 ../data/corridas/ultima-publicar.log | grep -q "Publicados: 0 "; then break; fi
           done
           python publicar.py --actualizar --max 12000 2>&1 | tee -a ../data/corridas/ultima-publicar.log
+          python publicar.py --retirar 2>&1 | tee -a ../data/corridas/ultima-publicar.log
       - name: Guardar resultados
         if: always()
         run: |

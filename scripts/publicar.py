@@ -36,11 +36,27 @@ def main():
     ap.add_argument("--estado", default="publish")
     ap.add_argument("--actualizar", action="store_true", help="reenvía a WordPress las fichas con pendiente_sync=1")
     ap.add_argument("--todas", action="store_true", help="con --actualizar, reenvía todas las publicadas")
+    ap.add_argument("--retirar", action="store_true", help="pasa a borrador las fichas de data/retirar.csv")
     a = ap.parse_args()
     url = os.environ.get("WP_URL", "https://gyms52.com").rstrip("/")
     s = requests.Session()
     s.auth = (os.environ["WP_USER"], os.environ["WP_APP_PASSWORD"])
     s.headers["User-Agent"] = "gyms52-pipeline/1.0"
+    if a.retirar:
+        ruta_ret = os.path.join(RAIZ, "data", "retirar.csv")
+        if not os.path.exists(ruta_ret):
+            print("Nada que retirar"); return
+        ret = pd.read_csv(ruta_ret, dtype=str).fillna("")
+        hechos = 0
+        for i, r in ret[ret.retirado_el == ""].iterrows():
+            resp = s.post(f"{url}/wp-json/geodir/v2/lugares/{r.wp_id}", json={"status": "draft"}, timeout=60)
+            if resp.status_code in (200, 201, 404):
+                ret.at[i, "retirado_el"] = dt.date.today().isoformat()
+                hechos += 1
+            time.sleep(0.3)
+        ret.to_csv(ruta_ret, index=False)
+        print(f"Retiradas: {hechos}")
+        return
     cats = categorias(s, url)
     ruta = os.path.join(RAIZ, "data", "base.csv")
     base = pd.read_csv(ruta, dtype=str).fillna("")
