@@ -1,2 +1,8 @@
-Claude: 1 archivos, 40 fichas revisadas, 17 con datos nuevos
-Publicados: 17 | errores: 0
+Claude: 1 archivos, 30 fichas revisadas, 7 con datos nuevos
+Publicados: 1 | errores: 6
+   Xtreme Force Gym: 400 {"code":"rest_invalid_param","message":"Par\u00e1metro(s) no v\u00e1lido(s): instalaciones, servicios","data":{"status":400,"params":{"instalaciones":"instalaci
+   The Factory GYM: 400 {"code":"rest_invalid_param","message":"Par\u00e1metro(s) no v\u00e1lido(s): instalaciones","data":{"status":400,"params":{"instalaciones":"instalaciones value 
+   Popeyes Gym: 400 {"code":"rest_invalid_param","message":"Par\u00e1metro(s) no v\u00e1lido(s): instalaciones","data":{"status":400,"params":{"instalaciones":"instalaciones value 
+   Champions GYM: 400 {"code":"rest_invalid_param","message":"Par\u00e1metro(s) no v\u00e1lido(s): instalaciones","data":{"status":400,"params":{"instalaciones":"instalaciones value 
+   ANUBIS GYM: 400 {"code":"rest_invalid_param","message":"Par\u00e1metro(s) no v\u00e1lido(s): instalaciones, servicios","data":{"status":400,"params":{"instalaciones":"instalaci
+   ANIMALCROSS GYM: 400 {"code":"rest_invalid_param","message":"Par\u00e1metro(s) no v\u00e1lido(s): instalaciones","data":{"status":400,"params":{"instalaciones":"instalaciones value 
