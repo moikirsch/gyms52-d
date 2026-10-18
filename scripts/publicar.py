@@ -84,7 +84,7 @@ def main():
             "instagram": r.get("instagram", ""), "facebook": r.get("facebook", ""), "tiktok": r.get("tiktok", ""),
             "whatsapp": r.get("whatsapp", ""), "business_hours": r.get("horario", ""),
         }
-        if cuerpo["correo"] and not re.fullmatch(r"[^@\s,;]+@[^@\s,;]+\.[a-zA-Z]{2,}", cuerpo["correo"].strip()):
+        if cuerpo["correo"] and not re.fullmatch(r"[A-Za-z0-9._%+\-]+@([A-Za-z0-9]([A-Za-z0-9\-]*[A-Za-z0-9])?\.)+[A-Za-z]{2,}", cuerpo["correo"].strip()):
             cuerpo["correo"] = ""  # WordPress rechaza correos mal escritos
         cuerpo = {k: v for k, v in cuerpo.items() if v not in ("", None, [])}
         destino = f"{url}/wp-json/geodir/v2/lugares" + (f"/{r.wp_id}" if a.actualizar else "")
