@@ -1,0 +1,40 @@
+name: Plantillas del tema
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["solicitudes/plantilla.json", "data/plantillas/*.html"]
+
+concurrency:
+  group: plantillas
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  plantilla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Leer o subir
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: cd scripts && python plantilla.py
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "gyms52-bot"
+          git config user.email "bot@gyms52.com"
+          git add data/plantillas
+          git commit -m "Plantillas del tema: respaldo" || echo "Sin cambios"
+          git pull --rebase origin main && git push
