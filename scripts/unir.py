@@ -15,7 +15,7 @@ from collections import defaultdict
 
 import pandas as pd
 
-from comun import es_cancha, titulo, clasificar, distancia_m, horario_osm, limpiar_nombre, nombre_denue, similitud, slug, TIPOS_VALIDOS
+from comun import es_cancha, sin_acentos, titulo, clasificar, distancia_m, horario_osm, limpiar_nombre, nombre_denue, similitud, slug, TIPOS_VALIDOS
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Qué significa haber aparecido en una sola búsqueda (solo se usa si el nombre no dice nada)
@@ -28,7 +28,7 @@ PISTAS = {
 ENRIQUECIDOS = ("horario", "google_rating", "google_resenas", "instagram", "facebook", "tiktok", "whatsapp",
                "detalles_el", "redes_el", "claude_el", "pendiente_sync",
                "lo_mejor", "a_considerar", "instalaciones", "servicios", "abierto_24h", "pases", "mensualidad_desde",
-               "inscripcion", "pase_dia", "fecha_precio", "precio_fuente_url", "opiniones_fuentes", "opiniones_el", "foto_url", "foto_el", "foto_subida")
+               "inscripcion", "pase_dia", "fecha_precio", "precio_fuente_url", "opiniones_fuentes", "opiniones_el", "foto_url", "foto_el", "foto_subida", "afiliaciones")
 EXCLUIR = {"school", "primary_school", "secondary_school", "university", "hospital", "doctor", "physiotherapist",
            "restaurant", "hotel", "lodging", "spa", "beauty_salon", "real_estate_agency", "apartment_complex",
            "church", "park", "cafe", "bar", "car_repair", "medical_lab", "dentist"}
@@ -244,6 +244,83 @@ def main():
             agregar(r)
             n_osm_nuevos += 1
 
+    # ---------- Fuentes oficiales (cadenas, pases, afiliaciones) ----------
+    PRIORIDAD = ["smartfit", "anytime", "sportsworld", "sportcity", "crossfit", "hyrox", "totalpass", "fitpass"]
+    DISC_FUENTE = {"crossfit": "CrossFit", "hyrox": "HYROX"}
+    n_fuente_nuevos, n_fuente_completan = defaultdict(int), defaultdict(int)
+    for fuente in PRIORIDAD:
+        ruta_f = os.path.join(RAIZ, "data", "fuentes", f"{fuente}.jsonl")
+        if not os.path.exists(ruta_f):
+            continue
+        for linea in open(ruta_f, encoding="utf-8"):
+            try:
+                o = json.loads(linea)
+                lat, lng = float(o["lat"]), float(o["lng"])
+            except (ValueError, KeyError, TypeError):
+                continue
+            nombre = limpiar_nombre(o.get("nombre", ""))
+            if not nombre or es_cancha(nombre):
+                continue
+            fid = f"{fuente}:{o.get('id_fuente', '')}"
+            extra = {c: (o.get(c) or "") for c in ("telefono", "sitio_web")}
+            extra["horario"] = horario_osm(o.get("horario_osm", ""))
+            union = {"pases": o.get("pases") or [], "afiliaciones": o.get("afiliaciones") or [],
+                     "instalaciones": o.get("instalaciones") or []}
+            forzar = {}
+            if o.get("cadena"):
+                forzar["cadena"] = o["cadena"]
+                if str(o.get("mensualidad_desde", "")).isdigit():
+                    forzar.update({"mensualidad_desde": str(o["mensualidad_desde"]), "precio_fuente_url": o.get("precio_fuente_url") or o.get("url_fuente", ""),
+                                   "fecha_precio": hoy[:7]})
+            # cadenas: misma marca a menos de 150 m aunque el nombre cambie; demás: nombre parecido
+            k = None
+            if o.get("cadena"):
+                mejor = 151
+                for dy in (-0.01, 0, 0.01):
+                    for dx in (-0.01, 0, 0.01):
+                        for kk in malla_f.get((round(lat + dy, 2), round(lng + dx, 2)), []):
+                            f = filas[kk]
+                            d = distancia_m(lat, lng, f["lat"], f["lng"])
+                            if d < mejor and (f.get("cadena") == o["cadena"] or sin_acentos(o["cadena"]).lower() in sin_acentos(f["nombre"]).lower()):
+                                k, mejor = kk, d
+            if k is None:
+                k = pareja(lat, lng, nombre, 150)
+            if k is not None:
+                f = filas[k]
+                f.setdefault("_extra", {}).update({c: v for c, v in extra.items() if v})
+                for c, v in union.items():
+                    f.setdefault("_union", {}).setdefault(c, set()).update(v)
+                f.setdefault("_forzar", {}).update(forzar)
+                f["fuente_ids"] = "|".join(sorted(set(filter(None, f.get("fuente_ids", "").split("|") + [fid]))))
+                if fuente in DISC_FUENTE and DISC_FUENTE[fuente] not in f["disciplinas"].split("|"):
+                    f["disciplinas"] = "|".join(filter(None, f["disciplinas"].split("|") + [DISC_FUENTE[fuente]]))
+                n_fuente_completan[fuente] += 1
+                continue
+            if fuente == "anytime" and o.get("estatus", "abierto") not in ("abierto", "open", "Open", ""):
+                continue
+            tipo, disciplinas, cadena = clasificar(nombre + " " + o.get("tipo", ""), [], "")
+            if fuente in DISC_FUENTE and DISC_FUENTE[fuente] not in disciplinas:
+                disciplinas = list(disciplinas) + [DISC_FUENTE[fuente]]
+            vd = vecino_denue(lat, lng)
+            r = {
+                "place_id": fid, "nombre": nombre, "slug": slug(nombre), "tipo_lugar": tipo, "disciplinas": "|".join(disciplinas),
+                "cadena": o.get("cadena") or cadena, "calle": titulo(o.get("calle", "")) if o.get("calle", "").isupper() else o.get("calle", ""),
+                "colonia": o.get("colonia") or (titulo(vd.nomb_asent) if vd is not None else ""),
+                "ciudad": o.get("ciudad") or (vd.municipio if vd is not None else ""),
+                "estado": o.get("estado") or (vd.entidad if vd is not None else ""),
+                "cp": o.get("cp") or (vd.cod_postal if vd is not None else ""),
+                "lat": round(lat, 7), "lng": round(lng, 7), "google_maps_url": "", "direccion_google": "",
+                "telefono": "", "correo": "", "sitio_web": "", "denue_id": "", "sector": "",
+                "metro_rango": "", "metropoli": "", "fuente": fuente, "ultima_verificacion": hoy, "osm_id": "", "fuente_ids": fid,
+                "_extra": {c: v for c, v in extra.items() if v}, "_union": {c: set(v) for c, v in union.items()}, "_forzar": forzar,
+            }
+            if vd is not None:
+                r["metro_rango"], r["metropoli"] = str(vd.metro_rango), vd.metropoli
+            if not r["metro_rango"]:
+                continue  # fuera de las metrópolis que cubrimos por ahora
+            agregar(r)
+            n_fuente_nuevos[fuente] += 1
+
     # ---------- DENUE sin pareja ----------
     n_denue = n_denue_genericos = 0
     for i, d in denue.iterrows():
@@ -285,6 +362,11 @@ def main():
     # ---------- Normalizar, conservar ficha publicada y lo enriquecido ----------
     por_denue = {v["denue_id"]: v for v in previo.values() if v.get("denue_id")}
     por_osm = {v["osm_id"]: v for v in previo.values() if v.get("osm_id")}
+    por_fid = {}
+    for v in previo.values():
+        for fi in (v.get("fuente_ids") or "").split("|"):
+            if fi:
+                por_fid.setdefault(fi, v)
     wp_usados = set()
     for r in filas:
         if r["estado"] in ("México", "State of Mexico", "Méx.", "Edo. Méx."):
@@ -294,8 +376,14 @@ def main():
         if r["sector"] == "público" and r["tipo_lugar"] in ("Gimnasio", "Club deportivo"):
             r["tipo_lugar"] = "Deportivo público"
         r.setdefault("osm_id", "")
+        r.setdefault("fuente_ids", "")
         r["descripcion"] = descripcion(r)
         ant = previo.get(r["place_id"]) or por_denue.get(r["denue_id"] or "-") or por_osm.get(r["osm_id"] or "-") or {}
+        if not ant:
+            for fi in r["fuente_ids"].split("|"):
+                if fi and fi in por_fid:
+                    ant = por_fid[fi]
+                    break
         if ant.get("wp_id") in wp_usados:
             ant = {}
         r["wp_id"] = ant.get("wp_id", "")
@@ -314,6 +402,19 @@ def main():
             if v and not r.get(c):
                 r[c] = v
                 cambio = True
+        for c, v in r.pop("_union", {}).items():
+            actual = set(filter(None, (r.get(c) or "").split("|")))
+            nuevo = actual | set(v)
+            if nuevo != actual:
+                r[c] = "|".join(sorted(nuevo))
+                cambio = True
+        for c, v in r.pop("_forzar", {}).items():
+            if v and r.get(c) != v:
+                r[c] = v
+                cambio = True
+        r["descripcion"] = con_opiniones(descripcion(r), r)
+        if ant and ant.get("descripcion") != r["descripcion"]:
+            cambio = True
         if cambio and r["wp_id"]:
             r["pendiente_sync"] = "1"
 
@@ -337,7 +438,7 @@ def main():
     sin = sin[sin.metro_rango.astype(str).isin(lanzamiento)]
     sin.drop(columns=["lat", "lng"]).to_csv(os.path.join(RAIZ, "data", "denue", "sin_pareja.csv"), index=False)
     print(f"Base: {len(base)} lugares | Google: {(base.fuente.str.startswith('google')).sum()} | OSM nuevos: {n_osm_nuevos} "
-          f"| OSM completan: {n_osm_completan} | DENUE nuevos: {n_denue} | DENUE genéricos fuera: {n_denue_genericos} "
+          f"| OSM completan: {n_osm_completan} | fuentes nuevas: {dict(n_fuente_nuevos)} | fuentes completan: {dict(n_fuente_completan)} | DENUE nuevos: {n_denue} | DENUE genéricos fuera: {n_denue_genericos} "
           f"| descartados Google: {descartados}")
     print(base.tipo_lugar.value_counts().to_string())
 
