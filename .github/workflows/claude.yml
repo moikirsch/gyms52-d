@@ -25,20 +25,30 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Aplicar, subir y guardar (reintenta si otra corrida cambió la base)
+      - name: Aplicar lo de Claude
+        run: |
+          mkdir -p data/corridas
+          cd scripts && python aplicar_claude.py 2>&1 | tee ../data/corridas/ultima-claude.log
+      - name: Subir a WordPress
+        if: always()
         env:
           WP_USER: ${{ secrets.WP_USER }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
         run: |
+          cd scripts
+          python publicar.py --actualizar --max 2000 2>&1 | tee -a ../data/corridas/ultima-claude.log
+          python publicar.py --retirar 2>&1 | tee -a ../data/corridas/ultima-claude.log
+      - name: Guardar (reintenta si la base cambió)
+        if: always()
+        shell: bash {0}
+        run: |
           git config user.name "gyms52-bot"
           git config user.email "bot@gyms52.com"
-          mkdir -p data/corridas
-          for intento in 1 2 3 4 5; do
-            git fetch -q origin main && git reset -q --hard origin/main
-            (cd scripts && python aplicar_claude.py && python publicar.py --actualizar --max 2000 && python publicar.py --retirar) 2>&1 | grep -v -i deprecat | tee data/corridas/ultima-claude.log
-            git add data
-            git commit -qm "Enriquecimiento de Claude aplicado" || { echo "Sin cambios"; break; }
-            if git push -q origin main; then break; fi
-            echo "La base cambió mientras tanto; reintento $intento"
-            sleep $((intento * 20))
+          git add data
+          git commit -qm "Enriquecimiento de Claude aplicado" || exit 0
+          for intento in 1 2 3 4 5 6; do
+            git pull -q --rebase -X theirs origin main && git push -q origin main && exit 0
+            git rebase --abort 2>/dev/null
+            echo "reintento $intento"; sleep $((intento * 15))
           done
+          exit 1
