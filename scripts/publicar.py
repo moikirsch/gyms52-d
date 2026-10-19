@@ -61,8 +61,9 @@ def main():
     cats = categorias(s, url)
     ruta = os.path.join(RAIZ, "data", "base.csv")
     base = pd.read_csv(ruta, dtype=str).fillna("")
-    if "pendiente_sync" not in base.columns:
-        base["pendiente_sync"] = ""
+    for c in ("pendiente_sync", "foto_url", "foto_subida"):
+        if c not in base.columns:
+            base[c] = ""
     if a.actualizar:
         pendientes = base[(base.wp_id != "") & ((base.pendiente_sync == "1") | a.todas)]
     else:
@@ -91,6 +92,9 @@ def main():
         }
         if cuerpo["correo"] and not re.fullmatch(r"[A-Za-z0-9._%+\-]+@([A-Za-z0-9]([A-Za-z0-9\-]*[A-Za-z0-9])?\.)+[A-Za-z]{2,}", cuerpo["correo"].strip()):
             cuerpo["correo"] = ""  # WordPress rechaza correos mal escritos
+        foto_nueva = r.get("foto_url", "") and r.get("foto_subida", "") != "1"
+        if foto_nueva:
+            cuerpo["post_images"] = f"{r.foto_url}|0|{r.nombre}|"
         cuerpo = {k: v for k, v in cuerpo.items() if v not in ("", None, [])}
         destino = f"{url}/wp-json/geodir/v2/lugares" + (f"/{r.wp_id}" if a.actualizar else "")
         if a.actualizar:
@@ -102,6 +106,8 @@ def main():
                 if not a.actualizar:
                     base.at[i, "publicado_el"] = hoy
                 base.at[i, "pendiente_sync"] = ""
+                if foto_nueva:
+                    base.at[i, "foto_subida"] = "1"
                 hechos += 1
             else:
                 errores.append(f"{r.nombre}: {resp.status_code} {resp.text[:160]}")

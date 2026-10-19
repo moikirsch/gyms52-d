@@ -53,6 +53,9 @@ jobs:
       - name: Redes desde el sitio web
         if: always()
         run: cd scripts && python redes.py --metros "${{ steps.p.outputs.metros }}" ${{ steps.p.outputs.rehacer }} 2>&1 | tee ../data/corridas/ultima-redes.log
+      - name: Fotos desde el sitio web
+        if: always()
+        run: cd scripts && python fotos.py --max 3000 2>&1 | tee ../data/corridas/ultima-fotos.log
       - name: Subir cambios a WordPress
         if: always()
         env:

@@ -13,6 +13,8 @@ Base maestra y procesos del directorio [gyms52.com](https://gyms52.com). Todo co
 6. **Fuentes gratis**: `scripts/osm.py` baja de OpenStreetMap gimnasios, estudios, dojos, academias de baile y tiendas (sin llave ni cuota). `unir.py` usa OSM para completar contacto, redes y horario, y agrega como fichas nuevas lo que Google no tiene. También agrega lo de DENUE sin pareja en las metrópolis de lanzamiento, salvo nombres genéricos ("GIMNASIO", "ZUMBA SIN NOMBRE"). Si después Google encuentra un lugar que venía de OSM o DENUE, se queda con la misma ficha en WordPress.
 7. **Claude**: una tarea programada busca en la web redes, contacto, horario y lo que dicen las reseñas (resumen propio "Lo mejor" / "A considerar", instalaciones, servicios, pases y precios con fuente y fecha) y deja un CSV en `data/claude/`. `aplicar_claude.py` lo integra (solo llena campos vacíos) y se sube a WordPress.
 
+8. **Fotos** (`scripts/fotos.py`): toma una foto del sitio web propio de cada lugar (no de cadenas, cuyas portadas son promociones) con filtro de tamaño, formato horizontal y detalle; GeoDirectory la descarga y la pone como imagen principal.
+
 ## Cómo pedir una corrida
 
 Edita y sube uno de estos archivos; el cambio dispara el proceso:
