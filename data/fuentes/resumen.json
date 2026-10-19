@@ -10,7 +10,7 @@
    "ok": true,
    "exportados": 119,
    "descartados": 0,
-   "segundos": 0.4,
+   "segundos": 0.3,
    "peticiones": 1,
    "llenado_pct": {
     "fuente": 100,
@@ -37,7 +37,7 @@
     "estatus": 100,
     "tipo": 0
    },
-   "fecha": "2026-10-19T04:53:36Z"
+   "fecha": "2026-10-19T07:08:38Z"
   },
   "sportsworld": {
    "zonas": 25,
@@ -74,14 +74,14 @@
     "estatus": 100,
     "tipo": 100
    },
-   "fecha": "2026-10-19T04:47:07Z"
+   "fecha": "2026-10-19T07:08:38Z"
   },
   "sportcity": {
    "total_fuente": 26,
    "ok": true,
    "exportados": 24,
    "descartados": 2,
-   "segundos": 5.3,
+   "segundos": 5.1,
    "peticiones": 6,
    "llenado_pct": {
     "fuente": 100,
@@ -108,7 +108,7 @@
     "estatus": 100,
     "tipo": 100
    },
-   "fecha": "2026-10-19T04:53:23Z"
+   "fecha": "2026-10-19T07:08:38Z"
   },
   "crossfit": {
    "total_fuente": 54,
@@ -142,7 +142,7 @@
     "estatus": 100,
     "tipo": 100
    },
-   "fecha": "2026-10-19T04:47:07Z"
+   "fecha": "2026-10-19T07:08:38Z"
   },
   "smartfit": {
    "proximamente": 28,
@@ -150,7 +150,7 @@
    "ok": true,
    "exportados": 498,
    "descartados": 0,
-   "segundos": 65.1,
+   "segundos": 65.0,
    "peticiones": 66,
    "llenado_pct": {
     "fuente": 100,
@@ -177,7 +177,7 @@
     "estatus": 100,
     "tipo": 40
    },
-   "fecha": "2026-10-19T04:47:07Z"
+   "fecha": "2026-10-19T07:08:38Z"
   },
   "hyrox": {
    "celdas": 139,
@@ -187,7 +187,7 @@
    "ok": true,
    "exportados": 361,
    "descartados": 0,
-   "segundos": 138.3,
+   "segundos": 138.2,
    "peticiones": 139,
    "llenado_pct": {
     "fuente": 100,
@@ -214,36 +214,36 @@
     "estatus": 100,
     "tipo": 100
    },
-   "fecha": "2026-10-19T04:47:07Z"
+   "fecha": "2026-10-19T07:08:38Z"
   },
   "fitpass": {
    "ciudades": 18,
    "por_ciudad": {
-    "CUERNAVACA": 45,
     "ACAPULCO": 8,
+    "CUERNAVACA": 45,
     "CANCUN": 71,
-    "CDMX": 1386,
     "LOS CABOS": 11,
-    "MAZATLAN": 0,
     "LEON": 31,
     "GDL": 294,
-    "PLAYA DEL CARMEN": 14,
+    "MAZATLAN": 0,
     "MERIDA": 73,
     "MONTERREY": 178,
-    "PUEBLA": 326,
-    "SAN MIGUEL DE ALLENDE": 4,
-    "PUERTO VALLARTA": 4,
-    "SAN LUIS POTOSI": 20,
+    "CDMX": 1386,
     "QUERETARO": 338,
+    "PUERTO VALLARTA": 4,
+    "PLAYA DEL CARMEN": 14,
+    "SAN LUIS POTOSI": 20,
+    "PUEBLA": 327,
     "TIJUANA": 2,
+    "SAN MIGUEL DE ALLENDE": 4,
     "TOLUCA": 115
    },
-   "total_fuente": 2920,
+   "total_fuente": 2921,
    "virtuales": 55,
    "ok": true,
-   "exportados": 2864,
+   "exportados": 2865,
    "descartados": 1,
-   "segundos": 4.7,
+   "segundos": 5.0,
    "peticiones": 19,
    "llenado_pct": {
     "fuente": 100,
@@ -270,22 +270,22 @@
     "estatus": 100,
     "tipo": 100
    },
-   "fecha": "2026-10-19T04:47:07Z"
+   "fecha": "2026-10-19T07:08:38Z"
   },
   "totalpass": {
    "urls_sitemap": 8270,
-   "pendientes_nuevos": 8020,
+   "pendientes_nuevos": 8000,
    "pendientes_viejos": 0,
-   "leidas_esta_corrida": 20,
+   "leidas_esta_corrida": 8000,
    "errores_pagina": 0,
    "404": 0,
    "retirados_del_sitemap": 0,
-   "cobertura_cache": "270/8270",
+   "cobertura_cache": "8270/8270",
    "ok": true,
-   "exportados": 270,
-   "descartados": 0,
-   "segundos": 4.7,
-   "peticiones": 21,
+   "exportados": 8263,
+   "descartados": 7,
+   "segundos": 2000.3,
+   "peticiones": 8001,
    "llenado_pct": {
     "fuente": 100,
     "id_fuente": 100,
@@ -293,32 +293,39 @@
     "lat": 100,
     "lng": 100,
     "calle": 100,
-    "colonia": 83,
+    "colonia": 82,
     "ciudad": 100,
     "estado": 100,
     "cp": 100,
-    "telefono": 63,
-    "sitio_web": 80,
+    "telefono": 54,
+    "sitio_web": 77,
     "url_fuente": 100,
-    "horario_osm": 100,
+    "horario_osm": 99,
     "cadena": 0,
     "pases": 100,
     "afiliaciones": 0,
-    "instalaciones": 69,
+    "instalaciones": 70,
     "mensualidad_desde": 0,
     "precio_fuente_url": 0,
-    "foto": 96,
+    "foto": 95,
     "estatus": 100,
     "tipo": 100
    },
-   "fecha": "2026-10-19T04:53:18Z"
+   "fecha": "2026-10-19T07:08:38Z"
   }
  },
- "actualizado": "2026-10-19T04:53:36Z",
+ "actualizado": "2026-10-19T07:08:38Z",
  "ultima_corrida": {
-  "fecha": "2026-10-19T04:53:36Z",
+  "fecha": "2026-10-19T07:08:38Z",
   "fuentes": [
-   "anytime"
+   "smartfit",
+   "anytime",
+   "sportsworld",
+   "sportcity",
+   "crossfit",
+   "hyrox",
+   "totalpass",
+   "fitpass"
   ],
   "fallidas": []
  }
