@@ -175,12 +175,14 @@ Actualizado: 19 oct 2026, 10:00 am (hora CDMX). Desde hoy el proyecto se lleva d
    - WordPress tenía 26,405 lugares publicados contra 25,548 en la base: 857 fichas huérfanas, todas copias de las 81 pendientes (hasta 15 copias de cada una, p. ej. "Altus Fit").
    - Causa: `publicar.py` creaba la ficha, pero el `wp_id` se perdía al guardar `base.csv`. Las tandas de `fuentes.yml` seguían aunque el push fallara, y `claude.yml` hace `rebase -X theirs` y sube su `base.csv` completo, que pisa los ids nuevos.
    - Arreglo: `data/wp_ids.csv` es una bitácora (place_id, wp_id) que `publicar.py` escribe al crear cada ficha. `publicar.py` y `unir.py` recuperan de ahí los ids perdidos. Antes de crear, `publicar.py` busca una huérfana con el mismo título (`/wp/v2/search`) y la adopta. `fuentes.yml` se detiene si una tanda no se puede guardar.
-   - Las 81 pendientes se van a ligar a su copia más antigua en la siguiente publicación. Las otras 776 copias están en `data/duplicados-2026-10-19.csv` y van a la papelera cuando Moi lo apruebe.
+   - Las 81 pendientes se van a ligar a su copia más antigua en la siguiente publicación. Las otras 776 copias (lista en `data/duplicados-2026-10-19.csv`) se mandaron a la papelera el 19 oct con el sí de Moi. Quedaron 25,629 publicados, igual que la base.
    - Ojo: la REST de GeoDirectory devuelve `id: null` en listas y en `GET /lugares/<id>`. Para ids usa `/wp-json/wp/v2/search?subtype=gd_place` o `/wp-json/geodir/v2/markers/?post_type=gd_place`.
 2. **Portada:** el mapa tipo `directory` cargaba los 25,548 pines (2 MB) y congelaba el navegador. Lo quité de `front-page`. "Cerca de ti" (no filtraba por ubicación) pasó a "Recién agregados", en carrusel. El respaldo de la plantilla anterior es el patrón borrador id 28203.
 3. **Menú:** `menu-wrapper` ahora tiene Lugares, Guías, Eventos y Blog. El respaldo es un patrón borrador.
 4. **Clasificación:** reglas nuevas en `comun.py`. Especializados (Infantil, Adultos mayores, Prenatal y posparto, Rehabilitación, Adaptado, Entrenamiento personal) es una etiqueta secundaria: no cuenta como prueba de que el lugar es de fitness. También hay reglas nuevas para Bootcamp, EMS, Step, Remo indoor, Running club, Ninja, Vinyasa, Ashtanga, Hatha, Tai chi, Movilidad, Jazz, Danza contemporánea, Telas, Aquaeróbics, Clavados y Escalada con cuerda. Unas 330 fichas cambian en la siguiente `unir`.
-5. **"Lo mejor":** no se pierde nada. Las tareas solo encontraron reseñas suficientes en 10 de ~270 fichas revisadas con la columna nueva, y las 10 están en la base. El cuello de botella es la búsqueda web (no lee reseñas de Google). La decisión está pendiente con Moi.
+5. **Limpieza:** la página en inglés "terms-and-conditions" (id 8) está en la papelera. El logo duplicado (media 16) sigue ahí: borrar medios es permanente, así que Moi lo borra a mano.
+6. **"Lo mejor":** Moi pidió bajar el mínimo a 2 opiniones. Cambiar el prompt de la tarea `trig_01SFyRzvrvhaVJfUNdyKewbJ` fue bloqueado por permisos; Moi lo cambia o da permiso.
+7. **"Lo mejor" (diagnóstico):** no se pierde nada. Las tareas solo encontraron reseñas suficientes en 10 de ~270 fichas revisadas con la columna nueva, y las 10 están en la base. El cuello de botella es la búsqueda web (no lee reseñas de Google). La decisión está pendiente con Moi.
 
 ## 8. Cómo revisar el estado rápido
 
