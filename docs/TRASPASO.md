@@ -1,6 +1,6 @@
 # Gyms +52: traspaso de sesión
 
-Actualizado: 19 oct 2026, 9:20 am (hora CDMX). Úsalo para retomar el proyecto en una sesión nueva sin repetir trabajo ni romper lo que ya corre.
+Actualizado: 19 oct 2026, 10:00 am (hora CDMX). Desde hoy el proyecto se lleva desde la sesión session_01G1sJGBbq7a9nYj5Fhce5Dz. Úsalo para retomar el proyecto en una sesión nueva sin repetir trabajo ni romper lo que ya corre.
 
 ## 1. Qué es y cómo está hoy
 
@@ -168,6 +168,19 @@ Actualizado: 19 oct 2026, 9:20 am (hora CDMX). Úsalo para retomar el proyecto e
 7. **Textos que siguen en inglés:** el título de archivo "Todos: Lugares". El resto ya se tradujo con Say What.
 8. **Pendientes de Moi:** el correo catch-all de @gyms52.com; aprobar mandar a la papelera la página en inglés "terms-and-conditions" (id 8) y el logo duplicado (media id 16); dar de alta el sitemap en Search Console.
 9. **Ideas que quedaron:** precios de más cadenas, el plan TotalPass mínimo (TP1 a TP7), Les Mills como etiqueta, coaches e instructores, abrir más metrópolis (`config/diario.json`: `metros_lanzamiento`, hoy 30).
+
+## 7b. Cambios del 19 oct, 9:30 a 10:00 am
+
+1. **Duplicados en WordPress (grave, ya contenido):**
+   - WordPress tenía 26,405 lugares publicados contra 25,548 en la base: 857 fichas huérfanas, todas copias de las 81 pendientes (hasta 15 copias de cada una, p. ej. "Altus Fit").
+   - Causa: `publicar.py` creaba la ficha, pero el `wp_id` se perdía al guardar `base.csv`. Las tandas de `fuentes.yml` seguían aunque el push fallara, y `claude.yml` hace `rebase -X theirs` y sube su `base.csv` completo, que pisa los ids nuevos.
+   - Arreglo: `data/wp_ids.csv` es una bitácora (place_id, wp_id) que `publicar.py` escribe al crear cada ficha. `publicar.py` y `unir.py` recuperan de ahí los ids perdidos. Antes de crear, `publicar.py` busca una huérfana con el mismo título (`/wp/v2/search`) y la adopta. `fuentes.yml` se detiene si una tanda no se puede guardar.
+   - Las 81 pendientes se van a ligar a su copia más antigua en la siguiente publicación. Las otras 776 copias están en `data/duplicados-2026-10-19.csv` y van a la papelera cuando Moi lo apruebe.
+   - Ojo: la REST de GeoDirectory devuelve `id: null` en listas y en `GET /lugares/<id>`. Para ids usa `/wp-json/wp/v2/search?subtype=gd_place` o `/wp-json/geodir/v2/markers/?post_type=gd_place`.
+2. **Portada:** el mapa tipo `directory` cargaba los 25,548 pines (2 MB) y congelaba el navegador. Lo quité de `front-page`. "Cerca de ti" (no filtraba por ubicación) pasó a "Recién agregados", en carrusel. El respaldo de la plantilla anterior es el patrón borrador id 28203.
+3. **Menú:** `menu-wrapper` ahora tiene Lugares, Guías, Eventos y Blog. El respaldo es un patrón borrador.
+4. **Clasificación:** reglas nuevas en `comun.py`. Especializados (Infantil, Adultos mayores, Prenatal y posparto, Rehabilitación, Adaptado, Entrenamiento personal) es una etiqueta secundaria: no cuenta como prueba de que el lugar es de fitness. También hay reglas nuevas para Bootcamp, EMS, Step, Remo indoor, Running club, Ninja, Vinyasa, Ashtanga, Hatha, Tai chi, Movilidad, Jazz, Danza contemporánea, Telas, Aquaeróbics, Clavados y Escalada con cuerda. Unas 330 fichas cambian en la siguiente `unir`.
+5. **"Lo mejor":** no se pierde nada. Las tareas solo encontraron reseñas suficientes en 10 de ~270 fichas revisadas con la columna nueva, y las 10 están en la base. El cuello de botella es la búsqueda web (no lee reseñas de Google). La decisión está pendiente con Moi.
 
 ## 8. Cómo revisar el estado rápido
 
