@@ -32,7 +32,7 @@ jobs:
         env:
           WP_USER: ${{ secrets.WP_USER }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
-        run: cd scripts && python publicar.py --actualizar --max 2000 2>&1 | tee -a ../data/corridas/ultima-claude.log
+        run: cd scripts && python publicar.py --actualizar --max 2000 2>&1 | tee -a ../data/corridas/ultima-claude.log && python publicar.py --retirar 2>&1 | tee -a ../data/corridas/ultima-claude.log
       - name: Guardar resultados
         if: always()
         run: |

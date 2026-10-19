@@ -318,6 +318,10 @@ def main():
             r["pendiente_sync"] = "1"
 
     base = pd.DataFrame(filas).drop_duplicates("place_id")
+    ruta_c = os.path.join(RAIZ, "data", "cerrados.csv")
+    if os.path.exists(ruta_c):
+        cerr = pd.read_csv(ruta_c, dtype=str).fillna("")
+        base = base[~base.place_id.isin(set(cerr.place_id)) & ~(base.wp_id.isin(set(cerr.wp_id)) & (base.wp_id != ""))]
     base.to_csv(ruta_base, index=False)
     # fichas publicadas que ya no están en la base (p. ej. canchas): se pasan a borrador
     ruta_ret = os.path.join(RAIZ, "data", "retirar.csv")

@@ -71,6 +71,7 @@ def main():
     hechos = set(open(reg).read().split()) if os.path.exists(reg) else set()
     idx = {p: i for i, p in enumerate(base.place_id)}
     revisadas = cambios = 0
+    cerrados = []
     nuevos = []
     for archivo in sorted(glob.glob(os.path.join(RAIZ, "data", "claude", "*.csv"))):
         nombre = os.path.basename(archivo)
@@ -84,6 +85,10 @@ def main():
                 continue
             revisadas += 1
             base.at[i, "claude_el"] = fecha
+            nota = (r.get("nota", "") or "").strip()
+            if nota.lower().startswith("cerrado") and base.at[i, "wp_id"]:
+                cerrados.append({"wp_id": base.at[i, "wp_id"], "nombre": base.at[i, "nombre"], "place_id": base.at[i, "place_id"],
+                                 "motivo": nota[:300], "retirado_el": ""})
             hubo = False
             for c in CAMPOS:
                 v = limpio(c, r.get(c, ""))
@@ -129,11 +134,22 @@ def main():
                 base.at[i, "pendiente_sync"] = "1"
                 cambios += 1
         nuevos.append(nombre)
+    # lugares que Claude encontró cerrados: fuera de la base y a borrador en WordPress
+    if cerrados:
+        ruta_ret = os.path.join(RAIZ, "data", "retirar.csv")
+        ret = pd.read_csv(ruta_ret, dtype=str).fillna("") if os.path.exists(ruta_ret) else pd.DataFrame(columns=["wp_id", "nombre", "motivo", "retirado_el"])
+        nuevos_ret = [c for c in cerrados if c["wp_id"] not in set(ret.wp_id)]
+        if nuevos_ret:
+            pd.concat([ret, pd.DataFrame(nuevos_ret)]).to_csv(ruta_ret, index=False)
+        reg_c = os.path.join(RAIZ, "data", "cerrados.csv")
+        prev = pd.read_csv(reg_c, dtype=str).fillna("") if os.path.exists(reg_c) else pd.DataFrame()
+        pd.concat([prev, pd.DataFrame(cerrados)]).drop_duplicates("place_id").to_csv(reg_c, index=False)
+        base = base[~base.place_id.isin({c["place_id"] for c in cerrados})]
     base.to_csv(ruta, index=False)
     with open(reg, "a") as f:
         for n in nuevos:
             f.write(n + "\n")
-    print(f"Claude: {len(nuevos)} archivos, {revisadas} fichas revisadas, {cambios} con datos nuevos")
+    print(f"Claude: {len(nuevos)} archivos, {revisadas} fichas revisadas, {cambios} con datos nuevos, {len(cerrados)} cerrados a borrador")
 
 
 if __name__ == "__main__":
