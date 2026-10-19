@@ -11,6 +11,7 @@ import datetime as dt
 import glob
 import json
 import os
+import re
 from collections import defaultdict
 
 import pandas as pd
@@ -261,9 +262,13 @@ def main():
             nombre = limpiar_nombre(o.get("nombre", ""))
             if not nombre or es_cancha(nombre):
                 continue
+            if fuente == "fitpass" and re.search(r"belleza|est[eé]tica|u[ñn]as|spa\b|masaje|barber|anniversary|evento|nutri[oó]log", sin_acentos(nombre + " " + o.get("tipo", "")), re.I):
+                continue  # Fitpass mezcla servicios que no son lugares para entrenar
             fid = f"{fuente}:{o.get('id_fuente', '')}"
             extra = {c: (o.get(c) or "") for c in ("telefono", "sitio_web")}
             extra["horario"] = horario_osm(o.get("horario_osm", ""))
+            if (o.get("foto") or "").startswith("http"):
+                extra["foto_url"] = o["foto"]
             union = {"pases": o.get("pases") or [], "afiliaciones": o.get("afiliaciones") or [],
                      "instalaciones": o.get("instalaciones") or []}
             forzar = {}

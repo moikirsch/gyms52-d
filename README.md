@@ -15,6 +15,8 @@ Base maestra y procesos del directorio [gyms52.com](https://gyms52.com). Todo co
 
 8. **Fotos** (`scripts/fotos.py`): toma una foto del sitio web propio de cada lugar (no de cadenas, cuyas portadas son promociones) con filtro de tamaño, formato horizontal y detalle; GeoDirectory la descarga y la pone como imagen principal.
 
+9. **Fuentes oficiales** (`scripts/fuentes.py`, cada miércoles): Smart Fit, Anytime Fitness, Sports World, Sport City, CrossFit, HYROX, TotalPass y Fitpass. Completan fichas existentes (pases, afiliaciones, cadena, precio, horario, instalaciones, foto) o agregan las que faltan. Wellhub queda fuera porque sus términos prohíben extraer datos.
+
 ## Cómo pedir una corrida
 
 Edita y sube uno de estos archivos; el cambio dispara el proceso:
@@ -22,6 +24,7 @@ Edita y sube uno de estos archivos; el cambio dispara el proceso:
 - `solicitudes/places.json` → `{"metros": "1,2", "max": 600}`
 - `solicitudes/publicar.json` → `{"metros": "1", "max": 300, "estado": "publish"}`
 - `solicitudes/osm.json` → `{"metros": ""}` (vacío = las de lanzamiento; también corre solo cada lunes)
+- `solicitudes/fuentes.json` → `{"max_totalpass": 3000}` (0 = todas)
 - `solicitudes/enriquecer.json` → `{"metros": "1", "max": 2000, "todas": false}`
 
 También se pueden lanzar a mano desde la pestaña Actions.

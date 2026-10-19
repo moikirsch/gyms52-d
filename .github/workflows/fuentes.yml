@@ -1,0 +1,69 @@
+name: Fuentes oficiales (cadenas, pases, afiliaciones)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 10 * * 3"   # miércoles 4:41 am
+  push:
+    branches: [main]
+    paths: ["solicitudes/fuentes.json"]
+
+concurrency:
+  group: datos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fuentes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # lo más reciente, no el commit que disparó la corrida (puede venir en cola)
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Descargar fuentes
+        run: |
+          mkdir -p data/corridas
+          MAXTP=$(jq -r '.max_totalpass // 3000' solicitudes/fuentes.json 2>/dev/null || echo 3000)
+          cd scripts && python fuentes.py --max-tp "$MAXTP" 2>&1 | tee ../data/corridas/ultima-fuentes.log
+      - name: Unir
+        if: always()
+        run: cd scripts && python unir.py 2>&1 | tee ../data/corridas/ultima-unir.log
+      - name: Guardar base antes de publicar
+        if: always()
+        run: |
+          git config user.name "gyms52-bot"
+          git config user.email "bot@gyms52.com"
+          git add data && git commit -m "Fuentes: base unida" || echo "Sin cambios"
+          git pull --rebase origin main && git push
+      - name: Publicar lo nuevo y actualizar lo completado
+        if: always()
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          # en tandas de 800 y guardando cada tanda, para no perder los ids si el trabajo se corta
+          git config user.name "gyms52-bot"
+          git config user.email "bot@gyms52.com"
+          cd scripts
+          for t in $(seq 1 15); do
+            python publicar.py --max 800 2>&1 | tee -a ../data/corridas/ultima-publicar.log
+            cd .. && git add data && (git commit -qm "Publicación fuentes, tanda $t" || true) && git pull -q --rebase origin main && git push -q && cd scripts
+            if tail -3 ../data/corridas/ultima-publicar.log | grep -q "Publicados: 0 "; then break; fi
+          done
+          python publicar.py --actualizar --max 12000 2>&1 | tee -a ../data/corridas/ultima-publicar.log
+          python publicar.py --retirar 2>&1 | tee -a ../data/corridas/ultima-publicar.log
+      - name: Guardar resultados
+        if: always()
+        run: |
+          git config user.name "gyms52-bot"
+          git config user.email "bot@gyms52.com"
+          git add data
+          git commit -m "Fuentes: publicación" || echo "Sin cambios"
+          git pull --rebase origin main && git push
