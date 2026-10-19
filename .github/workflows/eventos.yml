@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["data/eventos/eventos.csv"]
+    paths: ["data/eventos/eventos.csv", "solicitudes/eventos.json"]
 
 concurrency:
   group: datos
