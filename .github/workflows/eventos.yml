@@ -7,7 +7,7 @@ on:
     paths: ["data/eventos/eventos.csv", "solicitudes/eventos.json"]
 
 concurrency:
-  group: datos
+  group: eventos
   cancel-in-progress: false
 
 permissions:

@@ -9,7 +9,7 @@ on:
     paths: ["solicitudes/guias.json"]
 
 concurrency:
-  group: datos
+  group: guias
   cancel-in-progress: false
 
 permissions:
