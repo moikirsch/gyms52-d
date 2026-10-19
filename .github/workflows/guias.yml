@@ -41,4 +41,4 @@ jobs:
           git config user.email "bot@gyms52.com"
           git add data
           git commit -m "Guías actualizadas" || echo "Sin cambios"
-          git pull --rebase origin main && git push
+          for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && break; git rebase --abort 2>/dev/null; sleep 15; done
