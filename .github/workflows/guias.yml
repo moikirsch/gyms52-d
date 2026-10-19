@@ -1,0 +1,44 @@
+name: Guías por ciudad y disciplina
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "33 11 * * 0"   # domingos 5:33 am
+  push:
+    branches: [main]
+    paths: ["solicitudes/guias.json"]
+
+concurrency:
+  group: datos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  guias:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Publicar guías
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          mkdir -p data/corridas
+          cd scripts && python guias.py 2>&1 | tee ../data/corridas/ultima-guias.log
+      - name: Guardar resultados
+        if: always()
+        run: |
+          git config user.name "gyms52-bot"
+          git config user.email "bot@gyms52.com"
+          git add data
+          git commit -m "Guías actualizadas" || echo "Sin cambios"
+          git pull --rebase origin main && git push
