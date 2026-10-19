@@ -16,7 +16,7 @@ from collections import defaultdict
 
 import pandas as pd
 
-from comun import es_cancha, sin_acentos, titulo, clasificar, distancia_m, horario_osm, limpiar_nombre, nombre_denue, similitud, slug, TIPOS_VALIDOS
+from comun import restaurar_wp_ids, DISC_SECUNDARIAS, es_cancha, sin_acentos, titulo, clasificar, distancia_m, horario_osm, limpiar_nombre, nombre_denue, similitud, slug, TIPOS_VALIDOS
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Qué significa haber aparecido en una sola búsqueda (solo se usa si el nombre no dice nada)
@@ -98,7 +98,7 @@ def main():
             tipos = p.get("types", [])
             pista = " ".join(p.get("_busquedas", []))
             _, disc_nombre, _ = clasificar(nombre, ())
-            disc_nombre = [d for d in disc_nombre if d not in ("Pesas", "Equipo de gimnasio")]
+            disc_nombre = [d for d in disc_nombre if d not in ("Pesas", "Equipo de gimnasio") and d not in DISC_SECUNDARIAS]
             if not nombre or not es_fitness(p, disc_nombre):
                 descartados += 1
                 continue
@@ -201,9 +201,9 @@ def main():
             if t.get("amenity") == "dojo":
                 pista = "artes marciales"
             _, disc_nombre, _ = clasificar(nombre, ())
-            disc_nombre = [d for d in disc_nombre if d not in ("Pesas", "Equipo de gimnasio")]
+            disc_nombre = [d for d in disc_nombre if d not in ("Pesas", "Equipo de gimnasio") and d not in DISC_SECUNDARIAS]
             _, disc_dep, _ = clasificar(deporte, ())
-            disc_dep = [d for d in disc_dep if d not in ("Pesas", "Equipo de gimnasio")]
+            disc_dep = [d for d in disc_dep if d not in ("Pesas", "Equipo de gimnasio") and d not in DISC_SECUNDARIAS]
             if not (tipos or pista or disc_nombre or disc_dep or "fitness" in deporte):
                 continue  # p. ej. un sports_centre de pura cancha de futbol
             if not nombre or (es_cancha(nombre) and not t.get("shop")):
@@ -428,6 +428,9 @@ def main():
     if os.path.exists(ruta_c):
         cerr = pd.read_csv(ruta_c, dtype=str).fillna("")
         base = base[~base.place_id.isin(set(cerr.place_id)) & ~(base.wp_id.isin(set(cerr.wp_id)) & (base.wp_id != ""))]
+    rec = restaurar_wp_ids(base)
+    if rec:
+        print(f"wp_id recuperados de la bitácora: {rec}")
     base.to_csv(ruta_base, index=False)
     # fichas publicadas que ya no están en la base (p. ej. canchas): se pasan a borrador
     ruta_ret = os.path.join(RAIZ, "data", "retirar.csv")

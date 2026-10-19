@@ -14,6 +14,8 @@ import time
 import pandas as pd
 import requests
 
+from comun import clave_titulo, registrar_wp_id, restaurar_wp_ids
+
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -28,6 +30,29 @@ def categorias(s, url):
         if len(lote) < 100:
             return mapa
         pagina += 1
+
+
+def huerfanos_por_titulo(s, url, usados):
+    """Fichas publicadas en WordPress que no están ligadas a ninguna fila de la base, por título.
+    Si una ficha nueva ya tiene una huérfana con el mismo título, es una copia que perdió su
+    wp_id: se adopta en lugar de crear otra."""
+    mapa, pagina = {}, 1
+    while True:
+        r = s.get(f"{url}/wp-json/wp/v2/search", params={"subtype": "gd_place", "per_page": 100, "page": pagina,
+                                                       "_fields": "id,title"}, timeout=90)
+        if r.status_code == 400:
+            break
+        r.raise_for_status()
+        lote = r.json()
+        for x in lote:
+            if str(x["id"]) not in usados:
+                mapa.setdefault(clave_titulo(x["title"]), []).append(str(x["id"]))
+        if len(lote) < 100:
+            break
+        pagina += 1
+    for k in mapa:
+        mapa[k].sort(key=int)  # la más antigua primero: tiene el slug limpio
+    return mapa
 
 
 def main():
@@ -64,6 +89,10 @@ def main():
     for c in ("pendiente_sync", "foto_url", "foto_subida"):
         if c not in base.columns:
             base[c] = ""
+    recuperados = restaurar_wp_ids(base)
+    if recuperados:
+        print(f"wp_id recuperados de la bitácora: {recuperados}")
+        base.to_csv(ruta, index=False)
     if a.actualizar:
         pendientes = base[(base.wp_id != "") & ((base.pendiente_sync == "1") | a.todas)]
     else:
@@ -71,8 +100,21 @@ def main():
     if a.metros:
         pendientes = pendientes[pendientes.metro_rango.isin([x.strip() for x in a.metros.split(",")])]
     hoy = dt.date.today().isoformat()
-    hechos, errores = 0, []
+    hechos, errores, adoptados = 0, [], 0
+    huerfanos = {}
+    if not a.actualizar and len(pendientes):
+        huerfanos = huerfanos_por_titulo(s, url, set(base.wp_id) - {""})
     for i, r in pendientes.head(a.max).iterrows():
+        if not a.actualizar:
+            copia = huerfanos.get(clave_titulo(r.nombre))
+            if copia:
+                wp = copia.pop(0)
+                base.at[i, "wp_id"] = wp
+                base.at[i, "publicado_el"] = base.at[i, "publicado_el"] or hoy
+                base.at[i, "pendiente_sync"] = "1"  # la siguiente actualización le sube los datos completos
+                registrar_wp_id(r.place_id, wp, r.nombre)
+                adoptados += 1
+                continue
         ids = [cats[d] for d in r.disciplinas.split("|") if d in cats]
         cuerpo = {
             "title": r.nombre, "content": r.descripcion, "status": a.estado,
@@ -106,6 +148,7 @@ def main():
                 base.at[i, "wp_id"] = str(resp.json()["id"])
                 if not a.actualizar:
                     base.at[i, "publicado_el"] = hoy
+                    registrar_wp_id(r.place_id, base.at[i, "wp_id"], r.nombre)
                 base.at[i, "pendiente_sync"] = ""
                 if foto_nueva:
                     base.at[i, "foto_subida"] = "1"
@@ -122,8 +165,10 @@ def main():
     base.to_csv(ruta, index=False)
     os.makedirs(os.path.join(RAIZ, "data", "corridas"), exist_ok=True)
     nombre = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%d-%H%M") + "-publicar.json"
-    json.dump({"publicados": hechos, "pendientes_antes": len(pendientes), "errores": errores[:30]},
+    json.dump({"publicados": hechos, "adoptados": adoptados, "pendientes_antes": len(pendientes), "errores": errores[:30]},
               open(os.path.join(RAIZ, "data", "corridas", nombre), "w"), ensure_ascii=False, indent=1)
+    if adoptados:
+        print(f"Copias existentes adoptadas (no se publicaron de nuevo): {adoptados}")
     print(f"Publicados: {hechos} | errores: {len(errores)}")
     for e in errores[:10]:
         print("  ", e)

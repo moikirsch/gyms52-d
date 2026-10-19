@@ -1,9 +1,58 @@
 # -*- coding: utf-8 -*-
 """Utilidades compartidas del pipeline de Gyms +52."""
+import csv
+import html
 import math
 import json
+import os
 import re
 import unicodedata
+
+RAIZ_REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RUTA_WP_IDS = os.path.join(RAIZ_REPO, "data", "wp_ids.csv")
+
+
+# ---------------------------------------------------------------- bitácora de ids de WordPress
+# Cada ficha creada en WordPress se anota aquí (place_id, wp_id) al momento. Solo la escriben
+# los procesos de la fila "datos", así que no choca con los push de la tarea de Claude, que
+# reescribe base.csv completo. Si base.csv pierde un wp_id, se recupera de aquí y la ficha
+# no se vuelve a publicar (eso causó ~850 duplicados el 19 oct 2026).
+def registrar_wp_id(place_id, wp_id, nombre=""):
+    nuevo = not os.path.exists(RUTA_WP_IDS)
+    with open(RUTA_WP_IDS, "a", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        if nuevo:
+            w.writerow(["place_id", "wp_id", "nombre"])
+        w.writerow([place_id, wp_id, nombre])
+        f.flush()
+
+
+def leer_wp_ids():
+    if not os.path.exists(RUTA_WP_IDS):
+        return {}
+    with open(RUTA_WP_IDS, encoding="utf-8") as f:
+        return {r["place_id"]: r["wp_id"] for r in csv.DictReader(f) if r.get("place_id") and r.get("wp_id")}
+
+
+def restaurar_wp_ids(base):
+    """Llena los wp_id vacíos de base con la bitácora. Devuelve cuántos recuperó."""
+    ids = leer_wp_ids()
+    if not ids or "wp_id" not in base.columns:
+        return 0
+    usados = set(base.wp_id) - {""}
+    n = 0
+    for i in base.index[base.wp_id == ""]:
+        w = ids.get(base.at[i, "place_id"], "")
+        if w and w not in usados:
+            base.at[i, "wp_id"] = w
+            usados.add(w)
+            n += 1
+    return n
+
+
+def clave_titulo(s):
+    s = sin_acentos(html.unescape(s or "")).lower().replace("–", "-").replace("—", "-")
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
 
 
 def sin_acentos(s):
@@ -43,6 +92,12 @@ REGLAS_DISCIPLINA = [
     (r"crossfit|cross fit|\bwod\b", "CrossFit"),
     (r"hyrox", "HYROX"),
     (r"funcional|functional|bootcamp|f45|orangetheory|orange theory", "Funcional"),
+    (r"bootcamp|boot camp", "Bootcamp"),
+    (r"electroestimul|electro estimul|bodytec|xbody|\bems (training|fitness|studio|gym)", "EMS"),
+    (r"step aerobic|aerobics step|clases de step|\bstep (class|fitness)", "Step"),
+    (r"remo indoor|indoor rowing|rowing (studio|club|fitness)", "Remo indoor"),
+    (r"run club|running club|club de corredores", "Running club"),
+    (r"ninja (gym|park|parque|warrior|academy)|ninja warrior", "Ninja"),
     (r"\bhiit\b", "HIIT"),
     (r"powerlifting|power lifting", "Powerlifting"),
     (r"halterofilia|weightlifting", "Halterofilia"),
@@ -54,7 +109,12 @@ REGLAS_DISCIPLINA = [
     (r"pilates", "Pilates mat"),
     (r"hot yoga|bikram", "Hot yoga"),
     (r"yoga aereo|aerial yoga", "Yoga aéreo"),
+    (r"vinyasa", "Vinyasa"),
+    (r"ashtanga", "Ashtanga"),
+    (r"hatha", "Hatha yoga"),
     (r"yoga", "Yoga"),
+    (r"tai ?chi|taichi", "Tai chi"),
+    (r"stretching|estiramiento|clases de movilidad|mobility (studio|class)", "Movilidad y stretching"),
     (r"\bbarre\b", "Barre"),
     (r"muay thai|muaythai", "Muay thai"),
     (r"kickboxing|kick boxing", "Kickboxing"),
@@ -72,17 +132,35 @@ REGLAS_DISCIPLINA = [
     (r"jazzercise", "Jazzercise"),
     (r"\bpole\b|pole dance|pole fitness", "Pole fitness"),
     (r"ballet", "Ballet"),
+    (r"jazz dance|danza jazz|(danza|dance|ballet|academia|escuela|studio).*\bjazz\b|\bjazz\b.*(danza|dance|ballet|academia|escuela)", "Jazz"),
+    (r"danza contemporanea|contemporary dance", "Danza contemporánea"),
+    (r"telas aereas|danza aerea|aerial (dance|silk|hoop)|acrobacia aerea", "Telas y danza aérea"),
     (r"hip ?hop", "Hip hop"),
     (r"salsa|bachata", "Salsa y bachata"),
     (r"danza|dance|baile", "Baile fitness"),
+    (r"aquaerobic|aquafit|hidroaerobic|acuaerobic", "Aquaeróbics"),
+    (r"clavados", "Clavados"),
     (r"natacion|swim|alberca|acuatic|aquatic", "Natación"),
     (r"escalada|climbing|boulder|rocodromo", "Boulder"),
+    (r"escalada (en|con) cuerda|top ?rope|via ferrata", "Escalada con cuerda"),
     (r"parkour", "Parkour"),
     (r"suplement|nutrition|gnc|proteina|protein", "Suplementos"),
     (r"tenis|tennis", "Tenis"),
     (r"squash", "Squash"),
     (r"padel", "Pádel"),
 ]
+
+# Disciplinas de público o servicio: se agregan como etiqueta extra, pero no cuentan
+# como prueba de que el lugar es de fitness (p. ej. una clínica de fisioterapia).
+REGLAS_SECUNDARIAS = [
+    (r"\bkids?\b|infantil|para ninos|\bninos\b|baby gym|junior", "Infantil"),
+    (r"adulto mayor|adultos mayores|tercera edad|\bsenior", "Adultos mayores"),
+    (r"prenatal|embarazad|posparto|postparto|post parto", "Prenatal y posparto"),
+    (r"rehabilit|fisioterap|\bfisio\b|kinesio", "Rehabilitación"),
+    (r"adaptad|discapacidad|paralimp", "Adaptado"),
+    (r"entrenador personal|entrenamiento personal|personal train", "Entrenamiento personal"),
+]
+DISC_SECUNDARIAS = {d for _, d in REGLAS_SECUNDARIAS}
 
 CADENAS = {
     "smart fit": "Smart Fit", "sports world": "Sports World", "anytime fitness": "Anytime Fitness",
@@ -116,9 +194,11 @@ def clasificar(nombre, tipos=(), pista=""):
         tipo = "Box"
     elif any(d in disc for d in ("Muay thai", "Kickboxing", "MMA", "Jiu-jitsu brasileño", "Judo", "Karate", "Taekwondo", "Krav maga", "Box", "Lucha", "Esgrima", "Combate")):
         tipo = "Gimnasio de combate"
-    elif any(d in disc for d in ("Yoga", "Hot yoga", "Yoga aéreo", "Pilates mat", "Pilates reformer", "Barre", "Indoor cycling", "Jumping")):
+    elif any(d in disc for d in ("Yoga", "Hot yoga", "Yoga aéreo", "Vinyasa", "Ashtanga", "Hatha yoga", "Tai chi", "Pilates mat",
+                                 "Pilates reformer", "Barre", "Indoor cycling", "Jumping", "EMS")):
         tipo = "Estudio"
-    elif any(d in disc for d in ("Ballet", "Hip hop", "Salsa y bachata", "Baile fitness", "Pole fitness", "Zumba", "Jazzercise")) and not tipos & {"gym", "fitness_center"}:
+    elif any(d in disc for d in ("Ballet", "Hip hop", "Salsa y bachata", "Baile fitness", "Pole fitness", "Zumba", "Jazzercise", "Jazz",
+                                 "Danza contemporánea", "Telas y danza aérea")) and not tipos & {"gym", "fitness_center"}:
         tipo = "Escuela de danza"
     elif "Natación" in disc and ("swimming_pool" in tipos or "natacion" in n or "acuatic" in n):
         tipo = "Centro acuático"
@@ -134,6 +214,10 @@ def clasificar(nombre, tipos=(), pista=""):
         disc.append("Pesas")
     if not disc:
         disc.append("Pesas" if tipo != "Tienda" else "Equipo de gimnasio")
+    if tipo != "Tienda":
+        for patron, d in REGLAS_SECUNDARIAS:
+            if re.search(patron, n) and d not in disc:
+                disc.append(d)
     return tipo, disc, cadena
 
 
