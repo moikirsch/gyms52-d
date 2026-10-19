@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-10-19T19:41:23.324009+00:00Z",
+ "metros": {
+  "Valle de México (CDMX)": {
+   "antes": 2610,
+   "despues": 2610
+  }
+ },
+ "peticiones": 2,
+ "errores": [
+  "429 tienda de artículos deportivos en Coyoacán, Ciudad de México: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-19T19:41:27.434203+00:00Z"
+}
