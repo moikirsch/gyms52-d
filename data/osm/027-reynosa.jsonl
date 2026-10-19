@@ -1,0 +1,19 @@
+{"osm_id": "node/4631284645", "lat": 26.0179452, "lng": -98.2846617, "tags": {"name": "Deportes \"America\"", "shop": "sports"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "node/6208780867", "lat": 25.9936536, "lng": -98.0712162, "tags": {"leisure": "sports_centre", "name": "Gimnasio Municipal La Esperanza"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "node/6960312070", "lat": 26.0232941, "lng": -98.4081965, "tags": {"leisure": "fitness_centre", "name": "Stronger´s Gym"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "node/7294221505", "lat": 26.0697923, "lng": -98.2875234, "tags": {"leisure": "fitness_centre", "name": "Stayfit"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "node/11526524302", "lat": 26.0331242, "lng": -98.2963205, "tags": {"leisure": "fitness_centre", "name": "Reyfitness"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/587960165", "lat": 25.9802434, "lng": -98.2715123, "tags": {"leisure": "sports_centre", "name": "Quinta Los Leones", "sport": "swimming"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/619922451", "lat": 26.0327655, "lng": -98.353963, "tags": {"leisure": "sports_centre", "name": "Piscina para bautismo", "sport": "swimming"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/668766261", "lat": 25.9778379, "lng": -98.0836058, "tags": {"leisure": "sports_centre", "name": "Las Liebres"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/669831027", "lat": 25.9937417, "lng": -98.1103493, "tags": {"leisure": "sports_centre", "name": "Gimnacio Municipal Miguel Hidalgo"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/698803554", "lat": 26.0930497, "lng": -98.2771551, "tags": {"building": "yes", "name": "Innovasport", "shop": "sports"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/698815351", "lat": 26.060392, "lng": -98.2966958, "tags": {"leisure": "sports_centre", "name": "Arena juba", "sport": "lucha"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/724185632", "lat": 26.0432168, "lng": -98.2854789, "tags": {"leisure": "sports_centre", "name": "polideportivo Reynosa", "social_facility": "shelter", "sport": "swimming;basketball;volleyball;multi"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/964634808", "lat": 25.9937454, "lng": -98.07118, "tags": {"leisure": "sports_centre", "name": "Gimnasio La Esperanza"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/964704988", "lat": 25.9822903, "lng": -98.1098334, "tags": {"leisure": "sports_centre", "name": "Gimnasio Municipal Cuahutemoc"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/964704999", "lat": 25.9871234, "lng": -98.0846668, "tags": {"leisure": "sports_centre", "name": "Gimnasio Secundaria No.1"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/998887074", "lat": 25.9911309, "lng": -98.0860454, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "Olimpus"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/998887075", "lat": 25.9958613, "lng": -98.0736383, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "Espartacus"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/1087338106", "lat": 26.0412293, "lng": -98.3010471, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "Starfitness"}, "metro_rango": "27", "metropoli": "Reynosa"}
+{"osm_id": "way/1087338157", "lat": 26.0734257, "lng": -98.3191744, "tags": {"building": "yes", "name": "Innovasport", "shop": "sports"}, "metro_rango": "27", "metropoli": "Reynosa"}

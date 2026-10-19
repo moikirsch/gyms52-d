@@ -1,0 +1,9 @@
+{"osm_id": "node/2184252697", "lat": 22.2674736, "lng": -97.8493554, "tags": {"leisure": "swimming_pool", "name": "Alberca Unidad Nacional", "sport": "swimming"}, "metro_rango": "24", "metropoli": "Tampico"}
+{"osm_id": "node/4935919026", "lat": 22.262864, "lng": -97.8591798, "tags": {"name": "Real Nutrition Tampico", "shop": "nutrition_supplements"}, "metro_rango": "24", "metropoli": "Tampico"}
+{"osm_id": "node/5224112099", "lat": 22.2166513, "lng": -97.8537305, "tags": {"name": "Alva Deportes", "shop": "sports"}, "metro_rango": "24", "metropoli": "Tampico"}
+{"osm_id": "node/13821500233", "lat": 22.4230711, "lng": -97.9511809, "tags": {"addr:city": "Altamira", "addr:neighbourhood": "Colonia Briones", "addr:state": "Tamaulipas", "addr:street": "Calle Licenciado Benito Juárez", "leisure": "fitness_centre", "name": "FC Gym", "opening_hours": "Mo-Su 09:00-21:00", "sport": "exercise"}, "metro_rango": "24", "metropoli": "Tampico"}
+{"osm_id": "way/377676460", "lat": 22.2276165, "lng": -97.8488437, "tags": {"building": "yes", "leisure": "sports_centre", "name": "Polideportivo", "sport": "multi"}, "metro_rango": "24", "metropoli": "Tampico"}
+{"osm_id": "way/503247370", "lat": 22.2627597, "lng": -97.8590484, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "Real Gym Tampico"}, "metro_rango": "24", "metropoli": "Tampico"}
+{"osm_id": "way/596284649", "lat": 22.2537667, "lng": -97.8640338, "tags": {"leisure": "sports_centre", "name": "Centro deportivo Español"}, "metro_rango": "24", "metropoli": "Tampico"}
+{"osm_id": "way/1288180257", "lat": 22.2759225, "lng": -97.831599, "tags": {"leisure": "sports_centre", "name": "Unidad Deportiva de Ciudad Madero"}, "metro_rango": "24", "metropoli": "Tampico"}
+{"osm_id": "way/1300104935", "lat": 22.2220925, "lng": -97.8778997, "tags": {"capacity": "30", "leisure": "sports_centre", "name": "Unidad Deportiva Idea Morelos", "sport": "swimming"}, "metro_rango": "24", "metropoli": "Tampico"}
