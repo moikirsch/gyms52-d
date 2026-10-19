@@ -184,6 +184,10 @@ Actualizado: 19 oct 2026, 10:00 am (hora CDMX). Desde hoy el proyecto se lleva d
 6. **"Lo mejor":** Moi pidió bajar el mínimo a 2 opiniones. Cambiar el prompt de la tarea `trig_01SFyRzvrvhaVJfUNdyKewbJ` fue bloqueado por permisos; Moi lo cambia o da permiso.
 7. **"Lo mejor" (diagnóstico):** no se pierde nada. Las tareas solo encontraron reseñas suficientes en 10 de ~270 fichas revisadas con la columna nueva, y las 10 están en la base. El cuello de botella es la búsqueda web (no lee reseñas de Google). La decisión está pendiente con Moi.
 
+8. **Corridas diarias del 19 oct:** la #2 (manual, 11:08) publicó 568 fichas nuevas y actualizó miles, pero falló al guardar (choque de rebase, versión vieja del workflow). La #3 (programada, arrancó 13:40 por retraso de GitHub) ya con el arreglo: adoptó las 81 pendientes sin duplicar, actualizó 5,000 y guardó bien. Quedan 842 con `pendiente_sync` para la siguiente.
+9. **559 fichas publicadas sin fila en la base:** son lugares de Google que publicó la #2; sus datos de búsqueda se perdieron. Moi decidió dejarlas: cuando `places.py` las vuelva a encontrar, `publicar.py` las adopta por título. No mandarlas a la papelera.
+10. **Tareas programadas:** el 19 oct se agregó a todas (Gyms52, QueComer y Padel52) la regla de no esperar aprobaciones: abrir con WebFetch solo ligas que salieron en una búsqueda y saltarse lo que pida permiso.
+
 ## 8. Cómo revisar el estado rápido
 
 ```bash
