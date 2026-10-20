@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-10-20T17:57:59.238888+00:00Z",
+ "metros": {
+  "Valle de México (CDMX)": {
+   "antes": 2610,
+   "despues": 3472
+  }
+ },
+ "peticiones": 102,
+ "errores": [
+  "429 crossfit en Miguel Hidalgo, Ciudad de México: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-20T18:00:04.913603+00:00Z"
+}
