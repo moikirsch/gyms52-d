@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Publica la página "Eventos" (carreras, HYROX, CrossFit, triatlones, torneos) desde data/eventos/eventos.csv.
 
-Columnas: id,nombre,tipo,fecha_inicio,fecha_fin,ciudad,estado,sede,distancias,precio_desde,liga,fuente,actualizado_el
+Columnas: id,nombre,tipo,fecha_inicio,fecha_fin,ciudad,estado,sede,distancias,precio_desde,liga,fuente,actualizado_el[,organizador]
 - Solo muestra eventos de hoy en adelante, agrupados por mes. Agrega datos estructurados (schema.org SportsEvent).
 - La tarea programada de Claude mantiene el CSV; este script solo lo publica.
 """
@@ -14,6 +14,7 @@ import pandas as pd
 import requests
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+IMAGEN = "https://gyms52.com/wp-content/uploads/2026/10/gyms52-portada.jpg"
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 
 
@@ -56,8 +57,20 @@ def main():
                 "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                 "location": {"@type": "Place", "name": e.sede or e.ciudad,
                              "address": {"@type": "PostalAddress", "addressLocality": e.ciudad, "addressRegion": e.estado, "addressCountry": "MX"}}}
+        desc = f"{e.tipo} en {e.ciudad}" + (f", {e.sede}" if e.sede else "") + f", {fecha_txt(e.fecha_inicio, e.fecha_fin)}."
+        if e.distancias:
+            desc += f" {e.distancias}."
+        item["description"] = desc
+        item["image"] = [IMAGEN]
         if e.liga.startswith("http"):
             item["url"] = e.liga
+            oferta = {"@type": "Offer", "url": e.liga, "priceCurrency": "MXN"}
+            if e.precio_desde.isdigit():
+                oferta["price"] = e.precio_desde
+            item["offers"] = oferta
+        org = e.get("organizador", "")
+        if org:
+            item["organizer"] = {"@type": "Organization", "name": org, **({"url": e.liga} if e.liga.startswith("http") else {})}
         schema.append(item)
     if mes_actual:
         partes.append("</ul>")
