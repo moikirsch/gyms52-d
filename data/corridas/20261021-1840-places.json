@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-10-21T18:37:53.844600+00:00Z",
+ "metros": {
+  "Valle de México (CDMX)": {
+   "antes": 3472,
+   "despues": 4297
+  }
+ },
+ "peticiones": 106,
+ "errores": [
+  "429 crossfit en Tláhuac, Ciudad de México: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-21T18:40:08.574611+00:00Z"
+}
