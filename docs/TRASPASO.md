@@ -188,6 +188,7 @@ Actualizado: 19 oct 2026, 10:00 am (hora CDMX). Desde hoy el proyecto se lleva d
 8. **Corridas diarias del 19 oct:** la #2 (manual, 11:08) publicó 568 fichas nuevas y actualizó miles, pero falló al guardar (choque de rebase, versión vieja del workflow). La #3 (programada, arrancó 13:40 por retraso de GitHub) ya con el arreglo: adoptó las 81 pendientes sin duplicar, actualizó 5,000 y guardó bien. Quedan 842 con `pendiente_sync` para la siguiente.
 9. **559 fichas publicadas sin fila en la base:** son lugares de Google que publicó la #2; sus datos de búsqueda se perdieron. Moi decidió dejarlas: cuando `places.py` las vuelva a encontrar, `publicar.py` las adopta por título. No mandarlas a la papelera.
 10. **Tareas programadas:** el 19 oct se agregó a todas (Gyms52, QueComer y Padel52) la regla de no esperar aprobaciones: abrir con WebFetch solo ligas que salieron en una búsqueda y saltarse lo que pida permiso.
+11. **Ahorro de uso (21 oct):** la tarea de enriquecer corre cada 2 horas (minuto 23), con Sonnet, hasta 40 fichas por vuelta y máximo 2 búsquedas por ficha. Solo toma fichas con alguna señal web (reseñas de Google, sitio, redes, cadena o pases): ~8,400. Las ~16,000 de DENUE sin datos quedan fuera por ahora (rendían ~25%). La de eventos también usa Sonnet. El repo es público desde el 21 oct para tener minutos de Actions gratis.
 
 ## 8. Cómo revisar el estado rápido
 
