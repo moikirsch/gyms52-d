@@ -1,5 +1,7 @@
 # Gyms +52: traspaso de sesión
 
+> El repo es público desde el 21 oct 2026 (minutos gratis de GitHub Actions). Nunca subas llaves, contraseñas ni datos personales: todo eso va en los secretos de GitHub.
+
 Actualizado: 19 oct 2026, 10:00 am (hora CDMX). Desde hoy el proyecto se lleva desde la sesión session_01G1sJGBbq7a9nYj5Fhce5Dz. Úsalo para retomar el proyecto en una sesión nueva sin repetir trabajo ni romper lo que ya corre.
 
 ## 1. Qué es y cómo está hoy
@@ -29,7 +31,7 @@ Actualizado: 19 oct 2026, 10:00 am (hora CDMX). Desde hoy el proyecto se lleva d
 
 ## 2. Accesos (las credenciales nunca van al chat)
 
-- **WordPress (Pressable):** wp-admin de gyms52.com. En la sesión anterior, el Chrome de Moi conectado como **"Browser 2"** (deviceId `7fc58307-ed3e-453b-8ee6-63faad35941b`) tenía la sesión de wp-admin iniciada. Para escribir por REST desde ese navegador:
+- **WordPress (Pressable):** wp-admin de gyms52.com. El Chrome de Moi (Claude in Chrome) tiene la sesión de wp-admin iniciada. Para escribir por REST desde ese navegador:
   1. Saca el nonce con `fetch('/wp-admin/admin-ajax.php?action=rest-nonce')`.
   2. Manda el header `X-WP-Nonce`.
   - Cuidado: Claude in Chrome bloquea respuestas con pares `clave=valor` o URLs con query ("BLOCKED: Cookie/query string data"). Reemplaza `=` antes de devolver texto.
@@ -40,7 +42,6 @@ Actualizado: 19 oct 2026, 10:00 am (hora CDMX). Desde hoy el proyecto se lleva d
 - **Secretos de GitHub Actions:** `GOOGLE_PLACES_KEY`, `WP_USER`, `WP_APP_PASSWORD`. Ya están configurados. No pedirlos ni moverlos.
 - **Google Cloud (Places API New):**
   - Las cuotas diarias son bajas. Moi pidió subir "SearchTextRequest per day". Falta pedir también "GetPlaceRequest per day" (liga: https://console.cloud.google.com/apis/api/places.googleapis.com/quotas).
-  - Moi pegó una llave en el chat. Pidió dejarla así "por ahora"; no volver a mencionarlo.
 - **Site Kit de Google:** Moi lo conectó el 18 oct. Pendiente de su lado: dar de alta `sitemap_index.xml` en Search Console.
 - **gh CLI:** no está autenticado. No hay forma de ver el historial de GitHub Actions desde la sesión: solo se ve lo que cada corrida guarda en el repo. Si un proceso no deja commit, pídele a Moi que revise github.com/moikirsch/gyms52-d/actions o los correos de falla de GitHub.
 
