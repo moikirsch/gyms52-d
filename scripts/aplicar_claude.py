@@ -86,7 +86,7 @@ def main():
             revisadas += 1
             base.at[i, "claude_el"] = fecha
             nota = (r.get("nota", "") or "").strip()
-            if nota.lower().startswith("cerrado") and base.at[i, "wp_id"]:
+            if nota.lower().startswith(("cerrado", "no es fitness")) and base.at[i, "wp_id"]:
                 cerrados.append({"wp_id": base.at[i, "wp_id"], "nombre": base.at[i, "nombre"], "place_id": base.at[i, "place_id"],
                                  "motivo": nota[:300], "retirado_el": ""})
             hubo = False
