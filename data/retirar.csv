@@ -1,768 +1,785 @@
-wp_id,nombre,motivo,retirado_el
-1636,Fut 7 mundo E,fuera de la base,2026-10-18
-1844,Cancha De Futbol Rapido El Mirado,fuera de la base,2026-10-18
-1867,Fronton Cepillo Fronton,fuera de la base,2026-10-18
-1913,Campo De Futbol La Curva,fuera de la base,2026-10-18
-1947,Canchas De Futbol,fuera de la base,2026-10-18
-1950,Canchas De Futball El Yaqui,fuera de la base,2026-10-18
-1965,Cancha De Fut 5,fuera de la base,2026-10-18
-1978,Cancha Alianza Deportiva La Tolva,fuera de la base,2026-10-18
-2116,Club de Tenis Coyoacán,fuera de la base,2026-10-18
-2120,Club de Tenis Tepepan,fuera de la base,2026-10-18
-2282,Campo De Futbol San Ildefonso,fuera de la base,2026-10-18
-2490,La Red Club de Padel,fuera de la base,2026-10-18
-2593,canchas fut7,fuera de la base,2026-10-18
-2603,Futbol Rapido Nicolas Romero,fuera de la base,2026-10-18
-2613,Fronton La Hacienda,fuera de la base,2026-10-18
-2614,Fronton Squash Zavala,fuera de la base,2026-10-18
-2848,Canchas I y II de Pádel,fuera de la base,2026-10-18
-2923,Padel Pro,fuera de la base,2026-10-18
-2986,Baja Padel Club,fuera de la base,2026-10-18
-3004,Canchas Deportivas,fuera de la base,2026-10-18
-3057,Futbol Champions Tj,fuera de la base,2026-10-18
-3058,Futbol Siete Bulevard Dos Mil,fuera de la base,2026-10-18
-3065,Gimnacio Municipal de Basquet Bol Independencia Nacional,fuera de la base,2026-10-18
-3096,Gran Padel Rio,fuera de la base,2026-10-18
-3211,Tijuana Padel,fuera de la base,2026-10-18
-3262,Campo de Beis Bol Rene Ortiz Campoy,fuera de la base,2026-10-18
-3329,Campos de Futbol Santos,fuera de la base,2026-10-18
-3333,Central Soccer,fuera de la base,2026-10-18
-3337,Club Veteranos de Futbol,fuera de la base,2026-10-18
-3346,Deportivo Fronton Azteca,fuera de la base,2026-10-18
-3353,Elite Soccer,fuera de la base,2026-10-18
-3374,Galery Padel,fuera de la base,2026-10-18
-3463,Liga de Beisbol Infaltil Satelite,fuera de la base,2026-10-18
-3576,Futbol Catorce,fuera de la base,2026-10-18
-3592,Organizacionde Futbol Rapido de Barrios de Azcapotzalco,fuera de la base,2026-10-18
-3695,Mundo Padel Coapa,fuera de la base,2026-10-18
-3699,Padel Life,fuera de la base,2026-10-18
-3734,Campo de Futbol Gustvo Romero Hurtado,fuera de la base,2026-10-18
-3735,Cancha de Futobol Castillo Ledon,fuera de la base,2026-10-18
-3736,Cancha Deportiva Palo Alto,fuera de la base,2026-10-18
-3737,Canchas de Fultbool el Ranchito,fuera de la base,2026-10-18
-3759,Servicios Deportivos Champions Soccer Academy,fuera de la base,2026-10-18
-3776,Cancha Cuautepec,fuera de la base,2026-10-18
-3777,Cancha de Basquetbol Teotachtli,fuera de la base,2026-10-18
-3778,Cancha de Fut Bol Rapido Vivis,fuera de la base,2026-10-18
-3779,Cancha de Futbol la Escondida,fuera de la base,2026-10-18
-3780,Cancha de Futbol Rapido Jogabonito,fuera de la base,2026-10-18
-3781,Cancha de Tenis Acueducto,fuera de la base,2026-10-18
-3782,Cancha Monumental,fuera de la base,2026-10-18
-3783,Canchas de Futbol,fuera de la base,2026-10-18
-3817,Deportivo Fut 7 Lindavista,fuera de la base,2026-10-18
-3840,Fut 7 Olimpus,fuera de la base,2026-10-18
-3911,Liga de Futbol Grupo Tepeyac,fuera de la base,2026-10-18
-3948,Squash Fronton Hernandez,fuera de la base,2026-10-18
-3949,Star Futbol,fuera de la base,2026-10-18
-3971,Canchas de Futbol Rapido de la Esef,fuera de la base,2026-10-18
-4031,Padel Club Oriente,fuera de la base,2026-10-18
-4076,Canchas Anexas Utopia Cuauhtlicalli,fuera de la base,2026-10-18
-4077,Canchas Chupigol,fuera de la base,2026-10-18
-4078,Canchas de Futbol Insurgentes,fuera de la base,2026-10-18
-4079,Canchas de Futbol Rapido Center Gol,fuera de la base,2026-10-18
-4129,Deportivo Fut 7 Nace,fuera de la base,2026-10-18
-4156,Fronton Huitron,fuera de la base,2026-10-18
-4157,Fronton Lopez,fuera de la base,2026-10-18
-4298,Organizacion F y e Fut 7,fuera de la base,2026-10-18
-4302,Pia Monte Cancha de Fronton,fuera de la base,2026-10-18
-4352,Cancha de Futbol del Lienzo Charro,fuera de la base,2026-10-18
-4353,Canchas Deportivas Tierra Unida,fuera de la base,2026-10-18
-4373,Infinity Padel,fuera de la base,2026-10-18
-4386,Cancha de Futbool Real,fuera de la base,2026-10-18
-4388,Centro de Formacion de Futbol Olimpique,fuera de la base,2026-10-18
-4394,Fronton los Pillos,fuera de la base,2026-10-18
-4425,Cancha Desarrollo Urbano,fuera de la base,2026-10-18
-4426,Canchas de Futbol Rapido 7,fuera de la base,2026-10-18
-4427,Canchas Deportivas por Parte de la Delegacion,fuera de la base,2026-10-18
-4497,Padel On,fuera de la base,2026-10-18
-4536,Cancha de Futbol Tulyehualco,fuera de la base,2026-10-18
-4537,Canchas de Fut7 Tulyehualco,fuera de la base,2026-10-18
-4564,Fronton el Gordo,fuera de la base,2026-10-18
-4565,Fronton la Gallera,fuera de la base,2026-10-18
-4566,Fronton San Jose,fuera de la base,2026-10-18
-4567,Fronton San Juan Ixtayopan Fernando Medina,fuera de la base,2026-10-18
-4568,Fronton Tlahuac,fuera de la base,2026-10-18
-4628,7 Seven Soccer,fuera de la base,2026-10-18
-4642,Campo de Beisbol,fuera de la base,2026-10-18
-4643,Cancha Santa Ursula Xitla,fuera de la base,2026-10-18
-4644,Canchas de Futbol,fuera de la base,2026-10-18
-4645,Canchas Popular Santa Teresa,fuera de la base,2026-10-18
-4653,Club de Padel 20 X 10,fuera de la base,2026-10-18
-4677,Fronton Santana Castillo,fuera de la base,2026-10-18
-4761,Campo de Futbol,fuera de la base,2026-10-18
-4762,Campos de Futbol la Joya,fuera de la base,2026-10-18
-4763,Campos de Futbol Pokolpok,fuera de la base,2026-10-18
-4764,Campos de Futbol Sector Soccer,fuera de la base,2026-10-18
-4765,Cancha de Futbol de San Luis Tlaxialtemalco,fuera de la base,2026-10-18
-4766,Cancha de Futbol Rapido Oasis,fuera de la base,2026-10-18
-4767,Cancha de Futbol Tulyehualco,fuera de la base,2026-10-18
-4768,Canchas de Futbol la Joya,fuera de la base,2026-10-18
-4769,Canchas de Futbol Mx,fuera de la base,2026-10-18
-4778,Club de Acondiconamiento Fisico Inova Beisbol,fuera de la base,2026-10-18
-4787,Deportivo Tulyehualco Basquetbol,fuera de la base,2026-10-18
-4801,Fronton de Tulyehualco,fuera de la base,2026-10-18
-4802,Fronton Margarita,fuera de la base,2026-10-18
-4803,Futbol Soccer 7 Cuemanco,fuera de la base,2026-10-18
-4840,Liga de Futbol Fc Juarez CDMX,fuera de la base,2026-10-18
-4850,Silver Soccer,fuera de la base,2026-10-18
-4866,Canchas de Football de Escuela Tomas Alva Edison,fuera de la base,2026-10-18
-4868,Centro para Practica de Beisbol B -bat Jaulas de Bateo Portales,fuera de la base,2026-10-18
-4977,Fronton Inclan,fuera de la base,2026-10-18
-5066,Cancha de Tenis el Arbol,fuera de la base,2026-10-18
-5067,Canchas Premier Futbol 7,fuera de la base,2026-10-18
-5073,Deporte Canchas de Squash,fuera de la base,2026-10-18
-5155,Baños Publicos Estadio de Basquetbol,fuera de la base,2026-10-18
-5157,Cancha de Futbol Rapido Jopa,fuera de la base,2026-10-18
-5207,Oficina de Fut 7,fuera de la base,2026-10-18
-5274,Campo de Futbol Uruguayo la Canchita,fuera de la base,2026-10-18
-5275,Cancha 7,fuera de la base,2026-10-18
-5276,Cancha de Fronton Patria,fuera de la base,2026-10-18
-5277,Cancha de Futbol Golazo,fuera de la base,2026-10-18
-5278,Cancha de Futbol Uruguayo Mi Canchita,fuera de la base,2026-10-18
-5279,Cancha Deportiva Milenio,fuera de la base,2026-10-18
-5280,Cancha Deportiva The Padel Club,fuera de la base,2026-10-18
-5281,Cancha Esmeralda,fuera de la base,2026-10-18
-5282,Cancha Gerardo,fuera de la base,2026-10-18
-5283,Canchas Ceforfut,fuera de la base,2026-10-18
-5284,Canchas de Futball Rapido Banchetto,fuera de la base,2026-10-18
-5285,Canchas de Futbol Chovis,fuera de la base,2026-10-18
-5286,Canchas de Futbol Miura,fuera de la base,2026-10-18
-5287,Canchas de Futbol Uruguayo,fuera de la base,2026-10-18
-5288,Canchas de Futbol Volta 7,fuera de la base,2026-10-18
-5289,Canchas Deportiva de Futbol a Fiera,fuera de la base,2026-10-18
-5290,Canchas Deportivas Calcio,fuera de la base,2026-10-18
-5291,Canchas Deportivas de Voleibol,fuera de la base,2026-10-18
-5292,Canchas Deportivas Padel Park,fuera de la base,2026-10-18
-5293,Canchas Deportivas Soccer Play,fuera de la base,2026-10-18
-5294,Canchas Fut Beleño,fuera de la base,2026-10-18
-5295,Canchas Hidalgo del Valle,fuera de la base,2026-10-18
-5296,Canchas Match Point y Padel Tennis,fuera de la base,2026-10-18
-5297,Canchas Punta del Este,fuera de la base,2026-10-18
-5298,Capital Padel,fuera de la base,2026-10-18
-5343,Club de Padel,fuera de la base,2026-10-18
-5344,Club Deportivo Canchas Arsenal,fuera de la base,2026-10-18
-5382,Fer Play Soccer Club,fuera de la base,2026-10-18
-5394,Futbol 7 la Gambeta,fuera de la base,2026-10-18
-5582,Matchball Padel Indor Renta de Canchas,fuera de la base,2026-10-18
-5618,Padel Club,fuera de la base,2026-10-18
-5634,Renta de Canchas,fuera de la base,2026-10-18
-5654,Soccer Fit,fuera de la base,2026-10-18
-5691,Win Padel,fuera de la base,2026-10-18
-5805,Canchas 7 Tepojaco,fuera de la base,2026-10-18
-5876,Cancha de Futbol,fuera de la base,2026-10-18
-5877,Cancha de Futbol,fuera de la base,2026-10-18
-5878,Cancha de Futbol Ollin,fuera de la base,2026-10-18
-5879,Cancha Deportiva,fuera de la base,2026-10-18
-5880,Cancha la Talacha,fuera de la base,2026-10-18
-5881,Canchas de Bateo Boston,fuera de la base,2026-10-18
-5882,Canchas de Fut Bol Rapido,fuera de la base,2026-10-18
-5883,Canchas de Squash,fuera de la base,2026-10-18
-5884,Canchas Jed,fuera de la base,2026-10-18
-5967,Gera Fut 7,fuera de la base,2026-10-18
-6096,Mundo Carioca Canchas de Futbol,fuera de la base,2026-10-18
-6191,Unidad Deportiva Al Aire Libre con Canchas de Fubtol Unidad Deportiva Esteban Loera,fuera de la base,2026-10-18
-6235,Atlas Futbol Club,fuera de la base,2026-10-18
-6242,Campo de Fut Bol Davila,fuera de la base,2026-10-18
-6275,Soccer 13,fuera de la base,2026-10-18
-6293,Campo de Fut Bol,fuera de la base,2026-10-18
-6294,Campo de Futbol los Esquiveles,fuera de la base,2026-10-18
-6295,Campo de Futbol Pumitas,fuera de la base,2026-10-18
-6296,Campo de Futbol San Lucas Evangelista,fuera de la base,2026-10-18
-6299,Canchas de Futbol Atletigol,fuera de la base,2026-10-18
-6300,Canchas de Futbol del Comude,fuera de la base,2026-10-18
-6301,Canchas de Futbol Nou Camp,fuera de la base,2026-10-18
-6302,Canchas de Futbol San Agustin,fuera de la base,2026-10-18
-6303,Canchas de Futbot Soccers Center,fuera de la base,2026-10-18
-6383,Sport 7 Campo de Futbol,fuera de la base,2026-10-18
-6427,Campo de Futbol Alfredo Barba,fuera de la base,2026-10-18
-6431,Cancha Futbolsoccer 7,fuera de la base,2026-10-18
-6432,Cancha Roma Sport Gol,fuera de la base,2026-10-18
-6433,Canchas,fuera de la base,2026-10-18
-6434,Canchas de Fut Bol la Bombonera,fuera de la base,2026-10-18
-6435,Canchas de Futbol Halcones,fuera de la base,2026-10-18
-6436,Canchas de Futbol Hp,fuera de la base,2026-10-18
-6437,Canchas de Futbol Rapido la Furia,fuera de la base,2026-10-18
-6438,Canchas Peluma 7,fuera de la base,2026-10-18
-6515,Rex Soccer,fuera de la base,2026-10-18
-6552,Campo de Futbol Mi Ranchito,fuera de la base,2026-10-18
-6554,Campos de Futbol Casa Ejidal,fuera de la base,2026-10-18
-6555,Cancha de Futbo 7,fuera de la base,2026-10-18
-6556,Cancha de Futbol el Carril,fuera de la base,2026-10-18
-6557,Cancha de Futbol el Roble,fuera de la base,2026-10-18
-6558,Cancha de Futbol San Andres,fuera de la base,2026-10-18
-6559,Canchas de Futbol Tnl Center,fuera de la base,2026-10-18
-6581,Futbol Rapido la Hacienda,fuera de la base,2026-10-18
-6704,Campo de Fut Bol,fuera de la base,2026-10-18
-6705,Campo de Futbol,fuera de la base,2026-10-18
-6706,Cancha de Futbol Speedball,fuera de la base,2026-10-18
-6707,Cancha Deportiva,fuera de la base,2026-10-18
-6708,Cancha Deportiva Sportia,fuera de la base,2026-10-18
-6709,Canchas de Futbol Rapido Soccer Gdl,fuera de la base,2026-10-18
-6710,Canchas la Piramide,fuera de la base,2026-10-18
-6851,Jp Soccer Club,fuera de la base,2026-10-18
-6883,Padel & Pikle Gm Bugambilias,fuera de la base,2026-10-18
-6884,Padel Sport,fuera de la base,2026-10-18
-6915,Slice Padel Club,fuera de la base,2026-10-18
-6923,Soccer Park,fuera de la base,2026-10-18
-6984,Cancha de Futbol Rapido Eriel,fuera de la base,2026-10-18
-6985,Cancha Lago,fuera de la base,2026-10-18
-6986,Canchas de Futbol,fuera de la base,2026-10-18
-7031,Cancha de Futbol Rapido Estrella Azul,fuera de la base,2026-10-18
-7032,Cancha de Futboll Sin Nombe,fuera de la base,2026-10-18
-7048,Administracion del Campo de Fut 7 Premier Villas,fuera de la base,2026-10-18
-7066,Canchas Premier,fuera de la base,2026-10-18
-7190,Cancha de Bateo,fuera de la base,2026-10-18
-7198,Club Padel Coacalco,fuera de la base,2026-10-18
-7227,Renta de Canchas de Tenis,fuera de la base,2026-10-18
-7262,Campo de Futbol Alcafores,fuera de la base,2026-10-18
-7263,Campo de Futbol Amanal,fuera de la base,2026-10-18
-7264,Campo de Futbol Atlantico,fuera de la base,2026-10-18
-7265,Campo de Futbol Don Palemon,fuera de la base,2026-10-18
-7266,Campo de Futbol Durazno,fuera de la base,2026-10-18
-7267,Campo de Futbol el Alamo,fuera de la base,2026-10-18
-7268,Campo de Futbol Juanito 70,fuera de la base,2026-10-18
-7269,Campo de Futbol Juarez,fuera de la base,2026-10-18
-7270,Campo de Futbol la Piedra,fuera de la base,2026-10-18
-7271,Campo de Futbol la Trinidad,fuera de la base,2026-10-18
-7272,Campo de Futbol Macolo,fuera de la base,2026-10-18
-7273,Campo de Futbol Premier,fuera de la base,2026-10-18
-7274,Campo Deportivo Fut 7 Zarco,fuera de la base,2026-10-18
-7279,Campo Municipal de Beisbol,fuera de la base,2026-10-18
-7284,Campos de Futbol 7,fuera de la base,2026-10-18
-7286,Canchas la Capilla,fuera de la base,2026-10-18
-7287,Canchas Sport Green,fuera de la base,2026-10-18
-7293,D Jaime Campo de Futbol,fuera de la base,2026-10-18
-7336,Campo de Futbol Rulo,fuera de la base,2026-10-18
-7338,Cancha de Futbol Rapido Jc,fuera de la base,2026-10-18
-7339,Cancha de Futbol San Sebastian,fuera de la base,2026-10-18
-7364,Fronton el Chiquis,fuera de la base,2026-10-18
-7406,Miraflores Soccer Team,fuera de la base,2026-10-18
-7442,Cancha de Futbol 7 el Chino,fuera de la base,2026-10-18
-7443,Canchas de Futbol Nueva Era,fuera de la base,2026-10-18
-7473,Liga de Futbol Presidentes,fuera de la base,2026-10-18
-7501,Cancha de Fut 7 San Pablo,fuera de la base,2026-10-18
-7502,Cancha de Futbol Rapido Carpinteros,fuera de la base,2026-10-18
-7503,Cancha de Futbol Rapido Chocopro,fuera de la base,2026-10-18
-7504,Cancha de Futbol Rapido Jaguar,fuera de la base,2026-10-18
-7505,Cancha de Futbool Rapido la Cueva,fuera de la base,2026-10-18
-7506,Cancha de Voleibol Felipe Berriozabal,fuera de la base,2026-10-18
-7507,Cancha Deportiva de Futbol,fuera de la base,2026-10-18
-7508,Cancha Futbol 7 la Llorona,fuera de la base,2026-10-18
-7509,Cancha Monumental San Pablo,fuera de la base,2026-10-18
-7510,Canchas Carpinteros Arenal,fuera de la base,2026-10-18
-7511,Canchas de Futbol 4t,fuera de la base,2026-10-18
-7512,Canchas de Futbol el Refugio,fuera de la base,2026-10-18
-7513,Canchas de Futbol Fut7 Nativitas,fuera de la base,2026-10-18
-7514,Canchas de Futbol Gool 7,fuera de la base,2026-10-18
-7515,Canchas de Futbol Imperial,fuera de la base,2026-10-18
-7516,Canchas de Futbol la Nave,fuera de la base,2026-10-18
-7517,Canchas de Futbol Liga de Futbol 6 Juares,fuera de la base,2026-10-18
-7518,Canchas de Futbol Loreto,fuera de la base,2026-10-18
-7519,Canchas de Futbol Neyra,fuera de la base,2026-10-18
-7520,Canchas de Futbol Rapido Girasol,fuera de la base,2026-10-18
-7521,Canchas de Futbol Rapido la Muni,fuera de la base,2026-10-18
-7522,Canchas de Futbol San Juan,fuera de la base,2026-10-18
-7523,Canchas de Futboll,fuera de la base,2026-10-18
-7557,Fronton Corregidora,fuera de la base,2026-10-18
-7558,Fronton Mictlan,fuera de la base,2026-10-18
-7643,Renta de Canchas de Futbol la Joya,fuera de la base,2026-10-18
-7700,Campo de Futbol Elite Soccer Cristiana,fuera de la base,2026-10-18
-7703,Cancha de Basketball los Zurdos,fuera de la base,2026-10-18
-7704,Cancha de Fut 7 Zuach,fuera de la base,2026-10-18
-7705,Cancha de Futbol 40,fuera de la base,2026-10-18
-7706,Cancha de Futbol 7 Escorpion,fuera de la base,2026-10-18
-7707,Cancha de Futbol Fut Center Ecatepec,fuera de la base,2026-10-18
-7708,Cancha de Futbol Liga Premium,fuera de la base,2026-10-18
-7709,Cancha de Futbol Rapido,fuera de la base,2026-10-18
-7710,Cancha de Futbol Seven Colors,fuera de la base,2026-10-18
-7711,Cancha Defutbol Rapido Zapotecas,fuera de la base,2026-10-18
-7712,Cancha Futbol,fuera de la base,2026-10-18
-7713,Cancha Futbol Club 7r,fuera de la base,2026-10-18
-7714,Cancha Soccer 7 Tellez,fuera de la base,2026-10-18
-7715,Canchas de Fut 7 Cesr Jr,fuera de la base,2026-10-18
-7716,Canchas de Futbol,fuera de la base,2026-10-18
-7717,Canchas de Futbol Champions,fuera de la base,2026-10-18
-7718,Canchas los Pinos,fuera de la base,2026-10-18
-7760,Centro de Formacion de Futbol Soccer Nido de Aguila,fuera de la base,2026-10-18
-7766,Champions las Torres 4ever Soccer,fuera de la base,2026-10-18
-7797,Deportivo de Futbol Diablito,fuera de la base,2026-10-18
-7843,Fronton las Torres,fuera de la base,2026-10-18
-7844,Fronton Santo Tomas Chiconautla,fuera de la base,2026-10-18
-7846,Fut 7 San Pedro,fuera de la base,2026-10-18
-8002,Liga de Futbol Deportivo Citlaltepetl,fuera de la base,2026-10-18
-8103,Cancha de Futbol el Molino,fuera de la base,2026-10-18
-8104,Cancha de Futbol Guerreros,fuera de la base,2026-10-18
-8105,Cancha de Futbol la Era,fuera de la base,2026-10-18
-8106,Canchas de Basquetbol Publica,fuera de la base,2026-10-18
-8107,Canchas de Futbol Juvenil e Infantil,fuera de la base,2026-10-18
-8108,Canchas de Futbol Soccer Garden,fuera de la base,2026-10-18
-8109,Canchas de Futboll,fuera de la base,2026-10-18
-8110,Canchas el Gran Soccer Siete,fuera de la base,2026-10-18
-8149,Fronton Municipal Ixtapaluca,fuera de la base,2026-10-18
-8226,Cancha Comunitaria Fronton,fuera de la base,2026-10-18
-8227,Cancha de Futbol Rapido el Clasico 7,fuera de la base,2026-10-18
-8234,Campo de Futbol Fut 7,fuera de la base,2026-10-18
-8269,Campo de Futbol Ejido de Santiago Ahuizotla,fuera de la base,2026-10-18
-8271,Cancha de Futbol la Barquita,fuera de la base,2026-10-18
-8272,Cancha de Futbol Rapido Indoor,fuera de la base,2026-10-18
-8273,Cancha de Futbol Rapido Tepatlaxco,fuera de la base,2026-10-18
-8276,Centro Deportivo Fut 7 Rio Hondo,fuera de la base,2026-10-18
-8353,Liga de Beisbol Ac Moises Goñi,fuera de la base,2026-10-18
-8437,Cancha de Fut -7 Alfa Like,fuera de la base,2026-10-18
-8438,Cancha de Futbol Renovacion,fuera de la base,2026-10-18
-8439,Cancha Usos Multiples Agua Azul,fuera de la base,2026-10-18
-8440,Canchas de Fut Bol Rapido las Palmas,fuera de la base,2026-10-18
-8441,Canchas de Futbol Libertad,fuera de la base,2026-10-18
-8442,Canchas de Futbol Rapido Cefor Neza,fuera de la base,2026-10-18
-8443,Canchas de Futbol Rapido las Gemelas Neza 86,fuera de la base,2026-10-18
-8444,Canchas de Futbol Rapido las Gemelas Neza 86,fuera de la base,2026-10-18
-8445,Canchas Deportivas Lideras,fuera de la base,2026-10-18
-8446,Canchas Deportivas Sandy,fuera de la base,2026-10-18
-8447,Canchas Rapigol,fuera de la base,2026-10-18
-8646,Soccer Street 7,fuera de la base,2026-10-18
-8685,Cancha de Soccer 7,fuera de la base,2026-10-18
-8707,Campo de Futbol,fuera de la base,2026-10-18
-8708,Campo de Futbol 7 la Hacienda,fuera de la base,2026-10-18
-8709,Campo de Futbol 7 San Ildefonso,fuera de la base,2026-10-18
-8710,Campo de Futbol Aguilas de Progreso Industrial,fuera de la base,2026-10-18
-8711,Campo de Futbol Chivas,fuera de la base,2026-10-18
-8712,Campo de Futbol Soccer 7 la Chiva,fuera de la base,2026-10-18
-8714,Cancha de Futbool 7 22 de Febrero,fuera de la base,2026-10-18
-8722,Deportivo Juares Fc Campo de Futbol,fuera de la base,2026-10-18
-8730,Fronton Zavala Transfi,fuera de la base,2026-10-18
-8779,Liga de Futbol Azquil,fuera de la base,2026-10-18
-8796,Asociacion de el Deportivo de Beisbol de los Reyes la Paz,fuera de la base,2026-10-18
-8799,Cancha Bimbo Start,fuera de la base,2026-10-18
-8800,Cancha Comunitaria,fuera de la base,2026-10-18
-8801,Canchas de Futbol Rapido Varsa,fuera de la base,2026-10-18
-8811,Fronton el Cristo,fuera de la base,2026-10-18
-8812,Fronton Valverdes,fuera de la base,2026-10-18
-8864,Cancha de Fronton,fuera de la base,2026-10-18
-8872,Administracion de Canchas de Futball Rapido 7 Fragool,fuera de la base,2026-10-18
-8882,Campo Fut 7,fuera de la base,2026-10-18
-8883,Cancha de Futbol,fuera de la base,2026-10-18
-8884,Cancha de Futbol Rapido New Camp,fuera de la base,2026-10-18
-8885,Cancha de Futbool Rapido la Jaula,fuera de la base,2026-10-18
-8886,Cancha de Tenis,fuera de la base,2026-10-18
-8887,Canchas de Futbol Rapido,fuera de la base,2026-10-18
-8888,Canchas Iguanas Squash,fuera de la base,2026-10-18
-8889,Canchas Squash Tecamac,fuera de la base,2026-10-18
-8918,Fut 7 Santa Lucia,fuera de la base,2026-10-18
-8934,Go Padel Club,fuera de la base,2026-10-18
-8984,Campo de Futbol el Camello,fuera de la base,2026-10-18
-8985,Campo de Futbol Rancho Camper,fuera de la base,2026-10-18
-8986,Campo Fut 7,fuera de la base,2026-10-18
-8987,Campos de Futbol Centenario,fuera de la base,2026-10-18
-9016,Campo de Fut Bol Andy,fuera de la base,2026-10-18
-9017,Campo de Futbol las Animas,fuera de la base,2026-10-18
-9020,Cancha de Futbol 7,fuera de la base,2026-10-18
-9021,Cancha Footbool 7,fuera de la base,2026-10-18
-9029,Fut 7 Elite,fuera de la base,2026-10-18
-9045,Campo de Futbol la Noria,fuera de la base,2026-10-18
-9046,Cancha Boyeros,fuera de la base,2026-10-18
-9047,Cancha de Futbol 7 Cuautlalpan,fuera de la base,2026-10-18
-9048,Cancha de Futbol Boca Junior,fuera de la base,2026-10-18
-9049,Cancha de Futbol Fut Azteca,fuera de la base,2026-10-18
-9050,Canchas Asturias,fuera de la base,2026-10-18
-9051,Canchas de Futbol Rapido,fuera de la base,2026-10-18
-9052,Canchas de Futbol Rapido y Squash,fuera de la base,2026-10-18
-9053,Canchas San Borja,fuera de la base,2026-10-18
-9061,Deportivo San Felipe Fronton,fuera de la base,2026-10-18
-9067,Fronton Arriola,fuera de la base,2026-10-18
-9068,Fronton Squash Vega Sport,fuera de la base,2026-10-18
-9094,Mundo Soccer,fuera de la base,2026-10-18
-9113,Cancha de Futbol Santiago Bernabeu,fuera de la base,2026-10-18
-9136,Campo de Fut Bol el Polvorin,fuera de la base,2026-10-18
-9137,Cancha Dentro del Deportivo Tlalnepantla,fuera de la base,2026-10-18
-9138,Canchas de Futbol Soccer Tlalnepantla,fuera de la base,2026-10-18
-9219,Liga de Futbol Caracoles,fuera de la base,2026-10-18
-9234,Planet Gol Cancha de Fub Bol,fuera de la base,2026-10-18
-9278,Club de Tenis Wimbledon,fuera de la base,2026-10-18
-9302,Liga de Futbol Ctm San Pablo,fuera de la base,2026-10-18
-9328,Campo de Futbol San Juan,fuera de la base,2026-10-18
-9340,Deportivo Lomas de Cartagena Imcufidet. Canchas de Futbool Rapido,fuera de la base,2026-10-18
-9354,Futbol 9,fuera de la base,2026-10-18
-9419,Campo de Beisbol,fuera de la base,2026-10-18
-9420,Campo de Futbol Ramos,fuera de la base,2026-10-18
-9421,Cancha 16 San Juan,fuera de la base,2026-10-18
-9422,Cancha de Futbol Rapida Torres,fuera de la base,2026-10-18
-9454,La Cancha del 10,fuera de la base,2026-10-18
-9456,Progigol Zumpango Cancha N 7,fuera de la base,2026-10-18
-9464,Ullhama Canchas de Futbol,fuera de la base,2026-10-18
-9480,Campo de Futbol,fuera de la base,2026-10-18
-9481,Campo de Futbol Gualajara,fuera de la base,2026-10-18
-9482,Campo de Futbol Joyas 1,fuera de la base,2026-10-18
-9483,Campo de Futbol Mariano Lozano,fuera de la base,2026-10-18
-9484,Campo de Futbol Nowcamp con Estacionamiento,fuera de la base,2026-10-18
-9485,Campo de Futbol Tecolotes 4,fuera de la base,2026-10-18
-9502,Cancha de Futbol 7,fuera de la base,2026-10-18
-9503,Cancha de Futbol Victoria Fut 7,fuera de la base,2026-10-18
-9504,Canchas de Futbol Atlas,fuera de la base,2026-10-18
-9505,Canchas de Futbool Pecatos Soccer 7,fuera de la base,2026-10-18
-9533,Fronton y Squash Izcalli,fuera de la base,2026-10-18
-9535,Fut 7,fuera de la base,2026-10-18
-9575,Liga de Futbol Interestatal,fuera de la base,2026-10-18
-9619,Canchas de Futbol Campo Verde,fuera de la base,2026-10-18
-9620,Canchas de Futbol Premier,fuera de la base,2026-10-18
-9621,Canchas Deportiva,fuera de la base,2026-10-18
-9622,Canchas Puente Blanco,fuera de la base,2026-10-18
-9644,Fronton Pacos,fuera de la base,2026-10-18
-9742,Campo de Futbol Club Cuervos,fuera de la base,2026-10-18
-9743,Campo de Futbol Marfil,fuera de la base,2026-10-18
-9744,Cancha de Fut Bol Rapida Golondrinas,fuera de la base,2026-10-18
-9745,Cancha de Fut Bol Rapido,fuera de la base,2026-10-18
-9746,Cancha de Futbol 7 Futregio,fuera de la base,2026-10-18
-9747,Cancha de Futbol Apodaca,fuera de la base,2026-10-18
-9748,Cancha de Futbol Nuevo Amanecer 2,fuera de la base,2026-10-18
-9749,Cancha de Futbol Rapido Ebanos 4 -sector,fuera de la base,2026-10-18
-9750,Cancha de Futboll Soccer,fuera de la base,2026-10-18
-9751,Canchas de Futbol Rapido,fuera de la base,2026-10-18
-9752,Canchas de Futbol Rapido Mezquital,fuera de la base,2026-10-18
-9753,Canchas Deportivas Municipales,fuera de la base,2026-10-18
-9760,Club de Futbol,fuera de la base,2026-10-18
-9761,Club de Futbol Cachorros Enramada,fuera de la base,2026-10-18
-9855,Soccer Club Futbol 7 Apodaca,fuera de la base,2026-10-18
-9928,Padel Park,fuera de la base,2026-10-18
-9929,Parque de Beisbol del Acuatico,fuera de la base,2026-10-18
-9950,Cancha de Beisbol,fuera de la base,2026-10-18
-9986,Padel Camp,fuera de la base,2026-10-18
-9987,Padel Zone,fuera de la base,2026-10-18
-10073,Padelaruim Club de Padel,fuera de la base,2026-10-18
-10104,Campo de Futbol,fuera de la base,2026-10-18
-10161,Familia de Beisbol y Cultura,fuera de la base,2026-10-18
-10219,Liga Pequeña de Beisbol Nueva Libertad,fuera de la base,2026-10-18
-10224,Molinete Loiga Soccer,fuera de la base,2026-10-18
-10235,Padel 10 20 Renta de Canchas,fuera de la base,2026-10-18
-10302,Canchas la Rabona Futbol 7,fuera de la base,2026-10-18
-10340,Parque de Beisbol,fuera de la base,2026-10-18
-10361,Total Soccer,fuera de la base,2026-10-18
-10418,Campo de Fut Bol,fuera de la base,2026-10-18
-10420,Canchas de Futbol,fuera de la base,2026-10-18
-10450,Deportivo Padel,fuera de la base,2026-10-18
-10461,Fit Soccer,fuera de la base,2026-10-18
-10463,Fon Soccer,fuera de la base,2026-10-18
-10467,Fronton Venustiano Carranza,fuera de la base,2026-10-18
-10558,Kalcho Cumbres Cancha de Fut Boll,fuera de la base,2026-10-18
-10599,Padel Central,fuera de la base,2026-10-18
-10600,Padel Club,fuera de la base,2026-10-18
-10601,Padel Club Santa Maria,fuera de la base,2026-10-18
-10602,Padel G8,fuera de la base,2026-10-18
-10603,Padel Go Sieteseis,fuera de la base,2026-10-18
-10604,Padel Nation,fuera de la base,2026-10-18
-10605,Padel Park Indoor,fuera de la base,2026-10-18
-10606,Padel Point Sports,fuera de la base,2026-10-18
-10607,Padel Siete Sei,fuera de la base,2026-10-18
-10624,Power Padel,fuera de la base,2026-10-18
-10636,Republica Padel,fuera de la base,2026-10-18
-10643,Santo Padel,fuera de la base,2026-10-18
-10644,Sas Soccer,fuera de la base,2026-10-18
-10717,Valle Futbol Club,fuera de la base,2026-10-18
-10752,Centro de Formacion Santo Domingo Futbol 7,fuera de la base,2026-10-18
-10760,Club de Futbol Alemania,fuera de la base,2026-10-18
-10818,Ob3 Canchas Eeportivas,fuera de la base,2026-10-18
-10840,Titanes Soccer,fuera de la base,2026-10-18
-10852,Zona Padel,fuera de la base,2026-10-18
-10878,Liga de Futbol Municipal,fuera de la base,2026-10-18
-10879,Liga de Futbol Rincon del Poniente,fuera de la base,2026-10-18
-10880,Liga Pequeña de Beisbol de Santa Catarina,fuera de la base,2026-10-18
-10888,Republica Verde Canchas Deportivas,fuera de la base,2026-10-18
-10892,Star Soccer,fuera de la base,2026-10-18
-10900,Canchas de Futbol de Santa Maria Nenetzintla,fuera de la base,2026-10-18
-10920,Cancha de Futbol Gicerv 2000,fuera de la base,2026-10-18
-10947,Campo de Futbol la Monumental,fuera de la base,2026-10-18
-10948,Campo de Futbol Solares,fuera de la base,2026-10-18
-10950,Cancha de Futbol,fuera de la base,2026-10-18
-10951,Canchas Deportivas de la Colonia los Angeles,fuera de la base,2026-10-18
-10962,Futbol Sala,fuera de la base,2026-10-18
-10994,Cancha Deportiva Olimpo,fuera de la base,2026-10-18
-10995,Canchas de Futbol,fuera de la base,2026-10-18
-10996,Canchas Futbol Rapido Cuautlancingo,fuera de la base,2026-10-18
-11003,Fut 7 la Pista Campo,fuera de la base,2026-10-18
-11038,Cancha de Futbol Futsal,fuera de la base,2026-10-18
-11062,Salon de Futbol Rapido Zeus,fuera de la base,2026-10-18
-11125,Cancha de Futbol Comunitaria,fuera de la base,2026-10-18
-11126,Cancha de Futbol Villa Futbol,fuera de la base,2026-10-18
-11127,Canchas de Futbol 7,fuera de la base,2026-10-18
-11128,Canchas de Futbol de Bosques de San Sebastian,fuera de la base,2026-10-18
-11129,Canchas de Spark Padel,fuera de la base,2026-10-18
-11130,Canchas Deportivas,fuera de la base,2026-10-18
-11131,Canchas Deportivas de Padel,fuera de la base,2026-10-18
-11171,Deportivo Canchas San Ramon Tercera Seccion,fuera de la base,2026-10-18
-11172,Deportivo de Futbol Rapido,fuera de la base,2026-10-18
-11327,Green 7 Soccer,fuera de la base,2026-10-18
-11397,La Canchita de Fut 7,fuera de la base,2026-10-18
-11405,Liga de Futbol de Don Carlos,fuera de la base,2026-10-18
-11451,Por Tres Padel Club,fuera de la base,2026-10-18
-11566,Air Padel Club,fuera de la base,2026-10-18
-11574,Brazilian Soccer,fuera de la base,2026-10-18
-11575,Cancha Deportiva Punto 7,fuera de la base,2026-10-18
-11576,Canchas de Futbol,fuera de la base,2026-10-18
-11577,Canchas de Futbol Aca,fuera de la base,2026-10-18
-11578,Canchas de Futbool,fuera de la base,2026-10-18
-11626,Padel Cumbres,fuera de la base,2026-10-18
-11627,Padel State,fuera de la base,2026-10-18
-11635,Promaster Padel,fuera de la base,2026-10-18
-11637,Punta 7 Futbol,fuera de la base,2026-10-18
-11654,Unidad Deportiva de la Liga de Futbol de Puebla,fuera de la base,2026-10-18
-11666,Campo de Futbol Club Puebla,fuera de la base,2026-10-18
-11668,Cerritos Soccer Club,fuera de la base,2026-10-18
-11692,La Recta Fut 7,fuera de la base,2026-10-18
-11696,Padel Court,fuera de la base,2026-10-18
-11703,The Soccer Fatory,fuera de la base,2026-10-18
-11709,Cancha de Futbolito Rapido Tepatlaxco,fuera de la base,2026-10-18
-11719,Cancha de Futbol Rapido Koliseo,fuera de la base,2026-10-18
-11720,Cancha del Rio Santa Barbara,fuera de la base,2026-10-18
-11841,Backspin Padel,fuera de la base,2026-10-18
-11850,Campo de Futbol la Huertita de Jurica,fuera de la base,2026-10-18
-11853,Cancha de Fut Bol Punto Verde,fuera de la base,2026-10-18
-11854,Cancha de Futbol,fuera de la base,2026-10-18
-11855,Cancha del Centro,fuera de la base,2026-10-18
-11856,Cancha Futbol Sin Limite,fuera de la base,2026-10-18
-11857,Cancha Squash Italia,fuera de la base,2026-10-18
-11919,Futbol Capital,fuera de la base,2026-10-18
-11962,Glass Cube Padel Center,fuera de la base,2026-10-18
-11968,Golf Zona Centro Ac,fuera de la base,2026-10-18
-12028,Olimpus Futbol Queretaro,fuera de la base,2026-10-18
-12089,The Club Padel And Cademy,fuera de la base,2026-10-18
-12119,Cancha de Futbol Rapido Olimpo San Pedro,fuera de la base,2026-10-18
-12120,Cancha Saraperos de Tlaxcala,fuera de la base,2026-10-18
-12127,Funny Soccer Cancha de Futbol,fuera de la base,2026-10-18
-12196,Oficina de Comision de Mantenimiento de la Cancha de Futfol las Antenas,fuera de la base,2026-10-18
-12209,Cancha de Futbol Fut Ortiz,fuera de la base,2026-10-18
-3654,Estacionamiento Auxiliar Olimpus Gym,fuera de la base,2026-10-18
-1728,Sport City Carso,fuera de la base,2026-10-20
-2022,Smart Fit,fuera de la base,2026-10-20
-2200,Barras Plan Sexenal,fuera de la base,2026-10-20
-5137,Sports World Anbr / tabr / ra,fuera de la base,2026-10-20
-19675,Orangetheory Fitness MEX002 Polanco,fuera de la base,2026-10-20
-20912,Amigos Gym,fuera de la base,2026-10-20
-21401,Fitintegra Cuemanco,fuera de la base,2026-10-20
-26135,Flow Moovement Polanco,fuera de la base,2026-10-20
-19795,Medusaxfit,fuera de la base,2026-10-21
-19823,Anahata Estudio de Danza y Yoga Suc Colosio,fuera de la base,2026-10-21
-19824,Anahata Estudio de Danza y Yoga Suc Gremial,fuera de la base,2026-10-21
-19832,ELITE Athletics Training Center,fuera de la base,2026-10-21
-19865,Valhalla Strength and Conditioning,fuera de la base,2026-10-21
-19879,The Barre AGS,fuera de la base,2026-10-21
-19881,Anahata Estudio de Danza y Yoga Suc Paseos,fuera de la base,2026-10-21
-19894,ULTRAGYM MISIÓN ENSENADA,fuera de la base,2026-10-21
-19910,Reneikii centro de meditación,fuera de la base,2026-10-21
-19911,SportKines Mexicali,fuera de la base,2026-10-21
-19913,ULTRAGYM INDEPENDENCIA,fuera de la base,2026-10-21
-19914,ULTRAGYM SENDERO MEXICALI,fuera de la base,2026-10-21
-19915,ULTRAGYM VILLAS DEL REY,fuera de la base,2026-10-21
-19916,ULTRAGYM VILLAS VERDE,fuera de la base,2026-10-21
-19921,ULTRAGYM PABELLÓN ROSARITO,fuera de la base,2026-10-21
-19949,SmartFit Cucapah FR,fuera de la base,2026-10-21
-19950,SportKines Tijuana,fuera de la base,2026-10-21
-19953,ULTRAGYM CARROUSEL,fuera de la base,2026-10-21
-19954,ULTRAGYM LOMA BONITA,fuera de la base,2026-10-21
-19955,ULTRAGYM PAPALOTE,fuera de la base,2026-10-21
-19956,ULTRAGYM PASEO 2000,fuera de la base,2026-10-21
-19957,ULTRAGYM SANTA FÉ,fuera de la base,2026-10-21
-20008,Anytime Fitness Tapachula,fuera de la base,2026-10-21
-20015,BootCamp Academy,fuera de la base,2026-10-21
-20029,Anytime Fitness Industrial Bermudez 8113,fuera de la base,2026-10-21
-20031,SportKines Ciudad Juárez,fuera de la base,2026-10-21
-20032,Skyline Fit & Ride Concordia,fuera de la base,2026-10-21
-20054,Nira Yoga,fuera de la base,2026-10-21
-20068,Tres21 Bootcamp,fuera de la base,2026-10-21
-20069,ULTRAGYM CHIHUAHUA,fuera de la base,2026-10-21
-20127,BLACKFIT SAN ISIDRO,fuera de la base,2026-10-21
-20129,Campeones del box MX,fuera de la base,2026-10-21
-20287,P 365 CENTRO DE ENTRENAMIENTO FUNCIONAL,fuera de la base,2026-10-21
-20341,GYMMX,fuera de la base,2026-10-21
-20348,Santuario Boutique,fuera de la base,2026-10-21
-20362,Eunoia,fuera de la base,2026-10-21
-20397,Silver Sport Center Matriz,fuera de la base,2026-10-21
-20507,ARTE TOI,fuera de la base,2026-10-21
-20509,BLoft,fuera de la base,2026-10-21
-20514,Dance & Fit,fuera de la base,2026-10-21
-20561,La Jaula Training Center,fuera de la base,2026-10-21
-20671,Inferno Hot Room,fuera de la base,2026-10-21
-20696,Mov Mov Wellnes House,fuera de la base,2026-10-21
-20753,Ungravity Aerial Dance,fuera de la base,2026-10-21
-20761,Academia Tenista,fuera de la base,2026-10-21
-20797,La Vieja Guardia Aragón,fuera de la base,2026-10-21
-20848,Club Judokata México,fuera de la base,2026-10-21
-20855,GIMNASIO FUNCIONAL FUN,fuera de la base,2026-10-21
-20875,Crack’s Gym,fuera de la base,2026-10-21
-20983,Krav Maga Global (KMG),fuera de la base,2026-10-21
-21009,Ollinco CrossFitness,fuera de la base,2026-10-21
-21064,YOLLIN. ARTS-FITNESS-WELLNESS,fuera de la base,2026-10-21
-21070,KI NO SEKAI,fuera de la base,2026-10-21
-21249,OKÀN,fuera de la base,2026-10-21
-21300,Smart Fit Patio Revolución,fuera de la base,2026-10-21
-21301,SmartBeat Electrofitness San Pedro de los Pinos,fuera de la base,2026-10-21
-21337,Ungravity Aerial Dance Cuauhtémoc,fuera de la base,2026-10-21
-21369,Nocaut: Functional Studio,fuera de la base,2026-10-21
-21399,El Club ST,fuera de la base,2026-10-21
-21491,Animal Move,fuera de la base,2026-10-21
-21511,Helios Artes Escénico Aéreas,fuera de la base,2026-10-21
-21551,Sport Gym Club,fuera de la base,2026-10-21
-21595,Gorillaz Cross Training,fuera de la base,2026-10-21
-21603,IFIT GYM,fuera de la base,2026-10-21
-21628,ERATO GYM,fuera de la base,2026-10-21
-21633,Evvo Force,fuera de la base,2026-10-21
-21662,Republica Training,fuera de la base,2026-10-21
-21678,ULTRAGYM SALTILLO,fuera de la base,2026-10-21
-21712,Be Human,fuera de la base,2026-10-21
-21713,ALTAFIT,fuera de la base,2026-10-21
-21731,ALTAFIT VILLA DE JUAREZ,fuera de la base,2026-10-21
-21732,CLQFIT,fuera de la base,2026-10-21
-21739,Energym,fuera de la base,2026-10-21
-21740,Evolution Center,fuera de la base,2026-10-21
-21741,Evolution Center Sucursal El Eden,fuera de la base,2026-10-21
-21742,G Fitness MX,fuera de la base,2026-10-21
-21744,Lion Training Center,fuera de la base,2026-10-21
-21745,Lion Training Center Suc Lomas,fuera de la base,2026-10-21
-21746,M/W Fitness,fuera de la base,2026-10-21
-21752,Revo Cycling,fuera de la base,2026-10-21
-21757,Voga Boxing Club Gómez Palacio,fuera de la base,2026-10-21
-21767,BLACKFIT CLAVERIA,fuera de la base,2026-10-21
-21994,CENARU STUDIO,fuera de la base,2026-10-21
-21995,D.N.T,fuera de la base,2026-10-21
-22049,Love to Fit Arboledas,fuera de la base,2026-10-21
-22176,RideUp Cycling Studio,fuera de la base,2026-10-21
-22280,BodEvolve120,fuera de la base,2026-10-21
-22448,Calmecac Studio,fuera de la base,2026-10-21
-22488,CROSSFIT FIT STRONG,fuera de la base,2026-10-21
-22542,XTREME GYM,fuera de la base,2026-10-21
-22548,3G Functional Training,fuera de la base,2026-10-21
-22569,Love to Fit Satélite,fuera de la base,2026-10-21
-22581,SOULÉ PILATES,fuera de la base,2026-10-21
-22688,ARMY FIT 50,fuera de la base,2026-10-21
-22729,Shalom Centro Quiropráctico Toluca,fuera de la base,2026-10-21
-22761,Smart Fit Patio Chalco,fuera de la base,2026-10-21
-22785,Dale Play,fuera de la base,2026-10-21
-22819,BodyLab Gym,fuera de la base,2026-10-21
-22846,Live Fit San Miguel,fuera de la base,2026-10-21
-22858,Spartan Life Magno,fuera de la base,2026-10-21
-22859,Spartan Life Murales,fuera de la base,2026-10-21
-22905,Maverick Zona Sur (Padelista),fuera de la base,2026-10-21
-22951,The LAB Fitness & Health,fuera de la base,2026-10-21
-22960,Elite Fitness Acapulco,fuera de la base,2026-10-21
-22990,CENTERFIT CENTRO,fuera de la base,2026-10-21
-22991,CENTERFIT REVOLUCIÓN,fuera de la base,2026-10-21
-22993,Demom Crossfit,fuera de la base,2026-10-21
-23005,Spartan Crossfit,fuera de la base,2026-10-21
-23042,Anytime Fitness Estadio GDL,fuera de la base,2026-10-21
-23137,SportKines Guadalajara Santa Cruz,fuera de la base,2026-10-21
-23138,SportKines Guevara,fuera de la base,2026-10-21
-23151,Ufit Athletic,fuera de la base,2026-10-21
-23277,CrossBox Mateos,fuera de la base,2026-10-21
-23506,GLOBAL GYM,fuera de la base,2026-10-21
-23536,Center Fit Sucursal Salida a Charo,fuera de la base,2026-10-21
-23559,FIT CLUB SUC. CENTRO,fuera de la base,2026-10-21
-23560,FIT CLUB SUC. HUERTA,fuera de la base,2026-10-21
-23561,FIT CLUB SUC. PLAZA SAN MIGUEL,fuera de la base,2026-10-21
-23633,Training Zone,fuera de la base,2026-10-21
-23646,BLACK BULL ELITE FITNESS,fuera de la base,2026-10-21
-23736,Anytime Fitness Nvo Vallarta,fuera de la base,2026-10-21
-23820,AquaNa2,fuera de la base,2026-10-21
-23862,Power Fit Gym,fuera de la base,2026-10-21
-23884,Estudio Cardio Box,fuera de la base,2026-10-21
-23919,VAULT CROSSFIT,fuera de la base,2026-10-21
-24057,Delta Climbing,fuera de la base,2026-10-21
-24154,MW GYM,fuera de la base,2026-10-21
-24191,One Power Martial Arts,fuera de la base,2026-10-21
-24200,Pico norte nuevo sur,fuera de la base,2026-10-21
-24214,Reset Studio,fuera de la base,2026-10-21
-24225,SUPER FITNESS LAS TORRES,fuera de la base,2026-10-21
-24227,Sadhak Yoga Contry,fuera de la base,2026-10-21
-24268,TYM Sport Center San Jeronimo,fuera de la base,2026-10-21
-24269,TYM Sport Center Valle Alto,fuera de la base,2026-10-21
-24318,in-Vacu carretera nacional,fuera de la base,2026-10-21
-24418,Nova Fit EMS San Pedro,fuera de la base,2026-10-21
-24423,11:11 Fitness Armida,fuera de la base,2026-10-21
-24515,TYM Sport Center San Pedro,fuera de la base,2026-10-21
-24531,Urmah Sendero,fuera de la base,2026-10-21
-24536,Ponte Ready,fuera de la base,2026-10-21
-24538,TYM Sport Center Valle Poniente,fuera de la base,2026-10-21
-24540,ULTRAGYM SENDERO SANTA CATARINA,fuera de la base,2026-10-21
-24565,VITAL GYM Matriz,fuera de la base,2026-10-21
-24566,VITAL GYM XoXo,fuera de la base,2026-10-21
-24579,POWER CENTER KONWALIA,fuera de la base,2026-10-21
-24732,Diablo Crossfit,fuera de la base,2026-10-21
-24756,Psychotic CrossFit / Kingdom MMA,fuera de la base,2026-10-21
-25003,La Barra Sana,fuera de la base,2026-10-21
-25040,Love to Fit Juriquilla,fuera de la base,2026-10-21
-25055,Anytime Fitness Zakia Qro,fuera de la base,2026-10-21
-25070,Fitness Motion Juriquilla,fuera de la base,2026-10-21
-25092,Rebellion Studio,fuera de la base,2026-10-21
-25097,Seven Fitness Center,fuera de la base,2026-10-21
-25105,Three House,fuera de la base,2026-10-21
-25107,Ubuntu 33 Crossfit Y Trx,fuera de la base,2026-10-21
-25108,Uppercut Boxing Club,fuera de la base,2026-10-21
-25114,GO HIT CIRCUIT FITNESS,fuera de la base,2026-10-21
-25125,Krypteia Training Studio SJR,fuera de la base,2026-10-21
-25174,Box Arena,fuera de la base,2026-10-21
-25184,Celero Cycling,fuera de la base,2026-10-21
-25299,Neshamá Milenio,fuera de la base,2026-10-21
-25359,Sport Zone Express,fuera de la base,2026-10-21
-25394,ZUID FITNESS 24/7,fuera de la base,2026-10-21
-25449,EOS GYM,fuera de la base,2026-10-21
-25486,H2O Academia de Natación,fuera de la base,2026-10-21
-25490,Good Shape Sport Center Suc Jacaradas,fuera de la base,2026-10-21
-25504,Cross&Fitness Functional Training 1,fuera de la base,2026-10-21
-25505,Dinamita Boxing,fuera de la base,2026-10-21
-25532,ZON -THE FUNCTIONAL AND MMA EXPERIENCE,fuera de la base,2026-10-21
-25536,Fitness 2.0,fuera de la base,2026-10-21
-25541,ULTRAGYM AZAHARES,fuera de la base,2026-10-21
-25545,SportKines Culiacán,fuera de la base,2026-10-21
-25558,Punto Fit preparación física y fitness,fuera de la base,2026-10-21
-25563,ZONA FITNESS REAL DEL VALLE,fuera de la base,2026-10-21
-25565,Anytime Fitness Camino al Mar Mazatlán,fuera de la base,2026-10-21
-25567,Focus CDE Atlántico,fuera de la base,2026-10-21
-25650,SportKines Mazatlán,fuera de la base,2026-10-21
-25654,HB Crossfit,fuera de la base,2026-10-21
-25679,Boulder GRID,fuera de la base,2026-10-21
-25703,MS Sport Gym,fuera de la base,2026-10-21
-25720,SPIN HIIT QUIROGA,fuera de la base,2026-10-21
-25723,SPIN-HIIT Girls Pabellón Misiones,fuera de la base,2026-10-21
-25726,SPIN-HIIT SUN MALL,fuera de la base,2026-10-21
-25727,SPIN-HIIT Sur,fuera de la base,2026-10-21
-25733,Spin Hiit-Colosio,fuera de la base,2026-10-21
-25734,Spin Hiit-Vado del Río,fuera de la base,2026-10-21
-25748,SPIN-HIIT NAVOJOA,fuera de la base,2026-10-21
-25750,Dinamics Workout,fuera de la base,2026-10-21
-25752,Tutuli Fitness MX,fuera de la base,2026-10-21
-25758,ULTRAGYM SAN LUIS RÍO COLORADO,fuera de la base,2026-10-21
-25767,THE FIT HOUSE,fuera de la base,2026-10-21
-25803,SportKines Villahermosa,fuera de la base,2026-10-21
-25811,Geos Lima Lama,fuera de la base,2026-10-21
-25824,Palmas Gym,fuera de la base,2026-10-21
-25853,SportKines Tampico,fuera de la base,2026-10-21
-25855,Vonnacher ninjas borreguera,fuera de la base,2026-10-21
-25865,ZERO SPORT CENTER BANDERILLA,fuera de la base,2026-10-21
-25866,Buenavista Gym,fuera de la base,2026-10-21
-25875,MIND FIT,fuera de la base,2026-10-21
-25917,Zona Sport Gym,fuera de la base,2026-10-21
-25923,ZERO SPORT CENTER ARCOS SUR,fuera de la base,2026-10-21
-25924,ZERO SPORT CENTER LAGOS,fuera de la base,2026-10-21
-25934,ZERO SPORT CENTER AGUA SANTA,fuera de la base,2026-10-21
-25935,ZERO SPORT CENTER HACIENDAS,fuera de la base,2026-10-21
-25940,ZERO SPORT CENTER VILLA HERMOSA,fuera de la base,2026-10-21
-25944,AIAM Mérida - Academia Internacional de Artes Marciales,fuera de la base,2026-10-21
-25981,Centro Deportivo Mirmidones,fuera de la base,2026-10-21
-25987,Fitness Room,fuera de la base,2026-10-21
-26033,Coavsi GYM,fuera de la base,2026-10-21
-26038,Stronger Fitness Guadalupe,fuera de la base,2026-10-21
-26041,BLACK BASE,fuera de la base,2026-10-21
-26043,1% Muscle Gym,fuera de la base,2026-10-21
-26052,Stronger Fitness,fuera de la base,2026-10-21
-26119,DivaDance CDMX,fuera de la base,2026-10-21
-26252,Treino Studio,fuera de la base,2026-10-21
-26346,Malak Pilates,fuera de la base,2026-10-21
-26468,BoxZen San Pedro,fuera de la base,2026-10-21
-26553,Mova Wellness,fuera de la base,2026-10-21
-26673,Namore Pilates,fuera de la base,2026-10-21
-26700,Body Awareness Caucel,fuera de la base,2026-10-21
-19509,Sports World Anbr / zubr / res,fuera de la base,2026-10-21
-20169,VISTA FITNESS CENTER AZCAPOTZALCO,fuera de la base,2026-10-21
-20364,KiNN Lomas,fuera de la base,2026-10-21
-20920,Balans Pilates Club,fuera de la base,2026-10-21
-20947,Danza Aerea Polanco,fuera de la base,2026-10-21
-26082,Barre Studio Fer Díez Lomas,fuera de la base,2026-10-21
-26120,Dlk Fitness Santa Maria,fuera de la base,2026-10-21
-26137,Fuerza by Fitspin Lomas,fuera de la base,2026-10-21
+wp_id,nombre,motivo,retirado_el,place_id
+1636,Fut 7 mundo E,fuera de la base,2026-10-18,
+1844,Cancha De Futbol Rapido El Mirado,fuera de la base,2026-10-18,
+1867,Fronton Cepillo Fronton,fuera de la base,2026-10-18,
+1913,Campo De Futbol La Curva,fuera de la base,2026-10-18,
+1947,Canchas De Futbol,fuera de la base,2026-10-18,
+1950,Canchas De Futball El Yaqui,fuera de la base,2026-10-18,
+1965,Cancha De Fut 5,fuera de la base,2026-10-18,
+1978,Cancha Alianza Deportiva La Tolva,fuera de la base,2026-10-18,
+2116,Club de Tenis Coyoacán,fuera de la base,2026-10-18,
+2120,Club de Tenis Tepepan,fuera de la base,2026-10-18,
+2282,Campo De Futbol San Ildefonso,fuera de la base,2026-10-18,
+2490,La Red Club de Padel,fuera de la base,2026-10-18,
+2593,canchas fut7,fuera de la base,2026-10-18,
+2603,Futbol Rapido Nicolas Romero,fuera de la base,2026-10-18,
+2613,Fronton La Hacienda,fuera de la base,2026-10-18,
+2614,Fronton Squash Zavala,fuera de la base,2026-10-18,
+2848,Canchas I y II de Pádel,fuera de la base,2026-10-18,
+2923,Padel Pro,fuera de la base,2026-10-18,
+2986,Baja Padel Club,fuera de la base,2026-10-18,
+3004,Canchas Deportivas,fuera de la base,2026-10-18,
+3057,Futbol Champions Tj,fuera de la base,2026-10-18,
+3058,Futbol Siete Bulevard Dos Mil,fuera de la base,2026-10-18,
+3065,Gimnacio Municipal de Basquet Bol Independencia Nacional,fuera de la base,2026-10-18,
+3096,Gran Padel Rio,fuera de la base,2026-10-18,
+3211,Tijuana Padel,fuera de la base,2026-10-18,
+3262,Campo de Beis Bol Rene Ortiz Campoy,fuera de la base,2026-10-18,
+3329,Campos de Futbol Santos,fuera de la base,2026-10-18,
+3333,Central Soccer,fuera de la base,2026-10-18,
+3337,Club Veteranos de Futbol,fuera de la base,2026-10-18,
+3346,Deportivo Fronton Azteca,fuera de la base,2026-10-18,
+3353,Elite Soccer,fuera de la base,2026-10-18,
+3374,Galery Padel,fuera de la base,2026-10-18,
+3463,Liga de Beisbol Infaltil Satelite,fuera de la base,2026-10-18,
+3576,Futbol Catorce,fuera de la base,2026-10-18,
+3592,Organizacionde Futbol Rapido de Barrios de Azcapotzalco,fuera de la base,2026-10-18,
+3695,Mundo Padel Coapa,fuera de la base,2026-10-18,
+3699,Padel Life,fuera de la base,2026-10-18,
+3734,Campo de Futbol Gustvo Romero Hurtado,fuera de la base,2026-10-18,
+3735,Cancha de Futobol Castillo Ledon,fuera de la base,2026-10-18,
+3736,Cancha Deportiva Palo Alto,fuera de la base,2026-10-18,
+3737,Canchas de Fultbool el Ranchito,fuera de la base,2026-10-18,
+3759,Servicios Deportivos Champions Soccer Academy,fuera de la base,2026-10-18,
+3776,Cancha Cuautepec,fuera de la base,2026-10-18,
+3777,Cancha de Basquetbol Teotachtli,fuera de la base,2026-10-18,
+3778,Cancha de Fut Bol Rapido Vivis,fuera de la base,2026-10-18,
+3779,Cancha de Futbol la Escondida,fuera de la base,2026-10-18,
+3780,Cancha de Futbol Rapido Jogabonito,fuera de la base,2026-10-18,
+3781,Cancha de Tenis Acueducto,fuera de la base,2026-10-18,
+3782,Cancha Monumental,fuera de la base,2026-10-18,
+3783,Canchas de Futbol,fuera de la base,2026-10-18,
+3817,Deportivo Fut 7 Lindavista,fuera de la base,2026-10-18,
+3840,Fut 7 Olimpus,fuera de la base,2026-10-18,
+3911,Liga de Futbol Grupo Tepeyac,fuera de la base,2026-10-18,
+3948,Squash Fronton Hernandez,fuera de la base,2026-10-18,
+3949,Star Futbol,fuera de la base,2026-10-18,
+3971,Canchas de Futbol Rapido de la Esef,fuera de la base,2026-10-18,
+4031,Padel Club Oriente,fuera de la base,2026-10-18,
+4076,Canchas Anexas Utopia Cuauhtlicalli,fuera de la base,2026-10-18,
+4077,Canchas Chupigol,fuera de la base,2026-10-18,
+4078,Canchas de Futbol Insurgentes,fuera de la base,2026-10-18,
+4079,Canchas de Futbol Rapido Center Gol,fuera de la base,2026-10-18,
+4129,Deportivo Fut 7 Nace,fuera de la base,2026-10-18,
+4156,Fronton Huitron,fuera de la base,2026-10-18,
+4157,Fronton Lopez,fuera de la base,2026-10-18,
+4298,Organizacion F y e Fut 7,fuera de la base,2026-10-18,
+4302,Pia Monte Cancha de Fronton,fuera de la base,2026-10-18,
+4352,Cancha de Futbol del Lienzo Charro,fuera de la base,2026-10-18,
+4353,Canchas Deportivas Tierra Unida,fuera de la base,2026-10-18,
+4373,Infinity Padel,fuera de la base,2026-10-18,
+4386,Cancha de Futbool Real,fuera de la base,2026-10-18,
+4388,Centro de Formacion de Futbol Olimpique,fuera de la base,2026-10-18,
+4394,Fronton los Pillos,fuera de la base,2026-10-18,
+4425,Cancha Desarrollo Urbano,fuera de la base,2026-10-18,
+4426,Canchas de Futbol Rapido 7,fuera de la base,2026-10-18,
+4427,Canchas Deportivas por Parte de la Delegacion,fuera de la base,2026-10-18,
+4497,Padel On,fuera de la base,2026-10-18,
+4536,Cancha de Futbol Tulyehualco,fuera de la base,2026-10-18,
+4537,Canchas de Fut7 Tulyehualco,fuera de la base,2026-10-18,
+4564,Fronton el Gordo,fuera de la base,2026-10-18,
+4565,Fronton la Gallera,fuera de la base,2026-10-18,
+4566,Fronton San Jose,fuera de la base,2026-10-18,
+4567,Fronton San Juan Ixtayopan Fernando Medina,fuera de la base,2026-10-18,
+4568,Fronton Tlahuac,fuera de la base,2026-10-18,
+4628,7 Seven Soccer,fuera de la base,2026-10-18,
+4642,Campo de Beisbol,fuera de la base,2026-10-18,
+4643,Cancha Santa Ursula Xitla,fuera de la base,2026-10-18,
+4644,Canchas de Futbol,fuera de la base,2026-10-18,
+4645,Canchas Popular Santa Teresa,fuera de la base,2026-10-18,
+4653,Club de Padel 20 X 10,fuera de la base,2026-10-18,
+4677,Fronton Santana Castillo,fuera de la base,2026-10-18,
+4761,Campo de Futbol,fuera de la base,2026-10-18,
+4762,Campos de Futbol la Joya,fuera de la base,2026-10-18,
+4763,Campos de Futbol Pokolpok,fuera de la base,2026-10-18,
+4764,Campos de Futbol Sector Soccer,fuera de la base,2026-10-18,
+4765,Cancha de Futbol de San Luis Tlaxialtemalco,fuera de la base,2026-10-18,
+4766,Cancha de Futbol Rapido Oasis,fuera de la base,2026-10-18,
+4767,Cancha de Futbol Tulyehualco,fuera de la base,2026-10-18,
+4768,Canchas de Futbol la Joya,fuera de la base,2026-10-18,
+4769,Canchas de Futbol Mx,fuera de la base,2026-10-18,
+4778,Club de Acondiconamiento Fisico Inova Beisbol,fuera de la base,2026-10-18,
+4787,Deportivo Tulyehualco Basquetbol,fuera de la base,2026-10-18,
+4801,Fronton de Tulyehualco,fuera de la base,2026-10-18,
+4802,Fronton Margarita,fuera de la base,2026-10-18,
+4803,Futbol Soccer 7 Cuemanco,fuera de la base,2026-10-18,
+4840,Liga de Futbol Fc Juarez CDMX,fuera de la base,2026-10-18,
+4850,Silver Soccer,fuera de la base,2026-10-18,
+4866,Canchas de Football de Escuela Tomas Alva Edison,fuera de la base,2026-10-18,
+4868,Centro para Practica de Beisbol B -bat Jaulas de Bateo Portales,fuera de la base,2026-10-18,
+4977,Fronton Inclan,fuera de la base,2026-10-18,
+5066,Cancha de Tenis el Arbol,fuera de la base,2026-10-18,
+5067,Canchas Premier Futbol 7,fuera de la base,2026-10-18,
+5073,Deporte Canchas de Squash,fuera de la base,2026-10-18,
+5155,Baños Publicos Estadio de Basquetbol,fuera de la base,2026-10-18,
+5157,Cancha de Futbol Rapido Jopa,fuera de la base,2026-10-18,
+5207,Oficina de Fut 7,fuera de la base,2026-10-18,
+5274,Campo de Futbol Uruguayo la Canchita,fuera de la base,2026-10-18,
+5275,Cancha 7,fuera de la base,2026-10-18,
+5276,Cancha de Fronton Patria,fuera de la base,2026-10-18,
+5277,Cancha de Futbol Golazo,fuera de la base,2026-10-18,
+5278,Cancha de Futbol Uruguayo Mi Canchita,fuera de la base,2026-10-18,
+5279,Cancha Deportiva Milenio,fuera de la base,2026-10-18,
+5280,Cancha Deportiva The Padel Club,fuera de la base,2026-10-18,
+5281,Cancha Esmeralda,fuera de la base,2026-10-18,
+5282,Cancha Gerardo,fuera de la base,2026-10-18,
+5283,Canchas Ceforfut,fuera de la base,2026-10-18,
+5284,Canchas de Futball Rapido Banchetto,fuera de la base,2026-10-18,
+5285,Canchas de Futbol Chovis,fuera de la base,2026-10-18,
+5286,Canchas de Futbol Miura,fuera de la base,2026-10-18,
+5287,Canchas de Futbol Uruguayo,fuera de la base,2026-10-18,
+5288,Canchas de Futbol Volta 7,fuera de la base,2026-10-18,
+5289,Canchas Deportiva de Futbol a Fiera,fuera de la base,2026-10-18,
+5290,Canchas Deportivas Calcio,fuera de la base,2026-10-18,
+5291,Canchas Deportivas de Voleibol,fuera de la base,2026-10-18,
+5292,Canchas Deportivas Padel Park,fuera de la base,2026-10-18,
+5293,Canchas Deportivas Soccer Play,fuera de la base,2026-10-18,
+5294,Canchas Fut Beleño,fuera de la base,2026-10-18,
+5295,Canchas Hidalgo del Valle,fuera de la base,2026-10-18,
+5296,Canchas Match Point y Padel Tennis,fuera de la base,2026-10-18,
+5297,Canchas Punta del Este,fuera de la base,2026-10-18,
+5298,Capital Padel,fuera de la base,2026-10-18,
+5343,Club de Padel,fuera de la base,2026-10-18,
+5344,Club Deportivo Canchas Arsenal,fuera de la base,2026-10-18,
+5382,Fer Play Soccer Club,fuera de la base,2026-10-18,
+5394,Futbol 7 la Gambeta,fuera de la base,2026-10-18,
+5582,Matchball Padel Indor Renta de Canchas,fuera de la base,2026-10-18,
+5618,Padel Club,fuera de la base,2026-10-18,
+5634,Renta de Canchas,fuera de la base,2026-10-18,
+5654,Soccer Fit,fuera de la base,2026-10-18,
+5691,Win Padel,fuera de la base,2026-10-18,
+5805,Canchas 7 Tepojaco,fuera de la base,2026-10-18,
+5876,Cancha de Futbol,fuera de la base,2026-10-18,
+5877,Cancha de Futbol,fuera de la base,2026-10-18,
+5878,Cancha de Futbol Ollin,fuera de la base,2026-10-18,
+5879,Cancha Deportiva,fuera de la base,2026-10-18,
+5880,Cancha la Talacha,fuera de la base,2026-10-18,
+5881,Canchas de Bateo Boston,fuera de la base,2026-10-18,
+5882,Canchas de Fut Bol Rapido,fuera de la base,2026-10-18,
+5883,Canchas de Squash,fuera de la base,2026-10-18,
+5884,Canchas Jed,fuera de la base,2026-10-18,
+5967,Gera Fut 7,fuera de la base,2026-10-18,
+6096,Mundo Carioca Canchas de Futbol,fuera de la base,2026-10-18,
+6191,Unidad Deportiva Al Aire Libre con Canchas de Fubtol Unidad Deportiva Esteban Loera,fuera de la base,2026-10-18,
+6235,Atlas Futbol Club,fuera de la base,2026-10-18,
+6242,Campo de Fut Bol Davila,fuera de la base,2026-10-18,
+6275,Soccer 13,fuera de la base,2026-10-18,
+6293,Campo de Fut Bol,fuera de la base,2026-10-18,
+6294,Campo de Futbol los Esquiveles,fuera de la base,2026-10-18,
+6295,Campo de Futbol Pumitas,fuera de la base,2026-10-18,
+6296,Campo de Futbol San Lucas Evangelista,fuera de la base,2026-10-18,
+6299,Canchas de Futbol Atletigol,fuera de la base,2026-10-18,
+6300,Canchas de Futbol del Comude,fuera de la base,2026-10-18,
+6301,Canchas de Futbol Nou Camp,fuera de la base,2026-10-18,
+6302,Canchas de Futbol San Agustin,fuera de la base,2026-10-18,
+6303,Canchas de Futbot Soccers Center,fuera de la base,2026-10-18,
+6383,Sport 7 Campo de Futbol,fuera de la base,2026-10-18,
+6427,Campo de Futbol Alfredo Barba,fuera de la base,2026-10-18,
+6431,Cancha Futbolsoccer 7,fuera de la base,2026-10-18,
+6432,Cancha Roma Sport Gol,fuera de la base,2026-10-18,
+6433,Canchas,fuera de la base,2026-10-18,
+6434,Canchas de Fut Bol la Bombonera,fuera de la base,2026-10-18,
+6435,Canchas de Futbol Halcones,fuera de la base,2026-10-18,
+6436,Canchas de Futbol Hp,fuera de la base,2026-10-18,
+6437,Canchas de Futbol Rapido la Furia,fuera de la base,2026-10-18,
+6438,Canchas Peluma 7,fuera de la base,2026-10-18,
+6515,Rex Soccer,fuera de la base,2026-10-18,
+6552,Campo de Futbol Mi Ranchito,fuera de la base,2026-10-18,
+6554,Campos de Futbol Casa Ejidal,fuera de la base,2026-10-18,
+6555,Cancha de Futbo 7,fuera de la base,2026-10-18,
+6556,Cancha de Futbol el Carril,fuera de la base,2026-10-18,
+6557,Cancha de Futbol el Roble,fuera de la base,2026-10-18,
+6558,Cancha de Futbol San Andres,fuera de la base,2026-10-18,
+6559,Canchas de Futbol Tnl Center,fuera de la base,2026-10-18,
+6581,Futbol Rapido la Hacienda,fuera de la base,2026-10-18,
+6704,Campo de Fut Bol,fuera de la base,2026-10-18,
+6705,Campo de Futbol,fuera de la base,2026-10-18,
+6706,Cancha de Futbol Speedball,fuera de la base,2026-10-18,
+6707,Cancha Deportiva,fuera de la base,2026-10-18,
+6708,Cancha Deportiva Sportia,fuera de la base,2026-10-18,
+6709,Canchas de Futbol Rapido Soccer Gdl,fuera de la base,2026-10-18,
+6710,Canchas la Piramide,fuera de la base,2026-10-18,
+6851,Jp Soccer Club,fuera de la base,2026-10-18,
+6883,Padel & Pikle Gm Bugambilias,fuera de la base,2026-10-18,
+6884,Padel Sport,fuera de la base,2026-10-18,
+6915,Slice Padel Club,fuera de la base,2026-10-18,
+6923,Soccer Park,fuera de la base,2026-10-18,
+6984,Cancha de Futbol Rapido Eriel,fuera de la base,2026-10-18,
+6985,Cancha Lago,fuera de la base,2026-10-18,
+6986,Canchas de Futbol,fuera de la base,2026-10-18,
+7031,Cancha de Futbol Rapido Estrella Azul,fuera de la base,2026-10-18,
+7032,Cancha de Futboll Sin Nombe,fuera de la base,2026-10-18,
+7048,Administracion del Campo de Fut 7 Premier Villas,fuera de la base,2026-10-18,
+7066,Canchas Premier,fuera de la base,2026-10-18,
+7190,Cancha de Bateo,fuera de la base,2026-10-18,
+7198,Club Padel Coacalco,fuera de la base,2026-10-18,
+7227,Renta de Canchas de Tenis,fuera de la base,2026-10-18,
+7262,Campo de Futbol Alcafores,fuera de la base,2026-10-18,
+7263,Campo de Futbol Amanal,fuera de la base,2026-10-18,
+7264,Campo de Futbol Atlantico,fuera de la base,2026-10-18,
+7265,Campo de Futbol Don Palemon,fuera de la base,2026-10-18,
+7266,Campo de Futbol Durazno,fuera de la base,2026-10-18,
+7267,Campo de Futbol el Alamo,fuera de la base,2026-10-18,
+7268,Campo de Futbol Juanito 70,fuera de la base,2026-10-18,
+7269,Campo de Futbol Juarez,fuera de la base,2026-10-18,
+7270,Campo de Futbol la Piedra,fuera de la base,2026-10-18,
+7271,Campo de Futbol la Trinidad,fuera de la base,2026-10-18,
+7272,Campo de Futbol Macolo,fuera de la base,2026-10-18,
+7273,Campo de Futbol Premier,fuera de la base,2026-10-18,
+7274,Campo Deportivo Fut 7 Zarco,fuera de la base,2026-10-18,
+7279,Campo Municipal de Beisbol,fuera de la base,2026-10-18,
+7284,Campos de Futbol 7,fuera de la base,2026-10-18,
+7286,Canchas la Capilla,fuera de la base,2026-10-18,
+7287,Canchas Sport Green,fuera de la base,2026-10-18,
+7293,D Jaime Campo de Futbol,fuera de la base,2026-10-18,
+7336,Campo de Futbol Rulo,fuera de la base,2026-10-18,
+7338,Cancha de Futbol Rapido Jc,fuera de la base,2026-10-18,
+7339,Cancha de Futbol San Sebastian,fuera de la base,2026-10-18,
+7364,Fronton el Chiquis,fuera de la base,2026-10-18,
+7406,Miraflores Soccer Team,fuera de la base,2026-10-18,
+7442,Cancha de Futbol 7 el Chino,fuera de la base,2026-10-18,
+7443,Canchas de Futbol Nueva Era,fuera de la base,2026-10-18,
+7473,Liga de Futbol Presidentes,fuera de la base,2026-10-18,
+7501,Cancha de Fut 7 San Pablo,fuera de la base,2026-10-18,
+7502,Cancha de Futbol Rapido Carpinteros,fuera de la base,2026-10-18,
+7503,Cancha de Futbol Rapido Chocopro,fuera de la base,2026-10-18,
+7504,Cancha de Futbol Rapido Jaguar,fuera de la base,2026-10-18,
+7505,Cancha de Futbool Rapido la Cueva,fuera de la base,2026-10-18,
+7506,Cancha de Voleibol Felipe Berriozabal,fuera de la base,2026-10-18,
+7507,Cancha Deportiva de Futbol,fuera de la base,2026-10-18,
+7508,Cancha Futbol 7 la Llorona,fuera de la base,2026-10-18,
+7509,Cancha Monumental San Pablo,fuera de la base,2026-10-18,
+7510,Canchas Carpinteros Arenal,fuera de la base,2026-10-18,
+7511,Canchas de Futbol 4t,fuera de la base,2026-10-18,
+7512,Canchas de Futbol el Refugio,fuera de la base,2026-10-18,
+7513,Canchas de Futbol Fut7 Nativitas,fuera de la base,2026-10-18,
+7514,Canchas de Futbol Gool 7,fuera de la base,2026-10-18,
+7515,Canchas de Futbol Imperial,fuera de la base,2026-10-18,
+7516,Canchas de Futbol la Nave,fuera de la base,2026-10-18,
+7517,Canchas de Futbol Liga de Futbol 6 Juares,fuera de la base,2026-10-18,
+7518,Canchas de Futbol Loreto,fuera de la base,2026-10-18,
+7519,Canchas de Futbol Neyra,fuera de la base,2026-10-18,
+7520,Canchas de Futbol Rapido Girasol,fuera de la base,2026-10-18,
+7521,Canchas de Futbol Rapido la Muni,fuera de la base,2026-10-18,
+7522,Canchas de Futbol San Juan,fuera de la base,2026-10-18,
+7523,Canchas de Futboll,fuera de la base,2026-10-18,
+7557,Fronton Corregidora,fuera de la base,2026-10-18,
+7558,Fronton Mictlan,fuera de la base,2026-10-18,
+7643,Renta de Canchas de Futbol la Joya,fuera de la base,2026-10-18,
+7700,Campo de Futbol Elite Soccer Cristiana,fuera de la base,2026-10-18,
+7703,Cancha de Basketball los Zurdos,fuera de la base,2026-10-18,
+7704,Cancha de Fut 7 Zuach,fuera de la base,2026-10-18,
+7705,Cancha de Futbol 40,fuera de la base,2026-10-18,
+7706,Cancha de Futbol 7 Escorpion,fuera de la base,2026-10-18,
+7707,Cancha de Futbol Fut Center Ecatepec,fuera de la base,2026-10-18,
+7708,Cancha de Futbol Liga Premium,fuera de la base,2026-10-18,
+7709,Cancha de Futbol Rapido,fuera de la base,2026-10-18,
+7710,Cancha de Futbol Seven Colors,fuera de la base,2026-10-18,
+7711,Cancha Defutbol Rapido Zapotecas,fuera de la base,2026-10-18,
+7712,Cancha Futbol,fuera de la base,2026-10-18,
+7713,Cancha Futbol Club 7r,fuera de la base,2026-10-18,
+7714,Cancha Soccer 7 Tellez,fuera de la base,2026-10-18,
+7715,Canchas de Fut 7 Cesr Jr,fuera de la base,2026-10-18,
+7716,Canchas de Futbol,fuera de la base,2026-10-18,
+7717,Canchas de Futbol Champions,fuera de la base,2026-10-18,
+7718,Canchas los Pinos,fuera de la base,2026-10-18,
+7760,Centro de Formacion de Futbol Soccer Nido de Aguila,fuera de la base,2026-10-18,
+7766,Champions las Torres 4ever Soccer,fuera de la base,2026-10-18,
+7797,Deportivo de Futbol Diablito,fuera de la base,2026-10-18,
+7843,Fronton las Torres,fuera de la base,2026-10-18,
+7844,Fronton Santo Tomas Chiconautla,fuera de la base,2026-10-18,
+7846,Fut 7 San Pedro,fuera de la base,2026-10-18,
+8002,Liga de Futbol Deportivo Citlaltepetl,fuera de la base,2026-10-18,
+8103,Cancha de Futbol el Molino,fuera de la base,2026-10-18,
+8104,Cancha de Futbol Guerreros,fuera de la base,2026-10-18,
+8105,Cancha de Futbol la Era,fuera de la base,2026-10-18,
+8106,Canchas de Basquetbol Publica,fuera de la base,2026-10-18,
+8107,Canchas de Futbol Juvenil e Infantil,fuera de la base,2026-10-18,
+8108,Canchas de Futbol Soccer Garden,fuera de la base,2026-10-18,
+8109,Canchas de Futboll,fuera de la base,2026-10-18,
+8110,Canchas el Gran Soccer Siete,fuera de la base,2026-10-18,
+8149,Fronton Municipal Ixtapaluca,fuera de la base,2026-10-18,
+8226,Cancha Comunitaria Fronton,fuera de la base,2026-10-18,
+8227,Cancha de Futbol Rapido el Clasico 7,fuera de la base,2026-10-18,
+8234,Campo de Futbol Fut 7,fuera de la base,2026-10-18,
+8269,Campo de Futbol Ejido de Santiago Ahuizotla,fuera de la base,2026-10-18,
+8271,Cancha de Futbol la Barquita,fuera de la base,2026-10-18,
+8272,Cancha de Futbol Rapido Indoor,fuera de la base,2026-10-18,
+8273,Cancha de Futbol Rapido Tepatlaxco,fuera de la base,2026-10-18,
+8276,Centro Deportivo Fut 7 Rio Hondo,fuera de la base,2026-10-18,
+8353,Liga de Beisbol Ac Moises Goñi,fuera de la base,2026-10-18,
+8437,Cancha de Fut -7 Alfa Like,fuera de la base,2026-10-18,
+8438,Cancha de Futbol Renovacion,fuera de la base,2026-10-18,
+8439,Cancha Usos Multiples Agua Azul,fuera de la base,2026-10-18,
+8440,Canchas de Fut Bol Rapido las Palmas,fuera de la base,2026-10-18,
+8441,Canchas de Futbol Libertad,fuera de la base,2026-10-18,
+8442,Canchas de Futbol Rapido Cefor Neza,fuera de la base,2026-10-18,
+8443,Canchas de Futbol Rapido las Gemelas Neza 86,fuera de la base,2026-10-18,
+8444,Canchas de Futbol Rapido las Gemelas Neza 86,fuera de la base,2026-10-18,
+8445,Canchas Deportivas Lideras,fuera de la base,2026-10-18,
+8446,Canchas Deportivas Sandy,fuera de la base,2026-10-18,
+8447,Canchas Rapigol,fuera de la base,2026-10-18,
+8646,Soccer Street 7,fuera de la base,2026-10-18,
+8685,Cancha de Soccer 7,fuera de la base,2026-10-18,
+8707,Campo de Futbol,fuera de la base,2026-10-18,
+8708,Campo de Futbol 7 la Hacienda,fuera de la base,2026-10-18,
+8709,Campo de Futbol 7 San Ildefonso,fuera de la base,2026-10-18,
+8710,Campo de Futbol Aguilas de Progreso Industrial,fuera de la base,2026-10-18,
+8711,Campo de Futbol Chivas,fuera de la base,2026-10-18,
+8712,Campo de Futbol Soccer 7 la Chiva,fuera de la base,2026-10-18,
+8714,Cancha de Futbool 7 22 de Febrero,fuera de la base,2026-10-18,
+8722,Deportivo Juares Fc Campo de Futbol,fuera de la base,2026-10-18,
+8730,Fronton Zavala Transfi,fuera de la base,2026-10-18,
+8779,Liga de Futbol Azquil,fuera de la base,2026-10-18,
+8796,Asociacion de el Deportivo de Beisbol de los Reyes la Paz,fuera de la base,2026-10-18,
+8799,Cancha Bimbo Start,fuera de la base,2026-10-18,
+8800,Cancha Comunitaria,fuera de la base,2026-10-18,
+8801,Canchas de Futbol Rapido Varsa,fuera de la base,2026-10-18,
+8811,Fronton el Cristo,fuera de la base,2026-10-18,
+8812,Fronton Valverdes,fuera de la base,2026-10-18,
+8864,Cancha de Fronton,fuera de la base,2026-10-18,
+8872,Administracion de Canchas de Futball Rapido 7 Fragool,fuera de la base,2026-10-18,
+8882,Campo Fut 7,fuera de la base,2026-10-18,
+8883,Cancha de Futbol,fuera de la base,2026-10-18,
+8884,Cancha de Futbol Rapido New Camp,fuera de la base,2026-10-18,
+8885,Cancha de Futbool Rapido la Jaula,fuera de la base,2026-10-18,
+8886,Cancha de Tenis,fuera de la base,2026-10-18,
+8887,Canchas de Futbol Rapido,fuera de la base,2026-10-18,
+8888,Canchas Iguanas Squash,fuera de la base,2026-10-18,
+8889,Canchas Squash Tecamac,fuera de la base,2026-10-18,
+8918,Fut 7 Santa Lucia,fuera de la base,2026-10-18,
+8934,Go Padel Club,fuera de la base,2026-10-18,
+8984,Campo de Futbol el Camello,fuera de la base,2026-10-18,
+8985,Campo de Futbol Rancho Camper,fuera de la base,2026-10-18,
+8986,Campo Fut 7,fuera de la base,2026-10-18,
+8987,Campos de Futbol Centenario,fuera de la base,2026-10-18,
+9016,Campo de Fut Bol Andy,fuera de la base,2026-10-18,
+9017,Campo de Futbol las Animas,fuera de la base,2026-10-18,
+9020,Cancha de Futbol 7,fuera de la base,2026-10-18,
+9021,Cancha Footbool 7,fuera de la base,2026-10-18,
+9029,Fut 7 Elite,fuera de la base,2026-10-18,
+9045,Campo de Futbol la Noria,fuera de la base,2026-10-18,
+9046,Cancha Boyeros,fuera de la base,2026-10-18,
+9047,Cancha de Futbol 7 Cuautlalpan,fuera de la base,2026-10-18,
+9048,Cancha de Futbol Boca Junior,fuera de la base,2026-10-18,
+9049,Cancha de Futbol Fut Azteca,fuera de la base,2026-10-18,
+9050,Canchas Asturias,fuera de la base,2026-10-18,
+9051,Canchas de Futbol Rapido,fuera de la base,2026-10-18,
+9052,Canchas de Futbol Rapido y Squash,fuera de la base,2026-10-18,
+9053,Canchas San Borja,fuera de la base,2026-10-18,
+9061,Deportivo San Felipe Fronton,fuera de la base,2026-10-18,
+9067,Fronton Arriola,fuera de la base,2026-10-18,
+9068,Fronton Squash Vega Sport,fuera de la base,2026-10-18,
+9094,Mundo Soccer,fuera de la base,2026-10-18,
+9113,Cancha de Futbol Santiago Bernabeu,fuera de la base,2026-10-18,
+9136,Campo de Fut Bol el Polvorin,fuera de la base,2026-10-18,
+9137,Cancha Dentro del Deportivo Tlalnepantla,fuera de la base,2026-10-18,
+9138,Canchas de Futbol Soccer Tlalnepantla,fuera de la base,2026-10-18,
+9219,Liga de Futbol Caracoles,fuera de la base,2026-10-18,
+9234,Planet Gol Cancha de Fub Bol,fuera de la base,2026-10-18,
+9278,Club de Tenis Wimbledon,fuera de la base,2026-10-18,
+9302,Liga de Futbol Ctm San Pablo,fuera de la base,2026-10-18,
+9328,Campo de Futbol San Juan,fuera de la base,2026-10-18,
+9340,Deportivo Lomas de Cartagena Imcufidet. Canchas de Futbool Rapido,fuera de la base,2026-10-18,
+9354,Futbol 9,fuera de la base,2026-10-18,
+9419,Campo de Beisbol,fuera de la base,2026-10-18,
+9420,Campo de Futbol Ramos,fuera de la base,2026-10-18,
+9421,Cancha 16 San Juan,fuera de la base,2026-10-18,
+9422,Cancha de Futbol Rapida Torres,fuera de la base,2026-10-18,
+9454,La Cancha del 10,fuera de la base,2026-10-18,
+9456,Progigol Zumpango Cancha N 7,fuera de la base,2026-10-18,
+9464,Ullhama Canchas de Futbol,fuera de la base,2026-10-18,
+9480,Campo de Futbol,fuera de la base,2026-10-18,
+9481,Campo de Futbol Gualajara,fuera de la base,2026-10-18,
+9482,Campo de Futbol Joyas 1,fuera de la base,2026-10-18,
+9483,Campo de Futbol Mariano Lozano,fuera de la base,2026-10-18,
+9484,Campo de Futbol Nowcamp con Estacionamiento,fuera de la base,2026-10-18,
+9485,Campo de Futbol Tecolotes 4,fuera de la base,2026-10-18,
+9502,Cancha de Futbol 7,fuera de la base,2026-10-18,
+9503,Cancha de Futbol Victoria Fut 7,fuera de la base,2026-10-18,
+9504,Canchas de Futbol Atlas,fuera de la base,2026-10-18,
+9505,Canchas de Futbool Pecatos Soccer 7,fuera de la base,2026-10-18,
+9533,Fronton y Squash Izcalli,fuera de la base,2026-10-18,
+9535,Fut 7,fuera de la base,2026-10-18,
+9575,Liga de Futbol Interestatal,fuera de la base,2026-10-18,
+9619,Canchas de Futbol Campo Verde,fuera de la base,2026-10-18,
+9620,Canchas de Futbol Premier,fuera de la base,2026-10-18,
+9621,Canchas Deportiva,fuera de la base,2026-10-18,
+9622,Canchas Puente Blanco,fuera de la base,2026-10-18,
+9644,Fronton Pacos,fuera de la base,2026-10-18,
+9742,Campo de Futbol Club Cuervos,fuera de la base,2026-10-18,
+9743,Campo de Futbol Marfil,fuera de la base,2026-10-18,
+9744,Cancha de Fut Bol Rapida Golondrinas,fuera de la base,2026-10-18,
+9745,Cancha de Fut Bol Rapido,fuera de la base,2026-10-18,
+9746,Cancha de Futbol 7 Futregio,fuera de la base,2026-10-18,
+9747,Cancha de Futbol Apodaca,fuera de la base,2026-10-18,
+9748,Cancha de Futbol Nuevo Amanecer 2,fuera de la base,2026-10-18,
+9749,Cancha de Futbol Rapido Ebanos 4 -sector,fuera de la base,2026-10-18,
+9750,Cancha de Futboll Soccer,fuera de la base,2026-10-18,
+9751,Canchas de Futbol Rapido,fuera de la base,2026-10-18,
+9752,Canchas de Futbol Rapido Mezquital,fuera de la base,2026-10-18,
+9753,Canchas Deportivas Municipales,fuera de la base,2026-10-18,
+9760,Club de Futbol,fuera de la base,2026-10-18,
+9761,Club de Futbol Cachorros Enramada,fuera de la base,2026-10-18,
+9855,Soccer Club Futbol 7 Apodaca,fuera de la base,2026-10-18,
+9928,Padel Park,fuera de la base,2026-10-18,
+9929,Parque de Beisbol del Acuatico,fuera de la base,2026-10-18,
+9950,Cancha de Beisbol,fuera de la base,2026-10-18,
+9986,Padel Camp,fuera de la base,2026-10-18,
+9987,Padel Zone,fuera de la base,2026-10-18,
+10073,Padelaruim Club de Padel,fuera de la base,2026-10-18,
+10104,Campo de Futbol,fuera de la base,2026-10-18,
+10161,Familia de Beisbol y Cultura,fuera de la base,2026-10-18,
+10219,Liga Pequeña de Beisbol Nueva Libertad,fuera de la base,2026-10-18,
+10224,Molinete Loiga Soccer,fuera de la base,2026-10-18,
+10235,Padel 10 20 Renta de Canchas,fuera de la base,2026-10-18,
+10302,Canchas la Rabona Futbol 7,fuera de la base,2026-10-18,
+10340,Parque de Beisbol,fuera de la base,2026-10-18,
+10361,Total Soccer,fuera de la base,2026-10-18,
+10418,Campo de Fut Bol,fuera de la base,2026-10-18,
+10420,Canchas de Futbol,fuera de la base,2026-10-18,
+10450,Deportivo Padel,fuera de la base,2026-10-18,
+10461,Fit Soccer,fuera de la base,2026-10-18,
+10463,Fon Soccer,fuera de la base,2026-10-18,
+10467,Fronton Venustiano Carranza,fuera de la base,2026-10-18,
+10558,Kalcho Cumbres Cancha de Fut Boll,fuera de la base,2026-10-18,
+10599,Padel Central,fuera de la base,2026-10-18,
+10600,Padel Club,fuera de la base,2026-10-18,
+10601,Padel Club Santa Maria,fuera de la base,2026-10-18,
+10602,Padel G8,fuera de la base,2026-10-18,
+10603,Padel Go Sieteseis,fuera de la base,2026-10-18,
+10604,Padel Nation,fuera de la base,2026-10-18,
+10605,Padel Park Indoor,fuera de la base,2026-10-18,
+10606,Padel Point Sports,fuera de la base,2026-10-18,
+10607,Padel Siete Sei,fuera de la base,2026-10-18,
+10624,Power Padel,fuera de la base,2026-10-18,
+10636,Republica Padel,fuera de la base,2026-10-18,
+10643,Santo Padel,fuera de la base,2026-10-18,
+10644,Sas Soccer,fuera de la base,2026-10-18,
+10717,Valle Futbol Club,fuera de la base,2026-10-18,
+10752,Centro de Formacion Santo Domingo Futbol 7,fuera de la base,2026-10-18,
+10760,Club de Futbol Alemania,fuera de la base,2026-10-18,
+10818,Ob3 Canchas Eeportivas,fuera de la base,2026-10-18,
+10840,Titanes Soccer,fuera de la base,2026-10-18,
+10852,Zona Padel,fuera de la base,2026-10-18,
+10878,Liga de Futbol Municipal,fuera de la base,2026-10-18,
+10879,Liga de Futbol Rincon del Poniente,fuera de la base,2026-10-18,
+10880,Liga Pequeña de Beisbol de Santa Catarina,fuera de la base,2026-10-18,
+10888,Republica Verde Canchas Deportivas,fuera de la base,2026-10-18,
+10892,Star Soccer,fuera de la base,2026-10-18,
+10900,Canchas de Futbol de Santa Maria Nenetzintla,fuera de la base,2026-10-18,
+10920,Cancha de Futbol Gicerv 2000,fuera de la base,2026-10-18,
+10947,Campo de Futbol la Monumental,fuera de la base,2026-10-18,
+10948,Campo de Futbol Solares,fuera de la base,2026-10-18,
+10950,Cancha de Futbol,fuera de la base,2026-10-18,
+10951,Canchas Deportivas de la Colonia los Angeles,fuera de la base,2026-10-18,
+10962,Futbol Sala,fuera de la base,2026-10-18,
+10994,Cancha Deportiva Olimpo,fuera de la base,2026-10-18,
+10995,Canchas de Futbol,fuera de la base,2026-10-18,
+10996,Canchas Futbol Rapido Cuautlancingo,fuera de la base,2026-10-18,
+11003,Fut 7 la Pista Campo,fuera de la base,2026-10-18,
+11038,Cancha de Futbol Futsal,fuera de la base,2026-10-18,
+11062,Salon de Futbol Rapido Zeus,fuera de la base,2026-10-18,
+11125,Cancha de Futbol Comunitaria,fuera de la base,2026-10-18,
+11126,Cancha de Futbol Villa Futbol,fuera de la base,2026-10-18,
+11127,Canchas de Futbol 7,fuera de la base,2026-10-18,
+11128,Canchas de Futbol de Bosques de San Sebastian,fuera de la base,2026-10-18,
+11129,Canchas de Spark Padel,fuera de la base,2026-10-18,
+11130,Canchas Deportivas,fuera de la base,2026-10-18,
+11131,Canchas Deportivas de Padel,fuera de la base,2026-10-18,
+11171,Deportivo Canchas San Ramon Tercera Seccion,fuera de la base,2026-10-18,
+11172,Deportivo de Futbol Rapido,fuera de la base,2026-10-18,
+11327,Green 7 Soccer,fuera de la base,2026-10-18,
+11397,La Canchita de Fut 7,fuera de la base,2026-10-18,
+11405,Liga de Futbol de Don Carlos,fuera de la base,2026-10-18,
+11451,Por Tres Padel Club,fuera de la base,2026-10-18,
+11566,Air Padel Club,fuera de la base,2026-10-18,
+11574,Brazilian Soccer,fuera de la base,2026-10-18,
+11575,Cancha Deportiva Punto 7,fuera de la base,2026-10-18,
+11576,Canchas de Futbol,fuera de la base,2026-10-18,
+11577,Canchas de Futbol Aca,fuera de la base,2026-10-18,
+11578,Canchas de Futbool,fuera de la base,2026-10-18,
+11626,Padel Cumbres,fuera de la base,2026-10-18,
+11627,Padel State,fuera de la base,2026-10-18,
+11635,Promaster Padel,fuera de la base,2026-10-18,
+11637,Punta 7 Futbol,fuera de la base,2026-10-18,
+11654,Unidad Deportiva de la Liga de Futbol de Puebla,fuera de la base,2026-10-18,
+11666,Campo de Futbol Club Puebla,fuera de la base,2026-10-18,
+11668,Cerritos Soccer Club,fuera de la base,2026-10-18,
+11692,La Recta Fut 7,fuera de la base,2026-10-18,
+11696,Padel Court,fuera de la base,2026-10-18,
+11703,The Soccer Fatory,fuera de la base,2026-10-18,
+11709,Cancha de Futbolito Rapido Tepatlaxco,fuera de la base,2026-10-18,
+11719,Cancha de Futbol Rapido Koliseo,fuera de la base,2026-10-18,
+11720,Cancha del Rio Santa Barbara,fuera de la base,2026-10-18,
+11841,Backspin Padel,fuera de la base,2026-10-18,
+11850,Campo de Futbol la Huertita de Jurica,fuera de la base,2026-10-18,
+11853,Cancha de Fut Bol Punto Verde,fuera de la base,2026-10-18,
+11854,Cancha de Futbol,fuera de la base,2026-10-18,
+11855,Cancha del Centro,fuera de la base,2026-10-18,
+11856,Cancha Futbol Sin Limite,fuera de la base,2026-10-18,
+11857,Cancha Squash Italia,fuera de la base,2026-10-18,
+11919,Futbol Capital,fuera de la base,2026-10-18,
+11962,Glass Cube Padel Center,fuera de la base,2026-10-18,
+11968,Golf Zona Centro Ac,fuera de la base,2026-10-18,
+12028,Olimpus Futbol Queretaro,fuera de la base,2026-10-18,
+12089,The Club Padel And Cademy,fuera de la base,2026-10-18,
+12119,Cancha de Futbol Rapido Olimpo San Pedro,fuera de la base,2026-10-18,
+12120,Cancha Saraperos de Tlaxcala,fuera de la base,2026-10-18,
+12127,Funny Soccer Cancha de Futbol,fuera de la base,2026-10-18,
+12196,Oficina de Comision de Mantenimiento de la Cancha de Futfol las Antenas,fuera de la base,2026-10-18,
+12209,Cancha de Futbol Fut Ortiz,fuera de la base,2026-10-18,
+3654,Estacionamiento Auxiliar Olimpus Gym,fuera de la base,2026-10-18,
+1728,Sport City Carso,fuera de la base,2026-10-20,
+2022,Smart Fit,fuera de la base,2026-10-20,
+2200,Barras Plan Sexenal,fuera de la base,2026-10-20,
+5137,Sports World Anbr / tabr / ra,fuera de la base,2026-10-20,
+19675,Orangetheory Fitness MEX002 Polanco,fuera de la base,2026-10-20,
+20912,Amigos Gym,fuera de la base,2026-10-20,
+21401,Fitintegra Cuemanco,fuera de la base,2026-10-20,
+26135,Flow Moovement Polanco,fuera de la base,2026-10-20,
+19795,Medusaxfit,fuera de la base,2026-10-21,
+19823,Anahata Estudio de Danza y Yoga Suc Colosio,fuera de la base,2026-10-21,
+19824,Anahata Estudio de Danza y Yoga Suc Gremial,fuera de la base,2026-10-21,
+19832,ELITE Athletics Training Center,fuera de la base,2026-10-21,
+19865,Valhalla Strength and Conditioning,fuera de la base,2026-10-21,
+19879,The Barre AGS,fuera de la base,2026-10-21,
+19881,Anahata Estudio de Danza y Yoga Suc Paseos,fuera de la base,2026-10-21,
+19894,ULTRAGYM MISIÓN ENSENADA,fuera de la base,2026-10-21,
+19910,Reneikii centro de meditación,fuera de la base,2026-10-21,
+19911,SportKines Mexicali,fuera de la base,2026-10-21,
+19913,ULTRAGYM INDEPENDENCIA,fuera de la base,2026-10-21,
+19914,ULTRAGYM SENDERO MEXICALI,fuera de la base,2026-10-21,
+19915,ULTRAGYM VILLAS DEL REY,fuera de la base,2026-10-21,
+19916,ULTRAGYM VILLAS VERDE,fuera de la base,2026-10-21,
+19921,ULTRAGYM PABELLÓN ROSARITO,fuera de la base,2026-10-21,
+19949,SmartFit Cucapah FR,fuera de la base,2026-10-21,
+19950,SportKines Tijuana,fuera de la base,2026-10-21,
+19953,ULTRAGYM CARROUSEL,fuera de la base,2026-10-21,
+19954,ULTRAGYM LOMA BONITA,fuera de la base,2026-10-21,
+19955,ULTRAGYM PAPALOTE,fuera de la base,2026-10-21,
+19956,ULTRAGYM PASEO 2000,fuera de la base,2026-10-21,
+19957,ULTRAGYM SANTA FÉ,fuera de la base,2026-10-21,
+20008,Anytime Fitness Tapachula,fuera de la base,2026-10-21,
+20015,BootCamp Academy,fuera de la base,2026-10-21,
+20029,Anytime Fitness Industrial Bermudez 8113,fuera de la base,2026-10-21,
+20031,SportKines Ciudad Juárez,fuera de la base,2026-10-21,
+20032,Skyline Fit & Ride Concordia,fuera de la base,2026-10-21,
+20054,Nira Yoga,fuera de la base,2026-10-21,
+20068,Tres21 Bootcamp,fuera de la base,2026-10-21,
+20069,ULTRAGYM CHIHUAHUA,fuera de la base,2026-10-21,
+20127,BLACKFIT SAN ISIDRO,fuera de la base,2026-10-21,
+20129,Campeones del box MX,fuera de la base,2026-10-21,
+20287,P 365 CENTRO DE ENTRENAMIENTO FUNCIONAL,fuera de la base,2026-10-21,
+20341,GYMMX,fuera de la base,2026-10-21,
+20348,Santuario Boutique,fuera de la base,2026-10-21,
+20362,Eunoia,fuera de la base,2026-10-21,
+20397,Silver Sport Center Matriz,fuera de la base,2026-10-21,
+20507,ARTE TOI,fuera de la base,2026-10-21,
+20509,BLoft,fuera de la base,2026-10-21,
+20514,Dance & Fit,fuera de la base,2026-10-21,
+20561,La Jaula Training Center,fuera de la base,2026-10-21,
+20671,Inferno Hot Room,fuera de la base,2026-10-21,
+20696,Mov Mov Wellnes House,fuera de la base,2026-10-21,
+20753,Ungravity Aerial Dance,fuera de la base,2026-10-21,
+20761,Academia Tenista,fuera de la base,2026-10-21,
+20797,La Vieja Guardia Aragón,fuera de la base,2026-10-21,
+20848,Club Judokata México,fuera de la base,2026-10-21,
+20855,GIMNASIO FUNCIONAL FUN,fuera de la base,2026-10-21,
+20875,Crack’s Gym,fuera de la base,2026-10-21,
+20983,Krav Maga Global (KMG),fuera de la base,2026-10-21,
+21009,Ollinco CrossFitness,fuera de la base,2026-10-21,
+21064,YOLLIN. ARTS-FITNESS-WELLNESS,fuera de la base,2026-10-21,
+21070,KI NO SEKAI,fuera de la base,2026-10-21,
+21249,OKÀN,fuera de la base,2026-10-21,
+21300,Smart Fit Patio Revolución,fuera de la base,2026-10-21,
+21301,SmartBeat Electrofitness San Pedro de los Pinos,fuera de la base,2026-10-21,
+21337,Ungravity Aerial Dance Cuauhtémoc,fuera de la base,2026-10-21,
+21369,Nocaut: Functional Studio,fuera de la base,2026-10-21,
+21399,El Club ST,fuera de la base,2026-10-21,
+21491,Animal Move,fuera de la base,2026-10-21,
+21511,Helios Artes Escénico Aéreas,fuera de la base,2026-10-21,
+21551,Sport Gym Club,fuera de la base,2026-10-21,
+21595,Gorillaz Cross Training,fuera de la base,2026-10-21,
+21603,IFIT GYM,fuera de la base,2026-10-21,
+21628,ERATO GYM,fuera de la base,2026-10-21,
+21633,Evvo Force,fuera de la base,2026-10-21,
+21662,Republica Training,fuera de la base,2026-10-21,
+21678,ULTRAGYM SALTILLO,fuera de la base,2026-10-21,
+21712,Be Human,fuera de la base,2026-10-21,
+21713,ALTAFIT,fuera de la base,2026-10-21,
+21731,ALTAFIT VILLA DE JUAREZ,fuera de la base,2026-10-21,
+21732,CLQFIT,fuera de la base,2026-10-21,
+21739,Energym,fuera de la base,2026-10-21,
+21740,Evolution Center,fuera de la base,2026-10-21,
+21741,Evolution Center Sucursal El Eden,fuera de la base,2026-10-21,
+21742,G Fitness MX,fuera de la base,2026-10-21,
+21744,Lion Training Center,fuera de la base,2026-10-21,
+21745,Lion Training Center Suc Lomas,fuera de la base,2026-10-21,
+21746,M/W Fitness,fuera de la base,2026-10-21,
+21752,Revo Cycling,fuera de la base,2026-10-21,
+21757,Voga Boxing Club Gómez Palacio,fuera de la base,2026-10-21,
+21767,BLACKFIT CLAVERIA,fuera de la base,2026-10-21,
+21994,CENARU STUDIO,fuera de la base,2026-10-21,
+21995,D.N.T,fuera de la base,2026-10-21,
+22049,Love to Fit Arboledas,fuera de la base,2026-10-21,
+22176,RideUp Cycling Studio,fuera de la base,2026-10-21,
+22280,BodEvolve120,fuera de la base,2026-10-21,
+22448,Calmecac Studio,fuera de la base,2026-10-21,
+22488,CROSSFIT FIT STRONG,fuera de la base,2026-10-21,
+22542,XTREME GYM,fuera de la base,2026-10-21,
+22548,3G Functional Training,fuera de la base,2026-10-21,
+22569,Love to Fit Satélite,fuera de la base,2026-10-21,
+22581,SOULÉ PILATES,fuera de la base,2026-10-21,
+22688,ARMY FIT 50,fuera de la base,2026-10-21,
+22729,Shalom Centro Quiropráctico Toluca,fuera de la base,2026-10-21,
+22761,Smart Fit Patio Chalco,fuera de la base,2026-10-21,
+22785,Dale Play,fuera de la base,2026-10-21,
+22819,BodyLab Gym,fuera de la base,2026-10-21,
+22846,Live Fit San Miguel,fuera de la base,2026-10-21,
+22858,Spartan Life Magno,fuera de la base,2026-10-21,
+22859,Spartan Life Murales,fuera de la base,2026-10-21,
+22905,Maverick Zona Sur (Padelista),fuera de la base,2026-10-21,
+22951,The LAB Fitness & Health,fuera de la base,2026-10-21,
+22960,Elite Fitness Acapulco,fuera de la base,2026-10-21,
+22990,CENTERFIT CENTRO,fuera de la base,2026-10-21,
+22991,CENTERFIT REVOLUCIÓN,fuera de la base,2026-10-21,
+22993,Demom Crossfit,fuera de la base,2026-10-21,
+23005,Spartan Crossfit,fuera de la base,2026-10-21,
+23042,Anytime Fitness Estadio GDL,fuera de la base,2026-10-21,
+23137,SportKines Guadalajara Santa Cruz,fuera de la base,2026-10-21,
+23138,SportKines Guevara,fuera de la base,2026-10-21,
+23151,Ufit Athletic,fuera de la base,2026-10-21,
+23277,CrossBox Mateos,fuera de la base,2026-10-21,
+23506,GLOBAL GYM,fuera de la base,2026-10-21,
+23536,Center Fit Sucursal Salida a Charo,fuera de la base,2026-10-21,
+23559,FIT CLUB SUC. CENTRO,fuera de la base,2026-10-21,
+23560,FIT CLUB SUC. HUERTA,fuera de la base,2026-10-21,
+23561,FIT CLUB SUC. PLAZA SAN MIGUEL,fuera de la base,2026-10-21,
+23633,Training Zone,fuera de la base,2026-10-21,
+23646,BLACK BULL ELITE FITNESS,fuera de la base,2026-10-21,
+23736,Anytime Fitness Nvo Vallarta,fuera de la base,2026-10-21,
+23820,AquaNa2,fuera de la base,2026-10-21,
+23862,Power Fit Gym,fuera de la base,2026-10-21,
+23884,Estudio Cardio Box,fuera de la base,2026-10-21,
+23919,VAULT CROSSFIT,fuera de la base,2026-10-21,
+24057,Delta Climbing,fuera de la base,2026-10-21,
+24154,MW GYM,fuera de la base,2026-10-21,
+24191,One Power Martial Arts,fuera de la base,2026-10-21,
+24200,Pico norte nuevo sur,fuera de la base,2026-10-21,
+24214,Reset Studio,fuera de la base,2026-10-21,
+24225,SUPER FITNESS LAS TORRES,fuera de la base,2026-10-21,
+24227,Sadhak Yoga Contry,fuera de la base,2026-10-21,
+24268,TYM Sport Center San Jeronimo,fuera de la base,2026-10-21,
+24269,TYM Sport Center Valle Alto,fuera de la base,2026-10-21,
+24318,in-Vacu carretera nacional,fuera de la base,2026-10-21,
+24418,Nova Fit EMS San Pedro,fuera de la base,2026-10-21,
+24423,11:11 Fitness Armida,fuera de la base,2026-10-21,
+24515,TYM Sport Center San Pedro,fuera de la base,2026-10-21,
+24531,Urmah Sendero,fuera de la base,2026-10-21,
+24536,Ponte Ready,fuera de la base,2026-10-21,
+24538,TYM Sport Center Valle Poniente,fuera de la base,2026-10-21,
+24540,ULTRAGYM SENDERO SANTA CATARINA,fuera de la base,2026-10-21,
+24565,VITAL GYM Matriz,fuera de la base,2026-10-21,
+24566,VITAL GYM XoXo,fuera de la base,2026-10-21,
+24579,POWER CENTER KONWALIA,fuera de la base,2026-10-21,
+24732,Diablo Crossfit,fuera de la base,2026-10-21,
+24756,Psychotic CrossFit / Kingdom MMA,fuera de la base,2026-10-21,
+25003,La Barra Sana,fuera de la base,2026-10-21,
+25040,Love to Fit Juriquilla,fuera de la base,2026-10-21,
+25055,Anytime Fitness Zakia Qro,fuera de la base,2026-10-21,
+25070,Fitness Motion Juriquilla,fuera de la base,2026-10-21,
+25092,Rebellion Studio,fuera de la base,2026-10-21,
+25097,Seven Fitness Center,fuera de la base,2026-10-21,
+25105,Three House,fuera de la base,2026-10-21,
+25107,Ubuntu 33 Crossfit Y Trx,fuera de la base,2026-10-21,
+25108,Uppercut Boxing Club,fuera de la base,2026-10-21,
+25114,GO HIT CIRCUIT FITNESS,fuera de la base,2026-10-21,
+25125,Krypteia Training Studio SJR,fuera de la base,2026-10-21,
+25174,Box Arena,fuera de la base,2026-10-21,
+25184,Celero Cycling,fuera de la base,2026-10-21,
+25299,Neshamá Milenio,fuera de la base,2026-10-21,
+25359,Sport Zone Express,fuera de la base,2026-10-21,
+25394,ZUID FITNESS 24/7,fuera de la base,2026-10-21,
+25449,EOS GYM,fuera de la base,2026-10-21,
+25486,H2O Academia de Natación,fuera de la base,2026-10-21,
+25490,Good Shape Sport Center Suc Jacaradas,fuera de la base,2026-10-21,
+25504,Cross&Fitness Functional Training 1,fuera de la base,2026-10-21,
+25505,Dinamita Boxing,fuera de la base,2026-10-21,
+25532,ZON -THE FUNCTIONAL AND MMA EXPERIENCE,fuera de la base,2026-10-21,
+25536,Fitness 2.0,fuera de la base,2026-10-21,
+25541,ULTRAGYM AZAHARES,fuera de la base,2026-10-21,
+25545,SportKines Culiacán,fuera de la base,2026-10-21,
+25558,Punto Fit preparación física y fitness,fuera de la base,2026-10-21,
+25563,ZONA FITNESS REAL DEL VALLE,fuera de la base,2026-10-21,
+25565,Anytime Fitness Camino al Mar Mazatlán,fuera de la base,2026-10-21,
+25567,Focus CDE Atlántico,fuera de la base,2026-10-21,
+25650,SportKines Mazatlán,fuera de la base,2026-10-21,
+25654,HB Crossfit,fuera de la base,2026-10-21,
+25679,Boulder GRID,fuera de la base,2026-10-21,
+25703,MS Sport Gym,fuera de la base,2026-10-21,
+25720,SPIN HIIT QUIROGA,fuera de la base,2026-10-21,
+25723,SPIN-HIIT Girls Pabellón Misiones,fuera de la base,2026-10-21,
+25726,SPIN-HIIT SUN MALL,fuera de la base,2026-10-21,
+25727,SPIN-HIIT Sur,fuera de la base,2026-10-21,
+25733,Spin Hiit-Colosio,fuera de la base,2026-10-21,
+25734,Spin Hiit-Vado del Río,fuera de la base,2026-10-21,
+25748,SPIN-HIIT NAVOJOA,fuera de la base,2026-10-21,
+25750,Dinamics Workout,fuera de la base,2026-10-21,
+25752,Tutuli Fitness MX,fuera de la base,2026-10-21,
+25758,ULTRAGYM SAN LUIS RÍO COLORADO,fuera de la base,2026-10-21,
+25767,THE FIT HOUSE,fuera de la base,2026-10-21,
+25803,SportKines Villahermosa,fuera de la base,2026-10-21,
+25811,Geos Lima Lama,fuera de la base,2026-10-21,
+25824,Palmas Gym,fuera de la base,2026-10-21,
+25853,SportKines Tampico,fuera de la base,2026-10-21,
+25855,Vonnacher ninjas borreguera,fuera de la base,2026-10-21,
+25865,ZERO SPORT CENTER BANDERILLA,fuera de la base,2026-10-21,
+25866,Buenavista Gym,fuera de la base,2026-10-21,
+25875,MIND FIT,fuera de la base,2026-10-21,
+25917,Zona Sport Gym,fuera de la base,2026-10-21,
+25923,ZERO SPORT CENTER ARCOS SUR,fuera de la base,2026-10-21,
+25924,ZERO SPORT CENTER LAGOS,fuera de la base,2026-10-21,
+25934,ZERO SPORT CENTER AGUA SANTA,fuera de la base,2026-10-21,
+25935,ZERO SPORT CENTER HACIENDAS,fuera de la base,2026-10-21,
+25940,ZERO SPORT CENTER VILLA HERMOSA,fuera de la base,2026-10-21,
+25944,AIAM Mérida - Academia Internacional de Artes Marciales,fuera de la base,2026-10-21,
+25981,Centro Deportivo Mirmidones,fuera de la base,2026-10-21,
+25987,Fitness Room,fuera de la base,2026-10-21,
+26033,Coavsi GYM,fuera de la base,2026-10-21,
+26038,Stronger Fitness Guadalupe,fuera de la base,2026-10-21,
+26041,BLACK BASE,fuera de la base,2026-10-21,
+26043,1% Muscle Gym,fuera de la base,2026-10-21,
+26052,Stronger Fitness,fuera de la base,2026-10-21,
+26119,DivaDance CDMX,fuera de la base,2026-10-21,
+26252,Treino Studio,fuera de la base,2026-10-21,
+26346,Malak Pilates,fuera de la base,2026-10-21,
+26468,BoxZen San Pedro,fuera de la base,2026-10-21,
+26553,Mova Wellness,fuera de la base,2026-10-21,
+26673,Namore Pilates,fuera de la base,2026-10-21,
+26700,Body Awareness Caucel,fuera de la base,2026-10-21,
+19509,Sports World Anbr / zubr / res,fuera de la base,2026-10-21,
+20169,VISTA FITNESS CENTER AZCAPOTZALCO,fuera de la base,2026-10-21,
+20364,KiNN Lomas,fuera de la base,2026-10-21,
+20920,Balans Pilates Club,fuera de la base,2026-10-21,
+20947,Danza Aerea Polanco,fuera de la base,2026-10-21,
+26082,Barre Studio Fer Díez Lomas,fuera de la base,2026-10-21,
+26120,Dlk Fitness Santa Maria,fuera de la base,2026-10-21,
+26137,Fuerza by Fitspin Lomas,fuera de la base,2026-10-21,
+488,Innovasport Parque Antenas,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJo36uFasDzoURKcA7ZGnfi1U
+482,Innovasport Tezontle,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJsWcXT9L90YUR0IvF4Wl9Tmc
+455,Spartan Proteínas Creatinas y vitaminas,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJtf1tp4ICzoURtiOrCH-rXy4
+483,Tienda Deportiva PIRMA,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJYWtG5Y790YURIjkG98rsalQ
+452,Spartan Suplementos y Vitaminas Ermita Iztapalapa,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJVyxcIgkDzoURIQVmoPaQxJI
+459,Tiempo de Suplementos,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJd2g3vBf_0YURNKgk8tjELyY
+489,ARTÍCULOS DEPORTIVOS NUTRIDEPORT,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJX5bcQAT_0YURPYEzgOyIRNw
+464,Gph Nutrition CDMX,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJ2w-H--D_0YURb-cCfnIzzVs
+471,Sportland Suplementos Suc. Palacio,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJZQqZVMn80YURFs_JcASZnAg
+478,"GNC Plaza Central, Iztp. (CDMX)",no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJt1F9KVf90YURBI1PMV6ma6M
+449,Suplementos Total Pharma EL ROSAL,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJB34_cUj90YURPmJ7NC_YvQE
+453,Suplementos Total Pharma UAMI,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJD6Fdy2L90YUR0f7MxF_L6uE
+472,GNC Parque Las Antenas,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJp6d9CK4DzoURL3Jga8IWJMM
+468,Suplementos Sportland Suc. Escondida,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJPZ9Mws_80YURugUSojr84BM
+476,GNC Parque Tezontle,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJSVdJY-L90YURNxqC3RGkGpA
+456,Yolian Nutrición Suplementos,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJIcyxo7n90YURNqVzqyHIwWU
+481,GNC MCM La Viga,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJUajKVQ7_0YURyNnGuIRzgWs
