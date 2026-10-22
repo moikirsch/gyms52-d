@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-10-22T17:57:45.709809+00:00Z",
+ "metros": {
+  "Valle de México (CDMX)": {
+   "antes": 4297,
+   "despues": 4892
+  },
+  "Ecatepec de Morelos": {
+   "antes": 0,
+   "despues": 60
+  }
+ },
+ "peticiones": 105,
+ "errores": [
+  "429 crossfit en Ecatepec de Morelos, Estado de México: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-22T17:59:39.248325+00:00Z"
+}

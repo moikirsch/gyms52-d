@@ -1,7 +1,7 @@
 wp_id recuperados de la bitácora: 1
-Copias existentes adoptadas (no se publicaron de nuevo): 17
-Publicados: 466 | errores: 0
+Publicados: 387 | errores: 0
 wp_id recuperados de la bitácora: 1
-Publicados: 4880 | errores: 1
+Publicados: 4806 | errores: 2
+   Reset Room: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
    Gama Pilates: 404 {"code":"rest_no_route","message":"No se ha encontrado ninguna ruta que coincida con la URL y el m\u00e9todo de la solicitud.","data":{"status":404}}
-Retiradas: 8
+Retiradas: 5
