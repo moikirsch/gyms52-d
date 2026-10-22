@@ -783,3 +783,6 @@ wp_id,nombre,motivo,retirado_el,place_id
 476,GNC Parque Tezontle,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJSVdJY-L90YURNxqC3RGkGpA
 456,Yolian Nutrición Suplementos,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJIcyxo7n90YURNqVzqyHIwWU
 481,GNC MCM La Viga,no es fitness: tienda de deportes o suplementos,2026-10-21,ChIJUajKVQ7_0YURyNnGuIRzgWs
+1633,Súper Naturista,"no es fitness: tienda naturista (por nombre, sin verificar)",2026-10-22,osm:node/4327698361
+1662,distribuidor herbalife,"no es fitness: distribuidor de suplementos Herbalife (por nombre, sin verificar)",2026-10-22,osm:node/5170998425
+1704,MX Skate Shop,"no es fitness: tienda de skate (por nombre, sin verificar)",2026-10-22,osm:node/6612378917
