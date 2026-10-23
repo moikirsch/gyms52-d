@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-10-23T17:52:33.797058+00:00Z",
+ "metros": {
+  "Ecatepec de Morelos": {
+   "antes": 60,
+   "despues": 1467
+  }
+ },
+ "peticiones": 96,
+ "errores": [
+  "429 tienda de suplementos deportivos en Naucalpan de Juárez, Estado de México: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-23T17:54:34.172367+00:00Z"
+}
