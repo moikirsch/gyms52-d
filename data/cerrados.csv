@@ -56,3 +56,7 @@ wp_id,nombre,place_id,motivo,retirado_el
 20727,Siluets SpaEuropeo Roma Norte,totalpass:siluets-spaeuropeo-roma-norte,"no es fitness: spa (por nombre y giro, sin otra fuente)",
 20731,Soul Facial & Body Treatments,totalpass:soul-facial-body-treatments,"no es fitness: tratamientos faciales y corporales (por nombre y giro, sin otra fuente)",
 20733,Spa Holístico Somos BienStar,totalpass:spa-holistico-somos-bienestar,"no es fitness: spa holístico (por nombre y giro, sin otra fuente)",
+20809,Shimai Spa,totalpass:shimai-spa,"no es fitness: spa o masaje (por el nombre, sin verificar)",
+20812,Spacio Olaja De Masaje Y Bienestar,totalpass:spacio-olaja-de-masaje-y-bienestar,"no es fitness: spa o masaje (por el nombre, sin verificar)",
+20837,Model Art Spa Viaducto,totalpass:model-art-spa-viaducto,"no es fitness: spa o masaje (por el nombre, sin verificar)",
+20868,Top Spa Relax & Beauty,totalpass:top-spa-relax-beauty,"no es fitness: spa o masaje (por el nombre, sin verificar)",
