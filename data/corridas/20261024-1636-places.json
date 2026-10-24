@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-10-24T16:34:44.629527+00:00Z",
+ "metros": {
+  "Ecatepec de Morelos": {
+   "antes": 1467,
+   "despues": 2638
+  }
+ },
+ "peticiones": 104,
+ "errores": [
+  "429 estudio de yoga en Chicoloapan, Estado de México: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-24T16:36:49.658323+00:00Z"
+}
