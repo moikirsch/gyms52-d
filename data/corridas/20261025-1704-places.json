@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-10-25T17:02:50.914508+00:00Z",
+ "metros": {
+  "Ecatepec de Morelos": {
+   "antes": 2638,
+   "despues": 3432
+  }
+ },
+ "peticiones": 106,
+ "errores": [
+  "429 tienda de suplementos deportivos en Chimalhuacán, Estado de México: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-25T17:04:30.659291+00:00Z"
+}
