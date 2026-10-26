@@ -7,14 +7,11 @@
 {"osm_id": "node/7096859989", "lat": 21.0796845, "lng": -101.605572, "tags": {"leisure": "fitness_centre", "name": "SmartFit"}, "metro_rango": "9", "metropoli": "León"}
 {"osm_id": "node/10913007811", "lat": 21.0300066, "lng": -101.8680158, "tags": {"brand": "GNC", "brand:wikidata": "Q4808595", "name": "GNC", "shop": "nutrition_supplements"}, "metro_rango": "9", "metropoli": "León"}
 {"osm_id": "node/11341773544", "lat": 21.1085653, "lng": -101.5904172, "tags": {"leisure": "fitness_centre", "name": "Wellness and Barre Gym"}, "metro_rango": "9", "metropoli": "León"}
-{"osm_id": "node/14141346206", "lat": 21.2057215, "lng": -101.7683352, "tags": {"leisure": "fitness_centre", "name": "Gimnasio Canah", "operator": "Plasgo", "toilets": "no"}, "metro_rango": "9", "metropoli": "León"}
-{"osm_id": "node/14176300801", "lat": 21.1287511, "lng": -101.6590523, "tags": {"addr:housenumber": "402", "addr:postcode": "37260", "addr:street": "Calle Mazatlán", "check_date": "2026-09-12", "check_date:opening_hours": "2026-09-12", "leisure": "fitness_centre", "level": "0", "name": "Live Fit Oro", "opening_hours": "Mo-Sa 06:00-23:00", "website": "https://www.instagram.com/live.fit.gimnasio/?hl=es"}, "metro_rango": "9", "metropoli": "León"}
-{"osm_id": "node/14177278801", "lat": 21.0598604, "lng": -101.5698114, "tags": {"addr:street": "Boulevard Cañaveral", "check_date": "2026-09-12", "leisure": "sports_centre", "name": "Polideportivo"}, "metro_rango": "9", "metropoli": "León"}
 {"osm_id": "way/184322588", "lat": 21.1636282, "lng": -101.7089587, "tags": {"leisure": "sports_centre", "name": "Club Britania"}, "metro_rango": "9", "metropoli": "León"}
 {"osm_id": "way/224753361", "lat": 21.063462, "lng": -101.5837889, "tags": {"leisure": "sports_centre", "name": "Campo de futbol"}, "metro_rango": "9", "metropoli": "León"}
 {"osm_id": "way/224753367", "lat": 21.0647246, "lng": -101.5839891, "tags": {"leisure": "sports_centre", "name": "Cancha de Basquetbol"}, "metro_rango": "9", "metropoli": "León"}
 {"osm_id": "way/230286916", "lat": 21.1364159, "lng": -101.6885734, "tags": {"leisure": "sports_centre", "name": "Club Atenas", "source": "conocimiento local"}, "metro_rango": "9", "metropoli": "León"}
-{"osm_id": "way/245249742", "lat": 21.1064689, "lng": -101.6348211, "tags": {"leisure": "sports_centre", "name": "COMUDE", "wheelchair": "yes"}, "metro_rango": "9", "metropoli": "León"}
+{"osm_id": "way/245249742", "lat": 21.1064689, "lng": -101.6346808, "tags": {"leisure": "sports_centre", "name": "COMUDE", "wheelchair": "yes"}, "metro_rango": "9", "metropoli": "León"}
 {"osm_id": "way/245252823", "lat": 21.1175195, "lng": -101.6322511, "tags": {"leisure": "sports_centre", "name": "Club Loyola"}, "metro_rango": "9", "metropoli": "León"}
 {"osm_id": "way/245562171", "lat": 21.1216447, "lng": -101.6302104, "tags": {"leisure": "sports_centre", "name": "Acuática Lux"}, "metro_rango": "9", "metropoli": "León"}
 {"osm_id": "way/264835345", "lat": 21.1989308, "lng": -101.7227434, "tags": {"building": "yes", "leisure": "sports_centre", "name": "El Bosque Country Club"}, "metro_rango": "9", "metropoli": "León"}

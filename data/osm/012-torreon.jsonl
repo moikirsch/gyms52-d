@@ -25,10 +25,6 @@
 {"osm_id": "node/13994240959", "lat": 25.541707, "lng": -103.4615095, "tags": {"check_date": "2026-07-04", "name": "Salper Deportes", "shop": "sports"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "node/14030112968", "lat": 25.5617913, "lng": -103.4921168, "tags": {"check_date": "2026-07-20", "leisure": "fitness_centre", "name": "Academia de Box", "sport": "fitness"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "node/14030112970", "lat": 25.564621, "lng": -103.4942452, "tags": {"check_date": "2026-07-20", "leisure": "fitness_centre", "name": "Lux Center"}, "metro_rango": "12", "metropoli": "Torreón"}
-{"osm_id": "node/14168597513", "lat": 25.5007451, "lng": -103.4165056, "tags": {"leisure": "fitness_centre", "name": "CAP GYM"}, "metro_rango": "12", "metropoli": "Torreón"}
-{"osm_id": "node/14168597514", "lat": 25.4988649, "lng": -103.4130585, "tags": {"leisure": "fitness_centre", "name": "Voga Boxing Club"}, "metro_rango": "12", "metropoli": "Torreón"}
-{"osm_id": "node/14181848625", "lat": 25.6201993, "lng": -103.3921373, "tags": {"check_date": "2026-09-15", "leisure": "fitness_centre", "name": "Legacy fitness"}, "metro_rango": "12", "metropoli": "Torreón"}
-{"osm_id": "node/14183526029", "lat": 25.6207074, "lng": -103.3915712, "tags": {"check_date": "2026-09-15", "leisure": "fitness_centre", "name": "Motion by Fitness Coach Alex Ibarra"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/116771118", "lat": 25.5340013, "lng": -103.411321, "tags": {"alt_name": "Deportiva", "leisure": "sports_centre", "name": "Unidad Deportiva Torreón Braulio Fernández Aguirre", "sport": "soccer;baseball;basketball;swimming;tennis;volleyball;american_football"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/147219064", "lat": 25.5296478, "lng": -103.2207573, "tags": {"barrier": "wall", "leisure": "sports_centre", "name": "Unidad Deportiva Horacio Piña"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/147498918", "lat": 25.5331349, "lng": -103.2370255, "tags": {"leisure": "sports_centre", "name": "Cancha Camara Junior", "sport": "baseball"}, "metro_rango": "12", "metropoli": "Torreón"}
@@ -39,7 +35,6 @@
 {"osm_id": "way/257535764", "lat": 25.5760695, "lng": -103.4432611, "tags": {"leisure": "sports_centre", "name": "Magisterio"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/257539975", "lat": 25.5390517, "lng": -103.3928648, "tags": {"leisure": "sports_centre", "name": "El Golazo"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/462662264", "lat": 25.5514587, "lng": -103.5119902, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "Auditorio Municipal"}, "metro_rango": "12", "metropoli": "Torreón"}
-{"osm_id": "way/464624102", "lat": 25.5337931, "lng": -103.4481065, "tags": {"leisure": "sports_centre", "name": "Auditorio Municipal"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/465302186", "lat": 25.5527652, "lng": -103.5087574, "tags": {"building": "yes", "leisure": "dance", "name": "Gennte"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/466420887", "lat": 25.5275837, "lng": -103.4634735, "tags": {"building": "yes", "leisure": "sports_centre", "name": "Complejo Cultural y Deportivo la Jabonera"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/468886270", "lat": 25.5498854, "lng": -103.4680269, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "Gimnasio ULSA Laguna", "opening_hours": "08:00-21:00"}, "metro_rango": "12", "metropoli": "Torreón"}
@@ -67,6 +62,3 @@
 {"osm_id": "way/1324860667", "lat": 25.5412871, "lng": -103.3578049, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "Fitness Zone"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/1327413520", "lat": 25.5398773, "lng": -103.3591219, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "SUPER GYM NAZAS"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/1454314825", "lat": 25.5515123, "lng": -103.4305591, "tags": {"amenity": "dancing_school", "building": "yes", "name": "Oasis Creative"}, "metro_rango": "12", "metropoli": "Torreón"}
-{"osm_id": "way/1558959928", "lat": 25.6206265, "lng": -103.3917175, "tags": {"check_date": "2026-09-14", "leisure": "sports_hall", "name": "Academia de Gimnasia y Parkour", "sport": "gymnastics"}, "metro_rango": "12", "metropoli": "Torreón"}
-{"osm_id": "way/1560213961", "lat": 25.5584937, "lng": -103.3807594, "tags": {"brand": "Smart Fit", "brand:wikidata": "Q30930959", "building": "yes", "leisure": "fitness_centre", "name": "Smart Fit"}, "metro_rango": "12", "metropoli": "Torreón"}
-{"osm_id": "way/1561021478", "lat": 25.7084164, "lng": -103.3080365, "tags": {"access": "yes", "building": "yes", "leisure": "sports_centre", "lit": "yes", "name": "Cancha Santa Ana", "sport": "multi", "surface": "asphalt"}, "metro_rango": "12", "metropoli": "Torreón"}
