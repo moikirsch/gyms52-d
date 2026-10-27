@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-10-26T21:18:51.554503+00:00Z",
+ "metros": {
+  "Ecatepec de Morelos": {
+   "antes": 3432,
+   "despues": 3613
+  },
+  "Zapopan": {
+   "antes": 0,
+   "despues": 1055
+  }
+ },
+ "peticiones": 105,
+ "errores": [
+  "429 tienda de suplementos deportivos en Guadalajara, Jalisco: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-26T21:20:42.326879+00:00Z"
+}
