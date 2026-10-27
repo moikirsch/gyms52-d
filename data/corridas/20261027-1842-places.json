@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-10-27T18:40:42.811852+00:00Z",
+ "metros": {
+  "Zapopan": {
+   "antes": 1055,
+   "despues": 1858
+  },
+  "Monterrey": {
+   "antes": 0,
+   "despues": 152
+  }
+ },
+ "peticiones": 106,
+ "errores": [
+  "429 estudio de pilates en Monterrey, Nuevo León: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-27T18:42:29.654421+00:00Z"
+}

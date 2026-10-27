@@ -1,3 +1,1 @@
-/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/PIL/Image.py:3593: DecompressionBombWarning: Image size (116162618 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
-  warnings.warn(
-Fotos: 8 de 26 sitios con foto usable
+Fotos: 8 de 21 sitios con foto usable
