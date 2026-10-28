@@ -1,17 +1,17 @@
 == smartfit
-   498 exportados, 0 descartados, 65.6s
+   499 exportados, 0 descartados, 66.2s
 == anytime
-   119 exportados, 0 descartados, 0.4s
+   119 exportados, 0 descartados, 0.5s
 == sportsworld
    48 exportados, 0 descartados, 25.1s
 == sportcity
    24 exportados, 2 descartados, 5.1s
 == crossfit
-   53 exportados, 1 descartados, 54.4s
+   54 exportados, 1 descartados, 55.5s
 == hyrox
-   274 exportados, 0 descartados, 138.2s
+   277 exportados, 0 descartados, 189.0s
 == totalpass
-   7815 exportados, 0 descartados, 8.8s
+   7900 exportados, 2 descartados, 26.6s
 == fitpass
-   2872 exportados, 1 descartados, 4.6s
+   2900 exportados, 1 descartados, 4.7s
 resumen: /home/runner/work/gyms52-d/gyms52-d/data/fuentes/resumen.json
