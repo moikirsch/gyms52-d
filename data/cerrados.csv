@@ -125,3 +125,5 @@ wp_id,nombre,place_id,motivo,retirado_el
 2389,GNC,osm:node/6983984976,no es fitness: tienda de suplementos,
 2465,Pirma,osm:way/494496780,no es fitness: tienda de conveniencia (7-Eleven),
 23296,Aloe Home Spa Naciones Unidas,totalpass:aloe-home-spa-naciones-unidas,no es fitness: spa,
+2438,BICI TLAQUEPAQUE (Punto de encuentro),osm:node/12015239141,"no es fitness: punto de encuentro o paradero, sin confirmar con búsqueda",
+2441,CAMARA RODANTE (Punto de encuentro),osm:node/12858020120,"no es fitness: punto de encuentro o paradero, sin confirmar con búsqueda",
