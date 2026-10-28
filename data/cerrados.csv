@@ -122,3 +122,5 @@ wp_id,nombre,place_id,motivo,retirado_el
 22483,Get Spa Ecatepec,totalpass:get-spa-ecatepec,no es fitness: spa,
 958,"Distribuidor USANA, nutrición, vitaminas, suplementos",ChIJx-SvKUj70YUR9CV2DhJQ6pE,no es fitness: distribuidor de suplementos,
 23295,Aloe Home Spa Chapalita,totalpass:aloe-home-spa-chapalita,"no es fitness: spa (por el nombre, sin confirmar en búsqueda)",
+2389,GNC,osm:node/6983984976,no es fitness: tienda de suplementos,
+2465,Pirma,osm:way/494496780,no es fitness: tienda de conveniencia (7-Eleven),
