@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-10-28T19:27:47.838024+00:00Z",
+ "metros": {
+  "Monterrey": {
+   "antes": 152,
+   "despues": 1353
+  }
+ },
+ "peticiones": 94,
+ "errores": [
+  "429 box de entrenamiento funcional en General Escobedo, Nuevo León: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-28T19:29:45.548825+00:00Z"
+}
