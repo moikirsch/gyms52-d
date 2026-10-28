@@ -127,3 +127,5 @@ wp_id,nombre,place_id,motivo,retirado_el
 23296,Aloe Home Spa Naciones Unidas,totalpass:aloe-home-spa-naciones-unidas,no es fitness: spa,
 2438,BICI TLAQUEPAQUE (Punto de encuentro),osm:node/12015239141,"no es fitness: punto de encuentro o paradero, sin confirmar con búsqueda",
 2441,CAMARA RODANTE (Punto de encuentro),osm:node/12858020120,"no es fitness: punto de encuentro o paradero, sin confirmar con búsqueda",
+23033,AXA Keralty Guadalajara,totalpass:axa-keralty-guadalajara,no es fitness: clínica médica AXA Keralty,
+23034,AXA Keralty Plaza Mexico,totalpass:axa-keralty-plaza-mexico,no es fitness: clínica médica AXA Keralty,

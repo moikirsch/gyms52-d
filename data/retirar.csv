@@ -957,14 +957,16 @@ wp_id,nombre,motivo,retirado_el,place_id
 23296,Aloe Home Spa Naciones Unidas,no es fitness: spa,2026-10-28,totalpass:aloe-home-spa-naciones-unidas
 2438,BICI TLAQUEPAQUE (Punto de encuentro),"no es fitness: punto de encuentro o paradero, sin confirmar con búsqueda",2026-10-28,osm:node/12015239141
 2441,CAMARA RODANTE (Punto de encuentro),"no es fitness: punto de encuentro o paradero, sin confirmar con búsqueda",2026-10-28,osm:node/12858020120
-19776,NoStrangers.studio,fuera de la base,,
-19902,Girl Power Fitness,fuera de la base,,
-19963,BAJA FITNESS BY MEDANO,fuera de la base,,
-20025,Sukha Yoga Studio Tuxtla,fuera de la base,,
-20088,Koti Wellness Condesa,fuera de la base,,
-20490,Taekwondo Jidoja-do Sur Coyoacán,fuera de la base,,
-20672,Inpeak Reforma,fuera de la base,,
-21207,Koti Wellness Lomas De Chapultepec,fuera de la base,,
-22461,Taekwondo Jidoja-do Nezahualcoyotl,fuera de la base,,
-23967,Beam Studio,fuera de la base,,
-25973,Arbeha Spa,fuera de la base,,
+19776,NoStrangers.studio,fuera de la base,2026-10-28,
+19902,Girl Power Fitness,fuera de la base,2026-10-28,
+19963,BAJA FITNESS BY MEDANO,fuera de la base,2026-10-28,
+20025,Sukha Yoga Studio Tuxtla,fuera de la base,2026-10-28,
+20088,Koti Wellness Condesa,fuera de la base,2026-10-28,
+20490,Taekwondo Jidoja-do Sur Coyoacán,fuera de la base,2026-10-28,
+20672,Inpeak Reforma,fuera de la base,2026-10-28,
+21207,Koti Wellness Lomas De Chapultepec,fuera de la base,2026-10-28,
+22461,Taekwondo Jidoja-do Nezahualcoyotl,fuera de la base,2026-10-28,
+23967,Beam Studio,fuera de la base,2026-10-28,
+25973,Arbeha Spa,fuera de la base,2026-10-28,
+23033,AXA Keralty Guadalajara,no es fitness: clínica médica AXA Keralty,2026-10-28,totalpass:axa-keralty-guadalajara
+23034,AXA Keralty Plaza Mexico,no es fitness: clínica médica AXA Keralty,2026-10-28,totalpass:axa-keralty-plaza-mexico
