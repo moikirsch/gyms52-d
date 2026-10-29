@@ -132,3 +132,6 @@ wp_id,nombre,place_id,motivo,retirado_el
 10839,ChochosGym - Suplementos Deportivos,ChIJ128WszuVYoYRtv0QivxuFbY,no es fitness: tienda,
 2524,Decathlon Monterrey Cumbres,ChIJ01t1_xuXYoYRzj4b9tM929I,no es fitness: tienda,
 10276,Volvo Gym,ChIJTy42SXPrYoYRJEuLFo6pTXI,"no es fitness: sitio de Volvo, probable gimnasio corporativo",
+2581,Tigretienda,osm:way/1069656014,no es fitness: tienda de artículos del equipo Tigres,
+23783,Am Medicina Estetica,totalpass:am-medicina-estetica,no es fitness: clínica de medicina estética,
+23789,Sensitif Apodaca,totalpass:sensitif-apodaca,no es fitness: spa,
