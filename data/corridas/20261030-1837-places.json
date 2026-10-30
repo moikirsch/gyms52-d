@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-10-30T18:35:51.395297+00:00Z",
+ "metros": {
+  "Monterrey": {
+   "antes": 2153,
+   "despues": 2399
+  },
+  "Cuautitlán Izcalli": {
+   "antes": 0,
+   "despues": 638
+  }
+ },
+ "peticiones": 94,
+ "errores": [
+  "429 tienda de suplementos deportivos en Tecámac, Estado de México: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-30T18:37:27.198446+00:00Z"
+}
