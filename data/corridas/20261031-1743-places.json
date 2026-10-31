@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-10-31T17:41:45.118874+00:00Z",
+ "metros": {
+  "Cuautitlán Izcalli": {
+   "antes": 638,
+   "despues": 1724
+  }
+ },
+ "peticiones": 103,
+ "errores": [
+  "429 crossfit en Coacalco de Berriozábal, Estado de México: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-10-31T17:43:28.376729+00:00Z"
+}
