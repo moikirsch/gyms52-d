@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-11-01T18:25:04.408299+00:00Z",
+ "metros": {
+  "Cuautitlán Izcalli": {
+   "antes": 1724,
+   "despues": 2362
+  }
+ },
+ "peticiones": 103,
+ "errores": [
+  "429 box de entrenamiento funcional en Tizayuca, Hidalgo: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-01T18:26:29.916852+00:00Z"
+}
