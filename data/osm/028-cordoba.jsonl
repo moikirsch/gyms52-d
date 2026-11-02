@@ -37,7 +37,6 @@
 {"osm_id": "way/842819931", "lat": 18.8658265, "lng": -97.0973836, "tags": {"amenity": "dojo", "building": "yes", "name": "United T.A.M"}, "metro_rango": "28", "metropoli": "Córdoba"}
 {"osm_id": "way/842819932", "lat": 18.866013, "lng": -97.097271, "tags": {"building": "yes", "dance:teaching": "yes", "leisure": "dance", "name": "RUMBA", "opening_hours": "24/7", "wheelchair": "yes"}, "metro_rango": "28", "metropoli": "Córdoba"}
 {"osm_id": "way/843308421", "lat": 18.8497924, "lng": -97.110238, "tags": {"fee": "yes", "leisure": "sports_centre", "name": "Deportivo ADO", "payment:cash": "yes", "payment:coins": "yes", "sport": "soccer;tennis;basketball;swimming;running"}, "metro_rango": "28", "metropoli": "Córdoba"}
-{"osm_id": "way/854702873", "lat": 18.8953672, "lng": -96.9434975, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "Sport Fit"}, "metro_rango": "28", "metropoli": "Córdoba"}
 {"osm_id": "way/876169399", "lat": 18.8964663, "lng": -97.0089692, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "I Can Gym"}, "metro_rango": "28", "metropoli": "Córdoba"}
 {"osm_id": "way/1066178230", "lat": 18.8527097, "lng": -96.9787844, "tags": {"building": "roof", "leisure": "dance", "name": "Salón de Eventos Real Salomé"}, "metro_rango": "28", "metropoli": "Córdoba"}
 {"osm_id": "way/1096141214", "lat": 18.9233475, "lng": -97.0158434, "tags": {"leisure": "sports_centre", "name": "Unidad Deportiva \"Ángel Morgado\""}, "metro_rango": "28", "metropoli": "Córdoba"}
