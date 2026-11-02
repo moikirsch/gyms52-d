@@ -195,3 +195,6 @@ wp_id,nombre,place_id,motivo,retirado_el
 22497,Mar Spa,totalpass:mar-spa,no es fitness: spa o estética (según el nombre de su Instagram),
 22498,Model Art Spa Cosmopol,totalpass:model-art-spa-cosmopol,no es fitness: spa (según el nombre y su Instagram),
 22564,Studio 84,totalpass:studio-84,no es fitness: parece salón de uñas (según el nombre de su Instagram),
+24697,SUKHA Studio de Masaje Terapeútico,totalpass:sukha-studio-de-masaje-terapeutico,no es fitness: estudio de masaje terapéutico (por el nombre),
+24723,AKVO SPA FACIAL SURGERY LOMAS,totalpass:akvo-spa-facial-surgery-lomas,no es fitness: spa y cirugía facial (por el nombre),
+24724,AKVO SPA LOMAS DE ANGELOPOLIS,totalpass:akvo-spa-lomas-de-angelopolis,no es fitness: spa (por el nombre),
