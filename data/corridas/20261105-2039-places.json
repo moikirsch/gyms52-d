@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-11-05T20:38:50.347688+00:00Z",
+ "metros": {
+  "Puebla": {
+   "antes": 1380,
+   "despues": 1780
+  }
+ },
+ "peticiones": 104,
+ "errores": [
+  "429 crossfit en La Magdalena Tlaltelulco, Tlaxcala: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-05T20:39:55.521199+00:00Z"
+}
