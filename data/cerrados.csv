@@ -201,3 +201,6 @@ wp_id,nombre,place_id,motivo,retirado_el
 1488,Nerias Plaza Universidad,ChIJXVNblzj_0YURtCuLx_uM2QI,no es fitness: tienda de artículos deportivos,
 25012,AMOR SPA,totalpass:amor-spa,no es fitness: spa,
 25013,AXA Keralty Queretaro,totalpass:axa-keralty-queretaro,no es fitness: clínica médica de seguros,
+25236,Get Spa Queretaro,totalpass:get-spa-queretaro,"no es fitness: spa (por nombre, sin confirmar)",
+25242,Haman Massage,totalpass:haman-massage,"no es fitness: masajes (por nombre, sin confirmar)",
+25261,Kasha Spa,totalpass:kasha-spa,"no es fitness: spa (por nombre, sin confirmar). El sitio web registrado no es válido",

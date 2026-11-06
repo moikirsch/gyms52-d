@@ -1098,3 +1098,6 @@ wp_id,nombre,motivo,retirado_el,place_id
 10954,Clases de Strong,fuera de la base,2026-11-04,
 25012,AMOR SPA,no es fitness: spa,2026-11-06,totalpass:amor-spa
 25013,AXA Keralty Queretaro,no es fitness: clínica médica de seguros,2026-11-06,totalpass:axa-keralty-queretaro
+25236,Get Spa Queretaro,"no es fitness: spa (por nombre, sin confirmar)",2026-11-06,totalpass:get-spa-queretaro
+25242,Haman Massage,"no es fitness: masajes (por nombre, sin confirmar)",2026-11-06,totalpass:haman-massage
+25261,Kasha Spa,"no es fitness: spa (por nombre, sin confirmar). El sitio web registrado no es válido",2026-11-06,totalpass:kasha-spa
