@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-11-06T19:56:39.810341+00:00Z",
+ "metros": {
+  "Puebla": {
+   "antes": 1780,
+   "despues": 1950
+  },
+  "Tijuana": {
+   "antes": 0,
+   "despues": 60
+  }
+ },
+ "peticiones": 103,
+ "errores": [
+  "429 crossfit en Tijuana, Baja California: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-06T19:57:27.646575+00:00Z"
+}
