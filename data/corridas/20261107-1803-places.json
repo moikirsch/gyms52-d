@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-11-07T18:01:49.512189+00:00Z",
+ "metros": {
+  "Tijuana": {
+   "antes": 60,
+   "despues": 688
+  },
+  "Querétaro": {
+   "antes": 0,
+   "despues": 703
+  }
+ },
+ "peticiones": 106,
+ "errores": [
+  "429 gimnasio de box en Corregidora, Querétaro: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-07T18:03:55.220938+00:00Z"
+}
