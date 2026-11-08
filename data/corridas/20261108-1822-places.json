@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-11-08T18:20:56.091466+00:00Z",
+ "metros": {
+  "Querétaro": {
+   "antes": 703,
+   "despues": 925
+  },
+  "León": {
+   "antes": 0,
+   "despues": 635
+  }
+ },
+ "peticiones": 103,
+ "errores": [
+  "429 escuela de danza en San Francisco del Rincón, Guanajuato: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-08T18:22:39.496256+00:00Z"
+}
