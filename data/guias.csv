@@ -1,81 +1,86 @@
 slug,page_id,titulo,lugares
-gimnasios-acapulco,27480,Gimnasios en Acapulco,145
+gimnasios-acapulco,27480,Gimnasios en Acapulco,144
+funcional-acapulco,38699,Funcional en Acapulco,7
 gimnasios-aguascalientes,27482,Gimnasios en Aguascalientes,267
-baile-fitness-aguascalientes,27484,Baile fitness en Aguascalientes,15
-barre-aguascalientes,27485,Barre en Aguascalientes,7
+baile-fitness-aguascalientes,27484,Baile fitness en Aguascalientes,19
+barre-aguascalientes,27485,Barre en Aguascalientes,11
 box-aguascalientes,27487,Box en Aguascalientes,20
 combate-aguascalientes,27488,Combate en Aguascalientes,6
-crossfit-aguascalientes,27489,CrossFit en Aguascalientes,11
-funcional-aguascalientes,27491,Funcional en Aguascalientes,24
+crossfit-aguascalientes,27489,CrossFit en Aguascalientes,13
+funcional-aguascalientes,27491,Funcional en Aguascalientes,26
 hyrox-aguascalientes,27492,HYROX en Aguascalientes,9
 indoor-cycling-aguascalientes,27494,Indoor cycling en Aguascalientes,20
 natacion-aguascalientes,27495,Natación en Aguascalientes,11
-pilates-mat-aguascalientes,27497,Pilates mat en Aguascalientes,20
+pilates-mat-aguascalientes,27497,Pilates mat en Aguascalientes,22
 pole-fitness-aguascalientes,27498,Pole fitness en Aguascalientes,6
-yoga-aguascalientes,27499,Yoga en Aguascalientes,10
+yoga-aguascalientes,27499,Yoga en Aguascalientes,14
 zumba-aguascalientes,27500,Zumba en Aguascalientes,13
-gimnasios-cancun,27501,Gimnasios en Cancún,164
+gimnasios-cancun,27501,Gimnasios en Cancún,165
 baile-fitness-cancun,27502,Baile fitness en Cancún,13
 barre-cancun,27503,Barre en Cancún,14
 box-cancun,27504,Box en Cancún,7
 funcional-cancun,27506,Funcional en Cancún,28
 hiit-cancun,27507,HIIT en Cancún,10
 hyrox-cancun,27508,HYROX en Cancún,11
-indoor-cycling-cancun,27509,Indoor cycling en Cancún,7
+indoor-cycling-cancun,27509,Indoor cycling en Cancún,6
 pilates-mat-cancun,27510,Pilates mat en Cancún,31
 pilates-reformer-cancun,27511,Pilates reformer en Cancún,18
-yoga-cancun,27512,Yoga en Cancún,21
+yoga-cancun,27512,Yoga en Cancún,22
 zumba-cancun,27513,Zumba en Cancún,8
 gimnasios-celaya,27514,Gimnasios en Celaya,17
 crossfit-celaya,27515,CrossFit en Celaya,7
-funcional-celaya,27516,Funcional en Celaya,14
-gimnasios-chihuahua,27517,Gimnasios en Chihuahua,237
-box-chihuahua,27518,Box en Chihuahua,13
-funcional-chihuahua,27519,Funcional en Chihuahua,13
-indoor-cycling-chihuahua,27520,Indoor cycling en Chihuahua,11
-pilates-mat-chihuahua,27521,Pilates mat en Chihuahua,18
+funcional-celaya,27516,Funcional en Celaya,15
+pilates-mat-celaya,38700,Pilates mat en Celaya,6
+gimnasios-chihuahua,27517,Gimnasios en Chihuahua,238
+box-chihuahua,27518,Box en Chihuahua,14
+funcional-chihuahua,27519,Funcional en Chihuahua,14
+indoor-cycling-chihuahua,27520,Indoor cycling en Chihuahua,12
+pilates-mat-chihuahua,27521,Pilates mat en Chihuahua,19
 pilates-reformer-chihuahua,27522,Pilates reformer en Chihuahua,6
-gimnasios-ciudad-juarez,27524,Gimnasios en Ciudad Juárez,243
+yoga-chihuahua,38701,Yoga en Chihuahua,7
+gimnasios-ciudad-juarez,27524,Gimnasios en Ciudad Juárez,246
 box-ciudad-juarez,27525,Box en Ciudad Juárez,11
-natacion-ciudad-juarez,27527,Natación en Ciudad Juárez,15
+natacion-ciudad-juarez,27527,Natación en Ciudad Juárez,16
 suplementos-ciudad-juarez,27528,Suplementos en Ciudad Juárez,7
 zumba-ciudad-juarez,27529,Zumba en Ciudad Juárez,16
 gimnasios-ciudad-obregon,27530,Gimnasios en Ciudad Obregón,10
-funcional-ciudad-obregon,27531,Funcional en Ciudad Obregón,7
-gimnasios-ciudad-del-carmen,27532,Gimnasios en Ciudad del Carmen,7
+funcional-ciudad-obregon,27531,Funcional en Ciudad Obregón,8
+gimnasios-ciudad-del-carmen,27532,Gimnasios en Ciudad del Carmen,8
 gimnasios-coatzacoalcos,27533,Gimnasios en Coatzacoalcos,140
 baile-fitness-coatzacoalcos,27534,Baile fitness en Coatzacoalcos,9
 zumba-coatzacoalcos,27535,Zumba en Coatzacoalcos,15
-gimnasios-colima,27536,Gimnasios en Colima,8
-funcional-colima,27537,Funcional en Colima,6
-gimnasios-cuautitlan-izcalli,27540,Gimnasios en Cuautitlán Izcalli,1056
-baile-fitness-cuautitlan-izcalli,27541,Baile fitness en Cuautitlán Izcalli,178
-ballet-cuautitlan-izcalli,35738,Ballet en Cuautitlán Izcalli,18
-barre-cuautitlan-izcalli,27542,Barre en Cuautitlán Izcalli,26
-box-cuautitlan-izcalli,27543,Box en Cuautitlán Izcalli,155
-combate-cuautitlan-izcalli,27545,Combate en Cuautitlán Izcalli,124
-crossfit-cuautitlan-izcalli,27546,CrossFit en Cuautitlán Izcalli,39
-funcional-cuautitlan-izcalli,27548,Funcional en Cuautitlán Izcalli,38
-hiit-cuautitlan-izcalli,27549,HIIT en Cuautitlán Izcalli,7
+gimnasios-colima,27536,Gimnasios en Colima,11
+funcional-colima,27537,Funcional en Colima,10
+pilates-mat-colima,38702,Pilates mat en Colima,6
+gimnasios-cuautitlan-izcalli,27540,Gimnasios en Cuautitlán Izcalli,1227
+baile-fitness-cuautitlan-izcalli,27541,Baile fitness en Cuautitlán Izcalli,280
+ballet-cuautitlan-izcalli,35738,Ballet en Cuautitlán Izcalli,26
+barre-cuautitlan-izcalli,27542,Barre en Cuautitlán Izcalli,27
+boulder-cuautitlan-izcalli,38703,Boulder en Cuautitlán Izcalli,8
+box-cuautitlan-izcalli,27543,Box en Cuautitlán Izcalli,203
+combate-cuautitlan-izcalli,27545,Combate en Cuautitlán Izcalli,200
+crossfit-cuautitlan-izcalli,27546,CrossFit en Cuautitlán Izcalli,46
+funcional-cuautitlan-izcalli,27548,Funcional en Cuautitlán Izcalli,40
+hiit-cuautitlan-izcalli,27549,HIIT en Cuautitlán Izcalli,8
 hyrox-cuautitlan-izcalli,27550,HYROX en Cuautitlán Izcalli,8
-indoor-cycling-cuautitlan-izcalli,27551,Indoor cycling en Cuautitlán Izcalli,39
+indoor-cycling-cuautitlan-izcalli,27551,Indoor cycling en Cuautitlán Izcalli,52
 infantil-cuautitlan-izcalli,35739,Infantil en Cuautitlán Izcalli,6
-karate-cuautitlan-izcalli,35740,Karate en Cuautitlán Izcalli,30
-kickboxing-cuautitlan-izcalli,35741,Kickboxing en Cuautitlán Izcalli,18
-mma-cuautitlan-izcalli,27552,MMA en Cuautitlán Izcalli,16
-muay-thai-cuautitlan-izcalli,35742,Muay thai en Cuautitlán Izcalli,7
-natacion-cuautitlan-izcalli,27553,Natación en Cuautitlán Izcalli,55
-pilates-mat-cuautitlan-izcalli,27555,Pilates mat en Cuautitlán Izcalli,71
-pilates-reformer-cuautitlan-izcalli,27556,Pilates reformer en Cuautitlán Izcalli,24
-pole-fitness-cuautitlan-izcalli,27557,Pole fitness en Cuautitlán Izcalli,20
-rehabilitacion-cuautitlan-izcalli,31339,Rehabilitación en Cuautitlán Izcalli,16
-ropa-deportiva-cuautitlan-izcalli,35743,Ropa deportiva en Cuautitlán Izcalli,28
-suplementos-cuautitlan-izcalli,35744,Suplementos en Cuautitlán Izcalli,36
-taekwondo-cuautitlan-izcalli,35745,Taekwondo en Cuautitlán Izcalli,42
-tenis-cuautitlan-izcalli,35746,Tenis en Cuautitlán Izcalli,6
-yoga-cuautitlan-izcalli,27559,Yoga en Cuautitlán Izcalli,61
-zumba-cuautitlan-izcalli,27560,Zumba en Cuautitlán Izcalli,52
-gimnasios-cuernavaca,27561,Gimnasios en Cuernavaca,208
+karate-cuautitlan-izcalli,35740,Karate en Cuautitlán Izcalli,71
+kickboxing-cuautitlan-izcalli,35741,Kickboxing en Cuautitlán Izcalli,28
+mma-cuautitlan-izcalli,27552,MMA en Cuautitlán Izcalli,25
+muay-thai-cuautitlan-izcalli,35742,Muay thai en Cuautitlán Izcalli,8
+natacion-cuautitlan-izcalli,27553,Natación en Cuautitlán Izcalli,89
+pilates-mat-cuautitlan-izcalli,27555,Pilates mat en Cuautitlán Izcalli,84
+pilates-reformer-cuautitlan-izcalli,27556,Pilates reformer en Cuautitlán Izcalli,25
+pole-fitness-cuautitlan-izcalli,27557,Pole fitness en Cuautitlán Izcalli,25
+rehabilitacion-cuautitlan-izcalli,31339,Rehabilitación en Cuautitlán Izcalli,17
+ropa-deportiva-cuautitlan-izcalli,35743,Ropa deportiva en Cuautitlán Izcalli,43
+suplementos-cuautitlan-izcalli,35744,Suplementos en Cuautitlán Izcalli,58
+taekwondo-cuautitlan-izcalli,35745,Taekwondo en Cuautitlán Izcalli,84
+tenis-cuautitlan-izcalli,35746,Tenis en Cuautitlán Izcalli,8
+yoga-cuautitlan-izcalli,27559,Yoga en Cuautitlán Izcalli,77
+zumba-cuautitlan-izcalli,27560,Zumba en Cuautitlán Izcalli,53
+gimnasios-cuernavaca,27561,Gimnasios en Cuernavaca,205
 baile-fitness-cuernavaca,27563,Baile fitness en Cuernavaca,19
 barre-cuernavaca,27564,Barre en Cuernavaca,10
 box-cuernavaca,27566,Box en Cuernavaca,16
@@ -83,33 +88,36 @@ crossfit-cuernavaca,27567,CrossFit en Cuernavaca,13
 funcional-cuernavaca,27569,Funcional en Cuernavaca,23
 indoor-cycling-cuernavaca,27570,Indoor cycling en Cuernavaca,10
 natacion-cuernavaca,27572,Natación en Cuernavaca,7
-pilates-mat-cuernavaca,27573,Pilates mat en Cuernavaca,27
+pilates-mat-cuernavaca,27573,Pilates mat en Cuernavaca,28
+pilates-reformer-cuernavaca,38704,Pilates reformer en Cuernavaca,6
 rehabilitacion-cuernavaca,31340,Rehabilitación en Cuernavaca,6
 tenis-cuernavaca,27574,Tenis en Cuernavaca,14
 yoga-cuernavaca,27576,Yoga en Cuernavaca,22
 zumba-cuernavaca,27577,Zumba en Cuernavaca,15
-gimnasios-culiacan,27578,Gimnasios en Culiacán,217
+gimnasios-culiacan,27578,Gimnasios en Culiacán,221
 baile-fitness-culiacan,27579,Baile fitness en Culiacán,6
 box-culiacan,27580,Box en Culiacán,10
-funcional-culiacan,27581,Funcional en Culiacán,7
-indoor-cycling-culiacan,27582,Indoor cycling en Culiacán,16
-pilates-mat-culiacan,27584,Pilates mat en Culiacán,6
-gimnasios-cordoba,27585,Gimnasios en Córdoba,162
+funcional-culiacan,27581,Funcional en Culiacán,10
+indoor-cycling-culiacan,27582,Indoor cycling en Culiacán,17
+pilates-mat-culiacan,27584,Pilates mat en Culiacán,7
+gimnasios-cordoba,27585,Gimnasios en Córdoba,161
 baile-fitness-cordoba,27586,Baile fitness en Córdoba,15
 box-cordoba,27587,Box en Córdoba,10
 crossfit-cordoba,27588,CrossFit en Córdoba,6
 tenis-cordoba,27589,Tenis en Córdoba,7
 zumba-cordoba,27590,Zumba en Córdoba,10
-gimnasios-durango,27591,Gimnasios en Durango,10
-gimnasios-ecatepec,27594,Gimnasios en Ecatepec,1807
-baile-fitness-ecatepec,27596,Baile fitness en Ecatepec,417
+gimnasios-durango,27591,Gimnasios en Durango,14
+box-durango,38705,Box en Durango,6
+funcional-durango,38706,Funcional en Durango,8
+gimnasios-ecatepec,27594,Gimnasios en Ecatepec,1808
+baile-fitness-ecatepec,27596,Baile fitness en Ecatepec,418
 ballet-ecatepec,31341,Ballet en Ecatepec,25
-barre-ecatepec,27597,Barre en Ecatepec,59
+barre-ecatepec,27597,Barre en Ecatepec,60
 boulder-ecatepec,31342,Boulder en Ecatepec,14
-box-ecatepec,27598,Box en Ecatepec,331
+box-ecatepec,27598,Box en Ecatepec,332
 combate-ecatepec,27600,Combate en Ecatepec,245
-crossfit-ecatepec,27601,CrossFit en Ecatepec,132
-ems-ecatepec,31343,EMS en Ecatepec,8
+crossfit-ecatepec,27601,CrossFit en Ecatepec,133
+ems-ecatepec,31343,EMS en Ecatepec,6
 funcional-ecatepec,27602,Funcional en Ecatepec,74
 hiit-ecatepec,27603,HIIT en Ecatepec,6
 hyrox-ecatepec,27604,HYROX en Ecatepec,18
@@ -120,8 +128,8 @@ karate-ecatepec,31345,Karate en Ecatepec,50
 kickboxing-ecatepec,31346,Kickboxing en Ecatepec,19
 krav-maga-ecatepec,35747,Krav maga en Ecatepec,8
 mma-ecatepec,27607,MMA en Ecatepec,62
-natacion-ecatepec,27608,Natación en Ecatepec,200
-pilates-mat-ecatepec,27610,Pilates mat en Ecatepec,140
+natacion-ecatepec,27608,Natación en Ecatepec,199
+pilates-mat-ecatepec,27610,Pilates mat en Ecatepec,141
 pilates-reformer-ecatepec,27611,Pilates reformer en Ecatepec,35
 pole-fitness-ecatepec,27612,Pole fitness en Ecatepec,22
 rehabilitacion-ecatepec,31347,Rehabilitación en Ecatepec,35
@@ -132,26 +140,28 @@ suplementos-ecatepec,31350,Suplementos en Ecatepec,116
 taekwondo-ecatepec,31351,Taekwondo en Ecatepec,99
 telas-y-danza-aerea-ecatepec,31352,Telas y danza aérea en Ecatepec,8
 tenis-ecatepec,31353,Tenis en Ecatepec,7
-yoga-ecatepec,27615,Yoga en Ecatepec,155
+yoga-ecatepec,27615,Yoga en Ecatepec,156
 zumba-ecatepec,27616,Zumba en Ecatepec,133
-gimnasios-guadalupe,27618,Gimnasios en Guadalupe,12
-gimnasios-hermosillo,27620,Gimnasios en Hermosillo,187
+gimnasios-ensenada,38707,Gimnasios en Ensenada,6
+gimnasios-guadalupe,27618,Gimnasios en Guadalupe,15
+funcional-guadalupe,38708,Funcional en Guadalupe,6
+gimnasios-hermosillo,27620,Gimnasios en Hermosillo,193
 baile-fitness-hermosillo,27622,Baile fitness en Hermosillo,10
 barre-hermosillo,27623,Barre en Hermosillo,11
 box-hermosillo,27624,Box en Hermosillo,20
 calistenia-hermosillo,27625,Calistenia en Hermosillo,9
-crossfit-hermosillo,27626,CrossFit en Hermosillo,9
-funcional-hermosillo,27627,Funcional en Hermosillo,46
-hiit-hermosillo,27628,HIIT en Hermosillo,8
-indoor-cycling-hermosillo,27629,Indoor cycling en Hermosillo,10
+crossfit-hermosillo,27626,CrossFit en Hermosillo,8
+funcional-hermosillo,27627,Funcional en Hermosillo,53
+hiit-hermosillo,27628,HIIT en Hermosillo,15
+indoor-cycling-hermosillo,27629,Indoor cycling en Hermosillo,11
 pilates-mat-hermosillo,27630,Pilates mat en Hermosillo,36
 yoga-hermosillo,27631,Yoga en Hermosillo,17
-gimnasios-huixquilucan,27632,Gimnasios en Huixquilucan,22
+gimnasios-huixquilucan,27632,Gimnasios en Huixquilucan,23
 barre-huixquilucan,27634,Barre en Huixquilucan,12
 funcional-huixquilucan,27635,Funcional en Huixquilucan,13
-pilates-mat-huixquilucan,27637,Pilates mat en Huixquilucan,12
-yoga-huixquilucan,27640,Yoga en Huixquilucan,11
-gimnasios-irapuato,27641,Gimnasios en Irapuato,218
+pilates-mat-huixquilucan,27637,Pilates mat en Huixquilucan,11
+yoga-huixquilucan,27640,Yoga en Huixquilucan,10
+gimnasios-irapuato,27641,Gimnasios en Irapuato,219
 baile-fitness-irapuato,27643,Baile fitness en Irapuato,6
 box-irapuato,27644,Box en Irapuato,10
 crossfit-irapuato,27645,CrossFit en Irapuato,16
@@ -159,10 +169,10 @@ funcional-irapuato,27646,Funcional en Irapuato,15
 zumba-irapuato,27648,Zumba en Irapuato,13
 gimnasios-la-paz,27649,Gimnasios en La Paz,6
 gimnasios-la-piedad,27650,Gimnasios en La Piedad,6
-gimnasios-leon,27651,Gimnasios en León,452
+gimnasios-leon,27651,Gimnasios en León,454
 baile-fitness-leon,27652,Baile fitness en León,25
 barre-leon,27653,Barre en León,21
-box-leon,27654,Box en León,37
+box-leon,27654,Box en León,38
 calistenia-leon,31354,Calistenia en León,7
 crossfit-leon,27655,CrossFit en León,20
 funcional-leon,27656,Funcional en León,51
@@ -178,32 +188,33 @@ barre-los-cabos,27664,Barre en Los Cabos,7
 pilates-mat-los-cabos,27665,Pilates mat en Los Cabos,7
 yoga-los-cabos,27666,Yoga en Los Cabos,8
 gimnasios-los-mochis,27667,Gimnasios en Los Mochis,9
-gimnasios-mazatlan,27668,Gimnasios en Mazatlán,13
-gimnasios-mexicali,27670,Gimnasios en Mexicali,171
+gimnasios-mazatlan,27668,Gimnasios en Mazatlán,17
+funcional-mazatlan,38709,Funcional en Mazatlán,7
+gimnasios-mexicali,27670,Gimnasios en Mexicali,177
 box-mexicali,27671,Box en Mexicali,16
-funcional-mexicali,27672,Funcional en Mexicali,6
+funcional-mexicali,27672,Funcional en Mexicali,7
 pilates-mat-mexicali,27673,Pilates mat en Mexicali,10
-gimnasios-monterrey,27674,Gimnasios en Monterrey,1371
-baile-fitness-monterrey,27675,Baile fitness en Monterrey,252
+gimnasios-monterrey,27674,Gimnasios en Monterrey,1376
+baile-fitness-monterrey,27675,Baile fitness en Monterrey,253
 ballet-monterrey,27677,Ballet en Monterrey,17
 barre-monterrey,27678,Barre en Monterrey,70
 boulder-monterrey,35748,Boulder en Monterrey,13
 box-monterrey,27679,Box en Monterrey,222
 calistenia-monterrey,27681,Calistenia en Monterrey,10
 combate-monterrey,27682,Combate en Monterrey,139
-crossfit-monterrey,27684,CrossFit en Monterrey,68
-funcional-monterrey,27686,Funcional en Monterrey,153
+crossfit-monterrey,27684,CrossFit en Monterrey,69
+funcional-monterrey,27686,Funcional en Monterrey,157
 hiit-monterrey,27687,HIIT en Monterrey,15
 hyrox-monterrey,27689,HYROX en Monterrey,31
 indoor-cycling-monterrey,27690,Indoor cycling en Monterrey,145
 jiu-jitsu-brasileno-monterrey,35749,Jiu-jitsu brasileño en Monterrey,15
-jumping-monterrey,27691,Jumping en Monterrey,19
+jumping-monterrey,27691,Jumping en Monterrey,20
 karate-monterrey,35750,Karate en Monterrey,15
 kickboxing-monterrey,35751,Kickboxing en Monterrey,10
 krav-maga-monterrey,35752,Krav maga en Monterrey,7
 mma-monterrey,27692,MMA en Monterrey,29
 muay-thai-monterrey,27693,Muay thai en Monterrey,22
-natacion-monterrey,27694,Natación en Monterrey,85
+natacion-monterrey,27694,Natación en Monterrey,86
 pilates-mat-monterrey,27695,Pilates mat en Monterrey,277
 pilates-reformer-monterrey,27696,Pilates reformer en Monterrey,52
 pole-fitness-monterrey,27697,Pole fitness en Monterrey,16
@@ -211,208 +222,230 @@ rehabilitacion-monterrey,31357,Rehabilitación en Monterrey,46
 ropa-deportiva-monterrey,35753,Ropa deportiva en Monterrey,62
 suplementos-monterrey,27698,Suplementos en Monterrey,90
 taekwondo-monterrey,35754,Taekwondo en Monterrey,77
-tenis-monterrey,35755,Tenis en Monterrey,7
-yoga-monterrey,27699,Yoga en Monterrey,149
+tenis-monterrey,35755,Tenis en Monterrey,6
+yoga-monterrey,27699,Yoga en Monterrey,150
 zumba-monterrey,27700,Zumba en Monterrey,28
-gimnasios-morelia,27701,Gimnasios en Morelia,263
-baile-fitness-morelia,27702,Baile fitness en Morelia,25
+gimnasios-morelia,27701,Gimnasios en Morelia,265
+baile-fitness-morelia,27702,Baile fitness en Morelia,27
 barre-morelia,27703,Barre en Morelia,26
-box-morelia,27704,Box en Morelia,14
+box-morelia,27704,Box en Morelia,16
 crossfit-morelia,27705,CrossFit en Morelia,17
-funcional-morelia,27706,Funcional en Morelia,46
-hyrox-morelia,27707,HYROX en Morelia,6
+funcional-morelia,27706,Funcional en Morelia,52
+hyrox-morelia,27707,HYROX en Morelia,7
 indoor-cycling-morelia,27708,Indoor cycling en Morelia,16
 pilates-mat-morelia,27709,Pilates mat en Morelia,38
 rehabilitacion-morelia,31358,Rehabilitación en Morelia,9
 yoga-morelia,27710,Yoga en Morelia,28
 zumba-morelia,27711,Zumba en Morelia,8
-gimnasios-merida,27712,Gimnasios en Mérida,383
+gimnasios-merida,27712,Gimnasios en Mérida,379
 baile-fitness-merida,27713,Baile fitness en Mérida,41
 barre-merida,27714,Barre en Mérida,18
-box-merida,27716,Box en Mérida,23
+box-merida,27716,Box en Mérida,25
 crossfit-merida,27717,CrossFit en Mérida,9
-funcional-merida,27718,Funcional en Mérida,52
+funcional-merida,27718,Funcional en Mérida,57
 hiit-merida,27719,HIIT en Mérida,6
-hyrox-merida,27720,HYROX en Mérida,13
-indoor-cycling-merida,27721,Indoor cycling en Mérida,17
+hyrox-merida,27720,HYROX en Mérida,15
+indoor-cycling-merida,27721,Indoor cycling en Mérida,16
 jumping-merida,27722,Jumping en Mérida,11
-natacion-merida,27723,Natación en Mérida,11
+natacion-merida,27723,Natación en Mérida,12
 pilates-mat-merida,27724,Pilates mat en Mérida,35
 pilates-reformer-merida,27725,Pilates reformer en Mérida,11
 pole-fitness-merida,27726,Pole fitness en Mérida,7
-suplementos-merida,27727,Suplementos en Mérida,9
 tenis-merida,27729,Tenis en Mérida,7
-yoga-merida,27730,Yoga en Mérida,25
+yoga-merida,27730,Yoga en Mérida,26
 zumba-merida,27731,Zumba en Mérida,17
-gimnasios-pachuca,27733,Gimnasios en Pachuca,20
+gimnasios-oaxaca,38710,Gimnasios en Oaxaca,7
+gimnasios-pachuca,27733,Gimnasios en Pachuca,22
 barre-pachuca,27734,Barre en Pachuca,9
 box-pachuca,27735,Box en Pachuca,6
-funcional-pachuca,27739,Funcional en Pachuca,12
+crossfit-pachuca,38711,CrossFit en Pachuca,7
+funcional-pachuca,27739,Funcional en Pachuca,13
 pilates-mat-pachuca,27740,Pilates mat en Pachuca,13
 yoga-pachuca,27741,Yoga en Pachuca,9
 gimnasios-piedras-negras,27742,Gimnasios en Piedras Negras,7
 gimnasios-playa-del-carmen,27743,Gimnasios en Playa del Carmen,22
-crossfit-playa-del-carmen,27744,CrossFit en Playa del Carmen,6
 funcional-playa-del-carmen,27745,Funcional en Playa del Carmen,14
 pilates-mat-playa-del-carmen,27746,Pilates mat en Playa del Carmen,6
-gimnasios-puebla,27747,Gimnasios en Puebla,812
-baile-fitness-puebla,27748,Baile fitness en Puebla,94
-ballet-puebla,27749,Ballet en Puebla,8
-barre-puebla,27750,Barre en Puebla,74
-boulder-puebla,27751,Boulder en Puebla,19
-box-puebla,27752,Box en Puebla,73
-calistenia-puebla,27753,Calistenia en Puebla,6
-combate-puebla,27754,Combate en Puebla,17
-crossfit-puebla,27755,CrossFit en Puebla,43
-ems-puebla,31359,EMS en Puebla,8
-funcional-puebla,27756,Funcional en Puebla,116
-hiit-puebla,27757,HIIT en Puebla,21
+gimnasios-puebla,27747,Gimnasios en Puebla,1125
+baile-fitness-puebla,27748,Baile fitness en Puebla,215
+ballet-puebla,27749,Ballet en Puebla,29
+barre-puebla,27750,Barre en Puebla,63
+boulder-puebla,27751,Boulder en Puebla,22
+box-puebla,27752,Box en Puebla,150
+calistenia-puebla,27753,Calistenia en Puebla,8
+combate-puebla,27754,Combate en Puebla,107
+crossfit-puebla,27755,CrossFit en Puebla,50
+ems-puebla,31359,EMS en Puebla,7
+funcional-puebla,27756,Funcional en Puebla,104
+hiit-puebla,27757,HIIT en Puebla,16
 hyrox-puebla,27758,HYROX en Puebla,12
-indoor-cycling-puebla,27759,Indoor cycling en Puebla,49
-mma-puebla,27760,MMA en Puebla,12
-natacion-puebla,27761,Natación en Puebla,13
-pilates-mat-puebla,27763,Pilates mat en Puebla,128
-pilates-reformer-puebla,27764,Pilates reformer en Puebla,46
-pole-fitness-puebla,27765,Pole fitness en Puebla,13
+indoor-cycling-puebla,27759,Indoor cycling en Puebla,61
+jiu-jitsu-brasileno-puebla,38712,Jiu-jitsu brasileño en Puebla,12
+karate-puebla,38713,Karate en Puebla,20
+kickboxing-puebla,38714,Kickboxing en Puebla,10
+mma-puebla,27760,MMA en Puebla,29
+natacion-puebla,27761,Natación en Puebla,75
+pilates-mat-puebla,27763,Pilates mat en Puebla,151
+pilates-reformer-puebla,27764,Pilates reformer en Puebla,36
+pole-fitness-puebla,27765,Pole fitness en Puebla,12
 rehabilitacion-puebla,31360,Rehabilitación en Puebla,17
-suplementos-puebla,27767,Suplementos en Puebla,11
-yoga-puebla,27768,Yoga en Puebla,95
+ropa-deportiva-puebla,38715,Ropa deportiva en Puebla,64
+suplementos-puebla,27767,Suplementos en Puebla,73
+taekwondo-puebla,38716,Taekwondo en Puebla,57
+tenis-puebla,38717,Tenis en Puebla,11
+yoga-puebla,27768,Yoga en Puebla,136
 zumba-puebla,27770,Zumba en Puebla,55
-gimnasios-puerto-vallarta,27771,Gimnasios en Puerto Vallarta,6
-gimnasios-queretaro,27772,Gimnasios en Querétaro,480
-baile-fitness-queretaro,27773,Baile fitness en Querétaro,108
-barre-queretaro,27775,Barre en Querétaro,80
-box-queretaro,27777,Box en Querétaro,62
-calistenia-queretaro,27778,Calistenia en Querétaro,10
-combate-queretaro,27780,Combate en Querétaro,18
-crossfit-queretaro,27781,CrossFit en Querétaro,41
-ems-queretaro,31361,EMS en Querétaro,8
-funcional-queretaro,27782,Funcional en Querétaro,171
-hiit-queretaro,27783,HIIT en Querétaro,22
-hyrox-queretaro,27784,HYROX en Querétaro,16
-indoor-cycling-queretaro,27785,Indoor cycling en Querétaro,58
+gimnasios-puerto-vallarta,27771,Gimnasios en Puerto Vallarta,8
+gimnasios-queretaro,27772,Gimnasios en Querétaro,567
+baile-fitness-queretaro,27773,Baile fitness en Querétaro,142
+barre-queretaro,27775,Barre en Querétaro,60
+boulder-queretaro,38718,Boulder en Querétaro,6
+box-queretaro,27777,Box en Querétaro,88
+calistenia-queretaro,27778,Calistenia en Querétaro,8
+combate-queretaro,27780,Combate en Querétaro,49
+crossfit-queretaro,27781,CrossFit en Querétaro,35
+ems-queretaro,31361,EMS en Querétaro,6
+funcional-queretaro,27782,Funcional en Querétaro,136
+hiit-queretaro,27783,HIIT en Querétaro,15
+hyrox-queretaro,27784,HYROX en Querétaro,13
+indoor-cycling-queretaro,27785,Indoor cycling en Querétaro,60
+kickboxing-queretaro,38719,Kickboxing en Querétaro,7
 mma-queretaro,27787,MMA en Querétaro,13
-natacion-queretaro,27788,Natación en Querétaro,21
-pilates-mat-queretaro,27790,Pilates mat en Querétaro,200
-pilates-reformer-queretaro,27791,Pilates reformer en Querétaro,73
-pole-fitness-queretaro,27792,Pole fitness en Querétaro,10
-rehabilitacion-queretaro,31362,Rehabilitación en Querétaro,37
+natacion-queretaro,27788,Natación en Querétaro,57
+pilates-mat-queretaro,27790,Pilates mat en Querétaro,193
+pilates-reformer-queretaro,27791,Pilates reformer en Querétaro,67
+pole-fitness-queretaro,27792,Pole fitness en Querétaro,9
+rehabilitacion-queretaro,31362,Rehabilitación en Querétaro,39
+ropa-deportiva-queretaro,38720,Ropa deportiva en Querétaro,17
 salsa-y-bachata-queretaro,27793,Salsa y bachata en Querétaro,9
+suplementos-queretaro,38721,Suplementos en Querétaro,48
+taekwondo-queretaro,38722,Taekwondo en Querétaro,6
 tenis-queretaro,27794,Tenis en Querétaro,8
-yoga-queretaro,27795,Yoga en Querétaro,116
-zumba-queretaro,27796,Zumba en Querétaro,17
+yoga-queretaro,27795,Yoga en Querétaro,134
+zumba-queretaro,27796,Zumba en Querétaro,11
 gimnasios-reynosa,27797,Gimnasios en Reynosa,136
 zumba-reynosa,27798,Zumba en Reynosa,16
-gimnasios-saltillo,27800,Gimnasios en Saltillo,234
-baile-fitness-saltillo,27801,Baile fitness en Saltillo,14
+gimnasios-saltillo,27800,Gimnasios en Saltillo,239
+baile-fitness-saltillo,27801,Baile fitness en Saltillo,15
 barre-saltillo,27802,Barre en Saltillo,11
 box-saltillo,27803,Box en Saltillo,9
-crossfit-saltillo,27804,CrossFit en Saltillo,10
-funcional-saltillo,27805,Funcional en Saltillo,46
+crossfit-saltillo,27804,CrossFit en Saltillo,11
+funcional-saltillo,27805,Funcional en Saltillo,50
 hyrox-saltillo,27806,HYROX en Saltillo,10
 indoor-cycling-saltillo,27807,Indoor cycling en Saltillo,15
-pilates-mat-saltillo,27808,Pilates mat en Saltillo,19
+pilates-mat-saltillo,27808,Pilates mat en Saltillo,20
 rehabilitacion-saltillo,31363,Rehabilitación en Saltillo,7
-yoga-saltillo,27809,Yoga en Saltillo,15
+yoga-saltillo,27809,Yoga en Saltillo,16
 zumba-saltillo,27810,Zumba en Saltillo,10
 gimnasios-san-juan-del-rio,27811,Gimnasios en San Juan del Río,9
 indoor-cycling-san-juan-del-rio,27813,Indoor cycling en San Juan del Río,8
 pilates-mat-san-juan-del-rio,27814,Pilates mat en San Juan del Río,6
-gimnasios-san-luis-potosi,27815,Gimnasios en San Luis Potosí,273
-baile-fitness-san-luis-potosi,27816,Baile fitness en San Luis Potosí,21
-barre-san-luis-potosi,27817,Barre en San Luis Potosí,10
-box-san-luis-potosi,27818,Box en San Luis Potosí,23
-crossfit-san-luis-potosi,27820,CrossFit en San Luis Potosí,20
-funcional-san-luis-potosi,27821,Funcional en San Luis Potosí,36
-hiit-san-luis-potosi,27822,HIIT en San Luis Potosí,6
+gimnasios-san-luis-potosi,27815,Gimnasios en San Luis Potosí,270
+baile-fitness-san-luis-potosi,27816,Baile fitness en San Luis Potosí,22
+barre-san-luis-potosi,27817,Barre en San Luis Potosí,9
+box-san-luis-potosi,27818,Box en San Luis Potosí,28
+crossfit-san-luis-potosi,27820,CrossFit en San Luis Potosí,23
+funcional-san-luis-potosi,27821,Funcional en San Luis Potosí,45
+hiit-san-luis-potosi,27822,HIIT en San Luis Potosí,7
 hyrox-san-luis-potosi,27823,HYROX en San Luis Potosí,6
-indoor-cycling-san-luis-potosi,27824,Indoor cycling en San Luis Potosí,6
+indoor-cycling-san-luis-potosi,27824,Indoor cycling en San Luis Potosí,8
 pilates-mat-san-luis-potosi,27825,Pilates mat en San Luis Potosí,22
 pilates-reformer-san-luis-potosi,27826,Pilates reformer en San Luis Potosí,6
 pole-fitness-san-luis-potosi,27828,Pole fitness en San Luis Potosí,12
-yoga-san-luis-potosi,27829,Yoga en San Luis Potosí,25
+yoga-san-luis-potosi,27829,Yoga en San Luis Potosí,26
 zumba-san-luis-potosi,27830,Zumba en San Luis Potosí,16
-gimnasios-silao-de-la-victoria,27831,Gimnasios en Silao de la Victoria,9
+gimnasios-silao-de-la-victoria,27831,Gimnasios en Silao de la Victoria,10
 gimnasios-tampico,27832,Gimnasios en Tampico,164
-baile-fitness-tampico,27833,Baile fitness en Tampico,11
-barre-tampico,27834,Barre en Tampico,6
+baile-fitness-tampico,27833,Baile fitness en Tampico,12
+barre-tampico,27834,Barre en Tampico,7
 box-tampico,27835,Box en Tampico,7
-funcional-tampico,27836,Funcional en Tampico,9
-pilates-mat-tampico,27838,Pilates mat en Tampico,7
+funcional-tampico,27836,Funcional en Tampico,12
+indoor-cycling-tampico,38723,Indoor cycling en Tampico,6
+pilates-mat-tampico,27838,Pilates mat en Tampico,8
+yoga-tampico,38724,Yoga en Tampico,6
 zumba-tampico,27840,Zumba en Tampico,15
 gimnasios-tepic,27841,Gimnasios en Tepic,10
 funcional-tepic,27842,Funcional en Tepic,8
-gimnasios-tijuana,27844,Gimnasios en Tijuana,272
-baile-fitness-tijuana,27845,Baile fitness en Tijuana,12
-barre-tijuana,27846,Barre en Tijuana,12
-box-tijuana,27847,Box en Tijuana,31
-funcional-tijuana,27849,Funcional en Tijuana,9
-indoor-cycling-tijuana,27850,Indoor cycling en Tijuana,13
-pilates-mat-tijuana,27851,Pilates mat en Tijuana,8
-yoga-tijuana,27852,Yoga en Tijuana,8
+gimnasios-tijuana,27844,Gimnasios en Tijuana,358
+baile-fitness-tijuana,27845,Baile fitness en Tijuana,72
+barre-tijuana,27846,Barre en Tijuana,14
+box-tijuana,27847,Box en Tijuana,69
+combate-tijuana,38725,Combate en Tijuana,40
+crossfit-tijuana,38726,CrossFit en Tijuana,13
+funcional-tijuana,27849,Funcional en Tijuana,8
+indoor-cycling-tijuana,27850,Indoor cycling en Tijuana,23
+karate-tijuana,38727,Karate en Tijuana,17
+mma-tijuana,38728,MMA en Tijuana,11
+natacion-tijuana,38729,Natación en Tijuana,44
+pilates-mat-tijuana,27851,Pilates mat en Tijuana,46
+ropa-deportiva-tijuana,38730,Ropa deportiva en Tijuana,23
+suplementos-tijuana,38731,Suplementos en Tijuana,30
+taekwondo-tijuana,38732,Taekwondo en Tijuana,15
+yoga-tijuana,27852,Yoga en Tijuana,41
 zumba-tijuana,27853,Zumba en Tijuana,12
-gimnasios-toluca,27855,Gimnasios en Toluca,890
-baile-fitness-toluca,27856,Baile fitness en Toluca,111
-barre-toluca,27857,Barre en Toluca,33
-box-toluca,27859,Box en Toluca,51
-calistenia-toluca,27860,Calistenia en Toluca,8
+gimnasios-toluca,27855,Gimnasios en Toluca,894
+baile-fitness-toluca,27856,Baile fitness en Toluca,112
+barre-toluca,27857,Barre en Toluca,32
+box-toluca,27859,Box en Toluca,53
+calistenia-toluca,27860,Calistenia en Toluca,9
 combate-toluca,27862,Combate en Toluca,41
-crossfit-toluca,27863,CrossFit en Toluca,35
-funcional-toluca,27864,Funcional en Toluca,77
-hiit-toluca,27866,HIIT en Toluca,7
-hyrox-toluca,27867,HYROX en Toluca,13
-indoor-cycling-toluca,27869,Indoor cycling en Toluca,33
+crossfit-toluca,27863,CrossFit en Toluca,36
+funcional-toluca,27864,Funcional en Toluca,78
+hiit-toluca,27866,HIIT en Toluca,6
+hyrox-toluca,27867,HYROX en Toluca,14
+indoor-cycling-toluca,27869,Indoor cycling en Toluca,31
 karate-toluca,27871,Karate en Toluca,8
 kickboxing-toluca,27872,Kickboxing en Toluca,6
 mma-toluca,27874,MMA en Toluca,8
-natacion-toluca,27875,Natación en Toluca,18
-pilates-mat-toluca,27877,Pilates mat en Toluca,67
-pilates-reformer-toluca,27879,Pilates reformer en Toluca,19
-pole-fitness-toluca,27880,Pole fitness en Toluca,11
+natacion-toluca,27875,Natación en Toluca,19
+pilates-mat-toluca,27877,Pilates mat en Toluca,64
+pilates-reformer-toluca,27879,Pilates reformer en Toluca,17
+pole-fitness-toluca,27880,Pole fitness en Toluca,12
 rehabilitacion-toluca,31364,Rehabilitación en Toluca,16
 squash-toluca,27881,Squash en Toluca,30
-suplementos-toluca,27883,Suplementos en Toluca,16
+suplementos-toluca,27883,Suplementos en Toluca,15
 taekwondo-toluca,27884,Taekwondo en Toluca,19
 telas-y-danza-aerea-toluca,31365,Telas y danza aérea en Toluca,6
 tenis-toluca,27886,Tenis en Toluca,6
-yoga-toluca,27887,Yoga en Toluca,53
+yoga-toluca,27887,Yoga en Toluca,52
 zumba-toluca,27888,Zumba en Toluca,84
-gimnasios-torreon,27890,Gimnasios en Torreón,245
+gimnasios-torreon,27890,Gimnasios en Torreón,249
 baile-fitness-torreon,27891,Baile fitness en Torreón,28
-box-torreon,27892,Box en Torreón,18
+box-torreon,27892,Box en Torreón,19
 crossfit-torreon,27894,CrossFit en Torreón,8
-funcional-torreon,27895,Funcional en Torreón,11
+funcional-torreon,27895,Funcional en Torreón,12
 hyrox-torreon,27896,HYROX en Torreón,8
 natacion-torreon,27897,Natación en Torreón,6
 pilates-mat-torreon,27899,Pilates mat en Torreón,13
 yoga-torreon,27900,Yoga en Torreón,7
 zumba-torreon,27902,Zumba en Torreón,8
-gimnasios-tuxtla-gutierrez,27903,Gimnasios en Tuxtla Gutiérrez,201
+gimnasios-tuxtla-gutierrez,27903,Gimnasios en Tuxtla Gutiérrez,200
 baile-fitness-tuxtla-gutierrez,27905,Baile fitness en Tuxtla Gutiérrez,9
 box-tuxtla-gutierrez,27907,Box en Tuxtla Gutiérrez,8
-crossfit-tuxtla-gutierrez,27908,CrossFit en Tuxtla Gutiérrez,12
-funcional-tuxtla-gutierrez,27910,Funcional en Tuxtla Gutiérrez,14
+crossfit-tuxtla-gutierrez,27908,CrossFit en Tuxtla Gutiérrez,14
+funcional-tuxtla-gutierrez,27910,Funcional en Tuxtla Gutiérrez,16
 zumba-tuxtla-gutierrez,27912,Zumba en Tuxtla Gutiérrez,10
-gimnasios-uruapan,27913,Gimnasios en Uruapan,17
-funcional-uruapan,27915,Funcional en Uruapan,7
-gimnasios-ciudad-de-mexico,27916,Gimnasios en Ciudad de México,2872
-baile-fitness-ciudad-de-mexico,27918,Baile fitness en Ciudad de México,775
-ballet-ciudad-de-mexico,27920,Ballet en Ciudad de México,78
-barre-ciudad-de-mexico,27921,Barre en Ciudad de México,177
+gimnasios-uruapan,27913,Gimnasios en Uruapan,19
+funcional-uruapan,27915,Funcional en Uruapan,8
+gimnasios-ciudad-de-mexico,27916,Gimnasios en Ciudad de México,2885
+baile-fitness-ciudad-de-mexico,27918,Baile fitness en Ciudad de México,781
+ballet-ciudad-de-mexico,27920,Ballet en Ciudad de México,81
+barre-ciudad-de-mexico,27921,Barre en Ciudad de México,181
 bootcamp-ciudad-de-mexico,31366,Bootcamp en Ciudad de México,9
 boulder-ciudad-de-mexico,27923,Boulder en Ciudad de México,44
-box-ciudad-de-mexico,27925,Box en Ciudad de México,482
-calistenia-ciudad-de-mexico,27926,Calistenia en Ciudad de México,17
-combate-ciudad-de-mexico,27927,Combate en Ciudad de México,371
-crossfit-ciudad-de-mexico,27929,CrossFit en Ciudad de México,157
+box-ciudad-de-mexico,27925,Box en Ciudad de México,488
+calistenia-ciudad-de-mexico,27926,Calistenia en Ciudad de México,18
+combate-ciudad-de-mexico,27927,Combate en Ciudad de México,370
+crossfit-ciudad-de-mexico,27929,CrossFit en Ciudad de México,159
 ems-ciudad-de-mexico,31367,EMS en Ciudad de México,17
-funcional-ciudad-de-mexico,27930,Funcional en Ciudad de México,320
-hiit-ciudad-de-mexico,27931,HIIT en Ciudad de México,36
-hyrox-ciudad-de-mexico,27933,HYROX en Ciudad de México,88
-indoor-cycling-ciudad-de-mexico,27936,Indoor cycling en Ciudad de México,133
+funcional-ciudad-de-mexico,27930,Funcional en Ciudad de México,333
+hiit-ciudad-de-mexico,27931,HIIT en Ciudad de México,33
+hyrox-ciudad-de-mexico,27933,HYROX en Ciudad de México,90
+indoor-cycling-ciudad-de-mexico,27936,Indoor cycling en Ciudad de México,134
 infantil-ciudad-de-mexico,31368,Infantil en Ciudad de México,11
 jazz-ciudad-de-mexico,31369,Jazz en Ciudad de México,9
 jiu-jitsu-brasileno-ciudad-de-mexico,27937,Jiu-jitsu brasileño en Ciudad de México,21
+judo-ciudad-de-mexico,38733,Judo en Ciudad de México,6
 karate-ciudad-de-mexico,27938,Karate en Ciudad de México,95
 kickboxing-ciudad-de-mexico,27939,Kickboxing en Ciudad de México,43
 krav-maga-ciudad-de-mexico,27940,Krav maga en Ciudad de México,12
@@ -422,54 +455,56 @@ muay-thai-ciudad-de-mexico,27942,Muay thai en Ciudad de México,24
 natacion-ciudad-de-mexico,27943,Natación en Ciudad de México,318
 parkour-ciudad-de-mexico,27944,Parkour en Ciudad de México,9
 pilates-mat-ciudad-de-mexico,27946,Pilates mat en Ciudad de México,532
-pilates-reformer-ciudad-de-mexico,27948,Pilates reformer en Ciudad de México,129
-pole-fitness-ciudad-de-mexico,27950,Pole fitness en Ciudad de México,53
+pilates-reformer-ciudad-de-mexico,27948,Pilates reformer en Ciudad de México,126
+pole-fitness-ciudad-de-mexico,27950,Pole fitness en Ciudad de México,54
 padel-ciudad-de-mexico,27952,Pádel en Ciudad de México,12
-rehabilitacion-ciudad-de-mexico,31371,Rehabilitación en Ciudad de México,83
-ropa-deportiva-ciudad-de-mexico,27954,Ropa deportiva en Ciudad de México,108
+rehabilitacion-ciudad-de-mexico,31371,Rehabilitación en Ciudad de México,84
+ropa-deportiva-ciudad-de-mexico,27954,Ropa deportiva en Ciudad de México,100
 salsa-y-bachata-ciudad-de-mexico,27956,Salsa y bachata en Ciudad de México,30
 squash-ciudad-de-mexico,27957,Squash en Ciudad de México,30
-suplementos-ciudad-de-mexico,27960,Suplementos en Ciudad de México,190
+suplementos-ciudad-de-mexico,27960,Suplementos en Ciudad de México,176
 taekwondo-ciudad-de-mexico,27962,Taekwondo en Ciudad de México,108
 tai-chi-ciudad-de-mexico,31372,Tai chi en Ciudad de México,8
-telas-y-danza-aerea-ciudad-de-mexico,31373,Telas y danza aérea en Ciudad de México,19
-tenis-ciudad-de-mexico,27964,Tenis en Ciudad de México,36
-yoga-ciudad-de-mexico,27966,Yoga en Ciudad de México,476
+telas-y-danza-aerea-ciudad-de-mexico,31373,Telas y danza aérea en Ciudad de México,22
+tenis-ciudad-de-mexico,27964,Tenis en Ciudad de México,37
+yoga-ciudad-de-mexico,27966,Yoga en Ciudad de México,482
 zumba-ciudad-de-mexico,27967,Zumba en Ciudad de México,87
-gimnasios-veracruz,27968,Gimnasios en Veracruz,20
+gimnasios-veracruz,27968,Gimnasios en Veracruz,21
+crossfit-veracruz,38734,CrossFit en Veracruz,6
 pilates-mat-veracruz,27971,Pilates mat en Veracruz,6
-yoga-veracruz,27972,Yoga en Veracruz,7
-gimnasios-villahermosa,27973,Gimnasios en Villahermosa,24
+yoga-veracruz,27972,Yoga en Veracruz,8
+gimnasios-villahermosa,27973,Gimnasios en Villahermosa,25
 box-villahermosa,27974,Box en Villahermosa,6
-funcional-villahermosa,27976,Funcional en Villahermosa,19
+funcional-villahermosa,27976,Funcional en Villahermosa,20
 pilates-mat-villahermosa,27977,Pilates mat en Villahermosa,9
-gimnasios-xalapa,27979,Gimnasios en Xalapa,25
-gimnasios-guadalajara,27982,Gimnasios en Guadalajara,1226
-baile-fitness-guadalajara,27983,Baile fitness en Guadalajara,256
+gimnasios-xalapa,27979,Gimnasios en Xalapa,31
+funcional-xalapa,38735,Funcional en Xalapa,10
+gimnasios-guadalajara,27982,Gimnasios en Guadalajara,1232
+baile-fitness-guadalajara,27983,Baile fitness en Guadalajara,258
 ballet-guadalajara,35756,Ballet en Guadalajara,24
 barre-guadalajara,27985,Barre en Guadalajara,78
-boulder-guadalajara,27986,Boulder en Guadalajara,14
-box-guadalajara,27988,Box en Guadalajara,220
+boulder-guadalajara,27986,Boulder en Guadalajara,15
+box-guadalajara,27988,Box en Guadalajara,222
 calistenia-guadalajara,27989,Calistenia en Guadalajara,14
 combate-guadalajara,27991,Combate en Guadalajara,114
-crossfit-guadalajara,27992,CrossFit en Guadalajara,65
-funcional-guadalajara,27994,Funcional en Guadalajara,150
+crossfit-guadalajara,27992,CrossFit en Guadalajara,66
+funcional-guadalajara,27994,Funcional en Guadalajara,155
 hiit-guadalajara,27996,HIIT en Guadalajara,31
 hyrox-guadalajara,27997,HYROX en Guadalajara,23
-indoor-cycling-guadalajara,27999,Indoor cycling en Guadalajara,93
+indoor-cycling-guadalajara,27999,Indoor cycling en Guadalajara,96
 infantil-guadalajara,35757,Infantil en Guadalajara,12
 jiu-jitsu-brasileno-guadalajara,35758,Jiu-jitsu brasileño en Guadalajara,13
 jumping-guadalajara,28001,Jumping en Guadalajara,7
 karate-guadalajara,35759,Karate en Guadalajara,26
 mma-guadalajara,28002,MMA en Guadalajara,45
-natacion-guadalajara,28004,Natación en Guadalajara,124
-pilates-mat-guadalajara,28005,Pilates mat en Guadalajara,187
-pilates-reformer-guadalajara,28007,Pilates reformer en Guadalajara,65
+natacion-guadalajara,28004,Natación en Guadalajara,125
+pilates-mat-guadalajara,28005,Pilates mat en Guadalajara,188
+pilates-reformer-guadalajara,28007,Pilates reformer en Guadalajara,63
 pole-fitness-guadalajara,28009,Pole fitness en Guadalajara,21
-rehabilitacion-guadalajara,31374,Rehabilitación en Guadalajara,24
+rehabilitacion-guadalajara,31374,Rehabilitación en Guadalajara,26
 ropa-deportiva-guadalajara,35760,Ropa deportiva en Guadalajara,40
 suplementos-guadalajara,28010,Suplementos en Guadalajara,89
 taekwondo-guadalajara,35761,Taekwondo en Guadalajara,40
 tenis-guadalajara,35762,Tenis en Guadalajara,8
-yoga-guadalajara,28012,Yoga en Guadalajara,176
+yoga-guadalajara,28012,Yoga en Guadalajara,177
 zumba-guadalajara,28013,Zumba en Guadalajara,32
