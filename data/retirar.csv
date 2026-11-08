@@ -1145,3 +1145,13 @@ wp_id,nombre,motivo,retirado_el,place_id
 26639,Seven Days Gold Suc Constituye,fuera de la base,2026-11-07,
 3266,Em The Gym,fuera de la base,2026-11-07,
 24951,BellaNick Clinic Queretaro,no es fitness: parece clínica estética (sin confirmar),2026-11-07,totalpass:bellanick-clinic-queretaro
+5560,Health Rx Corp,"no es fitness: sin evidencia de gimnasio, sitio parece de farmacia en línea",2026-11-08,denue:7783780
+2905,Dick's Sporting Goods,no es fitness: tienda deportiva,2026-11-08,osm:node/8631005880
+2932,Academy Sports + Outdoors,no es fitness: tienda deportiva,2026-11-08,osm:way/346316965
+12931,Tienda de ajedrez Diagonales Un mundo de cuadritos,no es fitness: tienda de ajedrez,2026-11-08,osm:node/5258981469
+12937,Adidas,no es fitness: tienda de ropa deportiva,2026-11-08,osm:node/6601589916
+12938,GNC,no es fitness: tienda de suplementos,2026-11-08,osm:node/6652960501
+12939,Nutrisa,no es fitness: tienda de alimentos,2026-11-08,osm:node/6652960504
+12958,Omnilife CEDIS Mérida,no es fitness: centro de distribución de suplementos,2026-11-08,osm:node/12710901009
+12963,Centro de Distribución Omnilife Mérida Norte,no es fitness: centro de distribución de suplementos,2026-11-08,osm:node/12837564215
+12976,Mayan Salón & Spa,no es fitness: salón y spa,2026-11-08,osm:way/843873092
