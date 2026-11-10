@@ -124,7 +124,8 @@ def formulario_reportar(s, url, destino, anota):
     # el suyo, o el de ejemplo que crea el plugin al instalarse
     previo = [f for f in todas if f.get("title") == "Reportar un error"] or \
              [f for f in todas if f.get("title") in ("Contact form 1", "Formulario de contacto 1")]
-    r = s.post(api + (f"/{previo[0]['id']}" if previo else ""), json=datos, timeout=60)
+    # Contact Form 7 solo guarda de verdad con context=save; sin eso devuelve una vista previa
+    r = s.post(api + (f"/{previo[0]['id']}" if previo else ""), params={"context": "save"}, json=datos, timeout=60)
     anota(accion="guardar_formulario", http=r.status_code, respuesta=r.text[:300])
     if r.status_code not in (200, 201):
         return
