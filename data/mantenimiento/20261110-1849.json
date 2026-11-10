@@ -1,0 +1,40 @@
+{
+ "solicitud": {
+  "formulario_reportar": "hola@gyms52.com",
+  "ver_formularios": [
+   40550
+  ],
+  "n": 5
+ },
+ "resultados": [
+  {
+   "accion": "ver_formulario",
+   "id": 40550,
+   "http": 200,
+   "titulo": "Contact form 1",
+   "form": "<label> Your name\n    [text* your-name autocomplete:name] </label>\n\n<label> Your email\n    [email* your-email autocomplete:email] </label>\n\n<label> Subject\n    ",
+   "para": "[_site_admin_email]"
+  },
+  {
+   "accion": "cf7",
+   "http": 200,
+   "estado": "active"
+  },
+  {
+   "accion": "guardar_formulario",
+   "http": 200,
+   "respuesta": "{\"id\":40550,\"slug\":\"contact-form-1\",\"title\":\"Reportar un error\",\"locale\":\"es_MX\",\"properties\":{\"form\":{\"content\":\"<label>Tu nombre\\n    [text* tu-nombre autocomplete:name]<\\/label>\\n\\n<label>Tu correo\\n    [email* tu-correo autocomplete:email]<\\/label>\\n\\n<label>Lugar y ciudad\\n    [text* lugar plac"
+  },
+  {
+   "accion": "formulario",
+   "id": 40550,
+   "destinatario": "hola@gyms52.com",
+   "asunto": "Reporte de error: [lugar]"
+  },
+  {
+   "accion": "pagina_reportar",
+   "http": 200,
+   "con_formulario": true
+  }
+ ]
+}
