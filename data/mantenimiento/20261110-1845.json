@@ -1,0 +1,18 @@
+{
+ "solicitud": {
+  "formulario_reportar": "hola@gyms52.com",
+  "n": 2
+ },
+ "resultados": [
+  {
+   "accion": "cf7",
+   "http": 200,
+   "estado": "active"
+  },
+  {
+   "accion": "formulario",
+   "detalle": "no aparece en la lista",
+   "lista": "[{'id': 40550, 'hash': '1937eb7', 'slug': 'contact-form-1', 'title': 'Contact form 1', 'locale': 'es_MX'}]"
+  }
+ ]
+}
