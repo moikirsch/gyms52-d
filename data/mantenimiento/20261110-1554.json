@@ -1,0 +1,50 @@
+{
+ "solicitud": {
+  "borrador_lugares": [
+   1231,
+   29864,
+   33137,
+   35826,
+   37450,
+   37551
+  ]
+ },
+ "resultados": [
+  {
+   "accion": "borrador_lugar",
+   "id": 1231,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador_lugar",
+   "id": 29864,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador_lugar",
+   "id": 33137,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador_lugar",
+   "id": 35826,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador_lugar",
+   "id": 37450,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador_lugar",
+   "id": 37551,
+   "http": 200,
+   "estado": "draft"
+  }
+ ]
+}
