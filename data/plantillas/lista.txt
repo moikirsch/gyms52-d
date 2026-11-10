@@ -1,0 +1,29 @@
+templates	directory//gd-single	custom	GD Single
+templates	directory//front-page	custom	Página de inicio
+templates	directory//gd-location	theme	GD Location
+templates	directory//gd-search	theme	GD Search Archive
+templates	directory//page-sidebar-left	theme	Two columns, left sidebar
+templates	directory//archive	theme	Todos los archivos
+templates	directory//404	theme	Página: 404
+templates	directory//index	theme	Índice
+templates	directory//page	theme	Páginas
+templates	directory//page-sidebar-right	theme	Two columns, right sidebar
+templates	directory//search	theme	Resultados de búsqueda
+templates	directory//gd-archive	theme	GD Archives
+templates	directory//single	theme	Entradas individuales
+templates	directory//gd-add-listing	theme	GD Add Listing
+template-parts	directory//gd-archive-item-simple	custom	GD Archive Item Simple
+template-parts	directory//footer	custom	footer
+template-parts	directory//header	custom	header
+template-parts	directory//header-transparent	custom	header-transparent
+template-parts	directory//menu-wrapper	custom	Menu Wrapper
+template-parts	directory//gd-archive-item-list-square	theme	GD Archive Item List Square
+template-parts	directory//sidebar-left	theme	sidebar-left
+template-parts	directory//gd-archive-item-image	theme	GD Archive Item Image
+template-parts	directory//sidebar-right	theme	sidebar-right
+template-parts	directory//comments	theme	comments
+template-parts	directory//hero-archive	theme	hero-archive
+template-parts	directory//hero-page	theme	hero-page
+template-parts	directory//hero-post	theme	hero-post
+template-parts	directory//main	theme	main
+template-parts	directory//gd-archive-item	theme	gd-archive-item
