@@ -1,6 +1,8 @@
 slug,page_id,titulo,lugares
 gimnasios-acapulco,27480,Gimnasios en Acapulco,144
 funcional-acapulco,38699,Funcional en Acapulco,7
+totalpass-acapulco,40045,Dónde usar TotalPass en Acapulco,13
+fitpass-acapulco,40046,Dónde usar Fitpass en Acapulco,7
 gimnasios-aguascalientes,27482,Gimnasios en Aguascalientes,267
 baile-fitness-aguascalientes,27484,Baile fitness en Aguascalientes,19
 barre-aguascalientes,27485,Barre en Aguascalientes,11
@@ -15,6 +17,8 @@ pilates-mat-aguascalientes,27497,Pilates mat en Aguascalientes,22
 pole-fitness-aguascalientes,27498,Pole fitness en Aguascalientes,6
 yoga-aguascalientes,27499,Yoga en Aguascalientes,14
 zumba-aguascalientes,27500,Zumba en Aguascalientes,13
+totalpass-aguascalientes,40047,Dónde usar TotalPass en Aguascalientes,90
+totalpass-cadereyta,40048,Dónde usar TotalPass en Cadereyta,13
 gimnasios-cancun,27501,Gimnasios en Cancún,165
 baile-fitness-cancun,27502,Baile fitness en Cancún,13
 barre-cancun,27503,Barre en Cancún,14
@@ -27,10 +31,12 @@ pilates-mat-cancun,27510,Pilates mat en Cancún,31
 pilates-reformer-cancun,27511,Pilates reformer en Cancún,18
 yoga-cancun,27512,Yoga en Cancún,22
 zumba-cancun,27513,Zumba en Cancún,8
-gimnasios-celaya,27514,Gimnasios en Celaya,17
-crossfit-celaya,27515,CrossFit en Celaya,7
-funcional-celaya,27516,Funcional en Celaya,15
+totalpass-cancun,40049,Dónde usar TotalPass en Cancún,44
+fitpass-cancun,40050,Dónde usar Fitpass en Cancún,67
+gimnasios-celaya,27514,Gimnasios en Celaya,15
+funcional-celaya,27516,Funcional en Celaya,13
 pilates-mat-celaya,38700,Pilates mat en Celaya,6
+totalpass-celaya,40051,Dónde usar TotalPass en Celaya,33
 gimnasios-chihuahua,27517,Gimnasios en Chihuahua,238
 box-chihuahua,27518,Box en Chihuahua,14
 funcional-chihuahua,27519,Funcional en Chihuahua,14
@@ -38,20 +44,26 @@ indoor-cycling-chihuahua,27520,Indoor cycling en Chihuahua,12
 pilates-mat-chihuahua,27521,Pilates mat en Chihuahua,19
 pilates-reformer-chihuahua,27522,Pilates reformer en Chihuahua,6
 yoga-chihuahua,38701,Yoga en Chihuahua,7
+totalpass-chihuahua,40052,Dónde usar TotalPass en Chihuahua,52
 gimnasios-ciudad-juarez,27524,Gimnasios en Ciudad Juárez,246
 box-ciudad-juarez,27525,Box en Ciudad Juárez,11
 natacion-ciudad-juarez,27527,Natación en Ciudad Juárez,16
 suplementos-ciudad-juarez,27528,Suplementos en Ciudad Juárez,7
 zumba-ciudad-juarez,27529,Zumba en Ciudad Juárez,16
+totalpass-ciudad-juarez,40053,Dónde usar TotalPass en Ciudad Juárez,13
 gimnasios-ciudad-obregon,27530,Gimnasios en Ciudad Obregón,10
 funcional-ciudad-obregon,27531,Funcional en Ciudad Obregón,8
+totalpass-ciudad-obregon,40054,Dónde usar TotalPass en Ciudad Obregón,18
 gimnasios-ciudad-del-carmen,27532,Gimnasios en Ciudad del Carmen,8
+totalpass-ciudad-del-carmen,40055,Dónde usar TotalPass en Ciudad del Carmen,13
 gimnasios-coatzacoalcos,27533,Gimnasios en Coatzacoalcos,140
 baile-fitness-coatzacoalcos,27534,Baile fitness en Coatzacoalcos,9
 zumba-coatzacoalcos,27535,Zumba en Coatzacoalcos,15
+totalpass-coatzacoalcos,40056,Dónde usar TotalPass en Coatzacoalcos,9
 gimnasios-colima,27536,Gimnasios en Colima,11
 funcional-colima,27537,Funcional en Colima,10
 pilates-mat-colima,38702,Pilates mat en Colima,6
+totalpass-colima,40057,Dónde usar TotalPass en Colima,22
 gimnasios-cuautitlan-izcalli,27540,Gimnasios en Cuautitlán Izcalli,1227
 baile-fitness-cuautitlan-izcalli,27541,Baile fitness en Cuautitlán Izcalli,280
 ballet-cuautitlan-izcalli,35738,Ballet en Cuautitlán Izcalli,26
@@ -77,9 +89,12 @@ rehabilitacion-cuautitlan-izcalli,31339,Rehabilitación en Cuautitlán Izcalli,1
 ropa-deportiva-cuautitlan-izcalli,35743,Ropa deportiva en Cuautitlán Izcalli,43
 suplementos-cuautitlan-izcalli,35744,Suplementos en Cuautitlán Izcalli,58
 taekwondo-cuautitlan-izcalli,35745,Taekwondo en Cuautitlán Izcalli,84
-tenis-cuautitlan-izcalli,35746,Tenis en Cuautitlán Izcalli,8
+tenis-cuautitlan-izcalli,35746,Tenis en Cuautitlán Izcalli,7
 yoga-cuautitlan-izcalli,27559,Yoga en Cuautitlán Izcalli,77
 zumba-cuautitlan-izcalli,27560,Zumba en Cuautitlán Izcalli,53
+totalpass-cuautitlan-izcalli,40058,Dónde usar TotalPass en Cuautitlán Izcalli,287
+wellhub-cuautitlan-izcalli,40059,Dónde usar Wellhub en Cuautitlán Izcalli,31
+fitpass-cuautitlan-izcalli,40060,Dónde usar Fitpass en Cuautitlán Izcalli,93
 gimnasios-cuernavaca,27561,Gimnasios en Cuernavaca,205
 baile-fitness-cuernavaca,27563,Baile fitness en Cuernavaca,19
 barre-cuernavaca,27564,Barre en Cuernavaca,10
@@ -94,21 +109,26 @@ rehabilitacion-cuernavaca,31340,Rehabilitación en Cuernavaca,6
 tenis-cuernavaca,27574,Tenis en Cuernavaca,14
 yoga-cuernavaca,27576,Yoga en Cuernavaca,22
 zumba-cuernavaca,27577,Zumba en Cuernavaca,15
-gimnasios-culiacan,27578,Gimnasios en Culiacán,221
+totalpass-cuernavaca,40061,Dónde usar TotalPass en Cuernavaca,79
+fitpass-cuernavaca,40062,Dónde usar Fitpass en Cuernavaca,46
+gimnasios-culiacan,27578,Gimnasios en Culiacán,220
 baile-fitness-culiacan,27579,Baile fitness en Culiacán,6
 box-culiacan,27580,Box en Culiacán,10
 funcional-culiacan,27581,Funcional en Culiacán,10
 indoor-cycling-culiacan,27582,Indoor cycling en Culiacán,17
 pilates-mat-culiacan,27584,Pilates mat en Culiacán,7
+totalpass-culiacan,40063,Dónde usar TotalPass en Culiacán,35
 gimnasios-cordoba,27585,Gimnasios en Córdoba,161
 baile-fitness-cordoba,27586,Baile fitness en Córdoba,15
 box-cordoba,27587,Box en Córdoba,10
 crossfit-cordoba,27588,CrossFit en Córdoba,6
 tenis-cordoba,27589,Tenis en Córdoba,7
 zumba-cordoba,27590,Zumba en Córdoba,10
+totalpass-cordoba,40064,Dónde usar TotalPass en Córdoba,19
 gimnasios-durango,27591,Gimnasios en Durango,14
 box-durango,38705,Box en Durango,6
 funcional-durango,38706,Funcional en Durango,8
+totalpass-durango,40065,Dónde usar TotalPass en Durango,24
 gimnasios-ecatepec,27594,Gimnasios en Ecatepec,1808
 baile-fitness-ecatepec,27596,Baile fitness en Ecatepec,418
 ballet-ecatepec,31341,Ballet en Ecatepec,25
@@ -142,9 +162,16 @@ telas-y-danza-aerea-ecatepec,31352,Telas y danza aérea en Ecatepec,8
 tenis-ecatepec,31353,Tenis en Ecatepec,7
 yoga-ecatepec,27615,Yoga en Ecatepec,156
 zumba-ecatepec,27616,Zumba en Ecatepec,133
+gimnasios-con-alberca-ecatepec,40066,Gimnasios con alberca en Ecatepec,23
+totalpass-ecatepec,40067,Dónde usar TotalPass en Ecatepec,560
+wellhub-ecatepec,40068,Dónde usar Wellhub en Ecatepec,66
+fitpass-ecatepec,40069,Dónde usar Fitpass en Ecatepec,199
 gimnasios-ensenada,38707,Gimnasios en Ensenada,6
+totalpass-ensenada,40070,Dónde usar TotalPass en Ensenada,8
+totalpass-fresnillo,40071,Dónde usar TotalPass en Fresnillo,6
 gimnasios-guadalupe,27618,Gimnasios en Guadalupe,15
 funcional-guadalupe,38708,Funcional en Guadalupe,6
+totalpass-guadalupe,40072,Dónde usar TotalPass en Guadalupe,27
 gimnasios-hermosillo,27620,Gimnasios en Hermosillo,193
 baile-fitness-hermosillo,27622,Baile fitness en Hermosillo,10
 barre-hermosillo,27623,Barre en Hermosillo,11
@@ -156,44 +183,68 @@ hiit-hermosillo,27628,HIIT en Hermosillo,15
 indoor-cycling-hermosillo,27629,Indoor cycling en Hermosillo,11
 pilates-mat-hermosillo,27630,Pilates mat en Hermosillo,36
 yoga-hermosillo,27631,Yoga en Hermosillo,17
+totalpass-hermosillo,40073,Dónde usar TotalPass en Hermosillo,104
 gimnasios-huixquilucan,27632,Gimnasios en Huixquilucan,23
 barre-huixquilucan,27634,Barre en Huixquilucan,12
 funcional-huixquilucan,27635,Funcional en Huixquilucan,13
 pilates-mat-huixquilucan,27637,Pilates mat en Huixquilucan,11
 yoga-huixquilucan,27640,Yoga en Huixquilucan,10
+totalpass-huixquilucan,40074,Dónde usar TotalPass en Huixquilucan,45
+fitpass-huixquilucan,40075,Dónde usar Fitpass en Huixquilucan,22
 gimnasios-irapuato,27641,Gimnasios en Irapuato,219
 baile-fitness-irapuato,27643,Baile fitness en Irapuato,6
 box-irapuato,27644,Box en Irapuato,10
 crossfit-irapuato,27645,CrossFit en Irapuato,16
 funcional-irapuato,27646,Funcional en Irapuato,15
 zumba-irapuato,27648,Zumba en Irapuato,13
+totalpass-irapuato,40076,Dónde usar TotalPass en Irapuato,22
 gimnasios-la-paz,27649,Gimnasios en La Paz,6
+totalpass-la-paz,40077,Dónde usar TotalPass en La Paz,7
 gimnasios-la-piedad,27650,Gimnasios en La Piedad,6
-gimnasios-leon,27651,Gimnasios en León,454
-baile-fitness-leon,27652,Baile fitness en León,25
-barre-leon,27653,Barre en León,21
-box-leon,27654,Box en León,38
-calistenia-leon,31354,Calistenia en León,7
-crossfit-leon,27655,CrossFit en León,20
-funcional-leon,27656,Funcional en León,51
-hiit-leon,27657,HIIT en León,6
-indoor-cycling-leon,27658,Indoor cycling en León,20
-natacion-leon,27659,Natación en León,6
-pilates-mat-leon,27660,Pilates mat en León,30
+totalpass-la-piedad,40078,Dónde usar TotalPass en La Piedad,7
+gimnasios-leon,27651,Gimnasios en León,534
+baile-fitness-leon,27652,Baile fitness en León,65
+ballet-leon,40079,Ballet en León,12
+barre-leon,27653,Barre en León,16
+box-leon,27654,Box en León,66
+calistenia-leon,31354,Calistenia en León,6
+combate-leon,40080,Combate en León,35
+crossfit-leon,27655,CrossFit en León,33
+funcional-leon,27656,Funcional en León,37
+indoor-cycling-leon,27658,Indoor cycling en León,23
+mma-leon,40081,MMA en León,11
+muay-thai-leon,40082,Muay thai en León,6
+natacion-leon,27659,Natación en León,34
+pilates-mat-leon,27660,Pilates mat en León,40
+pilates-reformer-leon,40083,Pilates reformer en León,10
 rehabilitacion-leon,31355,Rehabilitación en León,13
-yoga-leon,27661,Yoga en León,28
-zumba-leon,27662,Zumba en León,46
+ropa-deportiva-leon,40084,Ropa deportiva en León,20
+suplementos-leon,40085,Suplementos en León,28
+taekwondo-leon,40086,Taekwondo en León,10
+yoga-leon,27661,Yoga en León,58
+zumba-leon,27662,Zumba en León,42
+gimnasios-con-alberca-leon,40087,Gimnasios con alberca en León,6
+totalpass-leon,40088,Dónde usar TotalPass en León,146
+wellhub-leon,40089,Dónde usar Wellhub en León,9
+fitpass-leon,40090,Dónde usar Fitpass en León,32
 gimnasios-los-cabos,27663,Gimnasios en Los Cabos,10
 barre-los-cabos,27664,Barre en Los Cabos,7
 pilates-mat-los-cabos,27665,Pilates mat en Los Cabos,7
 yoga-los-cabos,27666,Yoga en Los Cabos,8
+totalpass-los-cabos,40091,Dónde usar TotalPass en Los Cabos,18
+fitpass-los-cabos,40092,Dónde usar Fitpass en Los Cabos,10
 gimnasios-los-mochis,27667,Gimnasios en Los Mochis,9
+totalpass-los-mochis,40093,Dónde usar TotalPass en Los Mochis,13
+totalpass-matamoros,40094,Dónde usar TotalPass en Matamoros,7
 gimnasios-mazatlan,27668,Gimnasios en Mazatlán,17
 funcional-mazatlan,38709,Funcional en Mazatlán,7
+totalpass-mazatlan,40095,Dónde usar TotalPass en Mazatlán,18
 gimnasios-mexicali,27670,Gimnasios en Mexicali,177
 box-mexicali,27671,Box en Mexicali,16
 funcional-mexicali,27672,Funcional en Mexicali,7
 pilates-mat-mexicali,27673,Pilates mat en Mexicali,10
+totalpass-mexicali,40096,Dónde usar TotalPass en Mexicali,33
+totalpass-monclova,40097,Dónde usar TotalPass en Monclova,8
 gimnasios-monterrey,27674,Gimnasios en Monterrey,1376
 baile-fitness-monterrey,27675,Baile fitness en Monterrey,253
 ballet-monterrey,27677,Ballet en Monterrey,17
@@ -214,7 +265,7 @@ kickboxing-monterrey,35751,Kickboxing en Monterrey,10
 krav-maga-monterrey,35752,Krav maga en Monterrey,7
 mma-monterrey,27692,MMA en Monterrey,29
 muay-thai-monterrey,27693,Muay thai en Monterrey,22
-natacion-monterrey,27694,Natación en Monterrey,86
+natacion-monterrey,27694,Natación en Monterrey,85
 pilates-mat-monterrey,27695,Pilates mat en Monterrey,277
 pilates-reformer-monterrey,27696,Pilates reformer en Monterrey,52
 pole-fitness-monterrey,27697,Pole fitness en Monterrey,16
@@ -222,9 +273,13 @@ rehabilitacion-monterrey,31357,Rehabilitación en Monterrey,46
 ropa-deportiva-monterrey,35753,Ropa deportiva en Monterrey,62
 suplementos-monterrey,27698,Suplementos en Monterrey,90
 taekwondo-monterrey,35754,Taekwondo en Monterrey,77
-tenis-monterrey,35755,Tenis en Monterrey,6
+tenis-monterrey,35755,Tenis en Monterrey,7
 yoga-monterrey,27699,Yoga en Monterrey,150
 zumba-monterrey,27700,Zumba en Monterrey,28
+gimnasios-con-alberca-monterrey,40098,Gimnasios con alberca en Monterrey,12
+totalpass-monterrey,40099,Dónde usar TotalPass en Monterrey,869
+wellhub-monterrey,40100,Dónde usar Wellhub en Monterrey,154
+fitpass-monterrey,40101,Dónde usar Fitpass en Monterrey,173
 gimnasios-morelia,27701,Gimnasios en Morelia,265
 baile-fitness-morelia,27702,Baile fitness en Morelia,27
 barre-morelia,27703,Barre en Morelia,26
@@ -237,12 +292,13 @@ pilates-mat-morelia,27709,Pilates mat en Morelia,38
 rehabilitacion-morelia,31358,Rehabilitación en Morelia,9
 yoga-morelia,27710,Yoga en Morelia,28
 zumba-morelia,27711,Zumba en Morelia,8
-gimnasios-merida,27712,Gimnasios en Mérida,379
+totalpass-morelia,40102,Dónde usar TotalPass en Morelia,175
+gimnasios-merida,27712,Gimnasios en Mérida,380
 baile-fitness-merida,27713,Baile fitness en Mérida,41
 barre-merida,27714,Barre en Mérida,18
-box-merida,27716,Box en Mérida,25
+box-merida,27716,Box en Mérida,24
 crossfit-merida,27717,CrossFit en Mérida,9
-funcional-merida,27718,Funcional en Mérida,57
+funcional-merida,27718,Funcional en Mérida,56
 hiit-merida,27719,HIIT en Mérida,6
 hyrox-merida,27720,HYROX en Mérida,15
 indoor-cycling-merida,27721,Indoor cycling en Mérida,16
@@ -253,8 +309,12 @@ pilates-reformer-merida,27725,Pilates reformer en Mérida,11
 pole-fitness-merida,27726,Pole fitness en Mérida,7
 tenis-merida,27729,Tenis en Mérida,7
 yoga-merida,27730,Yoga en Mérida,26
-zumba-merida,27731,Zumba en Mérida,17
+zumba-merida,27731,Zumba en Mérida,16
+totalpass-merida,40103,Dónde usar TotalPass en Mérida,108
+fitpass-merida,40104,Dónde usar Fitpass en Mérida,68
+totalpass-nuevo-laredo,40105,Dónde usar TotalPass en Nuevo Laredo,8
 gimnasios-oaxaca,38710,Gimnasios en Oaxaca,7
+totalpass-oaxaca,40106,Dónde usar TotalPass en Oaxaca,17
 gimnasios-pachuca,27733,Gimnasios en Pachuca,22
 barre-pachuca,27734,Barre en Pachuca,9
 box-pachuca,27735,Box en Pachuca,6
@@ -262,10 +322,14 @@ crossfit-pachuca,38711,CrossFit en Pachuca,7
 funcional-pachuca,27739,Funcional en Pachuca,13
 pilates-mat-pachuca,27740,Pilates mat en Pachuca,13
 yoga-pachuca,27741,Yoga en Pachuca,9
+totalpass-pachuca,40107,Dónde usar TotalPass en Pachuca,48
 gimnasios-piedras-negras,27742,Gimnasios en Piedras Negras,7
+totalpass-piedras-negras,40108,Dónde usar TotalPass en Piedras Negras,12
 gimnasios-playa-del-carmen,27743,Gimnasios en Playa del Carmen,22
 funcional-playa-del-carmen,27745,Funcional en Playa del Carmen,14
 pilates-mat-playa-del-carmen,27746,Pilates mat en Playa del Carmen,6
+totalpass-playa-del-carmen,40109,Dónde usar TotalPass en Playa del Carmen,32
+fitpass-playa-del-carmen,40110,Dónde usar Fitpass en Playa del Carmen,13
 gimnasios-puebla,27747,Gimnasios en Puebla,1125
 baile-fitness-puebla,27748,Baile fitness en Puebla,215
 ballet-puebla,27749,Ballet en Puebla,29
@@ -295,36 +359,49 @@ taekwondo-puebla,38716,Taekwondo en Puebla,57
 tenis-puebla,38717,Tenis en Puebla,11
 yoga-puebla,27768,Yoga en Puebla,136
 zumba-puebla,27770,Zumba en Puebla,55
+totalpass-puebla,40111,Dónde usar TotalPass en Puebla,371
+wellhub-puebla,40112,Dónde usar Wellhub en Puebla,44
+fitpass-puebla,40113,Dónde usar Fitpass en Puebla,314
 gimnasios-puerto-vallarta,27771,Gimnasios en Puerto Vallarta,8
-gimnasios-queretaro,27772,Gimnasios en Querétaro,567
-baile-fitness-queretaro,27773,Baile fitness en Querétaro,142
-barre-queretaro,27775,Barre en Querétaro,60
-boulder-queretaro,38718,Boulder en Querétaro,6
-box-queretaro,27777,Box en Querétaro,88
+totalpass-puerto-vallarta,40114,Dónde usar TotalPass en Puerto Vallarta,10
+gimnasios-queretaro,27772,Gimnasios en Querétaro,605
+baile-fitness-queretaro,27773,Baile fitness en Querétaro,162
+ballet-queretaro,40115,Ballet en Querétaro,6
+barre-queretaro,27775,Barre en Querétaro,61
+boulder-queretaro,38718,Boulder en Querétaro,11
+box-queretaro,27777,Box en Querétaro,91
 calistenia-queretaro,27778,Calistenia en Querétaro,8
-combate-queretaro,27780,Combate en Querétaro,49
-crossfit-queretaro,27781,CrossFit en Querétaro,35
+combate-queretaro,27780,Combate en Querétaro,62
+crossfit-queretaro,27781,CrossFit en Querétaro,40
 ems-queretaro,31361,EMS en Querétaro,6
-funcional-queretaro,27782,Funcional en Querétaro,136
-hiit-queretaro,27783,HIIT en Querétaro,15
+funcional-queretaro,27782,Funcional en Querétaro,134
+hiit-queretaro,27783,HIIT en Querétaro,16
 hyrox-queretaro,27784,HYROX en Querétaro,13
-indoor-cycling-queretaro,27785,Indoor cycling en Querétaro,60
-kickboxing-queretaro,38719,Kickboxing en Querétaro,7
+indoor-cycling-queretaro,27785,Indoor cycling en Querétaro,68
+jiu-jitsu-brasileno-queretaro,40116,Jiu-jitsu brasileño en Querétaro,7
+karate-queretaro,40117,Karate en Querétaro,6
+kickboxing-queretaro,38719,Kickboxing en Querétaro,6
+krav-maga-queretaro,40118,Krav maga en Querétaro,6
 mma-queretaro,27787,MMA en Querétaro,13
-natacion-queretaro,27788,Natación en Querétaro,57
+natacion-queretaro,27788,Natación en Querétaro,66
 pilates-mat-queretaro,27790,Pilates mat en Querétaro,193
-pilates-reformer-queretaro,27791,Pilates reformer en Querétaro,67
+pilates-reformer-queretaro,27791,Pilates reformer en Querétaro,64
 pole-fitness-queretaro,27792,Pole fitness en Querétaro,9
 rehabilitacion-queretaro,31362,Rehabilitación en Querétaro,39
-ropa-deportiva-queretaro,38720,Ropa deportiva en Querétaro,17
+ropa-deportiva-queretaro,38720,Ropa deportiva en Querétaro,24
 salsa-y-bachata-queretaro,27793,Salsa y bachata en Querétaro,9
-suplementos-queretaro,38721,Suplementos en Querétaro,48
-taekwondo-queretaro,38722,Taekwondo en Querétaro,6
-tenis-queretaro,27794,Tenis en Querétaro,8
-yoga-queretaro,27795,Yoga en Querétaro,134
-zumba-queretaro,27796,Zumba en Querétaro,11
-gimnasios-reynosa,27797,Gimnasios en Reynosa,136
+suplementos-queretaro,38721,Suplementos en Querétaro,58
+taekwondo-queretaro,38722,Taekwondo en Querétaro,14
+tenis-queretaro,27794,Tenis en Querétaro,9
+yoga-queretaro,27795,Yoga en Querétaro,137
+zumba-queretaro,27796,Zumba en Querétaro,10
+gimnasios-con-alberca-queretaro,40119,Gimnasios con alberca en Querétaro,8
+totalpass-queretaro,40120,Dónde usar TotalPass en Querétaro,573
+wellhub-queretaro,40121,Dónde usar Wellhub en Querétaro,55
+fitpass-queretaro,40122,Dónde usar Fitpass en Querétaro,323
+gimnasios-reynosa,27797,Gimnasios en Reynosa,137
 zumba-reynosa,27798,Zumba en Reynosa,16
+totalpass-reynosa,40123,Dónde usar TotalPass en Reynosa,7
 gimnasios-saltillo,27800,Gimnasios en Saltillo,239
 baile-fitness-saltillo,27801,Baile fitness en Saltillo,15
 barre-saltillo,27802,Barre en Saltillo,11
@@ -337,9 +414,12 @@ pilates-mat-saltillo,27808,Pilates mat en Saltillo,20
 rehabilitacion-saltillo,31363,Rehabilitación en Saltillo,7
 yoga-saltillo,27809,Yoga en Saltillo,16
 zumba-saltillo,27810,Zumba en Saltillo,10
+totalpass-saltillo,40124,Dónde usar TotalPass en Saltillo,122
 gimnasios-san-juan-del-rio,27811,Gimnasios en San Juan del Río,9
 indoor-cycling-san-juan-del-rio,27813,Indoor cycling en San Juan del Río,8
 pilates-mat-san-juan-del-rio,27814,Pilates mat en San Juan del Río,6
+totalpass-san-juan-del-rio,40125,Dónde usar TotalPass en San Juan del Río,26
+fitpass-san-juan-del-rio,40126,Dónde usar Fitpass en San Juan del Río,8
 gimnasios-san-luis-potosi,27815,Gimnasios en San Luis Potosí,270
 baile-fitness-san-luis-potosi,27816,Baile fitness en San Luis Potosí,22
 barre-san-luis-potosi,27817,Barre en San Luis Potosí,9
@@ -354,7 +434,13 @@ pilates-reformer-san-luis-potosi,27826,Pilates reformer en San Luis Potosí,6
 pole-fitness-san-luis-potosi,27828,Pole fitness en San Luis Potosí,12
 yoga-san-luis-potosi,27829,Yoga en San Luis Potosí,26
 zumba-san-luis-potosi,27830,Zumba en San Luis Potosí,16
+totalpass-san-luis-potosi,40127,Dónde usar TotalPass en San Luis Potosí,84
+wellhub-san-luis-potosi,40128,Dónde usar Wellhub en San Luis Potosí,9
+fitpass-san-luis-potosi,40129,Dónde usar Fitpass en San Luis Potosí,19
+totalpass-san-martin-texmelucan-de-labastida,40130,Dónde usar TotalPass en San Martin Texmelucan de Labastida,7
+totalpass-san-miguel-de-allende,40131,Dónde usar TotalPass en San Miguel de Allende,7
 gimnasios-silao-de-la-victoria,27831,Gimnasios en Silao de la Victoria,10
+totalpass-silao-de-la-victoria,40132,Dónde usar TotalPass en Silao de la Victoria,14
 gimnasios-tampico,27832,Gimnasios en Tampico,164
 baile-fitness-tampico,27833,Baile fitness en Tampico,12
 barre-tampico,27834,Barre en Tampico,7
@@ -364,8 +450,11 @@ indoor-cycling-tampico,38723,Indoor cycling en Tampico,6
 pilates-mat-tampico,27838,Pilates mat en Tampico,8
 yoga-tampico,38724,Yoga en Tampico,6
 zumba-tampico,27840,Zumba en Tampico,15
+totalpass-tampico,40133,Dónde usar TotalPass en Tampico,43
+totalpass-tapachula,40134,Dónde usar TotalPass en Tapachula,7
 gimnasios-tepic,27841,Gimnasios en Tepic,10
 funcional-tepic,27842,Funcional en Tepic,8
+totalpass-tepic,40135,Dónde usar TotalPass en Tepic,19
 gimnasios-tijuana,27844,Gimnasios en Tijuana,358
 baile-fitness-tijuana,27845,Baile fitness en Tijuana,72
 barre-tijuana,27846,Barre en Tijuana,14
@@ -383,32 +472,38 @@ suplementos-tijuana,38731,Suplementos en Tijuana,30
 taekwondo-tijuana,38732,Taekwondo en Tijuana,15
 yoga-tijuana,27852,Yoga en Tijuana,41
 zumba-tijuana,27853,Zumba en Tijuana,12
-gimnasios-toluca,27855,Gimnasios en Toluca,894
-baile-fitness-toluca,27856,Baile fitness en Toluca,112
+totalpass-tijuana,40136,Dónde usar TotalPass en Tijuana,51
+wellhub-tijuana,40137,Dónde usar Wellhub en Tijuana,12
+gimnasios-toluca,27855,Gimnasios en Toluca,885
+baile-fitness-toluca,27856,Baile fitness en Toluca,110
 barre-toluca,27857,Barre en Toluca,32
-box-toluca,27859,Box en Toluca,53
-calistenia-toluca,27860,Calistenia en Toluca,9
-combate-toluca,27862,Combate en Toluca,41
+box-toluca,27859,Box en Toluca,51
+calistenia-toluca,27860,Calistenia en Toluca,8
+combate-toluca,27862,Combate en Toluca,39
 crossfit-toluca,27863,CrossFit en Toluca,36
-funcional-toluca,27864,Funcional en Toluca,78
+funcional-toluca,27864,Funcional en Toluca,79
 hiit-toluca,27866,HIIT en Toluca,6
 hyrox-toluca,27867,HYROX en Toluca,14
-indoor-cycling-toluca,27869,Indoor cycling en Toluca,31
-karate-toluca,27871,Karate en Toluca,8
+indoor-cycling-toluca,27869,Indoor cycling en Toluca,32
+karate-toluca,27871,Karate en Toluca,7
 kickboxing-toluca,27872,Kickboxing en Toluca,6
 mma-toluca,27874,MMA en Toluca,8
-natacion-toluca,27875,Natación en Toluca,19
+natacion-toluca,27875,Natación en Toluca,18
 pilates-mat-toluca,27877,Pilates mat en Toluca,64
 pilates-reformer-toluca,27879,Pilates reformer en Toluca,17
 pole-fitness-toluca,27880,Pole fitness en Toluca,12
 rehabilitacion-toluca,31364,Rehabilitación en Toluca,16
-squash-toluca,27881,Squash en Toluca,30
-suplementos-toluca,27883,Suplementos en Toluca,15
-taekwondo-toluca,27884,Taekwondo en Toluca,19
+squash-toluca,27881,Squash en Toluca,29
+suplementos-toluca,27883,Suplementos en Toluca,14
+taekwondo-toluca,27884,Taekwondo en Toluca,18
 telas-y-danza-aerea-toluca,31365,Telas y danza aérea en Toluca,6
 tenis-toluca,27886,Tenis en Toluca,6
 yoga-toluca,27887,Yoga en Toluca,52
-zumba-toluca,27888,Zumba en Toluca,84
+zumba-toluca,27888,Zumba en Toluca,85
+gimnasios-con-alberca-toluca,40138,Gimnasios con alberca en Toluca,6
+totalpass-toluca,40139,Dónde usar TotalPass en Toluca,325
+wellhub-toluca,40140,Dónde usar Wellhub en Toluca,36
+fitpass-toluca,40141,Dónde usar Fitpass en Toluca,97
 gimnasios-torreon,27890,Gimnasios en Torreón,249
 baile-fitness-torreon,27891,Baile fitness en Torreón,28
 box-torreon,27892,Box en Torreón,19
@@ -419,14 +514,17 @@ natacion-torreon,27897,Natación en Torreón,6
 pilates-mat-torreon,27899,Pilates mat en Torreón,13
 yoga-torreon,27900,Yoga en Torreón,7
 zumba-torreon,27902,Zumba en Torreón,8
+totalpass-torreon,40142,Dónde usar TotalPass en Torreón,39
 gimnasios-tuxtla-gutierrez,27903,Gimnasios en Tuxtla Gutiérrez,200
 baile-fitness-tuxtla-gutierrez,27905,Baile fitness en Tuxtla Gutiérrez,9
 box-tuxtla-gutierrez,27907,Box en Tuxtla Gutiérrez,8
 crossfit-tuxtla-gutierrez,27908,CrossFit en Tuxtla Gutiérrez,14
 funcional-tuxtla-gutierrez,27910,Funcional en Tuxtla Gutiérrez,16
 zumba-tuxtla-gutierrez,27912,Zumba en Tuxtla Gutiérrez,10
+totalpass-tuxtla-gutierrez,40143,Dónde usar TotalPass en Tuxtla Gutiérrez,22
 gimnasios-uruapan,27913,Gimnasios en Uruapan,19
 funcional-uruapan,27915,Funcional en Uruapan,8
+totalpass-uruapan,40144,Dónde usar TotalPass en Uruapan,31
 gimnasios-ciudad-de-mexico,27916,Gimnasios en Ciudad de México,2885
 baile-fitness-ciudad-de-mexico,27918,Baile fitness en Ciudad de México,781
 ballet-ciudad-de-mexico,27920,Ballet en Ciudad de México,81
@@ -459,26 +557,35 @@ pilates-reformer-ciudad-de-mexico,27948,Pilates reformer en Ciudad de México,12
 pole-fitness-ciudad-de-mexico,27950,Pole fitness en Ciudad de México,54
 padel-ciudad-de-mexico,27952,Pádel en Ciudad de México,12
 rehabilitacion-ciudad-de-mexico,31371,Rehabilitación en Ciudad de México,84
-ropa-deportiva-ciudad-de-mexico,27954,Ropa deportiva en Ciudad de México,100
+ropa-deportiva-ciudad-de-mexico,27954,Ropa deportiva en Ciudad de México,99
 salsa-y-bachata-ciudad-de-mexico,27956,Salsa y bachata en Ciudad de México,30
 squash-ciudad-de-mexico,27957,Squash en Ciudad de México,30
-suplementos-ciudad-de-mexico,27960,Suplementos en Ciudad de México,176
+suplementos-ciudad-de-mexico,27960,Suplementos en Ciudad de México,168
 taekwondo-ciudad-de-mexico,27962,Taekwondo en Ciudad de México,108
 tai-chi-ciudad-de-mexico,31372,Tai chi en Ciudad de México,8
 telas-y-danza-aerea-ciudad-de-mexico,31373,Telas y danza aérea en Ciudad de México,22
 tenis-ciudad-de-mexico,27964,Tenis en Ciudad de México,37
 yoga-ciudad-de-mexico,27966,Yoga en Ciudad de México,482
 zumba-ciudad-de-mexico,27967,Zumba en Ciudad de México,87
+gimnasios-24-horas-ciudad-de-mexico,40160,Gimnasios abiertos 24 horas en Ciudad de México,8
+gimnasios-con-alberca-ciudad-de-mexico,40161,Gimnasios con alberca en Ciudad de México,65
+totalpass-ciudad-de-mexico,40162,Dónde usar TotalPass en Ciudad de México,2083
+wellhub-ciudad-de-mexico,40163,Dónde usar Wellhub en Ciudad de México,613
+fitpass-ciudad-de-mexico,40164,Dónde usar Fitpass en Ciudad de México,1009
 gimnasios-veracruz,27968,Gimnasios en Veracruz,21
 crossfit-veracruz,38734,CrossFit en Veracruz,6
 pilates-mat-veracruz,27971,Pilates mat en Veracruz,6
 yoga-veracruz,27972,Yoga en Veracruz,8
+totalpass-veracruz,40165,Dónde usar TotalPass en Veracruz,34
 gimnasios-villahermosa,27973,Gimnasios en Villahermosa,25
 box-villahermosa,27974,Box en Villahermosa,6
 funcional-villahermosa,27976,Funcional en Villahermosa,20
 pilates-mat-villahermosa,27977,Pilates mat en Villahermosa,9
+totalpass-villahermosa,40166,Dónde usar TotalPass en Villahermosa,50
 gimnasios-xalapa,27979,Gimnasios en Xalapa,31
 funcional-xalapa,38735,Funcional en Xalapa,10
+totalpass-xalapa,40167,Dónde usar TotalPass en Xalapa,33
+totalpass-zamora,40168,Dónde usar TotalPass en Zamora,7
 gimnasios-guadalajara,27982,Gimnasios en Guadalajara,1232
 baile-fitness-guadalajara,27983,Baile fitness en Guadalajara,258
 ballet-guadalajara,35756,Ballet en Guadalajara,24
@@ -508,3 +615,8 @@ taekwondo-guadalajara,35761,Taekwondo en Guadalajara,40
 tenis-guadalajara,35762,Tenis en Guadalajara,8
 yoga-guadalajara,28012,Yoga en Guadalajara,177
 zumba-guadalajara,28013,Zumba en Guadalajara,32
+gimnasios-24-horas-guadalajara,40170,Gimnasios abiertos 24 horas en Guadalajara,6
+gimnasios-con-alberca-guadalajara,40171,Gimnasios con alberca en Guadalajara,13
+totalpass-guadalajara,40172,Dónde usar TotalPass en Guadalajara,547
+wellhub-guadalajara,40173,Dónde usar Wellhub en Guadalajara,78
+fitpass-guadalajara,40174,Dónde usar Fitpass en Guadalajara,289
