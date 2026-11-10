@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-11-10T20:27:24.698784+00:00Z",
+ "metros": {
+  "Mérida": {
+   "antes": 654,
+   "despues": 952
+  },
+  "Torreón": {
+   "antes": 0,
+   "despues": 297
+  }
+ },
+ "peticiones": 101,
+ "errores": [
+  "429 tienda de suplementos deportivos en Torreón, Coahuila: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-10T20:28:36.077950+00:00Z"
+}
