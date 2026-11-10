@@ -112,11 +112,14 @@ def formulario_reportar(s, url, destino, anota):
         },
     }
     api = f"{url}/wp-json/contact-form-7/v1/contact-forms"
-    r = s.get(api, params={"search": "Reportar un error"}, timeout=60)
-    previo = [f for f in (r.json() if r.status_code == 200 else []) if f.get("title") == "Reportar un error"]
+    r = s.get(api, params={"per_page": 50}, timeout=60)
+    todas = r.json() if r.status_code == 200 else []
+    # el suyo, o el de ejemplo que crea el plugin al instalarse
+    previo = [f for f in todas if f.get("title") == "Reportar un error"] or \
+             [f for f in todas if f.get("title") in ("Contact form 1", "Formulario de contacto 1")]
     r = s.post(api + (f"/{previo[0]['id']}" if previo else ""), json=datos, timeout=60)
+    anota(accion="guardar_formulario", http=r.status_code, respuesta=r.text[:300])
     if r.status_code not in (200, 201):
-        anota(accion="formulario", http=r.status_code, detalle=r.text[:300])
         return
     lista = s.get(api, params={"per_page": 50}, timeout=60).json()
     forma = [f for f in lista if f.get("title") == "Reportar un error"]
