@@ -9,6 +9,7 @@
 """
 import datetime as dt
 import glob
+import html
 import json
 import os
 import re
@@ -29,7 +30,8 @@ PISTAS = {
 ENRIQUECIDOS = ("horario", "google_rating", "google_resenas", "instagram", "facebook", "tiktok", "whatsapp",
                "detalles_el", "redes_el", "claude_el", "pendiente_sync",
                "lo_mejor", "a_considerar", "instalaciones", "servicios", "abierto_24h", "pases", "mensualidad_desde",
-               "inscripcion", "pase_dia", "fecha_precio", "precio_fuente_url", "opiniones_fuentes", "opiniones_el", "foto_url", "foto_el", "foto_subida", "afiliaciones")
+               "inscripcion", "pase_dia", "fecha_precio", "precio_fuente_url", "opiniones_fuentes", "opiniones_el", "foto_url", "foto_el", "foto_subida", "afiliaciones",
+               "sitio_el", "reserva_url", "reserva_plataforma")
 EXCLUIR = {"school", "primary_school", "secondary_school", "university", "hospital", "doctor", "physiotherapist",
            "restaurant", "hotel", "lodging", "spa", "beauty_salon", "real_estate_agency", "apartment_complex",
            "church", "park", "cafe", "bar", "car_repair", "medical_lab", "dentist"}
@@ -72,6 +74,11 @@ def con_opiniones(texto, r):
         partes.append(f"<p><strong>Lo mejor, según sus reseñas:</strong> {r['lo_mejor']}</p>")
     if r.get("a_considerar"):
         partes.append(f"<p><strong>A considerar:</strong> {r['a_considerar']}</p>")
+    if r.get("reserva_plataforma"):
+        destino = r.get("reserva_url") or r.get("sitio_web", "")
+        if destino:
+            partes.append(f'<p><strong>Reserva en línea:</strong> <a href="{html.escape(destino, quote=True)}" target="_blank" rel="nofollow noopener">'
+                          f'aparta tu clase o compra tu plan en {html.escape(r["reserva_plataforma"])}</a>.</p>')
     return texto + ("\n" + "\n".join(partes) if partes else "")
 
 
