@@ -1,0 +1,142 @@
+@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(https://fonts.gstatic.com/s/archivo/v25/k3kQo8UDI-1M0wlSfdnoLmvDIaI.woff2) format('woff2');}
+@font-face{font-family:'Archivo';font-style:italic;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(https://fonts.gstatic.com/s/archivo/v25/k3kSo8UDI-1M0wlSfdzYLGHEA6CF8Q.woff2) format('woff2');}
+body h1,body h2,body h3,body h4,body .h1,body .h2,body .h3,body .h4{font-family:'Archivo',Poppins,system-ui,sans-serif !important;font-weight:800 !important;}
+body h1.wp-block-blockstrap-blockstrap-widget-heading{font-weight:900 !important;font-weight:900;font-style:italic;font-stretch:125%;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05;}
+.btn-primary,.btn-primary:hover,.btn-primary:focus,.btn-primary:active{color:#090B10 !important;}
+.btn-primary .fas,.btn-primary i{color:#090B10 !important;}
+.g52-logo{height:auto;max-width:170px;}
+.navbar-dark .g52-logo-claro,.navbar-light .g52-logo-oscuro{display:none;}
+.g52-footer-list{list-style:none;padding-left:0;margin:0}.g52-footer-list li{margin:.4rem 0;font-size:15px}
+.g52-footer a{text-decoration:none}.g52-footer a:hover{color:#2B8CFF !important}
+.g52-footer h3{color:#FFFFFF !important}
+/* ===== G52 MOVIL INICIO ===== */
+.gd-cptcat-parent:has(a[href$="/especializados/"]),.gd-cptcat-parent:has(a[href$="/otros/"]){display:none !important;}
+.gd-cptcat-icon i{color:#2B8CFF;font-size:18px !important;line-height:1;}
+/* Tarjetas: tipo · ciudad en una línea */
+.geodir-post .col:has(> .g52-meta),.geodir-post .col:has(> * > .g52-meta){display:flex !important;flex-wrap:wrap;column-gap:0;align-items:baseline;}
+.geodir-post .col:has(.g52-meta) > *:not(:has(.g52-meta)):not(.g52-meta){flex-basis:100%;}
+.geodir-post .g52-meta{display:inline !important;font-size:12.5px;color:#545C6B;}
+.geodir-post .g52-ciudad::before{content:" · ";}
+.geodir-post .g52-meta + .geodir_post_meta:not(.g52-meta){display:block;margin-top:2px;}
+
+/* ===== Gyms +52 · móvil (densidad) ===== */
+@media (max-width: 767.98px){
+  body{font-size:15px;}
+  .container,.container-sm,.container-fluid{--bs-gutter-x:1.5rem;}
+  h1,.h1{font-size:1.6rem !important;} h2,.h2{font-size:1.3rem !important;} h3,.h3{font-size:1.1rem !important;}
+  /* Portada */
+  .home .container-fluid.position-relative:has(h1){padding-top:88px !important;padding-bottom:28px !important;background-attachment:scroll !important;}
+  .home .container-fluid.position-relative:has(h1) > .container,.home .container-fluid.position-relative:has(h1) .row.align-items-center{padding-top:0 !important;padding-bottom:0 !important;margin-bottom:0 !important;}
+  .home h1.wp-block-blockstrap-blockstrap-widget-heading{padding-bottom:0 !important;}
+  .home h1.wp-block-blockstrap-blockstrap-widget-heading{font-size:1.75rem !important;margin-bottom:1rem !important;}
+  .geodir-listing-search .form-control,.geodir-listing-search .form-select{height:44px;font-size:15px;}
+  .geodir-listing-search .row{--bs-gutter-y:.5rem;}
+  /* Categorías: 3 por fila, compactas */
+  .gd-cptcat-row > .row{display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 !important;}
+  .gd-cptcat-row > .row > .gd-cptcat-ul{width:auto !important;max-width:none !important;padding:0 !important;margin:0 !important;}
+  .gd-cptcat-ul .card-body{padding:10px 4px !important;background:#EEF2F8;border-radius:10px;}
+  .gd-cptcat-ul .card-body .gd-cptcat-cat-left{margin-bottom:4px !important;}
+  .gd-cptcat-ul .card-body .gd-cptcat-icon,.gd-cptcat-ul .card-body .gd-cptcat-cat-left img,.gd-cptcat-ul .card-body .gd-cptcat-cat-left > *{width:30px !important;height:30px !important;line-height:30px !important;font-size:14px !important;}
+  .gd-cptcat-ul .gd-cptcat-cat-right a{font-size:12.5px !important;line-height:1.2;white-space:normal;text-transform:none !important;}
+  .gd-cptcat-ul .gd-cptcat-cat-right .text-muted,.gd-cptcat-ul .gd-cptcat-cat-right small,.gd-cptcat-ul .gd-cptcat-cat-right span{font-size:11px !important;}
+  .gd-cptcat-ul .gd-cptcat-cat-right .text-truncate{white-space:normal;}
+  .gd-cptcat-ul .card-body [data-bs-toggle],.gd-cptcat-ul .card-body .fa-chevron-down,.gd-cptcat-ul .gd-cptcat-li-toggle{display:none !important;}
+  
+  /* Cerca de ti: lista arriba, mapa abajo */
+  .row:has(> .col-5.overflow-auto + .col-7 .geodir-map-wrap) > .col-5,.row:has(> .col-5.overflow-auto + .col-7 .geodir-map-wrap) > .col-7{flex:0 0 100% !important;max-width:100% !important;width:100% !important;}
+  .row:has(> .col-5.overflow-auto + .col-7 .geodir-map-wrap) > .col-5{max-height:none !important;height:auto !important;}
+  .geodir-map-wrap,.geodir-map-wrap .geodir_map_container,.geodir-map-wrap .geodir-map-canvas{height:300px !important;max-height:300px !important;}
+  .geodir-map-wrap .map-places-listing,.geodir-map-wrap #gd-map-cat-filter,.geodir-map-wrap .gd-map-cat-filter,.geodir-map-wrap .geodir-map-cat-filter-wrap{display:none !important;}
+  /* Fichas en lista: tarjeta horizontal */
+  .geodir-loop-container .geodir-post,.geodir-category-list-view .geodir-post{width:100% !important;flex:0 0 100% !important;margin-bottom:10px !important;}
+  .geodir-loop-container .geodir-post > .card,.geodir-category-list-view .geodir-post > .card{flex-direction:row !important;align-items:center;gap:12px;padding:8px;border:1px solid #E3E8F0 !important;border-radius:12px;}
+  .geodir-loop-container .geodir-post .card-img-top,.geodir-category-list-view .geodir-post .card-img-top{flex:0 0 84px;width:84px;margin:0 !important;}
+  .geodir-loop-container .geodir-post .card-img-top .ratio,.geodir-category-list-view .geodir-post .card-img-top .ratio{--bs-aspect-ratio:100% !important;}
+  .geodir-loop-container .geodir-post .card-img-top .gd-fav-info-wrap,.geodir-category-list-view .geodir-post .card-img-top .gd-fav-info-wrap{display:none !important;}
+  .geodir-loop-container .geodir-post .card-body,.geodir-category-list-view .geodir-post .card-body{padding:0 !important;min-width:0;}
+  .geodir-loop-container .geodir-post .card-body > .row,.geodir-category-list-view .geodir-post .card-body > .row{margin:0 !important;--bs-gutter-x:0;}
+  .geodir-loop-container .geodir-post .card-body > .row > .col,.geodir-category-list-view .geodir-post .card-body > .row > .col{flex:1 1 100%;padding:0 !important;text-align:left !important;}
+  .geodir-loop-container .geodir-post h2,.geodir-category-list-view .geodir-post h2{font-size:1rem !important;line-height:1.25;margin:0 0 2px !important;}
+  .geodir-post .geodir-post-rating-value-0,.geodir-post .gd-rating-info-wrap:has(.text-muted:only-child){display:none !important;}
+  .geodir-post .card-body .text-muted{font-size:12.5px !important;line-height:1.35;}
+  .geodir-loop-actions-container,.geodir-loop-paging-container{font-size:13px;}
+  .geodir-loop-actions-container{margin-bottom:.5rem !important;}
+  /* Ficha: datos clave arriba, imagen genérica fuera */
+  .single-gd_place .row > .col-lg-4:has(.list-group){order:-1;margin-bottom:1rem !important;}
+  .single-gd_place .row > .col-lg-4 .list-group-item{padding:.45rem .9rem !important;font-size:14px;}
+  .single-gd_place .row > .col-lg-4 .list-group{position:static !important;}
+  .single-gd_place .list-group-item:empty{display:none !important;}
+  .single-gd_place .col-md-8:has(img[src*="sin-foto"]),.single-gd_place figure:has(img[src*="sin-foto"]){display:none !important;}
+  .single-gd_place .geodir-tab-content > *:has(.geodir-images img[src*="sin-foto"]){display:none !important;}
+  .single-gd_place .geodir-single-tabs-container h2,.single-gd_place .geodir-tabs-content h2{margin-top:1.25rem !important;margin-bottom:.5rem !important;}
+  .geodir-map-canvas[id*="detail"],.single-gd_place .geodir-map-wrap{height:240px !important;}
+  .single-gd_place .text-white.text-center:has(img[src*="sin-foto"]):not(:has(h1)){display:none !important;}
+  .single-gd_place .container-sm.pt-3{padding-top:.5rem !important;}
+  .single-gd_place .row > .col-lg-4 .btn{padding:.3rem .8rem;font-size:13px;}
+  /* Pie: enlaces en 2 columnas y más juntos */
+  footer .wp-block-blockstrap-blockstrap-widget-nav .nav-link,footer .nav-link{padding:.3rem 0 !important;font-size:14px;}
+  footer .row > .col,footer .row > [class*="col-"]{margin-bottom:1rem !important;}
+}
+/* ===== G52 MOVIL FIN ===== */
+.geodir-post-rating-value-0{display:none !important;}
+#post_images:has(.geodir-images-n-1 img[src*="sin-foto"]),#post_images:has(.geodir-images-n-1 img[data-src*="sin-foto"]){display:none !important;}
+.leaflet-routing-error{display:none !important;}
+@media (max-width:767.98px){.leaflet-routing-container{display:none !important;}}
+/* Categorías en escritorio: 3 x 3 en tarjetas horizontales */
+.gd-cptcat-ul .gd-cptcat-cat-right a{text-transform:none !important;}
+.gd-cptcat-ul .gd-cptcat-li-sub-container{display:none !important;}
+@media (min-width:768px){
+ .gd-cptcat-row > .row{display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 !important;}
+ .gd-cptcat-row > .row > .gd-cptcat-ul{width:auto !important;max-width:none !important;padding:0 !important;margin:0 !important;}
+ .gd-cptcat-ul .card-body{display:flex !important;align-items:center;gap:14px;text-align:left !important;padding:14px 18px !important;background:#EEF2F8;border-radius:12px;}
+ .gd-cptcat-ul .card-body .gd-cptcat-cat-left{margin:0 !important;flex:0 0 44px;}
+ .gd-cptcat-ul .gd-cptcat-cat-right{text-align:left;}
+ .gd-cptcat-ul .gd-cptcat-cat-right a{font-size:15px !important;}
+}
+/* Guías */
+.g52-guia{list-style:none;padding:0;margin:1rem 0;display:grid;gap:10px;}
+.g52-guia li{border:1px solid #E3E8F0;border-radius:12px;padding:12px 14px;line-height:1.45;font-size:15px;color:#545C6B;}
+.g52-guia li a{color:#090B10;text-decoration:none;} .g52-guia li a strong{color:#1F6FD1;}
+.g52-guia li em{display:block;margin-top:4px;color:#141821;font-style:normal;font-size:14px;}
+.g52-guia li small{color:#545C6B;}
+.g52-guias-indice{columns:2;column-gap:2rem;padding-left:1.1rem;} @media (min-width:992px){.g52-guias-indice{columns:3;}}
+/* ===== G52 REVISION 2026-11-10 ===== */
+/* Categorías: el texto largo se parte en vez de empujar la columna */
+.gd-cptcat-ul .gd-cptcat-cat-right{min-width:0;}
+.gd-cptcat-ul .gd-cptcat-cat-right a{overflow-wrap:anywhere;hyphens:auto;}
+.gd-cptcat-ul .gd-cptcat-cat-right .text-truncate,.gd-cptcat-ul .gd-cptcat-cat-right a{white-space:normal !important;overflow:visible !important;text-overflow:clip !important;}
+/* Encabezado fijo: fondo sólido al hacer scroll */
+nav.navbar.fixed-top.navbar-light{background-color:#FFFFFF !important;}
+/* Páginas: quita el bloque vacío bajo el título */
+.wp-block-template-part > .container.mb-5:has(> .row > .col):not(:has(.col > *)){display:none !important;}
+/* Ficha en escritorio: sin galería cuando solo hay imagen genérica */
+.single-gd_place .aui-gallery:has(img[src*="sin-foto"]):not(:has(img:not([src*="sin-foto"]))){display:none !important;}
+.single-gd_place [class*="col-lg-7"]:has(> .aui-gallery img[src*="sin-foto"]):not(:has(img:not([src*="sin-foto"]))):not(:has(h2,h3,p)){display:none !important;}
+/* Perfil: un respiro entre ideas */
+.single-gd_place .geodir-field-post_content p{line-height:1.6;}
+/* Tablas de guías y avisos: desplazamiento horizontal en pantallas chicas */
+.g52-precios,.p52-tabla{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-collapse:collapse;}
+.g52-precios th,.g52-precios td,.p52-tabla th,.p52-tabla td{padding:.5rem .65rem;vertical-align:top;line-height:1.35;}
+.g52-precios th,.p52-tabla th,.g52-precios td{white-space:nowrap;}
+.g52-precios td:first-child{white-space:normal;min-width:8.5rem;}
+.g52-precios td:last-child{white-space:normal;min-width:15rem;}
+.p52-tabla td{min-width:9rem;}
+/* Ligas sobre blanco: texto oscuro con subrayado azul (nunca texto azul sobre blanco) */
+.wp-site-blocks > :not(header):not(footer) a:not(.btn):not(.badge):not(.page-link):not(.nav-link):not(.dropdown-item):not([class*="leaflet"]):not(.text-white),
+.breadcrumb-item.active{color:#090B10;}
+.wp-site-blocks > :not(header):not(footer) a:not(.btn):not(.badge):not(.page-link):not(.nav-link):not(.dropdown-item):not([class*="leaflet"]):not(.text-white):hover{color:#1F6FD1;}
+.geodir_post_meta a,.entry-content p a,.entry-content li a:not(:has(strong)),.wp-block-post-content p a{text-decoration:underline;text-decoration-color:#2B8CFF;text-decoration-thickness:2px;text-underline-offset:3px;}
+.g52-guia li a strong{color:#090B10;text-decoration:underline;text-decoration-color:#2B8CFF;text-decoration-thickness:2px;text-underline-offset:3px;}
+.geodir-post h2 a,.geodir-post .geodir-entry-title a{color:#090B10 !important;}
+.geodir-post h2 a:hover{color:#1F6FD1 !important;}
+@media (max-width: 767.98px){
+  /* Archivo: sin desborde lateral */
+  .geodir-listing-search .geodir-search.row{margin-left:-4px !important;margin-right:-4px !important;}
+  .geodir-category-list-view.row{margin-left:0 !important;margin-right:0 !important;--bs-gutter-x:0;}
+  .row.align-items-center:has(.gd-pagination-details){margin-left:0 !important;margin-right:0 !important;}
+  .row.align-items-center:has(.gd-pagination-details) > .col{padding-left:0 !important;padding-right:0 !important;}
+  .geodir-loop-paging-container,.geodir-loop-paging-container section{max-width:100%;}
+  .geodir-loop-paging-container .pagination,.geodir-loop-paging-container .nav-links{flex-wrap:wrap;justify-content:center;row-gap:6px;}
+  .geodir-loop-paging-container section{left:auto !important;margin-left:0 !important;}
+}
+
