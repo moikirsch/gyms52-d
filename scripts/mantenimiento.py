@@ -65,6 +65,13 @@ def main():
         anota(accion="borrador_lugar", id=wid, http=r.status_code, estado=(r.json().get("status") if r.status_code == 200 else r.text[:150]))
         time.sleep(0.3)
 
+    for fid in sol.get("ver_formularios", []):
+        r = s.get(f"{url}/wp-json/contact-form-7/v1/contact-forms/{fid}", timeout=60)
+        j = r.json() if r.status_code == 200 else {}
+        pr = j.get("properties") or {}
+        anota(accion="ver_formulario", id=fid, http=r.status_code, titulo=j.get("title"),
+              form=str((pr.get("form") or {}).get("content", pr.get("form")))[:160], para=(pr.get("mail") or {}).get("recipient"))
+
     destino = sol.get("formulario_reportar")
     if destino:
         formulario_reportar(s, url, destino, anota)
