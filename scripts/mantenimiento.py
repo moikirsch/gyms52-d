@@ -121,13 +121,12 @@ def formulario_reportar(s, url, destino, anota):
     anota(accion="guardar_formulario", http=r.status_code, respuesta=r.text[:300])
     if r.status_code not in (200, 201):
         return
-    lista = s.get(api, params={"per_page": 50}, timeout=60).json()
-    forma = [f for f in lista if f.get("title") == "Reportar un error"]
-    if not forma:
-        anota(accion="formulario", detalle="no aparece en la lista", lista=str(lista)[:300])
+    guardado = r.json()
+    fid = guardado.get("id")
+    mail = (guardado.get("properties") or {}).get("mail") or {}
+    anota(accion="formulario", id=fid, destinatario=mail.get("recipient"), asunto=mail.get("subject"))
+    if not fid:
         return
-    fid = forma[0].get("id")
-    anota(accion="formulario", id=fid, hash=forma[0].get("hash", ""), destinatario=destino)
     r = s.get(f"{url}/wp-json/wp/v2/pages/39", params={"context": "edit"}, timeout=60)
     crudo = r.json()["content"]["raw"]
     open(os.path.join(DIR, f"reportar-un-error-{dt.date.today()}.html"), "w").write(crudo)
