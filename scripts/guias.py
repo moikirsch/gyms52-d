@@ -261,6 +261,13 @@ def main():
         if padre:
             datos["parent"] = int(padre)
         pid = ids.get(slug_p)
+        if not pid:  # páginas que no están en guias.csv (madre, cadenas, densidad, precios): búscala antes de crear otra
+            q = {"slug": slug_p, "status": "publish", "_fields": "id"}
+            if padre:
+                q["parent"] = int(padre)
+            r0 = s.get(f"{url}/wp-json/wp/v2/pages", params=q, timeout=60)
+            if r0.status_code == 200 and r0.json():
+                pid = str(r0.json()[0]["id"])
         r = s.post(f"{url}/wp-json/wp/v2/pages" + (f"/{pid}" if pid else ""), json=datos, timeout=90)
         if r.status_code in (200, 201):
             ids[slug_p] = str(r.json()["id"])
