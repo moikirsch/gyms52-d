@@ -17,7 +17,7 @@ from collections import defaultdict
 
 import pandas as pd
 
-from comun import restaurar_wp_ids, DISC_SECUNDARIAS, es_cancha, sin_acentos, titulo, clasificar, distancia_m, horario_osm, limpiar_nombre, nombre_denue, similitud, slug, TIPOS_VALIDOS
+from comun import foto_valida, restaurar_wp_ids, DISC_SECUNDARIAS, es_cancha, sin_acentos, titulo, clasificar, distancia_m, horario_osm, limpiar_nombre, nombre_denue, similitud, slug, TIPOS_VALIDOS
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Qué significa haber aparecido en una sola búsqueda (solo se usa si el nombre no dice nada)
@@ -278,7 +278,7 @@ def main():
             fid = f"{fuente}:{o.get('id_fuente', '')}"
             extra = {c: (o.get(c) or "") for c in ("telefono", "sitio_web")}
             extra["horario"] = horario_osm(o.get("horario_osm", ""))
-            if (o.get("foto") or "").startswith("http"):
+            if foto_valida(o.get("foto") or ""):
                 extra["foto_url"] = o["foto"]
             union = {"pases": o.get("pases") or [], "afiliaciones": o.get("afiliaciones") or [],
                      "instalaciones": o.get("instalaciones") or []}
@@ -441,6 +441,10 @@ def main():
     if os.path.exists(ruta_c):
         cerr = pd.read_csv(ruta_c, dtype=str).fillna("")
         base = base[~base.place_id.isin(set(cerr.place_id)) & ~(base.wp_id.isin(set(cerr.wp_id)) & (base.wp_id != ""))]
+    malas = base.foto_url.astype(str).str.len().gt(0) & ~base.foto_url.astype(str).map(foto_valida) & (base.foto_subida != "1")
+    if malas.any():
+        base.loc[malas, "foto_url"] = ""
+        print(f"Fotos que no son del lugar, quitadas antes de publicar: {int(malas.sum())}")
     rec = restaurar_wp_ids(base)
     if rec:
         print(f"wp_id recuperados de la bitácora: {rec}")

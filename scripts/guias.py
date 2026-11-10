@@ -15,7 +15,7 @@ import time
 import pandas as pd
 import requests
 
-from comun import slug
+from comun import foto_valida, slug
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NOMBRE_METRO = {"Valle de México (CDMX)": "Ciudad de México", "Zapopan": "Guadalajara", "Ecatepec de Morelos": "Ecatepec"}
@@ -26,7 +26,7 @@ PLURAL = {"Gimnasio": "gimnasios", "Estudio": "estudios", "Box": "boxes", "Gimna
 
 
 def puntaje(r):
-    return (3 * bool(r.lo_mejor) + 2 * bool(r.get("foto_url", "")) + 2 * bool(r.horario) + bool(r.instagram or r.facebook)
+    return (3 * bool(r.lo_mejor) + 2 * foto_valida(r.get("foto_url", "")) + 2 * bool(r.horario) + bool(r.instagram or r.facebook)
             + bool(r.telefono or r.whatsapp) + bool(r.sitio_web) + bool(r.pases))
 
 

@@ -312,6 +312,14 @@ def titulo(s):
 
 
 # Canchas y campos de deportes de equipo: no son lugares de entrenamiento (DENUE y OSM los traen mezclados)
+# Fotos que no son del lugar: marcadores de posición, avatares, logos e imágenes para compartir.
+RE_FOTO_MALA = re.compile(r"placeholder|default|avatar|logo|favicon|fb-share|og-image|share-image|no-image|sin-imagen", re.I)
+
+
+def foto_valida(url):
+    return bool(url) and url.startswith("http") and not RE_FOTO_MALA.search(url)
+
+
 RE_CANCHA = re.compile(r"\b(cancha|canchas|campo de fut|campo de beis|futbol rapido|f[uú]tbol r[aá]pido|fut ?7|futbol 7|"
                        r"fut[bv]ol(?! americano)|futball|soccer(?! ?city)|front[oó]n|beisbol|b[eé]isbol|basquet|b[aá]squetbol|"
                        r"padel|p[aá]del|tenis club|club de tenis|campo de golf|golf)\b", re.I)
