@@ -1,0 +1,23 @@
+{
+ "inicio": "2026-11-10T00:35:17.227593+00:00Z",
+ "metros": {
+  "León": {
+   "antes": 635,
+   "despues": 718
+  },
+  "Ciudad Juárez": {
+   "antes": 0,
+   "despues": 386
+  },
+  "Mérida": {
+   "antes": 0,
+   "despues": 654
+  }
+ },
+ "peticiones": 95,
+ "errores": [
+  "429 estudio de pilates en Kanasín, Yucatán: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-10T00:36:58.503080+00:00Z"
+}
