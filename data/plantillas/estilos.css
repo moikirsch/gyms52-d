@@ -32,7 +32,7 @@ body h1.wp-block-blockstrap-blockstrap-widget-heading{font-weight:900 !important
   .geodir-listing-search .form-control,.geodir-listing-search .form-select{height:44px;font-size:15px;}
   .geodir-listing-search .row{--bs-gutter-y:.5rem;}
   /* Categorías: 3 por fila, compactas */
-  .gd-cptcat-row > .row{display:grid !important;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 !important;}
+  .gd-cptcat-row > .row{display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 !important;}
   .gd-cptcat-row > .row > .gd-cptcat-ul{width:auto !important;max-width:none !important;padding:0 !important;margin:0 !important;}
   .gd-cptcat-ul .card-body{padding:10px 4px !important;background:#EEF2F8;border-radius:10px;}
   .gd-cptcat-ul .card-body .gd-cptcat-cat-left{margin-bottom:4px !important;}
@@ -86,7 +86,7 @@ body h1.wp-block-blockstrap-blockstrap-widget-heading{font-weight:900 !important
 .gd-cptcat-ul .gd-cptcat-cat-right a{text-transform:none !important;}
 .gd-cptcat-ul .gd-cptcat-li-sub-container{display:none !important;}
 @media (min-width:768px){
- .gd-cptcat-row > .row{display:grid !important;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 !important;}
+ .gd-cptcat-row > .row{display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 !important;}
  .gd-cptcat-row > .row > .gd-cptcat-ul{width:auto !important;max-width:none !important;padding:0 !important;margin:0 !important;}
  .gd-cptcat-ul .card-body{display:flex !important;align-items:center;gap:14px;text-align:left !important;padding:14px 18px !important;background:#EEF2F8;border-radius:12px;}
  .gd-cptcat-ul .card-body .gd-cptcat-cat-left{margin:0 !important;flex:0 0 44px;}
@@ -100,3 +100,43 @@ body h1.wp-block-blockstrap-blockstrap-widget-heading{font-weight:900 !important
 .g52-guia li em{display:block;margin-top:4px;color:#141821;font-style:normal;font-size:14px;}
 .g52-guia li small{color:#545C6B;}
 .g52-guias-indice{columns:2;column-gap:2rem;padding-left:1.1rem;} @media (min-width:992px){.g52-guias-indice{columns:3;}}
+/* ===== G52 REVISION 2026-11-10 ===== */
+/* Categorías: el texto largo se parte en vez de empujar la columna */
+.gd-cptcat-ul .gd-cptcat-cat-right{min-width:0;}
+.gd-cptcat-ul .gd-cptcat-cat-right a{overflow-wrap:anywhere;hyphens:auto;}
+.gd-cptcat-ul .gd-cptcat-cat-right .text-truncate,.gd-cptcat-ul .gd-cptcat-cat-right a{white-space:normal !important;overflow:visible !important;text-overflow:clip !important;}
+/* Encabezado fijo: fondo sólido al hacer scroll */
+nav.navbar.fixed-top.navbar-light{background-color:#FFFFFF !important;}
+/* Páginas: quita el bloque vacío bajo el título */
+.wp-block-template-part > .container.mb-5:has(> .row > .col):not(:has(.col > *)){display:none !important;}
+/* Ficha en escritorio: sin galería cuando solo hay imagen genérica */
+.single-gd_place .aui-gallery:has(img[src*="sin-foto"]):not(:has(img:not([src*="sin-foto"]))){display:none !important;}
+.single-gd_place [class*="col-lg-7"]:has(> .aui-gallery img[src*="sin-foto"]):not(:has(img:not([src*="sin-foto"]))):not(:has(h2,h3,p)){display:none !important;}
+/* Perfil: un respiro entre ideas */
+.single-gd_place .geodir-field-post_content p{line-height:1.6;}
+/* Tablas de guías y avisos: desplazamiento horizontal en pantallas chicas */
+.g52-precios,.p52-tabla{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-collapse:collapse;}
+.g52-precios th,.g52-precios td,.p52-tabla th,.p52-tabla td{padding:.5rem .65rem;vertical-align:top;line-height:1.35;}
+.g52-precios th,.p52-tabla th,.g52-precios td{white-space:nowrap;}
+.g52-precios td:first-child{white-space:normal;min-width:8.5rem;}
+.g52-precios td:last-child{white-space:normal;min-width:15rem;}
+.p52-tabla td{min-width:9rem;}
+/* Ligas sobre blanco: texto oscuro con subrayado azul (nunca texto azul sobre blanco) */
+.wp-site-blocks > :not(header):not(footer) a:not(.btn):not(.badge):not(.page-link):not(.nav-link):not(.dropdown-item):not([class*="leaflet"]):not(.text-white),
+.breadcrumb-item.active{color:#090B10;}
+.wp-site-blocks > :not(header):not(footer) a:not(.btn):not(.badge):not(.page-link):not(.nav-link):not(.dropdown-item):not([class*="leaflet"]):not(.text-white):hover{color:#1F6FD1;}
+.geodir_post_meta a,.entry-content p a,.entry-content li a:not(:has(strong)),.wp-block-post-content p a{text-decoration:underline;text-decoration-color:#2B8CFF;text-decoration-thickness:2px;text-underline-offset:3px;}
+.g52-guia li a strong{color:#090B10;text-decoration:underline;text-decoration-color:#2B8CFF;text-decoration-thickness:2px;text-underline-offset:3px;}
+.geodir-post h2 a,.geodir-post .geodir-entry-title a{color:#090B10 !important;}
+.geodir-post h2 a:hover{color:#1F6FD1 !important;}
+@media (max-width: 767.98px){
+  /* Archivo: sin desborde lateral */
+  .geodir-listing-search .geodir-search.row{margin-left:-4px !important;margin-right:-4px !important;}
+  .geodir-category-list-view.row{margin-left:0 !important;margin-right:0 !important;--bs-gutter-x:0;}
+  .row.align-items-center:has(.gd-pagination-details){margin-left:0 !important;margin-right:0 !important;}
+  .row.align-items-center:has(.gd-pagination-details) > .col{padding-left:0 !important;padding-right:0 !important;}
+  .geodir-loop-paging-container,.geodir-loop-paging-container section{max-width:100%;}
+  .geodir-loop-paging-container .pagination,.geodir-loop-paging-container .nav-links{flex-wrap:wrap;justify-content:center;row-gap:6px;}
+  .geodir-loop-paging-container section{left:auto !important;margin-left:0 !important;}
+}
+
