@@ -9,10 +9,14 @@
       pasa fichas a borrador.
   {"plugins_activar": ["ninja-forms/ninja-forms"]}
       activa plugins instalados.
+  {"formulario_reportar": "hola@gyms52.com"}
+      instala Contact Form 7, crea o actualiza el formulario "Reportar un error" con ese destinatario
+      y lo pone en la página reportar-un-error (id 39) en lugar del formulario viejo.
 Cada corrida deja su bitácora en data/mantenimiento/<fecha>.json.
 Necesita WP_USER y WP_APP_PASSWORD.
 """
 import datetime as dt
+import re
 import json
 import os
 import time
@@ -61,7 +65,73 @@ def main():
         anota(accion="borrador_lugar", id=wid, http=r.status_code, estado=(r.json().get("status") if r.status_code == 200 else r.text[:150]))
         time.sleep(0.3)
 
+    destino = sol.get("formulario_reportar")
+    if destino:
+        formulario_reportar(s, url, destino, anota)
+
     json.dump(log, open(os.path.join(DIR, f"{marca}.json"), "w"), ensure_ascii=False, indent=1)
+
+
+FORM_REPORTAR = """<label>Tu nombre
+    [text* tu-nombre autocomplete:name]</label>
+
+<label>Tu correo
+    [email* tu-correo autocomplete:email]</label>
+
+<label>Lugar y ciudad
+    [text* lugar placeholder "Ej. Smart Fit Pabellón Iztapalapa, CDMX"]</label>
+
+<label>Qué hay que corregir
+    [textarea* mensaje placeholder "Ej. ya cerró, cambió de teléfono, el horario es otro o falta un lugar"]</label>
+
+[submit "Enviar reporte"]"""
+
+
+def formulario_reportar(s, url, destino, anota):
+    r = s.get(f"{url}/wp-json/wp/v2/plugins/contact-form-7/wp-contact-form-7", params={"context": "edit"}, timeout=60)
+    if r.status_code == 404:
+        r = s.post(f"{url}/wp-json/wp/v2/plugins", json={"slug": "contact-form-7", "status": "active"}, timeout=180)
+        anota(accion="instalar_cf7", http=r.status_code, detalle=r.text[:200] if r.status_code >= 300 else r.json().get("status"))
+    elif r.status_code == 200 and r.json().get("status") != "active":
+        r = s.post(f"{url}/wp-json/wp/v2/plugins/contact-form-7/wp-contact-form-7", json={"status": "active"}, timeout=90)
+        anota(accion="activar_cf7", http=r.status_code)
+    else:
+        anota(accion="cf7", http=r.status_code, estado=r.json().get("status") if r.status_code == 200 else r.text[:150])
+    datos = {
+        "title": "Reportar un error",
+        "locale": "es_MX",
+        "form": FORM_REPORTAR,
+        "mail": {
+            "active": True,
+            "recipient": destino,
+            "sender": "Gyms +52 <wordpress@gyms52.com>",
+            "subject": "Reporte de error: [lugar]",
+            "body": "Lugar y ciudad: [lugar]\nQué hay que corregir:\n[mensaje]\n\nDe: [tu-nombre] <[tu-correo]>\n\nEnviado desde gyms52.com/reportar-un-error/",
+            "additional_headers": "Reply-To: [tu-correo]",
+            "attachments": "", "use_html": False, "exclude_blank": False,
+        },
+    }
+    api = f"{url}/wp-json/contact-form-7/v1/contact-forms"
+    r = s.get(api, params={"search": "Reportar un error"}, timeout=60)
+    previo = [f for f in (r.json() if r.status_code == 200 else []) if f.get("title") == "Reportar un error"]
+    r = s.post(api + (f"/{previo[0]['id']}" if previo else ""), json=datos, timeout=60)
+    if r.status_code not in (200, 201):
+        anota(accion="formulario", http=r.status_code, detalle=r.text[:300])
+        return
+    fid = r.json()["id"]
+    hash_ = r.json().get("hash", "")
+    anota(accion="formulario", id=fid, destinatario=destino)
+    r = s.get(f"{url}/wp-json/wp/v2/pages/39", params={"context": "edit"}, timeout=60)
+    crudo = r.json()["content"]["raw"]
+    open(os.path.join(DIR, "reportar-un-error-antes.html"), "w").write(crudo)
+    codigo = f'[contact-form-7 id="{hash_ or fid}" title="Reportar un error"]'
+    nuevo = re.sub(r"\[ninja_forms?[^\]]*\]", codigo, crudo)
+    nuevo = re.sub(r"<noscript class=\"ninja-forms-noscript-message\">.*?nf-loading-spinner\"></div>\s*</div>\s*(<!--[^>]*-->\s*)?(<script>.*?</script>)?", codigo, nuevo, flags=re.S)
+    if codigo not in nuevo:
+        # sin formulario viejo reconocible: va después del primer párrafo
+        nuevo = nuevo.replace("<!-- /wp:paragraph -->", f"<!-- /wp:paragraph -->\n\n<!-- wp:shortcode -->\n{codigo}\n<!-- /wp:shortcode -->", 1)
+    r = s.post(f"{url}/wp-json/wp/v2/pages/39", json={"content": nuevo}, timeout=60)
+    anota(accion="pagina_reportar", http=r.status_code, con_formulario=codigo in nuevo)
 
 
 if __name__ == "__main__":
