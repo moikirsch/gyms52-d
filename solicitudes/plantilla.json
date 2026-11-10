@@ -1,1 +1,1 @@
-{"accion": "subir", "estilos": true}
+{"accion": "leer", "plantillas": ["directory//gd-single", "directory//gd-archive", "directory//archive", "directory//gd-search"]}
