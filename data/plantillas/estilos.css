@@ -142,4 +142,16 @@ img[src*="placeholder_photo"],img[src*="fb-share"]{opacity:0 !important;}
   .geodir-loop-paging-container .pagination,.geodir-loop-paging-container .nav-links{flex-wrap:wrap;justify-content:center;row-gap:6px;}
   .geodir-loop-paging-container section{left:auto !important;margin-left:0 !important;}
 }
+/* Formulario "Reportar un error" (Contact Form 7) */
+.wpcf7-form{max-width:560px;margin:1rem 0 1.5rem;}
+.wpcf7-form p{margin:0 0 14px;}
+.wpcf7-form label{display:block;font-weight:600;font-size:14px;color:#141821;}
+.wpcf7-form input[type="text"],.wpcf7-form input[type="email"],.wpcf7-form textarea{display:block;width:100%;margin-top:6px;padding:10px 12px;font-size:16px;font-weight:400;color:#090B10;background:#FFFFFF;border:1px solid #CFD6E2;border-radius:10px;}
+.wpcf7-form textarea{height:140px;resize:vertical;}
+.wpcf7-form input:focus,.wpcf7-form textarea:focus{outline:none;border-color:#2B8CFF;box-shadow:0 0 0 3px rgba(43,140,255,.2);}
+.wpcf7-form input::placeholder,.wpcf7-form textarea::placeholder{color:#9BA3B2;}
+.wpcf7-form .wpcf7-submit{background:#2B8CFF;color:#090B10;border:0;border-radius:999px;padding:10px 24px;font-weight:600;font-size:15px;cursor:pointer;}
+.wpcf7-form .wpcf7-submit:hover{background:#1F6FD1;color:#FFFFFF;}
+.wpcf7-not-valid-tip{font-size:13px;font-weight:400;margin-top:4px;}
+.wpcf7-response-output{border-radius:10px;font-size:14px;margin:12px 0 0 !important;}
 
