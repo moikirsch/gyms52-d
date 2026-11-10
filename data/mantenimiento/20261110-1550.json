@@ -1,0 +1,132 @@
+{
+ "solicitud": {
+  "info": true,
+  "borrador_paginas": [
+   40232,
+   40231,
+   31356,
+   27744,
+   27727,
+   27719,
+   27715,
+   27657,
+   27619,
+   27526,
+   27515,
+   27505,
+   40192,
+   40044,
+   38698,
+   35737,
+   31338
+  ]
+ },
+ "resultados": [
+  {
+   "accion": "info",
+   "plugins": 10
+  },
+  {
+   "accion": "borrador",
+   "id": 40232,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 40231,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 31356,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 27744,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 27727,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 27719,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 27715,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 27657,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 27619,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 27526,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 27515,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 27505,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 40192,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 40044,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 38698,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 35737,
+   "http": 200,
+   "estado": "draft"
+  },
+  {
+   "accion": "borrador",
+   "id": 31338,
+   "http": 200,
+   "estado": "draft"
+  }
+ ]
+}
