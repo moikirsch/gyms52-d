@@ -18,7 +18,9 @@ import requests
 from comun import foto_valida, slug
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-NOMBRE_METRO = {"Valle de México (CDMX)": "Ciudad de México", "Zapopan": "Guadalajara", "Ecatepec de Morelos": "Ecatepec"}
+NOMBRE_METRO = {"Valle de México (CDMX)": "Ciudad de México", "Zapopan": "Guadalajara", "Ecatepec de Morelos": "Edomex, zona conurbada"}
+# Las ligas ya publicadas conservan su slug aunque cambie el nombre visible
+CLAVE_METRO = {"Ecatepec de Morelos": "Ecatepec"}
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 PLURAL = {"Gimnasio": "gimnasios", "Estudio": "estudios", "Box": "boxes", "Gimnasio de combate": "gimnasios de combate",
           "Escuela de danza": "escuelas de danza", "Club deportivo": "clubes deportivos", "Deportivo público": "deportivos públicos",
@@ -218,23 +220,24 @@ def main():
     grupos = []  # (titulo_corto, metro_nombre, slug, filas)
     for metro, dfm in base.groupby("metropoli"):
         nombre = NOMBRE_METRO.get(metro, metro)
+        clave = CLAVE_METRO.get(metro, nombre)
         gim = dfm[dfm.tipo_lugar == "Gimnasio"].sort_values("puntaje", ascending=False)
         if len(gim) >= a.min:
-            grupos.append(("Gimnasios", nombre, slug(f"gimnasios {nombre}"), gim))
+            grupos.append(("Gimnasios", nombre, slug(f"gimnasios {clave}"), gim))
         x = dfm.assign(d=dfm.disciplinas.str.split("|")).explode("d")
         for d, dfd in x[(x.d != "") & (x.d != "Pesas") & (x.d != "Equipo de gimnasio")].groupby("d"):
             if len(dfd) >= a.min:
-                grupos.append((d, nombre, slug(f"{d} {nombre}"), dfd.sort_values("puntaje", ascending=False)))
+                grupos.append((d, nombre, slug(f"{d} {clave}"), dfd.sort_values("puntaje", ascending=False)))
         # guías por necesidad: lo que la gente busca además de la disciplina
         necesidades = [
-            ("Gimnasios abiertos 24 horas", "lugares abiertos las 24 horas", f"gimnasios 24 horas {nombre}", dfm[dfm.abierto_24h == "1"]),
-            ("Gimnasios con alberca", "lugares para entrenar con alberca", f"gimnasios con alberca {nombre}",
+            ("Gimnasios abiertos 24 horas", "lugares abiertos las 24 horas", f"gimnasios 24 horas {clave}", dfm[dfm.abierto_24h == "1"]),
+            ("Gimnasios con alberca", "lugares para entrenar con alberca", f"gimnasios con alberca {clave}",
              dfm[dfm.instalaciones.str.contains("Alberca", na=False)]),
-            ("Clases con reserva en línea", "lugares donde puedes reservar tu clase en línea", f"reserva en linea {nombre}",
+            ("Clases con reserva en línea", "lugares donde puedes reservar tu clase en línea", f"reserva en linea {clave}",
              dfm[dfm.reserva_plataforma != ""]),
         ]
         for pase in ("TotalPass", "Wellhub", "Fitpass", "ClassPass"):
-            necesidades.append((f"Dónde usar {pase}", f"lugares que aceptan {pase}", f"{pase} {nombre}",
+            necesidades.append((f"Dónde usar {pase}", f"lugares que aceptan {pase}", f"{pase} {clave}",
                                 dfm[dfm.pases.str.contains(pase, na=False)]))
         for titulo_corto, frase, sl, dfn in necesidades:
             if len(dfn) >= a.min:
