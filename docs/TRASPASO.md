@@ -138,6 +138,8 @@ Actualizado: 19 oct 2026, 10:00 am (hora CDMX). Desde hoy el proyecto se lleva d
   - Yoast genera `/sitemap_index.xml`.
   - El título de la portada es "Gyms +52: gimnasios, estudios y boxes en México". Se cambia desde el editor de bloques con `wp.data.dispatch('yoast-seo/editor').updateData({title, description})` y luego `savePost`.
   - La REST no expone los meta de Yoast.
+- **plantilla.yml (ampliado 2026-11-10):** además de plantillas, lee y sube partes (`"partes"`), el CSS de Global Styles (`"estilos": true` ↔ `data/plantillas/estilos.css`), títulos de páginas (`"paginas"`) y lista todo con `"listar": true`. Siempre deja respaldo en `data/plantillas/respaldos/`.
+- **Revisión de diseño 2026-11-10:** bloque `/* ===== G52 REVISION 2026-11-10 ===== */` al final del CSS: categorías sin desborde, encabezado sólido al hacer scroll, ligas en negro con subrayado azul, tablas con scroll horizontal, archivo sin desborde en móvil, ficha sin imagen genérica en escritorio, fotos de relleno (`placeholder_photo`, `fb-share`) tapadas con la imagen de la marca. Blog fuera del menú y del pie (0 entradas). 404 en español. Portada: destacados al azar y recientes, ambos solo con foto.
 - **Revisión móvil:** Pressable muestra un "Confirm you are human" al Chromium headless. Para ver la versión móvil, inyecta un iframe de 390 px dentro de una pestaña de gyms52.com en el Chrome de Moi.
 
 ## 6. Campos propios de GeoDirectory
