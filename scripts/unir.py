@@ -31,7 +31,7 @@ ENRIQUECIDOS = ("horario", "google_rating", "google_resenas", "instagram", "face
                "detalles_el", "redes_el", "claude_el", "pendiente_sync",
                "lo_mejor", "a_considerar", "instalaciones", "servicios", "abierto_24h", "pases", "mensualidad_desde",
                "inscripcion", "pase_dia", "fecha_precio", "precio_fuente_url", "opiniones_fuentes", "opiniones_el", "foto_url", "foto_el", "foto_subida", "afiliaciones",
-               "sitio_el", "reserva_url", "reserva_plataforma")
+               "sitio_el", "reserva_url", "reserva_plataforma", "totalpass_planes")
 EXCLUIR = {"school", "primary_school", "secondary_school", "university", "hospital", "doctor", "physiotherapist",
            "restaurant", "hotel", "lodging", "spa", "beauty_salon", "real_estate_agency", "apartment_complex",
            "church", "park", "cafe", "bar", "car_repair", "medical_lab", "dentist"}
@@ -74,6 +74,10 @@ def con_opiniones(texto, r):
         partes.append(f"<p><strong>Lo mejor, según sus reseñas:</strong> {r['lo_mejor']}</p>")
     if r.get("a_considerar"):
         partes.append(f"<p><strong>A considerar:</strong> {r['a_considerar']}</p>")
+    if r.get("totalpass_planes") and "TotalPass" in (r.get("pases") or ""):
+        planes = [p for p in r["totalpass_planes"].split("|") if p and "free" not in p.lower()]
+        if planes:
+            partes.append(f"<p><strong>Con TotalPass:</strong> entras desde el plan {html.escape(planes[0])}.</p>")
     if r.get("reserva_plataforma"):
         destino = r.get("reserva_url") or r.get("sitio_web", "")
         if destino:
@@ -279,6 +283,8 @@ def main():
             union = {"pases": o.get("pases") or [], "afiliaciones": o.get("afiliaciones") or [],
                      "instalaciones": o.get("instalaciones") or []}
             forzar = {}
+            if fuente == "totalpass" and o.get("planes"):
+                forzar["totalpass_planes"] = "|".join(o["planes"])
             if o.get("cadena"):
                 forzar["cadena"] = o["cadena"]
                 if str(o.get("mensualidad_desde", "")).isdigit():

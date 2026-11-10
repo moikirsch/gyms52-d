@@ -11,6 +11,8 @@ import json
 import os
 
 import pandas as pd
+
+from comun import sin_acentos
 import requests
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,6 +28,29 @@ def fecha_txt(i, f):
     if a.month == b.month:
         return f"{a.day} al {b.day} de {MESES[a.month - 1]}"
     return f"{a.day} de {MESES[a.month - 1]} al {b.day} de {MESES[b.month - 1]}"
+
+
+# guías que sirven para prepararse según el tipo de evento
+PREPARAR = {"Carrera": ["Running club", "Ropa deportiva"], "HYROX": ["HYROX", "Funcional"], "CrossFit": ["CrossFit", "Halterofilia"],
+            "Triatlón": ["Natación", "Indoor cycling", "Running club"], "Obstáculos": ["Funcional", "Calistenia"],
+            "Ciclismo": ["Indoor cycling"]}
+_GUIAS = None
+
+
+def preparar(tipo, ciudad):
+    """[(título corto, slug)] de las guías publicadas para ese tipo de evento en esa ciudad."""
+    global _GUIAS
+    if _GUIAS is None:
+        _GUIAS = {}
+        ruta = os.path.join(RAIZ, "data", "guias.csv")
+        if os.path.exists(ruta):
+            for _, g in pd.read_csv(ruta, dtype=str).fillna("").iterrows():
+                if " en " in g.titulo:
+                    disc, cd = g.titulo.split(" en ", 1)
+                    _GUIAS[(disc, sin_acentos(cd).lower())] = g.slug
+    cd = sin_acentos(ciudad or "").lower()
+    nombres = {"Running club": "Clubes de corredores", "Ropa deportiva": "Tiendas de ropa deportiva"}
+    return [(f"{nombres.get(d, d)} en {ciudad}", _GUIAS[(d, cd)]) for d in PREPARAR.get(tipo, []) if (d, cd) in _GUIAS]
 
 
 def main():
@@ -51,8 +76,10 @@ def main():
         detalle = " · ".join(x for x in (e.tipo, e.distancias, f"desde ${int(e.precio_desde):,}" if e.precio_desde.isdigit() else "") if x)
         nombre = html.escape(e.nombre)
         enlace = f'<a href="{html.escape(e.liga)}" target="_blank" rel="noopener nofollow"><strong>{nombre}</strong></a>' if e.liga.startswith("http") else f"<strong>{nombre}</strong>"
+        prep = [f'<a href="/guias/{sl}/">{html.escape(t)}</a>' for t, sl in preparar(e.tipo, e.ciudad)]
         partes.append(f"<li>{enlace}<br>{fecha_txt(e.fecha_inicio, e.fecha_fin)} · {html.escape(lugar)}"
-                      + (f"<br><small>{html.escape(detalle)}</small>" if detalle else "") + "</li>")
+                      + (f"<br><small>{html.escape(detalle)}</small>" if detalle else "")
+                      + (f"<br><small>Para prepararte: {' · '.join(prep)}</small>" if prep else "") + "</li>")
         item = {"@type": "SportsEvent", "name": e.nombre, "startDate": e.fecha_inicio, "endDate": e.fecha_fin or e.fecha_inicio,
                 "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
                 "location": {"@type": "Place", "name": e.sede or e.ciudad,

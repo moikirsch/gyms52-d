@@ -34,8 +34,8 @@ UA = "gyms52.com directorio (bot@gyms52.com)"
 FUENTES = ["smartfit", "anytime", "sportsworld", "sportcity", "crossfit", "hyrox", "totalpass", "fitpass"]
 CAMPOS = ["fuente", "id_fuente", "nombre", "lat", "lng", "calle", "colonia", "ciudad", "estado", "cp", "telefono",
           "sitio_web", "url_fuente", "horario_osm", "cadena", "pases", "afiliaciones", "instalaciones",
-          "mensualidad_desde", "precio_fuente_url", "foto", "estatus", "tipo"]
-LISTAS = {"pases", "afiliaciones", "instalaciones"}
+          "mensualidad_desde", "precio_fuente_url", "foto", "estatus", "tipo", "planes"]
+LISTAS = {"pases", "afiliaciones", "instalaciones", "planes"}
 INSTALACIONES = ["Alberca", "Regaderas y vestidores", "Lockers", "Sauna o vapor", "Estacionamiento", "Área infantil",
                  "Cafetería", "Tienda", "Zona de peso libre", "Zona funcional", "Aire acondicionado"]
 TP_DIAS_REFRESCO = 30
@@ -785,6 +785,14 @@ def tp_parse(h, slug, url):
     if isinstance(arr, list) and len(arr) >= 4 and isinstance(arr[3], dict):
         gym = (arr[3].get("data") or {})
     at = gym.get("attributes") or {}
+    if not at:
+        # la página cambió de forma: busca el objeto de atributos del gimnasio directo en el flujo
+        k = fl.find('"type":"gym","attributes":')
+        if k >= 0:
+            try:
+                at, _ = json.JSONDecoder().raw_decode(fl, k + len('"type":"gym","attributes":'))
+            except ValueError:
+                at = {}
     mods = []
     m = re.search(r'"modalities":(\[\{"id":"\d+","type":"modality".*?\}\}\])\}', fl)
     if m:
@@ -815,9 +823,13 @@ def tp_parse(h, slug, url):
     else:
         calle = full
     es = "abierto"
-    if at.get("closed") or at.get("active") is False:
+    if at.get("closed") or at.get("active") is False or "sandbox" in (at.get("gym_group_slug") or ""):
         es = "cerrado"
     planes = [p.get("name") for p in at.get("accessible_on_plans") or [] if isinstance(p, dict)]
+    # planes de TotalPass con los que se entra, del más barato al más caro (sin los "indirectos" de empresas)
+    planes_venta = [p for p in at.get("accessible_on_plans") or []
+                    if isinstance(p, dict) and p.get("name") and p.get("active", True) and "indirect" not in (p.get("code") or "").lower()]
+    planes_venta = [p["name"] for p in sorted(planes_venta, key=lambda p: (p.get("price") or 0))]
     return registro(
         fuente="totalpass", id_fuente=slug, nombre=at.get("name") or ld.get("name"), lat=lat, lng=lng, calle=calle,
         colonia=adr.get("neighborhood") or "", ciudad=titulo_ciudad(adr.get("city") or lad.get("addressLocality")),
@@ -825,7 +837,7 @@ def tp_parse(h, slug, url):
         telefono=telefono(at.get("phone") or ld.get("telephone")), sitio_web=web(at.get("website")), url_fuente=url,
         horario_osm=horario, pases=["TotalPass"],
         instalaciones=instalaciones((at.get("structures") or []) + [x for x in mods if re.search(r"(?i)peso libre|nataci|sauna|vapor", x)]),
-        foto=at.get("main_image_url") or ld.get("image") or "", estatus=es, tipo=", ".join(mods)), \
+        foto=at.get("main_image_url") or ld.get("image") or "", estatus=es, tipo=", ".join(mods), planes=planes_venta), \
         {"tipo_tp": at.get("type"), "planes": planes, "estructuras": at.get("structures") or []}
 
 
@@ -849,7 +861,9 @@ def f_totalpass(cli, st, max_tp=TP_MAX_DEFAULT, hilos=4):
     hoy = dt.date.today()
     limite = (hoy - dt.timedelta(days=TP_DIAS_REFRESCO)).isoformat()
     nuevos = sorted(s for s in slugs if s not in cache)
-    viejos = sorted((s for s in slugs if s in cache and cache[s] < limite), key=lambda s: cache[s])
+    # también se releen los que se guardaron antes de que existiera el campo "planes"
+    sin_planes = {s for s, r in previos.items() if "planes" not in r}
+    viejos = sorted((s for s in slugs if s in cache and (cache[s] < limite or s in sin_planes)), key=lambda s: (s not in sin_planes, cache[s]))
     cola = nuevos + viejos
     if max_tp and max_tp > 0:
         cola = cola[:max_tp]

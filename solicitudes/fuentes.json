@@ -1,1 +1,5 @@
-{"max_totalpass": 0, "nota": "primera corrida completa (reintento)"}
+{
+ "motivo": "releer TotalPass para guardar planes por gimnasio",
+ "fecha": "2026-11-09",
+ "max_totalpass": 7000
+}

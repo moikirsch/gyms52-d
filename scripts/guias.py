@@ -56,6 +56,9 @@ def item(r, liga):
     extra = []
     if r.pases:
         extra.append("Acepta " + r.pases.replace("|", " y "))
+        planes = [x for x in str(r.get("totalpass_planes", "")).split("|") if x and "free" not in x.lower()]
+        if planes and "TotalPass" in r.pases:
+            extra.append(f"TotalPass desde {planes[0]}")
     if r.instalaciones:
         extra.append(r.instalaciones.replace("|", ", ").lower().capitalize())
     txt = f'<li><a href="{liga}"><strong>{html.escape(r.nombre)}</strong></a> · {html.escape(" · ".join(partes))}'
@@ -79,6 +82,67 @@ def cuerpo_guia(titulo_corto, metro, filas, ligas, tope, hoy, frase=""):
     if n > tope:
         intro += f"<p>Aquí van los {tope} con información más completa.</p>"
     return "<!-- wp:html -->\n" + intro + '<ul class="g52-guia">' + "".join(lista) + "</ul>\n<!-- /wp:html -->"
+
+
+def pagina_densidad(hoy):
+    """Metrópolis con más gimnasios por habitante, con el DENUE del INEGI (misma fuente para todas)."""
+    d = pd.read_csv(os.path.join(RAIZ, "data", "denue", "gimnasios.csv"), dtype=str).fillna("")
+    m = pd.read_csv(os.path.join(RAIZ, "config", "metros.csv"), dtype=str).fillna("")
+    m["poblacion"] = pd.to_numeric(m.poblacion, errors="coerce")
+    conteo = d.groupby("metro_rango").size()
+    m["gyms"] = m.rango.map(conteo).fillna(0)
+    m = m[(m.poblacion >= 300000) & (m.gyms > 0)].copy()
+    m["por100k"] = m.gyms / m.poblacion * 100000
+    m["nombre"] = m.metropoli.map(lambda x: NOMBRE_METRO.get(x, x))
+    m = m.sort_values("por100k", ascending=False)
+    total = d.shape[0]
+    pais = m.gyms.sum() / m.poblacion.sum() * 100000
+    mes = f"{MESES[hoy.month - 1]} de {hoy.year}"
+    p = ["<!-- wp:html -->",
+         f"<p>En las metrópolis de México de más de 300 mil habitantes hay en promedio <strong>{pais:.0f} lugares para entrenar por cada "
+         f"100 mil personas</strong>. {html.escape(m.iloc[0]['nombre'])} encabeza la lista con {m.iloc[0]['por100k']:.0f}; "
+         f"{html.escape(m.iloc[-1]['nombre'])} cierra con {m.iloc[-1]['por100k']:.0f}.</p>",
+         "<table class=\"g52-precios\"><thead><tr><th>#</th><th>Metrópoli</th><th>Por cada 100 mil habitantes</th>"
+         "<th>Lugares registrados</th><th>Habitantes</th></tr></thead><tbody>"]
+    for k, (_, r) in enumerate(m.iterrows(), 1):
+        p.append(f"<tr><td>{k}</td><td>{html.escape(r['nombre'])}</td><td>{r.por100k:.1f}</td><td>{int(r.gyms):,}</td><td>{int(r.poblacion):,}</td></tr>")
+    p.append("</tbody></table>")
+    p.append(f"<h2>Cómo lo calculamos</h2><p>Contamos los centros de acondicionamiento físico públicos y privados que registra el "
+             f"Directorio Estadístico Nacional de Unidades Económicas (DENUE) del INEGI en cada zona metropolitana ({total:,} en total) "
+             f"y los dividimos entre su población. Usamos solo el DENUE para que todas las ciudades se midan igual; en Gyms +52 hay "
+             f"más lugares porque sumamos estudios, boxes y clubes de otras fuentes. Actualizado en {mes}.</p>")
+    p.append("<!-- /wp:html -->")
+    return "\n".join(p), len(m)
+
+
+def pagina_cadenas(base, hoy, minimo=8):
+    """Comparativo de las cadenas con más sucursales publicadas: sucursales, ciudades, pases, 24 h y precio."""
+    c = base[base.cadena != ""]
+    filas = []
+    for cadena, g in c.groupby("cadena"):
+        if len(g) < minimo:
+            continue
+        precio = pd.to_numeric(g.mensualidad_desde, errors="coerce").dropna()
+        pases = []
+        for pase in ("TotalPass", "Wellhub", "Fitpass", "ClassPass"):
+            n = g.pases.str.contains(pase, na=False).sum()
+            if n:
+                pases.append(f"{pase} ({n})")
+        precio = precio[(precio >= 150) & (precio <= 10000)]
+        filas.append((cadena, len(g), g.metropoli.nunique(),
+                      _pesos(precio.median()) if len(precio) >= 3 else "sin datos suficientes", ", ".join(pases) or "ninguno registrado"))
+    filas.sort(key=lambda z: -z[1])
+    mes = f"{MESES[hoy.month - 1]} de {hoy.year}"
+    p = ["<!-- wp:html -->",
+         f"<p>Las cadenas de gimnasios con más sucursales en México, según las fichas de Gyms +52. Actualizado en {mes}.</p>",
+         "<table class=\"g52-precios\"><thead><tr><th>Cadena</th><th>Sucursales</th><th>Ciudades</th>"
+         "<th>Mensualidad típica</th><th>Sucursales con pase</th></tr></thead><tbody>"]
+    for f in filas:
+        p.append("<tr>" + "".join(f"<td>{html.escape(str(x))}</td>" for x in f) + "</tr>")
+    p.append("</tbody></table><p><small>Sucursales y pases según los sitios oficiales de cada cadena y de cada pase. "
+             "La mensualidad típica es la mediana de lo que publica la cadena por sucursal, sin promociones; puede variar en cada una.</small></p>")
+    p.append("<!-- /wp:html -->")
+    return "\n".join(p), len(filas)
 
 
 def _pesos(x):
@@ -144,7 +208,7 @@ def main():
     s = requests.Session()
     s.auth = (os.environ.get("WP_USER", ""), os.environ.get("WP_APP_PASSWORD", ""))
     base = pd.read_csv(os.path.join(RAIZ, "data", "base.csv"), dtype=str).fillna("")
-    for c in ("lo_mejor", "foto_url", "pases", "instalaciones", "abierto_24h", "reserva_plataforma", "mensualidad_desde", "cadena"):
+    for c in ("lo_mejor", "foto_url", "pases", "instalaciones", "abierto_24h", "reserva_plataforma", "mensualidad_desde", "cadena", "totalpass_planes"):
         if c not in base.columns:
             base[c] = ""
     base = base[base.wp_id != ""].copy()
@@ -183,6 +247,8 @@ def main():
         for g in nec[:25]:
             print(" ", g[0], "en", g[1], len(g[3]))
         print(indice_precios(base, hoy)[1])
+        print(pagina_densidad(hoy)[0][:900])
+        print(pagina_cadenas(base, hoy)[0][:1500])
         return
 
     ligas = enlaces(s, url)
@@ -225,6 +291,15 @@ def main():
                                      "Mensualidad típica de gimnasios y estudios por ciudad, con datos publicados por los propios lugares."):
         partes.insert(2, '<p><strong><a href="/guias/precios-gimnasios/">Cuánto cuesta un gimnasio en México</a></strong>: '
                          'mensualidades por ciudad y tipo de lugar.</p>')
+    dens_html, n_dens = pagina_densidad(hoy)
+    if n_dens and guardar_pagina("gimnasios-por-habitante", "Las ciudades de México con más gimnasios por habitante", dens_html, madre,
+                                 "Lugares para entrenar por cada 100 mil habitantes en las metrópolis de México, con datos del INEGI."):
+        partes.insert(2, '<p><strong><a href="/guias/gimnasios-por-habitante/">Las ciudades con más gimnasios por habitante</a></strong>.</p>')
+    cad_html, n_cad = pagina_cadenas(base, hoy)
+    if n_cad and guardar_pagina("cadenas-de-gimnasios", "Cadenas de gimnasios en México: sucursales, pases y precios", cad_html, madre,
+                                "Smart Fit, Anytime Fitness, Sports World, Sport City y más: cuántas sucursales tienen, en qué ciudades y qué pases aceptan."):
+        partes.insert(2, '<p><strong><a href="/guias/cadenas-de-gimnasios/">Cadenas de gimnasios en México</a></strong>: sucursales, pases y precios.</p>')
+    print(f"Páginas de datos: densidad {n_dens} metrópolis, cadenas {n_cad}")
     partes.append("<!-- /wp:html -->")
     guardar_pagina("guias", "Guías", "\n".join(partes))
     pd.DataFrame(filas_reg).to_csv(ruta, index=False)
