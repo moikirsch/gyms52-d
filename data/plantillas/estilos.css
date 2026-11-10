@@ -129,6 +129,9 @@ nav.navbar.fixed-top.navbar-light{background-color:#FFFFFF !important;}
 .g52-guia li a strong{color:#090B10;text-decoration:underline;text-decoration-color:#2B8CFF;text-decoration-thickness:2px;text-underline-offset:3px;}
 .geodir-post h2 a,.geodir-post .geodir-entry-title a,.geodir-listings h2 a,.geodir-listings h3 a{color:#090B10 !important;}
 .geodir-post h2 a:hover,.geodir-listings h2 a:hover,.geodir-listings h3 a:hover{color:#1F6FD1 !important;}
+/* Fotos de relleno de otras plataformas: se ve la imagen de la marca */
+img[src*="placeholder_photo"],img[src*="fb-share"]{opacity:0 !important;}
+:is(.ratio,figure,a,div):has(> img[src*="placeholder_photo"]),:is(.ratio,figure,a,div):has(> img[src*="fb-share"]){background:#090B10 url(/wp-content/uploads/2026/10/gyms52-sin-foto.jpg) center/cover no-repeat;}
 @media (max-width: 767.98px){
   /* Archivo: sin desborde lateral */
   .geodir-listing-search .geodir-search.row{margin-left:-4px !important;margin-right:-4px !important;}
