@@ -1,1 +1,1 @@
-{"accion": "leer", "listar": true, "estilos": true, "plantillas": ["directory//404", "directory//home", "directory//index", "directory//front-page"], "partes": ["directory//header", "directory//footer"]}
+{"accion": "leer", "plantillas": ["directory//gd-single"], "partes": ["directory//menu-wrapper", "directory//comments"]}
