@@ -268,6 +268,10 @@ def main():
         print("  error", slug_p, r.status_code, r.text[:150])
         return ""
 
+    # la página madre no se guarda en guias.csv: se busca por su slug para no crear "guias-2", "guias-3"...
+    r = s.get(f"{url}/wp-json/wp/v2/pages", params={"slug": "guias", "status": "publish", "_fields": "id"}, timeout=60)
+    if r.status_code == 200 and r.json():
+        ids["guias"] = str(r.json()[0]["id"])
     madre = guardar_pagina("guias", "Guías", "<!-- wp:paragraph --><p>Preparando las guías…</p><!-- /wp:paragraph -->")
     filas_reg, indice = [], {}
     for titulo_corto, metro, slug_p, filas, frase in grupos:
