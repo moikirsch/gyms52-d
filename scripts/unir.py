@@ -445,6 +445,10 @@ def main():
     if malas.any():
         base.loc[malas, "foto_url"] = ""
         print(f"Fotos que no son del lugar, quitadas antes de publicar: {int(malas.sum())}")
+    sin_nombre = base.nombre.astype(str).str.replace(r"\W", "", regex=True).str.len().lt(2) & (base.wp_id == "")
+    if sin_nombre.any():
+        base = base[~sin_nombre]
+        print(f"Sin nombre válido, fuera de la base: {int(sin_nombre.sum())}")
     rec = restaurar_wp_ids(base)
     if rec:
         print(f"wp_id recuperados de la bitácora: {rec}")

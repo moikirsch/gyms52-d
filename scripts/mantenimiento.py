@@ -5,6 +5,8 @@
       guarda en data/mantenimiento/info.json los plugins y ajustes del sitio.
   {"borrador_paginas": [123, 456]}
       pasa páginas a borrador: dejan de verse y se pueden volver a publicar.
+  {"borrador_lugares": [wp_id, ...]}
+      pasa fichas a borrador.
   {"plugins_activar": ["ninja-forms/ninja-forms"]}
       activa plugins instalados.
 Cada corrida deja su bitácora en data/mantenimiento/<fecha>.json.
@@ -52,6 +54,11 @@ def main():
     for pid in sol.get("borrador_paginas", []):
         r = s.post(f"{url}/wp-json/wp/v2/pages/{pid}", json={"status": "draft"}, timeout=60)
         anota(accion="borrador", id=pid, http=r.status_code, estado=(r.json().get("status") if r.status_code == 200 else r.text[:150]))
+        time.sleep(0.3)
+
+    for wid in sol.get("borrador_lugares", []):
+        r = s.post(f"{url}/wp-json/geodir/v2/lugares/{wid}", json={"status": "draft"}, timeout=60)
+        anota(accion="borrador_lugar", id=wid, http=r.status_code, estado=(r.json().get("status") if r.status_code == 200 else r.text[:150]))
         time.sleep(0.3)
 
     json.dump(log, open(os.path.join(DIR, f"{marca}.json"), "w"), ensure_ascii=False, indent=1)
