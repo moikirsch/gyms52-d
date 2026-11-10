@@ -118,18 +118,26 @@ def formulario_reportar(s, url, destino, anota):
     if r.status_code not in (200, 201):
         anota(accion="formulario", http=r.status_code, detalle=r.text[:300])
         return
-    fid = r.json()["id"]
-    hash_ = r.json().get("hash", "")
-    anota(accion="formulario", id=fid, destinatario=destino)
+    lista = s.get(api, params={"per_page": 50}, timeout=60).json()
+    forma = [f for f in lista if f.get("title") == "Reportar un error"]
+    if not forma:
+        anota(accion="formulario", detalle="no aparece en la lista", lista=str(lista)[:300])
+        return
+    fid = forma[0].get("id")
+    anota(accion="formulario", id=fid, hash=forma[0].get("hash", ""), destinatario=destino)
     r = s.get(f"{url}/wp-json/wp/v2/pages/39", params={"context": "edit"}, timeout=60)
     crudo = r.json()["content"]["raw"]
-    open(os.path.join(DIR, "reportar-un-error-antes.html"), "w").write(crudo)
-    codigo = f'[contact-form-7 id="{hash_ or fid}" title="Reportar un error"]'
-    nuevo = re.sub(r"\[ninja_forms?[^\]]*\]", codigo, crudo)
-    nuevo = re.sub(r"<noscript class=\"ninja-forms-noscript-message\">.*?nf-loading-spinner\"></div>\s*</div>\s*(<!--[^>]*-->\s*)?(<script>.*?</script>)?", codigo, nuevo, flags=re.S)
+    open(os.path.join(DIR, f"reportar-un-error-{dt.date.today()}.html"), "w").write(crudo)
+    codigo = f'[contact-form-7 id="{fid}" title="Reportar un error"]'
+    bloque = f'<div class="g52-form">{codigo}</div>'
+    nuevo = re.sub(r'\[contact-form-7[^\]]*\]', codigo, crudo)
+    if codigo not in nuevo and "<p><noscript" in nuevo:
+        i = nuevo.index("<p><noscript")
+        j = nuevo.index("</p>", nuevo.index("</script>", i)) + len("</p>")
+        nuevo = nuevo[:i] + bloque + nuevo[j:]
     if codigo not in nuevo:
-        # sin formulario viejo reconocible: va después del primer párrafo
-        nuevo = nuevo.replace("<!-- /wp:paragraph -->", f"<!-- /wp:paragraph -->\n\n<!-- wp:shortcode -->\n{codigo}\n<!-- /wp:shortcode -->", 1)
+        anota(accion="pagina_reportar", detalle="no encontré dónde poner el formulario")
+        return
     r = s.post(f"{url}/wp-json/wp/v2/pages/39", json={"content": nuevo}, timeout=60)
     anota(accion="pagina_reportar", http=r.status_code, con_formulario=codigo in nuevo)
 
