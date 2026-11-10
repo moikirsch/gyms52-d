@@ -1,0 +1,17 @@
+{
+ "solicitud": {
+  "ver_formularios": [
+   40550
+  ]
+ },
+ "resultados": [
+  {
+   "accion": "ver_formulario",
+   "id": 40550,
+   "http": 200,
+   "titulo": "Contact form 1",
+   "form": "<label> Your name\n    [text* your-name autocomplete:name] </label>\n\n<label> Your email\n    [email* your-email autocomplete:email] </label>\n\n<label> Subject\n    ",
+   "para": "[_site_admin_email]"
+  }
+ ]
+}
