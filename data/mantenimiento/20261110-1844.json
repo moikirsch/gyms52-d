@@ -1,0 +1,22 @@
+{
+ "solicitud": {
+  "formulario_reportar": "hola@gyms52.com"
+ },
+ "resultados": [
+  {
+   "accion": "instalar_cf7",
+   "http": 201,
+   "detalle": "active"
+  },
+  {
+   "accion": "formulario",
+   "id": null,
+   "destinatario": "hola@gyms52.com"
+  },
+  {
+   "accion": "pagina_reportar",
+   "http": 200,
+   "con_formulario": true
+  }
+ ]
+}
