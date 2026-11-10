@@ -1,19 +1,45 @@
 == smartfit
-   500 exportados, 0 descartados, 68.3s
+   500 exportados, 0 descartados, 65.8s
 == anytime
-   120 exportados, 0 descartados, 0.7s
+   120 exportados, 0 descartados, 0.5s
 == sportsworld
-   48 exportados, 0 descartados, 25.2s
+   48 exportados, 0 descartados, 25.1s
 == sportcity
    24 exportados, 2 descartados, 5.1s
 == crossfit
-   55 exportados, 1 descartados, 56.5s
+   55 exportados, 1 descartados, 56.4s
 == hyrox
-   282 exportados, 0 descartados, 138.3s
+   287 exportados, 0 descartados, 145.9s
 == totalpass
-  totalpass: 250/544 (62s)
-  totalpass: 500/544 (124s)
-   8424 exportados, 0 descartados, 135.8s
+  totalpass: 250/7000 (62s)
+  totalpass: 500/7000 (124s)
+  totalpass: 750/7000 (187s)
+  totalpass: 1000/7000 (249s)
+  totalpass: 1250/7000 (312s)
+  totalpass: 1500/7000 (374s)
+  totalpass: 1750/7000 (437s)
+  totalpass: 2000/7000 (499s)
+  totalpass: 2250/7000 (562s)
+  totalpass: 2500/7000 (624s)
+  totalpass: 2750/7000 (687s)
+  totalpass: 3000/7000 (749s)
+  totalpass: 3250/7000 (812s)
+  totalpass: 3500/7000 (874s)
+  totalpass: 3750/7000 (937s)
+  totalpass: 4000/7000 (1000s)
+  totalpass: 4250/7000 (1062s)
+  totalpass: 4500/7000 (1125s)
+  totalpass: 4750/7000 (1187s)
+  totalpass: 5000/7000 (1250s)
+  totalpass: 5250/7000 (1313s)
+  totalpass: 5500/7000 (1375s)
+  totalpass: 5750/7000 (1437s)
+  totalpass: 6000/7000 (1500s)
+  totalpass: 6250/7000 (1562s)
+  totalpass: 6500/7000 (1624s)
+  totalpass: 6750/7000 (1687s)
+  totalpass: 7000/7000 (1750s)
+   8423 exportados, 1 descartados, 1750.0s
 == fitpass
-   2913 exportados, 1 descartados, 4.7s
+   2910 exportados, 1 descartados, 4.3s
 resumen: /home/runner/work/gyms52-d/gyms52-d/data/fuentes/resumen.json
