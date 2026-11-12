@@ -1,0 +1,23 @@
+{
+ "inicio": "2026-11-12T20:47:47.946933+00:00Z",
+ "metros": {
+  "San Luis Potosí": {
+   "antes": 488,
+   "despues": 635
+  },
+  "Mexicali": {
+   "antes": 0,
+   "despues": 420
+  },
+  "Toluca": {
+   "antes": 0,
+   "despues": 583
+  }
+ },
+ "peticiones": 109,
+ "errores": [
+  "429 escuela de danza en Metepec, Estado de México: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-12T20:50:00.440642+00:00Z"
+}
