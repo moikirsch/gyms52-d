@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-11-11T21:27:06.461171+00:00Z",
+ "metros": {
+  "Torreón": {
+   "antes": 297,
+   "despues": 765
+  },
+  "San Luis Potosí": {
+   "antes": 0,
+   "despues": 488
+  }
+ },
+ "peticiones": 106,
+ "errores": [
+  "429 tienda de artículos deportivos en San Luis Potosí, San Luis Potosí: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-11T21:28:37.523156+00:00Z"
+}
