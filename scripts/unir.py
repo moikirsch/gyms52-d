@@ -445,6 +445,15 @@ def main():
     if malas.any():
         base.loc[malas, "foto_url"] = ""
         print(f"Fotos que no son del lugar, quitadas antes de publicar: {int(malas.sum())}")
+    # Ligas de redes que llegan como "sitio web" (DENUE, OSM): van a su red, igual que en redes.py,
+    # para que la base no oscile entre corridas y no se reenvíen miles de fichas sin cambios.
+    for red, dominio in (("instagram", "instagram.com"), ("facebook", "facebook.com"), ("tiktok", "tiktok.com")):
+        if red not in base.columns:
+            base[red] = ""
+        es_red = base.sitio_web.astype(str).str.lower().str.contains(dominio, regex=False)
+        vacia = es_red & (base[red] == "")
+        base.loc[vacia, red] = base.loc[vacia, "sitio_web"].str.split("?").str[0]
+        base.loc[es_red, "sitio_web"] = ""
     sin_nombre = base.nombre.astype(str).str.replace(r"\W", "", regex=True).str.len().lt(2) & (base.wp_id == "")
     if sin_nombre.any():
         base = base[~sin_nombre]
