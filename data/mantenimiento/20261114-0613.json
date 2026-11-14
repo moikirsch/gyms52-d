@@ -1,0 +1,46 @@
+{
+ "solicitud": {
+  "sitekit": {
+   "desde": "2026-10-01",
+   "hasta": "2026-11-13"
+  }
+ },
+ "resultados": [
+  {
+   "accion": "sitekit",
+   "dato": "modulos",
+   "http": 200,
+   "muestra": "[{'slug': 'site-verification', 'name': 'Verificación del sitio', 'description': 'La verificación del sitio de Google te permite gestionar la propiedad de tu sitio.', 'homepage': 'https://www.google.co"
+  },
+  {
+   "accion": "sitekit",
+   "dato": "sc_ajustes",
+   "http": 200,
+   "muestra": "{'propertyID': 'https://gyms52.com/', 'ownerID': 1}"
+  },
+  {
+   "accion": "sitekit",
+   "dato": "sc_sitios",
+   "http": 403,
+   "muestra": "{'code': 'missing_required_scopes', 'message': 'Site Kit no puede acceder a datos relevantes desde Search Console porque no has facilitado todos los permisos solicitados durante la configuración.', 'd"
+  },
+  {
+   "accion": "sitekit",
+   "dato": "sc_dias",
+   "http": 403,
+   "muestra": "{'code': 'missing_required_scopes', 'message': 'Site Kit no puede acceder a datos relevantes desde Search Console porque no has facilitado todos los permisos solicitados durante la configuración.', 'd"
+  },
+  {
+   "accion": "sitekit",
+   "dato": "sc_consultas",
+   "http": 403,
+   "muestra": "{'code': 'missing_required_scopes', 'message': 'Site Kit no puede acceder a datos relevantes desde Search Console porque no has facilitado todos los permisos solicitados durante la configuración.', 'd"
+  },
+  {
+   "accion": "sitekit",
+   "dato": "sc_paginas",
+   "http": 403,
+   "muestra": "{'code': 'missing_required_scopes', 'message': 'Site Kit no puede acceder a datos relevantes desde Search Console porque no has facilitado todos los permisos solicitados durante la configuración.', 'd"
+  }
+ ]
+}

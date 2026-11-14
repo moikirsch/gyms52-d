@@ -1,0 +1,210 @@
+{
+ "modulos": [
+  {
+   "slug": "site-verification",
+   "name": "Verificación del sitio",
+   "description": "La verificación del sitio de Google te permite gestionar la propiedad de tu sitio.",
+   "homepage": "https://www.google.com/webmasters/verification/home",
+   "internal": true,
+   "order": 0,
+   "forceActive": true,
+   "recoverable": false,
+   "shareable": false,
+   "active": true,
+   "connected": true,
+   "disconnectedAt": null,
+   "dependencies": [],
+   "dependants": [],
+   "owner": null
+  },
+  {
+   "slug": "search-console",
+   "name": "Search Console",
+   "description": "Google Search Console te ayuda a comprender cómo ve Google tu sitio y a optimizar su rendimiento en los resultados de búsqueda.",
+   "homepage": "https://search.google.com/search-console",
+   "internal": false,
+   "order": 1,
+   "forceActive": true,
+   "recoverable": false,
+   "shareable": true,
+   "active": true,
+   "connected": true,
+   "disconnectedAt": null,
+   "dependencies": [],
+   "dependants": [],
+   "owner": {
+    "id": 1,
+    "login": "gyms52-com"
+   }
+  },
+  {
+   "slug": "ads",
+   "name": "Ads",
+   "description": "Aumenta las ventas, los contactos o la notoriedad de tu empresa anunciándote con Google Ads",
+   "homepage": "https://google.com/ads",
+   "internal": false,
+   "order": 10,
+   "forceActive": false,
+   "recoverable": false,
+   "shareable": false,
+   "active": false,
+   "connected": false,
+   "disconnectedAt": null,
+   "dependencies": [],
+   "dependants": [],
+   "owner": null
+  },
+  {
+   "slug": "analytics-4",
+   "name": "Analytics",
+   "description": "Obtén una comprensión más profunda de tus clientes. Google Analytics te brinda las herramientas gratuitas que necesitas para analizar los datos de tu empresa en un solo lugar.",
+   "homepage": "https://analytics.google.com/analytics/web",
+   "internal": false,
+   "order": 10,
+   "forceActive": false,
+   "recoverable": false,
+   "shareable": true,
+   "active": true,
+   "connected": true,
+   "disconnectedAt": null,
+   "dependencies": [],
+   "dependants": [],
+   "owner": {
+    "id": 1,
+    "login": "gyms52-com"
+   }
+  },
+  {
+   "slug": "tagmanager",
+   "name": "Tag Manager",
+   "description": "Tag Manager crea una forma fácil de gestionar la creación de etiquetas en tu sitio sin actualizar el código",
+   "homepage": "https://tagmanager.google.com/",
+   "internal": false,
+   "order": 10,
+   "forceActive": false,
+   "recoverable": false,
+   "shareable": false,
+   "active": false,
+   "connected": false,
+   "disconnectedAt": null,
+   "dependencies": [],
+   "dependants": [],
+   "owner": null
+  },
+  {
+   "slug": "adsense",
+   "name": "AdSense",
+   "description": "Gana dinero poniendo anuncios en tu web. Es gratis y fácil.",
+   "homepage": "https://adsense.google.com/start?source=site-kit&url=https://gyms52.com",
+   "internal": false,
+   "order": 10,
+   "forceActive": false,
+   "recoverable": false,
+   "shareable": false,
+   "active": true,
+   "connected": false,
+   "disconnectedAt": null,
+   "dependencies": [],
+   "dependants": [],
+   "owner": {
+    "id": 1,
+    "login": "gyms52-com"
+   }
+  },
+  {
+   "slug": "pagespeed-insights",
+   "name": "PageSpeed Insights",
+   "description": "Google PageSpeed Insights te ofrece métricas sobre rendimiento, accesibilidad, SEO y PWA",
+   "homepage": "https://pagespeed.web.dev",
+   "internal": false,
+   "order": 10,
+   "forceActive": false,
+   "recoverable": false,
+   "shareable": true,
+   "active": true,
+   "connected": true,
+   "disconnectedAt": null,
+   "dependencies": [],
+   "dependants": [],
+   "owner": null
+  },
+  {
+   "slug": "sign-in-with-google",
+   "name": "Acceder con Google",
+   "description": "Mejora la implicación de los usuarios, la confianza y la privacidad de los datos, al tiempo que creas una experiencia sencilla, segura y personalizada para tus visitantes",
+   "homepage": "https://developers.google.com/identity/gsi/web/guides/overview",
+   "internal": false,
+   "order": 10,
+   "forceActive": false,
+   "recoverable": false,
+   "shareable": false,
+   "active": false,
+   "connected": false,
+   "disconnectedAt": null,
+   "dependencies": [],
+   "dependants": [],
+   "owner": null
+  },
+  {
+   "slug": "reader-revenue-manager",
+   "name": "Reader Revenue Manager",
+   "description": "Añade CTAs sencillas en tus páginas para pedir a los usuarios que se registren en tu newsletter, completen una encuesta, hagan una contribución o se suscriban.",
+   "homepage": "https://publishercenter.google.com",
+   "internal": false,
+   "order": 10,
+   "forceActive": false,
+   "recoverable": false,
+   "shareable": false,
+   "active": false,
+   "connected": false,
+   "disconnectedAt": null,
+   "dependencies": [],
+   "dependants": [],
+   "owner": null
+  }
+ ],
+ "sc_ajustes": {
+  "propertyID": "https://gyms52.com/",
+  "ownerID": 1
+ },
+ "sc_sitios": {
+  "code": "missing_required_scopes",
+  "message": "Site Kit no puede acceder a datos relevantes desde Search Console porque no has facilitado todos los permisos solicitados durante la configuración.",
+  "data": {
+   "status": 403,
+   "scopes": [
+    "https://www.googleapis.com/auth/webmasters"
+   ]
+  }
+ },
+ "sc_dias": {
+  "code": "missing_required_scopes",
+  "message": "Site Kit no puede acceder a datos relevantes desde Search Console porque no has facilitado todos los permisos solicitados durante la configuración.",
+  "data": {
+   "status": 403,
+   "scopes": [
+    "https://www.googleapis.com/auth/webmasters"
+   ]
+  }
+ },
+ "sc_consultas": {
+  "code": "missing_required_scopes",
+  "message": "Site Kit no puede acceder a datos relevantes desde Search Console porque no has facilitado todos los permisos solicitados durante la configuración.",
+  "data": {
+   "status": 403,
+   "scopes": [
+    "https://www.googleapis.com/auth/webmasters"
+   ]
+  }
+ },
+ "sc_paginas": {
+  "code": "missing_required_scopes",
+  "message": "Site Kit no puede acceder a datos relevantes desde Search Console porque no has facilitado todos los permisos solicitados durante la configuración.",
+  "data": {
+   "status": 403,
+   "scopes": [
+    "https://www.googleapis.com/auth/webmasters"
+   ]
+  }
+ }
+}
