@@ -51,3 +51,13 @@ add_filter( 'wpseo_sitemap_entry', function ( $url, $type, $post ) {
 	}
 	return $url;
 }, 10, 3 );
+
+// Las fichas usan la etiqueta robots del núcleo de WordPress, no la de Yoast.
+add_filter( 'wp_robots', function ( $robots ) {
+	if ( is_singular( 'gd_place' ) && g52_ficha_vacia( get_queried_object_id() ) ) {
+		unset( $robots['index'] );
+		$robots['noindex'] = true;
+		$robots['follow']  = true;
+	}
+	return $robots;
+}, 20 );
