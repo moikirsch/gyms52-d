@@ -1,0 +1,52 @@
+{
+ "solicitud": {
+  "plugins_instalar": [
+   "code-snippets"
+  ],
+  "snippets": [
+   {
+    "nombre": "Gyms52: fichas vacías sin indexar",
+    "archivo": "fichas-vacias-noindex.php",
+    "desc": "noindex y fuera del sitemap para fichas sin contacto, horario, pases ni foto propia",
+    "probar": [
+     28725,
+     95
+    ]
+   }
+  ]
+ },
+ "resultados": [
+  {
+   "accion": "instalar",
+   "plugin": "code-snippets",
+   "http": 201,
+   "detalle": "active"
+  },
+  {
+   "accion": "snippet",
+   "nombre": "Gyms52: fichas vacías sin indexar",
+   "http": 200,
+   "id": 5,
+   "activo": true,
+   "detalle": ""
+  },
+  {
+   "accion": "prueba",
+   "url": "https://gyms52.com/",
+   "http": 200,
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  },
+  {
+   "accion": "prueba",
+   "url": "https://gyms52.com/?p=28725&post_type=gd_place",
+   "http": 200,
+   "robots": "index, follow, max-image-preview:large"
+  },
+  {
+   "accion": "prueba",
+   "url": "https://gyms52.com/?p=95&post_type=gd_place",
+   "http": 200,
+   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  }
+ ]
+}
