@@ -1,1 +1,1 @@
-{"formulario_reportar": "hola@gyms52.com", "ver_formularios": [40550], "n": 5}
+{"plugins_instalar": ["code-snippets"], "snippets": [{"nombre": "Gyms52: fichas vac\u00edas sin indexar", "archivo": "fichas-vacias-noindex.php", "desc": "noindex y fuera del sitemap para fichas sin contacto, horario, pases ni foto propia", "probar": [28725, 95]}]}

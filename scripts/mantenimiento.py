@@ -43,13 +43,20 @@ def main():
 
     if sol.get("info"):
         info = {}
-        r = s.get(f"{url}/wp-json/wp/v2/plugins", params={"context": "edit"}, timeout=60)
+        r = s.get(f"{url}/wp-json/wp/v2/plugins", params={"context": "edit", "per_page": 100}, timeout=60)
         info["plugins"] = [{"plugin": p["plugin"], "nombre": p["name"], "estado": p["status"], "version": p["version"]}
                            for p in r.json()] if r.status_code == 200 else f"HTTP {r.status_code} {r.text[:200]}"
         r = s.get(f"{url}/wp-json/wp/v2/settings", timeout=60)
         info["ajustes"] = r.json() if r.status_code == 200 else f"HTTP {r.status_code}"
         json.dump(info, open(os.path.join(DIR, "info.json"), "w"), ensure_ascii=False, indent=1)
         anota(accion="info", plugins=len(info["plugins"]) if isinstance(info["plugins"], list) else info["plugins"])
+
+    for slug in sol.get("plugins_instalar", []):
+        r = s.post(f"{url}/wp-json/wp/v2/plugins", json={"slug": slug, "status": "active"}, timeout=180)
+        anota(accion="instalar", plugin=slug, http=r.status_code, detalle=r.text[:200] if r.status_code >= 300 else r.json().get("status"))
+
+    for sn in sol.get("snippets", []):
+        snippet(s, url, sn, anota)
 
     for pl in sol.get("plugins_activar", []):
         r = s.post(f"{url}/wp-json/wp/v2/plugins/{pl}", json={"status": "active"}, timeout=90)
@@ -77,6 +84,36 @@ def main():
         formulario_reportar(s, url, destino, anota)
 
     json.dump(log, open(os.path.join(DIR, f"{marca}.json"), "w"), ensure_ascii=False, indent=1)
+
+
+def snippet(s, url, sn, anota):
+    """Crea o actualiza un snippet de Code Snippets y revisa que el sitio siga en pie; si no, lo apaga."""
+    api = f"{url}/wp-json/code-snippets/v1/snippets"
+    codigo = open(os.path.join(DIR, "snippets", sn["archivo"])).read()
+    r = s.get(api, timeout=60)
+    previos = [x for x in (r.json() if r.status_code == 200 else []) if x.get("name") == sn["nombre"]]
+    datos = {"name": sn["nombre"], "desc": sn.get("desc", ""), "code": codigo, "scope": "global", "active": bool(sn.get("activo", True))}
+    r = s.post(api + (f"/{previos[0]['id']}" if previos else ""), json=datos, timeout=60)
+    sid = r.json().get("id") if r.status_code in (200, 201) else None
+    anota(accion="snippet", nombre=sn["nombre"], http=r.status_code, id=sid, activo=r.json().get("active") if sid else None,
+          detalle=r.text[:200] if not sid else "")
+    if not sid:
+        return
+    time.sleep(3)
+    pruebas = [f"{url}/"] + [f"{url}/?p={x}&post_type=gd_place" for x in sn.get("probar", [])]
+    caido = False
+    for u in pruebas:
+        try:
+            h = requests.get(u, headers={"User-Agent": "Mozilla/5.0 gyms52-pipeline"}, params={"nc": int(time.time())}, timeout=60)
+            robots = re.search(r'<meta name=["\']robots["\'] content=["\']([^"\']*)', h.text)
+            anota(accion="prueba", url=u, http=h.status_code, robots=robots.group(1) if robots else "")
+            if h.status_code >= 500 or "critical error" in h.text.lower() or "error crítico" in h.text.lower():
+                caido = True
+        except Exception as e:
+            anota(accion="prueba", url=u, error=str(e)[:150])
+    if caido:
+        r = s.post(f"{api}/{sid}", json={"active": False}, timeout=60)
+        anota(accion="snippet_apagado_por_error", id=sid, http=r.status_code)
 
 
 FORM_REPORTAR = """<label>Tu nombre
