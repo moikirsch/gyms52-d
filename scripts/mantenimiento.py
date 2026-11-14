@@ -55,6 +55,22 @@ def main():
         r = s.post(f"{url}/wp-json/wp/v2/plugins", json={"slug": slug, "status": "active"}, timeout=180)
         anota(accion="instalar", plugin=slug, http=r.status_code, detalle=r.text[:200] if r.status_code >= 300 else r.json().get("status"))
 
+    if sol.get("sitekit"):
+        sk = f"{url}/wp-json/google-site-kit/v1"
+        salida = {}
+        for nombre, ruta, params in [
+            ("modulos", "/core/modules/data/list", {}),
+            ("sc_ajustes", "/modules/search-console/data/settings", {}),
+            ("sc_sitios", "/modules/search-console/data/matched-sites", {}),
+            ("sc_dias", "/modules/search-console/data/searchanalytics", {"startDate": sol["sitekit"].get("desde"), "endDate": sol["sitekit"].get("hasta"), "dimensions": "date", "limit": 100}),
+            ("sc_consultas", "/modules/search-console/data/searchanalytics", {"startDate": sol["sitekit"].get("desde"), "endDate": sol["sitekit"].get("hasta"), "dimensions": "query", "limit": 50}),
+            ("sc_paginas", "/modules/search-console/data/searchanalytics", {"startDate": sol["sitekit"].get("desde"), "endDate": sol["sitekit"].get("hasta"), "dimensions": "page", "limit": 50}),
+        ]:
+            r = s.get(sk + ruta, params={k: v for k, v in params.items() if v}, timeout=90)
+            salida[nombre] = r.json() if r.headers.get("content-type", "").startswith("application/json") else r.text[:300]
+            anota(accion="sitekit", dato=nombre, http=r.status_code, muestra=str(salida[nombre])[:200])
+        json.dump(salida, open(os.path.join(DIR, "sitekit.json"), "w"), ensure_ascii=False, indent=1)
+
     for sn in sol.get("snippets", []):
         snippet(s, url, sn, anota)
 
