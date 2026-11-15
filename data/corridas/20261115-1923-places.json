@@ -1,0 +1,27 @@
+{
+ "inicio": "2026-11-15T19:21:51.925389+00:00Z",
+ "metros": {
+  "Toluca": {
+   "antes": 1515,
+   "despues": 1522
+  },
+  "Chihuahua": {
+   "antes": 0,
+   "despues": 490
+  },
+  "Cancún": {
+   "antes": 0,
+   "despues": 309
+  },
+  "Cuernavaca": {
+   "antes": 0,
+   "despues": 239
+  }
+ },
+ "peticiones": 102,
+ "errores": [
+  "429 escuela de danza en Cuernavaca, Morelos: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-15T19:23:19.850292+00:00Z"
+}
