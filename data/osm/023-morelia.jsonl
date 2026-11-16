@@ -19,10 +19,10 @@
 {"osm_id": "way/463466342", "lat": 19.7295592, "lng": -101.1789783, "tags": {"leisure": "sports_centre", "name": "Unidad Deportiva Felipe Carrillo Puerto"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/463580312", "lat": 19.7333558, "lng": -101.2047581, "tags": {"leisure": "sports_centre", "name": "Deportivo Solidaridad"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/463975911", "lat": 19.6880816, "lng": -101.2900817, "tags": {"building": "yes", "leisure": "sports_centre", "name": "Plaza de Toros El Relicario"}, "metro_rango": "23", "metropoli": "Morelia"}
-{"osm_id": "way/464226565", "lat": 19.6631425, "lng": -101.1787128, "tags": {"leisure": "sports_centre", "name": "Área Deportiva Los Encinos"}, "metro_rango": "23", "metropoli": "Morelia"}
+{"osm_id": "way/464226565", "lat": 19.6631425, "lng": -101.1787128, "tags": {"building": "yes", "leisure": "sports_centre", "name": "Área Deportiva Los Encinos"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/464828154", "lat": 19.6919707, "lng": -101.1461393, "tags": {"leisure": "sports_centre", "name": "Club Britania"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/464839769", "lat": 19.6880732, "lng": -101.1366876, "tags": {"leisure": "sports_centre", "name": "Club Deportivo Futurama"}, "metro_rango": "23", "metropoli": "Morelia"}
-{"osm_id": "way/464839816", "lat": 19.7244342, "lng": -101.1368111, "tags": {"leisure": "sports_centre", "name": "Canchas de Futbol de la Liga Infantil y Juvenil Morelia", "sport": "soccer"}, "metro_rango": "23", "metropoli": "Morelia"}
+{"osm_id": "way/464839816", "lat": 19.7250219, "lng": -101.1368111, "tags": {"leisure": "sports_centre", "name": "Canchas de Futbol de la Liga Infantil y Juvenil Morelia", "sport": "soccer"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/481070030", "lat": 19.6396842, "lng": -101.2742018, "tags": {"leisure": "sports_centre", "name": "Servicios Ecoturisticos de Cointzio S.C. de C.V. de R.L.", "name_1": "Balneario Ejidal de Cointzio", "sport": "swimming"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/482337493", "lat": 19.6495752, "lng": -101.2301668, "tags": {"building": "yes", "leisure": "fitness_centre", "name": "Gimnasio UNAM"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/546427175", "lat": 19.6966513, "lng": -101.2035997, "tags": {"leisure": "sports_centre", "name": "CECUFID"}, "metro_rango": "23", "metropoli": "Morelia"}
@@ -35,7 +35,6 @@
 {"osm_id": "way/1311595841", "lat": 19.7221855, "lng": -101.1973905, "tags": {"fitness_station": "yes", "leisure": "fitness_station", "name": "Spot Morelia", "sport": "fitness"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/1312498138", "lat": 19.707351, "lng": -101.1824063, "tags": {"leisure": "sports_centre", "name": "Centro Deportivo Felix Ireta Viveros (Frontones)"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/1312498150", "lat": 19.7169063, "lng": -101.1860489, "tags": {"leisure": "sports_centre", "name": "Deportivo Santiaguito"}, "metro_rango": "23", "metropoli": "Morelia"}
-{"osm_id": "way/1312880285", "lat": 19.7256683, "lng": -101.1647302, "tags": {"leisure": "fitness_station", "name": "Gimnasio al Aire Libre 20 de Noviembre", "sport": "fitness"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/1352944404", "lat": 19.701301, "lng": -101.2164932, "tags": {"leisure": "sports_centre", "name": "Unidad Deportiva Tres Puentes"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/1352992677", "lat": 19.7135211, "lng": -101.2109132, "tags": {"leisure": "sports_centre", "name": "Deportivo Primo Tapia"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/1354206631", "lat": 19.706902, "lng": -101.1996944, "tags": {"leisure": "sports_centre", "name": "Unidad Deportiva 150"}, "metro_rango": "23", "metropoli": "Morelia"}
@@ -43,8 +42,4 @@
 {"osm_id": "way/1354218541", "lat": 19.7175724, "lng": -101.2180346, "tags": {"leisure": "sports_centre", "name": "Centro Deportivo, Recreativo y Cultural \"Eduardo Ruiz\""}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/1364888319", "lat": 19.7217743, "lng": -101.20456, "tags": {"leisure": "sports_centre", "name": "Ignacio Zaragoza", "sport": "soccer;basketball;skateboard;gymnastics"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "way/1418586733", "lat": 19.7231978, "lng": -101.2301522, "tags": {"leisure": "sports_centre", "name": "UNIDAD DEPORTIVA"}, "metro_rango": "23", "metropoli": "Morelia"}
-{"osm_id": "way/1546087463", "lat": 19.7076639, "lng": -101.1094555, "tags": {"building": "yes", "leisure": "sports_hall", "name": "Centro de Gimnasia Artística Tres Marías"}, "metro_rango": "23", "metropoli": "Morelia"}
-{"osm_id": "way/1546128635", "lat": 19.689344, "lng": -101.2418929, "tags": {"leisure": "sports_centre", "name": "Canchas Furamo"}, "metro_rango": "23", "metropoli": "Morelia"}
-{"osm_id": "way/1546128656", "lat": 19.6868105, "lng": -101.2574702, "tags": {"leisure": "sports_centre", "name": "Unidad Deportiva Mariano Abasolo"}, "metro_rango": "23", "metropoli": "Morelia"}
-{"osm_id": "way/1547986166", "lat": 19.7991876, "lng": -101.1706935, "tags": {"leisure": "sports_centre", "name": "Unidad Deportiva La 16"}, "metro_rango": "23", "metropoli": "Morelia"}
 {"osm_id": "relation/6921431", "lat": 19.7086582, "lng": -101.2335087, "tags": {"leisure": "sports_centre", "name": "Unidad Deportiva Miguel Hidalgo", "type": "multipolygon"}, "metro_rango": "23", "metropoli": "Morelia"}
