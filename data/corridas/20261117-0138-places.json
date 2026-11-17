@@ -1,0 +1,15 @@
+{
+ "inicio": "2026-11-17T01:37:22.212123+00:00Z",
+ "metros": {
+  "Cuernavaca": {
+   "antes": 239,
+   "despues": 796
+  }
+ },
+ "peticiones": 101,
+ "errores": [
+  "429 gimnasio de box en Xochitepec, Morelos: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-17T01:38:28.910913+00:00Z"
+}
