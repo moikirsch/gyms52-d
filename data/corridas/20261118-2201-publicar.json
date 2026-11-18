@@ -1,0 +1,8 @@
+{
+ "publicados": 4999,
+ "adoptados": 0,
+ "pendientes_antes": 5558,
+ "errores": [
+  "Arenal Sport: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+ ]
+}
