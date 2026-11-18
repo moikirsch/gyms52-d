@@ -1,0 +1,23 @@
+{
+ "inicio": "2026-11-17T21:45:16.757057+00:00Z",
+ "metros": {
+  "Cuernavaca": {
+   "antes": 796,
+   "despues": 829
+  },
+  "Hermosillo": {
+   "antes": 0,
+   "despues": 467
+  },
+  "Aguascalientes": {
+   "antes": 0,
+   "despues": 631
+  }
+ },
+ "peticiones": 108,
+ "errores": [
+  "429 box de entrenamiento funcional en San Francisco de los Romo, Aguascalientes: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-17T21:46:57.488923+00:00Z"
+}

@@ -1,14 +1,14 @@
-wp_id recuperados de la bitácora: 37
-Por retirar de WordPress: 2
-Base: 39713 lugares | Google: 21499 | OSM nuevos: 1854 | OSM completan: 1447 | fuentes nuevas: {'smartfit': 203, 'anytime': 71, 'sportsworld': 12, 'sportcity': 5, 'crossfit': 30, 'hyrox': 182, 'totalpass': 4906, 'fitpass': 428} | fuentes completan: {'smartfit': 274, 'anytime': 44, 'sportsworld': 35, 'sportcity': 19, 'crossfit': 21, 'hyrox': 91, 'totalpass': 3111, 'fitpass': 2432} | DENUE nuevos: 10728 | DENUE genéricos fuera: 2850 | descartados Google: 3650
+wp_id recuperados de la bitácora: 2
+Por retirar de WordPress: 4
+Base: 40401 lugares | Google: 22447 | OSM nuevos: 1820 | OSM completan: 1481 | fuentes nuevas: {'smartfit': 195, 'anytime': 70, 'sportsworld': 11, 'sportcity': 5, 'crossfit': 30, 'hyrox': 180, 'totalpass': 4821, 'fitpass': 428} | fuentes completan: {'smartfit': 282, 'anytime': 45, 'sportsworld': 36, 'sportcity': 19, 'crossfit': 21, 'hyrox': 93, 'totalpass': 3196, 'fitpass': 2432} | DENUE nuevos: 10599 | DENUE genéricos fuera: 2841 | descartados Google: 3823
 tipo_lugar
-Gimnasio               17610
-Gimnasio de combate     5240
-Estudio                 4815
-Escuela de danza        3827
-Tienda                  3089
-Club deportivo          1889
+Gimnasio               17743
+Gimnasio de combate     5384
+Estudio                 4927
+Escuela de danza        3925
+Tienda                  3213
+Club deportivo          1944
 Deportivo público       1241
-Box                     1182
-Centro acuático          655
-Muro de escalada         165
+Box                     1186
+Centro acuático          671
+Muro de escalada         167
