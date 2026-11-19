@@ -1,0 +1,27 @@
+{
+ "inicio": "2026-11-18T22:02:08.262124+00:00Z",
+ "metros": {
+  "Aguascalientes": {
+   "antes": 631,
+   "despues": 650
+  },
+  "Culiacán": {
+   "antes": 0,
+   "despues": 438
+  },
+  "Saltillo": {
+   "antes": 0,
+   "despues": 474
+  },
+  "Morelia": {
+   "antes": 0,
+   "despues": 140
+  }
+ },
+ "peticiones": 103,
+ "errores": [
+  "429 estudio de yoga en Morelia, Michoacán: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-18T22:03:51.504886+00:00Z"
+}
