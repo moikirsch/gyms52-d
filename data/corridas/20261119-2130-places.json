@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-11-19T21:28:57.885923+00:00Z",
+ "metros": {
+  "Morelia": {
+   "antes": 140,
+   "despues": 508
+  },
+  "Tampico": {
+   "antes": 0,
+   "despues": 512
+  }
+ },
+ "peticiones": 103,
+ "errores": [
+  "429 crossfit en Pueblo Viejo, Veracruz: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-19T21:30:28.414629+00:00Z"
+}
