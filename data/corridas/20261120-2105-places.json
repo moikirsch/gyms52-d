@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-11-20T21:03:44.300417+00:00Z",
+ "metros": {
+  "Tampico": {
+   "antes": 512,
+   "despues": 706
+  },
+  "Tuxtla Gutiérrez": {
+   "antes": 0,
+   "despues": 583
+  }
+ },
+ "peticiones": 109,
+ "errores": [
+  "429 tienda de artículos deportivos en Suchiapa, Chiapas: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-20T21:05:03.261363+00:00Z"
+}
