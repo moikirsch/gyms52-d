@@ -1,0 +1,27 @@
+{
+ "inicio": "2026-11-21T20:04:28.343753+00:00Z",
+ "metros": {
+  "Tuxtla Gutiérrez": {
+   "antes": 583,
+   "despues": 589
+  },
+  "Acapulco": {
+   "antes": 0,
+   "despues": 274
+  },
+  "Reynosa": {
+   "antes": 0,
+   "despues": 425
+  },
+  "Córdoba": {
+   "antes": 0,
+   "despues": 274
+  }
+ },
+ "peticiones": 107,
+ "errores": [
+  "429 estudio de yoga en Orizaba, Veracruz: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-21T20:05:53.434419+00:00Z"
+}
