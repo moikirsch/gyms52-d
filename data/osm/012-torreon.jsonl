@@ -5,7 +5,7 @@
 {"osm_id": "node/3778877748", "lat": 25.5224224, "lng": -103.3850047, "tags": {"leisure": "sports_centre", "name": "Britania Club", "sport": "swimming"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "node/3778877755", "lat": 25.5224551, "lng": -103.3785447, "tags": {"leisure": "sports_centre", "name": "Extreme Gym"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "node/5408601572", "lat": 25.5981804, "lng": -103.4040281, "tags": {"leisure": "fitness_centre", "name": "PERFORMA Perfect Fitness & Spa"}, "metro_rango": "12", "metropoli": "Torreón"}
-{"osm_id": "node/6561583745", "lat": 25.7807266, "lng": -103.2730933, "tags": {"fitness_station": "yes", "leisure": "fitness_station", "name": "Gimnasio al aire libre", "sport": "fitness"}, "metro_rango": "12", "metropoli": "Torreón"}
+{"osm_id": "node/6561583745", "lat": 25.7807266, "lng": -103.2730933, "tags": {"leisure": "fitness_station", "name": "Gimnasio al aire libre", "sport": "fitness"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "node/6582382819", "lat": 25.5412124, "lng": -103.4108231, "tags": {"brand": "YMCA", "brand:wikidata": "Q157169", "brand:wikipedia": "en:YMCA", "leisure": "sports_centre", "name": "YMCA"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "node/8350593610", "lat": 25.5941525, "lng": -103.503939, "tags": {"name": "Innovasport", "shop": "sports"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "node/8498385201", "lat": 25.5543205, "lng": -103.4954216, "tags": {"name": "CENTRO DE NUTRICION ByN DE LA LAGUNA", "shop": "nutrition_supplements"}, "metro_rango": "12", "metropoli": "Torreón"}
@@ -33,6 +33,7 @@
 {"osm_id": "node/14309331236", "lat": 25.565061, "lng": -103.4840708, "tags": {"check_date": "2026-10-28", "healthcare": "pharmacy", "leisure": "fitness_centre", "name": "Elite Sport Club"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "node/14335076361", "lat": 25.5689319, "lng": -103.4919855, "tags": {"amenity": "dojo", "check_date": "2026-10-30", "name": "Tae Kwon Do"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "node/14367997928", "lat": 25.6191866, "lng": -103.3913252, "tags": {"amenity": "dancing_school", "check_date": "2026-11-11", "education": "dancing_school", "level": "0", "name": "Epic Motion Dance Studio"}, "metro_rango": "12", "metropoli": "Torreón"}
+{"osm_id": "node/14391474612", "lat": 25.6196138, "lng": -103.3900286, "tags": {"check_date": "2026-11-18", "leisure": "fitness_centre", "name": "Now Training Club"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/116771118", "lat": 25.5340013, "lng": -103.411321, "tags": {"alt_name": "Deportiva", "leisure": "sports_centre", "name": "Unidad Deportiva Torreón Braulio Fernández Aguirre", "sport": "soccer;baseball;basketball;swimming;tennis;volleyball;american_football"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/147219064", "lat": 25.5296478, "lng": -103.2207573, "tags": {"barrier": "wall", "leisure": "sports_centre", "name": "Unidad Deportiva Horacio Piña"}, "metro_rango": "12", "metropoli": "Torreón"}
 {"osm_id": "way/147498918", "lat": 25.5331349, "lng": -103.2370255, "tags": {"leisure": "sports_centre", "name": "Cancha Camara Junior", "sport": "baseball"}, "metro_rango": "12", "metropoli": "Torreón"}

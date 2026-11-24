@@ -1,3 +1,4 @@
+{"osm_id": "node/1241390013", "lat": 19.0645333, "lng": -98.1509931, "tags": {"addr:street": "Calle Chabacano", "description": "Ring de lucha libre y entrenamiento físico. Abierto comúnmente por las tardes.", "leisure": "fitness_centre", "name": "Los cuatro rudos", "power": "portal"}, "metro_rango": "6", "metropoli": "Puebla"}
 {"osm_id": "node/1928435112", "lat": 19.0600555, "lng": -98.331513, "tags": {"leisure": "sports_centre", "name": "Clob de Golf La Huerta"}, "metro_rango": "6", "metropoli": "Puebla"}
 {"osm_id": "node/1928471506", "lat": 19.0272789, "lng": -98.23254, "tags": {"leisure": "sports_centre", "name": "Sport City"}, "metro_rango": "6", "metropoli": "Puebla"}
 {"osm_id": "node/1931726957", "lat": 19.0671361, "lng": -98.2952952, "tags": {"leisure": "sports_centre", "name": "Squash"}, "metro_rango": "6", "metropoli": "Puebla"}
@@ -42,7 +43,6 @@
 {"osm_id": "node/5969691095", "lat": 19.034978, "lng": -98.2281043, "tags": {"brand": "Smart Fit", "brand:wikidata": "Q30930959", "leisure": "fitness_centre", "name": "Smart Fit"}, "metro_rango": "6", "metropoli": "Puebla"}
 {"osm_id": "node/5978210758", "lat": 19.0431898, "lng": -98.2305815, "tags": {"dance:teaching": "yes", "leisure": "dance", "name": "Kizomba Escuela De Baile"}, "metro_rango": "6", "metropoli": "Puebla"}
 {"osm_id": "node/5981347431", "lat": 19.02772, "lng": -98.2360327, "tags": {"leisure": "fitness_centre", "name": "Life Fitness"}, "metro_rango": "6", "metropoli": "Puebla"}
-{"osm_id": "node/6409113489", "lat": 19.06364, "lng": -98.15125, "tags": {"addr:street": "Calle Chabacano", "description": "Ring de lucha libre y entrenamiento físico. Abierto comúnmente por las tardes.", "leisure": "fitness_centre", "name": "Los cuatro rudos"}, "metro_rango": "6", "metropoli": "Puebla"}
 {"osm_id": "node/7127074252", "lat": 19.0767684, "lng": -98.2947679, "tags": {"brand": "GNC", "brand:wikidata": "Q4808595", "brand:wikipedia": "en:GNC (store)", "name": "GNC", "shop": "nutrition_supplements"}, "metro_rango": "6", "metropoli": "Puebla"}
 {"osm_id": "node/7131821049", "lat": 19.3413612, "lng": -98.1730325, "tags": {"addr:city": "Amaxac de Guerrero", "addr:housenumber": "#22", "addr:postcode": "90620", "addr:street": "Cuahutemoc", "leisure": "fitness_centre", "name": "Gimasio City Life"}, "metro_rango": "6", "metropoli": "Puebla"}
 {"osm_id": "node/7236199236", "lat": 19.0443911, "lng": -98.2268109, "tags": {"amenity": "dojo", "description": "Dojo de Karate", "name": "Karate do Ronin Dojo", "sport": "karate"}, "metro_rango": "6", "metropoli": "Puebla"}
