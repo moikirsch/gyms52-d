@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-11-24T03:01:23.662522+00:00Z",
+ "metros": {
+  "Córdoba": {
+   "antes": 728,
+   "despues": 950
+  },
+  "Irapuato": {
+   "antes": 0,
+   "despues": 99
+  }
+ },
+ "peticiones": 103,
+ "errores": [
+  "429 gimnasio de box en Irapuato, Guanajuato: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-24T03:01:56.533865+00:00Z"
+}
