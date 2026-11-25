@@ -1,0 +1,19 @@
+{
+ "inicio": "2026-11-24T23:00:01.896516+00:00Z",
+ "metros": {
+  "Irapuato": {
+   "antes": 99,
+   "despues": 608
+  },
+  "Coatzacoalcos": {
+   "antes": 0,
+   "despues": 479
+  }
+ },
+ "peticiones": 108,
+ "errores": [
+  "429 tienda de artículos deportivos en Nanchital de Lázaro Cárdenas del Río, Veracruz: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTextRequest per day' of service 'places.googleapis.com' for consumer 'project_numbe",
+  "Cuota diaria de Google agotada: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'SearchTextRequest' and limit 'SearchTex"
+ ],
+ "fin": "2026-11-24T23:01:28.638347+00:00Z"
+}
