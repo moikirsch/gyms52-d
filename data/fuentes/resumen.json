@@ -4,13 +4,13 @@
    "total_fuente": 188,
    "por_estatus": {
     "abierto": 121,
-    "próximamente": 55,
-    "preventa": 12
+    "preventa": 14,
+    "próximamente": 53
    },
    "ok": true,
    "exportados": 121,
    "descartados": 0,
-   "segundos": 0.4,
+   "segundos": 0.3,
    "peticiones": 1,
    "llenado_pct": {
     "fuente": 100,
@@ -38,7 +38,7 @@
     "tipo": 0,
     "planes": 0
    },
-   "fecha": "2026-11-18T19:00:39Z"
+   "fecha": "2026-11-25T20:08:13Z"
   },
   "sportsworld": {
    "zonas": 25,
@@ -48,7 +48,7 @@
    "ok": true,
    "exportados": 48,
    "descartados": 0,
-   "segundos": 25.1,
+   "segundos": 25.2,
    "peticiones": 26,
    "llenado_pct": {
     "fuente": 100,
@@ -76,7 +76,7 @@
     "tipo": 100,
     "planes": 0
    },
-   "fecha": "2026-11-18T19:00:39Z"
+   "fecha": "2026-11-25T20:08:13Z"
   },
   "sportcity": {
    "total_fuente": 26,
@@ -111,7 +111,7 @@
     "tipo": 100,
     "planes": 0
    },
-   "fecha": "2026-11-18T19:00:39Z"
+   "fecha": "2026-11-25T20:08:13Z"
   },
   "crossfit": {
    "total_fuente": 56,
@@ -146,16 +146,16 @@
     "tipo": 100,
     "planes": 0
    },
-   "fecha": "2026-11-18T19:00:39Z"
+   "fecha": "2026-11-25T20:08:13Z"
   },
   "smartfit": {
    "proximamente": 26,
-   "total_fuente": 529,
+   "total_fuente": 528,
    "ok": true,
-   "exportados": 503,
+   "exportados": 502,
    "descartados": 0,
-   "segundos": 68.6,
-   "peticiones": 67,
+   "segundos": 70.1,
+   "peticiones": 66,
    "llenado_pct": {
     "fuente": 100,
     "id_fuente": 100,
@@ -182,15 +182,15 @@
     "tipo": 39,
     "planes": 0
    },
-   "fecha": "2026-11-18T19:00:39Z"
+   "fecha": "2026-11-25T20:08:13Z"
   },
   "hyrox": {
    "celdas": 139,
    "truncadas": 0,
-   "total_fuente": 381,
+   "total_fuente": 382,
    "fuera_de_mexico": 88,
    "ok": true,
-   "exportados": 293,
+   "exportados": 294,
    "descartados": 0,
    "segundos": 138.2,
    "peticiones": 139,
@@ -203,7 +203,7 @@
     "calle": 100,
     "colonia": 0,
     "ciudad": 100,
-    "estado": 16,
+    "estado": 17,
     "cp": 100,
     "telefono": 59,
     "sitio_web": 0,
@@ -215,41 +215,41 @@
     "instalaciones": 0,
     "mensualidad_desde": 0,
     "precio_fuente_url": 0,
-    "foto": 21,
+    "foto": 22,
     "estatus": 100,
     "tipo": 100,
     "planes": 0
    },
-   "fecha": "2026-11-18T19:00:39Z"
+   "fecha": "2026-11-25T20:08:13Z"
   },
   "fitpass": {
    "ciudades": 18,
    "por_ciudad": {
-    "CUERNAVACA": 46,
     "ACAPULCO": 8,
-    "CDMX": 1413,
+    "CUERNAVACA": 46,
     "CANCUN": 70,
-    "MAZATLAN": 0,
-    "LOS CABOS": 11,
+    "LOS CABOS": 12,
     "LEON": 33,
     "GDL": 302,
+    "MAZATLAN": 0,
+    "MERIDA": 77,
+    "MONTERREY": 180,
+    "CDMX": 1415,
     "PLAYA DEL CARMEN": 13,
-    "MONTERREY": 178,
-    "PUEBLA": 331,
-    "MERIDA": 76,
     "PUERTO VALLARTA": 4,
+    "QUERETARO": 341,
+    "PUEBLA": 331,
+    "TIJUANA": 6,
     "SAN MIGUEL DE ALLENDE": 4,
     "SAN LUIS POTOSI": 20,
-    "QUERETARO": 341,
-    "TIJUANA": 4,
     "TOLUCA": 117
    },
-   "total_fuente": 2971,
+   "total_fuente": 2979,
    "virtuales": 47,
    "ok": true,
-   "exportados": 2923,
+   "exportados": 2931,
    "descartados": 1,
-   "segundos": 4.4,
+   "segundos": 4.7,
    "peticiones": 19,
    "llenado_pct": {
     "fuente": 100,
@@ -277,22 +277,22 @@
     "tipo": 100,
     "planes": 0
    },
-   "fecha": "2026-11-18T19:00:39Z"
+   "fecha": "2026-11-25T20:08:13Z"
   },
   "totalpass": {
-   "urls_sitemap": 8049,
-   "pendientes_nuevos": 68,
-   "pendientes_viejos": 0,
-   "leidas_esta_corrida": 68,
+   "urls_sitemap": 8570,
+   "pendientes_nuevos": 538,
+   "pendientes_viejos": 7,
+   "leidas_esta_corrida": 545,
    "errores_pagina": 0,
    "404": 0,
-   "retirados_del_sitemap": 487,
-   "cobertura_cache": "8049/8049",
+   "retirados_del_sitemap": 17,
+   "cobertura_cache": "8570/8570",
    "ok": true,
-   "exportados": 8038,
-   "descartados": 1,
-   "segundos": 16.8,
-   "peticiones": 69,
+   "exportados": 8560,
+   "descartados": 6,
+   "segundos": 136.7,
+   "peticiones": 546,
    "llenado_pct": {
     "fuente": 100,
     "id_fuente": 100,
@@ -304,14 +304,14 @@
     "ciudad": 100,
     "estado": 100,
     "cp": 100,
-    "telefono": 54,
-    "sitio_web": 94,
+    "telefono": 53,
+    "sitio_web": 93,
     "url_fuente": 100,
     "horario_osm": 99,
     "cadena": 0,
     "pases": 100,
     "afiliaciones": 0,
-    "instalaciones": 78,
+    "instalaciones": 79,
     "mensualidad_desde": 0,
     "precio_fuente_url": 0,
     "foto": 100,
@@ -319,12 +319,12 @@
     "tipo": 100,
     "planes": 100
    },
-   "fecha": "2026-11-18T19:00:39Z"
+   "fecha": "2026-11-25T20:08:13Z"
   }
  },
- "actualizado": "2026-11-18T19:00:39Z",
+ "actualizado": "2026-11-25T20:08:13Z",
  "ultima_corrida": {
-  "fecha": "2026-11-18T19:00:39Z",
+  "fecha": "2026-11-25T20:08:13Z",
   "fuentes": [
    "smartfit",
    "anytime",
